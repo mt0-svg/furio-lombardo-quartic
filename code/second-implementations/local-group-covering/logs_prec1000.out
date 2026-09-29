@@ -1,0 +1,63 @@
+PREC 1000, cap 3000, T_GOAL 1500, MU 8; root certified to pi^2983
+
+==== twist k = 0 ====
+ D1: u exact (prec 2959), V refined: v(V' - V_export) >= 240, certified precision of V' 2822
+ D2: u exact (prec 2962), V refined: v(V' - V_export) >= 242, certified precision of V' 2660
+ D3: u exact (prec 2962), V refined: v(V' - V_export) >= 240, certified precision of V' 2605
+ D4: u exact (prec 2968), V refined: v(V' - V_export) >= 241, certified precision of V' 2849
+ D5: u exact (prec 2965), V refined: v(V' - V_export) >= 240, certified precision of V' 2886
+ D6: u exact (prec 2962), V refined: v(V' - V_export) >= 240, certified precision of V' 2877
+ D7: u exact (prec 2965), V refined: v(V' - V_export) >= 241, certified precision of V' 2887
+  log D1        N = 45045*2^4, chart aff, qa, margin mu 9, M 165, log (v 5, prec 1496) (v 4, prec 1495)  1.8s
+  log D2        N = 45045*2^5, chart aff, qa, margin mu 10, M 148, log (v 3, prec 1487) (v 6, prec 1490)  1.4s
+  log D3        N = 45045*2^5, chart aff, qa, margin mu 10, M 148, log (v 3, prec 1487) (v 4, prec 1488)  1.2s
+  log D4        N = 45045*2^1, chart aff, split, margin mu 8, M 185, log (v 13, prec 1501) (v 12, prec 1500)  0.6s
+  log D5        N = 45045*2^4, chart aff, qa, margin mu 8, M 185, log (v 4, prec 1489) (v 3, prec 1488)  2.2s
+  log D6        N = 45045*2^4, chart aff, split, margin mu 9, M 165, log (v 5, prec 1499) (v 4, prec 1498)  0.6s
+  log D7        N = 45045*2^5, chart inf, split, margin mu 10, M 148, log (v 9, prec 1496) (v 2, prec 1489)  0.5s
+  log phi0      N = 45045*2^4, chart aff, qa, margin mu 10, M 148, log (v 6, prec 1490) (v 10, prec 1494)  1.6s
+  log phi2      N = 45045*2^4, chart aff, qa, margin mu 10, M 148, log (v 6, prec 1490) (v 10, prec 1494)  1.6s
+ KAT T genuine: f mod u_T = ['(v O, prec 2964)', '(v O, prec 2967)']
+  log D1+D2     N = 45045*2^5, chart aff, qa, margin mu 10, M 148, log (v 3, prec 1487) (v 4, prec 1488)  1.4s
+ KAT additivity v(log(D1+D2) - log D1 - log D2) >= [1487, 1488]
+  log D1+T      N = 45045*2^4, chart aff, qa, margin mu 9, M 165, log (v 5, prec 1496) (v 4, prec 1495)  1.8s
+ KAT torsion v(log(D1+T) - log D1) >= [1496, 1495]
+  log phia+T    N = 45045*2^4, chart aff, qa, margin mu 10, M 148, log (v 6, prec 1490) (v 10, prec 1494)  1.6s
+ KAT torsion v(log(phi_a+T) - log phi_a) >= [1490, 1494]
+  log D1 3N     N = 135135*2^6, chart aff, qa, margin mu 15, M 98, log (v 5, prec 1481) (v 4, prec 1480)  0.6s
+ KAT multiplier v(log D1 [3N] - log D1) >= [1481, 1480]
+  log phib 3N   N = 135135*2^5, chart aff, qa, margin mu 13, M 113, log (v 6, prec 1485) (v 10, prec 1489)  1.0s
+ KAT multiplier v(log phi_b [3N] - log phi_b) >= [1485, 1489]
+ least precision of the saved logs: pi^1487
+
+==== twist k = 1 ====
+ D1: u exact (prec 2971), V refined: v(V' - V_export) >= 240, certified precision of V' 2898
+ D2: u exact (prec 2968), V refined: v(V' - V_export) >= 240, certified precision of V' 2897
+ D3: u exact (prec 2965), V refined: v(V' - V_export) >= 241, certified precision of V' 2849
+ D4: u exact (prec 2965), V refined: v(V' - V_export) >= 240, certified precision of V' 2886
+ D5: u exact (prec 2965), V refined: v(V' - V_export) >= 240, certified precision of V' 2886
+ D6: u exact (prec 2968), V refined: v(V' - V_export) >= 240, certified precision of V' 2858
+ D7: u exact (prec 2968), V refined: v(V' - V_export) >= 240, certified precision of V' 2895
+  log D1        N = 45045*2^5, chart inf, qa, margin mu 10, M 148, log (v 4, prec 1488) (v 2, prec 1486)  1.6s
+  log D2        N = 45045*2^4, chart aff, qa, margin mu 9, M 165, log (v 5, prec 1496) (v 4, prec 1495)  1.9s
+  log D3        N = 45045*2^5, chart aff, split, margin mu 10, M 148, log (v 3, prec 1490) (v 3, prec 1490)  0.5s
+  log D4        N = 45045*2^4, chart aff, qa, margin mu 8, M 185, log (v 4, prec 1489) (v 3, prec 1488)  2.2s
+  log D5        N = 45045*2^4, chart aff, qa, margin mu 8, M 185, log (v 4, prec 1489) (v 3, prec 1488)  2.2s
+  log D6        N = 45045*2^4, chart aff, qa, margin mu 10, M 148, log (v 6, prec 1490) (v 5, prec 1489)  1.6s
+  log D7        N = 45045*2^4, chart aff, qa, margin mu 10, M 148, log (v 6, prec 1490) (v 7, prec 1491)  1.9s
+  log phi1      N = 45045*2^3, chart inf, qa, margin mu 8, M 185, log (v 12, prec 1497) (v 6, prec 1491)  2.6s
+  log phi3      N = 45045*2^3, chart inf, qa, margin mu 8, M 185, log (v 9, prec 1494) (v 6, prec 1491)  2.8s
+ KAT T genuine: f mod u_T = ['(v O, prec 2962)', '(v O, prec 2967)']
+  log D1+D2     N = 45045*2^5, chart inf, qa, margin mu 10, M 148, log (v 4, prec 1488) (v 2, prec 1486)  1.7s
+ KAT additivity v(log(D1+D2) - log D1 - log D2) >= [1488, 1486]
+  log D1+T      N = 45045*2^5, chart inf, qa, margin mu 10, M 148, log (v 4, prec 1488) (v 2, prec 1486)  1.8s
+ KAT torsion v(log(D1+T) - log D1) >= [1488, 1486]
+  log phia+T    N = 45045*2^3, chart inf, qa, margin mu 8, M 185, log (v 12, prec 1497) (v 6, prec 1491)  2.4s
+ KAT torsion v(log(phi_a+T) - log phi_a) >= [1497, 1491]
+  log D1 3N     N = 135135*2^6, chart inf, qa, margin mu 13, M 113, log (v 4, prec 1483) (v 2, prec 1481)  1.0s
+ KAT multiplier v(log D1 [3N] - log D1) >= [1483, 1481]
+  log phib 3N   N = 135135*2^5, chart inf, qa, margin mu 14, M 105, log (v 9, prec 1490) (v 6, prec 1487)  1.0s
+ KAT multiplier v(log phi_b [3N] - log phi_b) >= [1490, 1487]
+ least precision of the saved logs: pi^1486
+
+time 44.2s

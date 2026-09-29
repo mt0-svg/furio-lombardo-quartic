@@ -1,0 +1,5 @@
+  ***   Warning: new maximum stack size = 2000003072 (1907.352 Mbytes).
+index = [2, 25; 45613, 1; 462191, 1; 249279053, 1]
+hA max bits 22, hW max bits 67
+diagP = [2, 80; 45613, 20; 462191, 20; 249279053, 20]
+chi0 = [2, 72; 7, 27; 45613, 2; 462191, 2; 249279053, 2]; MB digits 725; HB max digits 724

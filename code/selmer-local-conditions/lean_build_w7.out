@@ -1,0 +1,212 @@
+# lake build of the w7 data and check modules, 2026-09-29T19:48:44Z
+W7Data: rc=0, 135.02 s wall, 7035996 KB max RSS
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:200:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.sb_ne_zero`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:239:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.zero_const`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:250:10: This simp argument is unused:
+    MvPowerSeries.coeff_map
+  Hint: Omit it from the simp argument list.
+    [apply] simp
+  Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+  Build completed successfully (9158 jobs).
+W7DataL: rc=0, 231.04 s wall, 7022348 KB max RSS
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:200:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.sb_ne_zero`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:239:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.zero_const`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:250:10: This simp argument is unused:
+    MvPowerSeries.coeff_map
+  Hint: Omit it from the simp argument list.
+    [apply] simp
+  Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+  Build completed successfully (9158 jobs).
+W7DataN: rc=0, 244.62 s wall, 7191100 KB max RSS
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:200:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.sb_ne_zero`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:239:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.zero_const`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:250:10: This simp argument is unused:
+    MvPowerSeries.coeff_map
+  Hint: Omit it from the simp argument list.
+    [apply] simp
+  Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+  Build completed successfully (9158 jobs).
+W7CheckM: rc=0, 143.15 s wall, 7325784 KB max RSS
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:200:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.sb_ne_zero`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:239:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.zero_const`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:250:10: This simp argument is unused:
+    MvPowerSeries.coeff_map
+  Hint: Omit it from the simp argument list.
+    [apply] simp
+  Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+  Build completed successfully (9159 jobs).
+W7CheckL: rc=0, 43.62 s wall, 7209428 KB max RSS
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:200:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.sb_ne_zero`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:239:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.zero_const`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:250:10: This simp argument is unused:
+    MvPowerSeries.coeff_map
+  Hint: Omit it from the simp argument list.
+    [apply] simp
+  Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+  Build completed successfully (9160 jobs).
+W7CheckN0: rc=0, 85.38 s wall, 7284116 KB max RSS
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:200:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.sb_ne_zero`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:239:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.zero_const`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:250:10: This simp argument is unused:
+    MvPowerSeries.coeff_map
+  Hint: Omit it from the simp argument list.
+    [apply] simp
+  Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+  Build completed successfully (9160 jobs).
+W7CheckN1: rc=0, 26.32 s wall, 7349972 KB max RSS
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:200:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.sb_ne_zero`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:239:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.zero_const`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:250:10: This simp argument is unused:
+    MvPowerSeries.coeff_map
+  Hint: Omit it from the simp argument list.
+    [apply] simp
+  Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+  Build completed successfully (9160 jobs).
+W7CheckN: rc=0, 7.19 s wall, 6971800 KB max RSS
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:200:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.sb_ne_zero`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:239:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.zero_const`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:250:10: This simp argument is unused:
+    MvPowerSeries.coeff_map
+  Hint: Omit it from the simp argument list.
+    [apply] simp
+  Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+  Build completed successfully (9162 jobs).
+W7CheckB: rc=0, 7.48 s wall, 7051828 KB max RSS
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:200:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.sb_ne_zero`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:239:0: automatically included section variable(s) unused in theorem `Toolbox.G2Formal.Setup.zero_const`:
+    [Finite τ]
+  consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+    omit [Finite τ] in theorem ...
+  Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+  warning: FurioLombardo/Discharge/R7/FGLK.lean:250:10: This simp argument is unused:
+    MvPowerSeries.coeff_map
+  Hint: Omit it from the simp argument list.
+    [apply] simp
+  Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+  Build completed successfully (9162 jobs).
+W7Check: rc=0, 13.77 s wall, 6937900 KB max RSS
+    The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+    [apply] ring_nf
+    The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+    [apply] ring_nf
+    The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+  warning: FurioLombardo/Discharge/SelmerBasis/PointGen.lean:766:6: This simp argument is unused:
+    map_intCast
+  Hint: Omit it from the simp argument list.
+    [apply] simp only [PtData.Np, evK_mul, evK_add, evK_sub, evK_int, evK_lin, map_mul, map_add, map_sub,
+      Int.cast_natCast, map_natCast]
+  Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+  warning: FurioLombardo/Discharge/SelmerBasis/PointGen.lean:770:80: This simp argument is unused:
+    map_intCast
+  Hint: Omit it from the simp argument list.
+    [apply] simp only [PtData.Xa, evK_mul, evK_sub, evK_int, evK_lin, map_mul, map_sub, Int.cast_natCast, map_natCast]
+  Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+  Build completed successfully (9168 jobs).
+sp7_axioms.lean: rc=0, 4.91 s wall, 6949432 KB max RSS

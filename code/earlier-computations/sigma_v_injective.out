@@ -1,0 +1,113 @@
+  ***   Warning: new maximum stack size = 9000001536 (8583.070 Mbytes).
+  *** read: Warning: increasing stack size to 16000000.
+  *** read: Warning: increasing stack size to 32000000.
+  *** read: Warning: increasing stack size to 64000000.
+ok: f_0 = c G1 (A^2 - d B^2) is the Prym sextic F0
+  ***   Warning: increasing stack size to 128000000.
+  ***   Warning: increasing stack size to 256000000.
+ok: f_1 = c G1 (A^2 - d B^2) is the Prym sextic F1
+ok: clear nearest root
+ok: clear nearest root
+  *** nfeltembed: Warning: increasing stack size to 512000000.
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 1: 2 real roots of G1, 2 of h
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 2: 2 real roots of G1, 2 of h
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 3: 2 real roots of G1, 2 of h
+global generators: 164 x 82 coordinate matrix, rank 82 (28355 ms)
+---- twist k = 0
+ok: p21_21_li_k0_s1_e3.bin is a complete J side run
+ok: the 7 divisors of p21_21_li_k0_s1_e3.bin are certified again here
+  p = 2 (e = 3, f = 1), factor degrees [2, 4]: local image 7 of D_v = 7 (7 divisors, 22 coordinates)
+ok: p21_21_li_k0_s1_e12.bin is a complete J side run
+ok: the 26 divisors of p21_21_li_k0_s1_e12.bin are certified again here
+  p = 2 (e = 12, f = 1), factor degrees [2, 2, 2]: local image 26 of D_v = 26 (26 divisors, 78 coordinates)
+ok: p21_21_li_k0_s1_e6.bin is a complete J side run
+ok: the 14 divisors of p21_21_li_k0_s1_e6.bin are certified again here
+  p = 2 (e = 6, f = 1), factor degrees [2, 2, 2]: local image 14 of D_v = 14 (14 divisors, 42 coordinates)
+ok: O_K + W^M has full rank
+ok: den th lies in O_K + W^M
+ok: root approximation
+ok: O_K + W^M has full rank
+ok: den th lies in O_K + W^M
+ok: root approximation
+ok: O_K + W^M has full rank
+ok: den th lies in O_K + W^M
+ok: root approximation
+ok: O_K + W^M has full rank
+ok: den th lies in O_K + W^M
+ok: root approximation
+  place above 7: 4 root approximations, 48 points, 24 certified pairs
+  p = 7 (e = 7, f = 3), factor degrees [1, 1, 1, 2, 1]: local image 3 of D_v = 3 (3 divisors, 10 coordinates)
+ok: #J(R)[2] power of 2
+  real place 1: 4 real roots, local image 1 of D = 1
+ok: #J(R)[2] power of 2
+  real place 2: 4 real roots, local image 1 of D = 1
+ok: #J(R)[2] power of 2
+  real place 3: 4 real roots, local image 1 of D = 1
+ok: coordinate layout
+  dim X = 19, dim Sel_fake = dim X - 15 = 4, rank Jac(F_0)(K21) <= 3 (79266 ms)
+  KAT T: in every local image 1; in loc(X) + sum K_v^x 1
+  KAT phi(x_0): in every local image 1; in loc(X) + sum K_v^x 1
+  KAT phi(x_2): in every local image 1; in loc(X) + sum K_v^x 1
+  SIGMA k = 0: dim sigma(Sel) = 4 of dim Sel = 4 (ker sigma = 0: 1); known classes under sigma: 2
+  SIGMA k = 0: at p = 2 (e = 3, f = 1), factor degrees [2, 4], dim of the image of Sel = 4 (D_v = 7)
+  SIGMA k = 0: at p = 2 (e = 12, f = 1), factor degrees [2, 2, 2], dim of the image of Sel = 3 (D_v = 26)
+  SIGMA k = 0: at p = 2 (e = 6, f = 1), factor degrees [2, 2, 2], dim of the image of Sel = 4 (D_v = 14)
+  RELATIONS k = 0 (coefficients of ["T", "phi(x_0)", "phi(x_2)"] modulo 2J(K21), from the full localisation):
+    [0, 1, 1]
+  KAT: the 3 known classes span 2 dimensions modulo sum K_v^x (loc(X) modulo sum K_v^x: 4)
+---- twist k = 1
+ok: p21_21_li_k1_s1_e3.bin is a complete J side run
+ok: the 7 divisors of p21_21_li_k1_s1_e3.bin are certified again here
+  p = 2 (e = 3, f = 1), factor degrees [2, 4]: local image 7 of D_v = 7 (7 divisors, 22 coordinates)
+ok: p21_21_li_k1_s1_e12.bin is a complete J side run
+ok: the 26 divisors of p21_21_li_k1_s1_e12.bin are certified again here
+  p = 2 (e = 12, f = 1), factor degrees [2, 2, 2]: local image 26 of D_v = 26 (26 divisors, 78 coordinates)
+ok: p21_21_li_k1_s1_e6.bin is a complete J side run
+ok: the 14 divisors of p21_21_li_k1_s1_e6.bin are certified again here
+  p = 2 (e = 6, f = 1), factor degrees [2, 2, 2]: local image 14 of D_v = 14 (14 divisors, 42 coordinates)
+ok: O_K + W^M has full rank
+ok: den th lies in O_K + W^M
+ok: root approximation
+ok: O_K + W^M has full rank
+ok: den th lies in O_K + W^M
+ok: root approximation
+ok: O_K + W^M has full rank
+ok: den th lies in O_K + W^M
+ok: root approximation
+ok: O_K + W^M has full rank
+ok: den th lies in O_K + W^M
+ok: root approximation
+  place above 7: 4 root approximations, 48 points, 24 certified pairs
+  p = 7 (e = 7, f = 3), factor degrees [1, 1, 1, 2, 1]: local image 3 of D_v = 3 (3 divisors, 10 coordinates)
+ok: #J(R)[2] power of 2
+  real place 1: 4 real roots, local image 1 of D = 1
+ok: #J(R)[2] power of 2
+  real place 2: 4 real roots, local image 1 of D = 1
+ok: #J(R)[2] power of 2
+  real place 3: 4 real roots, local image 1 of D = 1
+ok: coordinate layout
+  dim X = 19, dim Sel_fake = dim X - 15 = 4, rank Jac(F_1)(K21) <= 3 (125260 ms)
+  KAT T: in every local image 1; in loc(X) + sum K_v^x 1
+  KAT phi(x_1): in every local image 1; in loc(X) + sum K_v^x 1
+  KAT phi(x_3): in every local image 1; in loc(X) + sum K_v^x 1
+  SIGMA k = 1: dim sigma(Sel) = 4 of dim Sel = 4 (ker sigma = 0: 1); known classes under sigma: 2
+  SIGMA k = 1: at p = 2 (e = 3, f = 1), factor degrees [2, 4], dim of the image of Sel = 4 (D_v = 7)
+  SIGMA k = 1: at p = 2 (e = 12, f = 1), factor degrees [2, 2, 2], dim of the image of Sel = 3 (D_v = 26)
+  SIGMA k = 1: at p = 2 (e = 6, f = 1), factor degrees [2, 2, 2], dim of the image of Sel = 4 (D_v = 14)
+  RELATIONS k = 1 (coefficients of ["T", "phi(x_1)", "phi(x_3)"] modulo 2J(K21), from the full localisation):
+    [0, 1, 1]
+  KAT: the 3 known classes span 2 dimensions modulo sum K_v^x (loc(X) modulo sum K_v^x: 4)
+RESULT [[19, 1], [19, 1]] (129601 ms)

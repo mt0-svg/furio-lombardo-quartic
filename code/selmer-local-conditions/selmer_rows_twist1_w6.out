@@ -1,0 +1,62 @@
+sb_2_certs.gp sha256 827c126b7852b6d7, sb_lib.gp sha256 d34eeaca5aa25f7e, SUnitData.lean sha256 4f709da46eeb36c2, gp 2.17.4
+  ***   Warning: new maximum stack size = 1800003584 (1716.617 Mbytes).
+==== stage 0 (tools, global data) (0 ms)
+ok: tool: f2eqspan (positive and negative)
+ok: tool: f2annih (kills the span, not a vector outside)
+ok: primes of K21 above 2 and 7 in the order v (e = 3), w2 (e = 12), w3 (e = 6), p7 (e = 7, f = 3)
+ok: fRev_0 = polrecip(F0) = c_k q h with q, h monic, the same for both twists
+ok: fRev_1 = polrecip(F1) = c_k q h with q, h monic, the same for both twists
+ok: place w3: M2's alpha generates the prime (p = 2, e = 6, f = 1)
+ok: CRT element E = 1 mod w^400, 0 mod w'^400
+==== stage 1 (components, roots) (70 ms)
+  K_w3(sqrt disc q): unit part at odd depth 11, Eisenstein P1 = Y1^2 - B Y1 - A, v(A) = 1, v(B) = 1
+ok: w3: P1 Eisenstein
+  component 1 (q, n = 2): 2 roots of the scaled factor in O_F, [v(gh(t')), v(gh'(t'))] = [[516, 2], [516, 2]]
+ok: component 1: a root generating F over K_w, not conjugate to a root already used
+ok: component 1: Hensel certificate v(gh(t')) = 516 > 2 v(gh'(t')) = 4, t' integral; v(tau' - t') >= 514
+  component 2 (h, n = 2): 4 roots of the scaled factor in O_F, [v(gh(t')), v(gh'(t'))] = [[480, 18], [800, 18], [672, 18], [672, 18]]
+ok: component 2: a root generating F over K_w, not conjugate to a root already used
+ok: component 2: Hensel certificate v(gh(t')) = 480 > 2 v(gh'(t')) = 36, t' integral; v(tau' - t') >= 462
+  component 3 (h, n = 2): 4 roots of the scaled factor in O_F, [v(gh(t')), v(gh'(t'))] = [[480, 18], [800, 18], [672, 18], [672, 18]]
+ok: component 3: a root generating F over K_w, not conjugate to a root already used
+ok: component 3: Hensel certificate v(gh(t')) = 800 > 2 v(gh'(t')) = 36, t' integral; v(tau' - t') >= 782
+==== stage 2 (standard basis KAT, negative controls) (6752 ms)
+ok: component 1: the coordinates of the standard basis (14 elements) are the unit vectors
+ok: component 1: 4 random products of basis elements: coordinates = exponents, never a square (verC with zero bits fails)
+ok: component 1: negative control, a certificate with one flipped bit fails
+ok: component 1: coordinates additive on 4 random pairs, zero on 4 random squares
+ok: component 2: the coordinates of the standard basis (14 elements) are the unit vectors
+ok: component 2: 4 random products of basis elements: coordinates = exponents, never a square (verC with zero bits fails)
+ok: component 2: negative control, a certificate with one flipped bit fails
+ok: component 2: coordinates additive on 4 random pairs, zero on 4 random squares
+ok: component 3: the coordinates of the standard basis (14 elements) are the unit vectors
+ok: component 3: 4 random products of basis elements: coordinates = exponents, never a square (verC with zero bits fails)
+ok: component 3: negative control, a certificate with one flipped bit fails
+ok: component 3: coordinates additive on 4 random pairs, zero on 4 random squares
+==== stage 3 (kappa) (18657 ms)
+  kappa: 13 elements, 39 certificates, all verified (5737 ms)
+  dim of the image of K_w^x (kappa) in G/G^2: 7 (e_w + 1 = 7); dim G/G^2 = 42
+ok: (ii) dim image of kappa = e_w + 1 (d is a square in every component)
+  lc(fRev_1) in K_w^x/K_w^x2 on [Pi, 1+Pi^1w1, 1+Pi^3w1, 1+Pi^5w1, 1+Pi^7w1, 1+Pi^9w1, 1+Pi^11w1, 1+4w*]: [0, 0, 0, 1, 0, 0, 0, 1], m = 0
+ok: lc(fRev_k) is not a square in K_w (nonzero coordinates, verified certificate)
+==== stage 4 (points, mu) (24405 ms)
+  split points: 10558 candidates tested, 14 points kept, rank mod kappa 13 of D = 14 (150002 ms)
+ok: p21_21_li_k1_s1_e6.bin: 14 divisors
+  points used: lane M4 divisors (p21_21_li)
+  mu: 14 elements, 42 certificates, all verified (5511 ms)
+ok: (i) the 14 mu are independent modulo span(kappa)
+  dim V_w = dim span(kappa, mu) = 21, dim G/G^2 = 42
+ok: dim V_w = half of dim G/G^2
+==== stage 5 (generators) (179964 ms)
+ok: SUnitData.lean: 82 Pgen, 6 zk lists of length 21 each
+ok: the 82 Pgen coefficient lists are pairwise different (one def read per s)
+  generators Pgen s (tau_j): 82 elements, 246 certificates, all verified (36762 ms)
+ok: Pgen s (tau_j) has zero coordinates at the components of the other factor (Pgen s = 1 there: s < 29 at h, s >= 29 at q)
+  ***   Warning: increasing stack size to 16000000.
+==== stage 6 (F_2 checks at the place) (217091 ms)
+  dim V_w = 21 (half of dim G/G^2 = 21), annihilator rows 21; preimage of V_w in F_2^82: dim 61
+ok: dim V_w = half of dim G/G^2
+ok: negative control: some generator lies outside V_w (the rows C_w are nonzero)
+  C_w rows (annihilator of V_w times generator coordinates), 21 x 82: [0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1; 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1; 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0; 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0; 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1; 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0; 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0; 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0; 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1; 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1; 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0; 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0; 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1; 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0]
+DONE, 0 failed checks (36 ok, 217091 ms)
+exit 0

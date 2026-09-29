@@ -1,0 +1,23 @@
+  ***   Warning: new maximum stack size = 1000001536 (953.676 Mbytes).
+ok   al7 generates p7 (v = 1, norm 343)
+ok   P2 = P1^2 = al7^2
+ok   P4 = P2^2 = al7^4
+ok   P8 = P4^2 = al7^8
+ok   P16 = P8^2 = al7^16
+ok   P32 = P16^2 = al7^32
+ok   P64 = P32^2 = al7^64
+ok   n = 65, m = 64
+ok   Y - T^2 = P64 al A (Y = 4 fRev_1(w7k1x))
+ok   T^2 = P64 B
+ok   B Bi = 1 + al Cb
+ok   v(Y) = 64, B a unit
+ok   negative control: T^2 != P32 B
+ok   P2 read back
+ok   P4 read back
+ok   P8 read back
+ok   P16 read back
+ok   P32 read back
+ok   P64 read back
+max digits of the P coordinates: [1, 2, 4, 9, 19, 38]
+checks failed: 0
+DONE

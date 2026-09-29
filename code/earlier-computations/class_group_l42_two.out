@@ -1,0 +1,13 @@
+# rerun 2026-09-30, PARI/GP 2.17.4, run: (cd code/earlier-computations && gp -q class_group_l42_two.gp < /dev/null)
+  ***   Warning: new maximum stack size = 6000001024 (5722.047 Mbytes).
+ok: E_K/E_K^2 candidate basis of size r1 + r2 = 12
+ok: the 12 units are independent modulo squares (character matrix of rank 12): they span E_K/E_K^2
+finite primes of K21 ramified in L: [[2, 1, 3], [2, 1, 6]]
+real places of K21 ramified in L (d < 0): []
+t = 2 ramified places; rank of the unit symbol matrix = 1
+ok: [E_K : E_K cap N(L^x)] = 2^(t-1): |Cl(L)^G| = h(K21), so Cl(L)[2] = 0 as soon as h(K21) is odd
+  *** _polint_worker: Warning: increasing stack size to 16000000.
+  *** bnfinit: Warning: increasing stack size to 32000000.
+L: signature [6, 18], #S_L = 5 (above 2: 3, above 7: 2); expected dim L(S,2) = 29; generators 29
+ok: number of S-unit generators = r1 + r2 + #S_L
+ok: the 29 S-units are independent modulo squares: they span O_S^x/squares = L(S,2) (given Cl(L)[2] = 0)

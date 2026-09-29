@@ -1,0 +1,21 @@
+D != 0: True
+N(D) = 2^273 * 3^12 * 7^270 * 439^12
+support of (D): (p, e, f, v_P(D)) = [(2, 12, 1, 156), (2, 6, 1, 78), (2, 3, 1, 39), (3, 1, 1, 12), (7, 7, 3, 90), (439, 1, 1, 12)]
+|S| = 6
+2 : primes above p: 3  in S: 3  (e, f) of those in S: [(12, 1), (6, 1), (3, 1)]
+3 : primes above p: 4  in S: 1  (e, f) of those in S: [(1, 1)]
+7 : primes above p: 1  in S: 1  (e, f) of those in S: [(7, 3)]
+439 : primes above p: 12  in S: 1  (e, f) of those in S: [(1, 1)]
+coefficients of Q1, Q2, Q3 with a pole outside S: []
+  prime above 2 (e = 12 ) min v(coeff Q1 ) = 0
+  prime above 2 (e = 12 ) min v(coeff Q3 ) = 0
+  prime above 2 (e = 6 ) min v(coeff Q1 ) = 0
+  prime above 2 (e = 6 ) min v(coeff Q3 ) = 0
+  prime above 2 (e = 3 ) min v(coeff Q1 ) = 0
+  prime above 2 (e = 3 ) min v(coeff Q3 ) = 0
+  prime above 3 (e = 1 ) min v(coeff Q1 ) = 0
+  prime above 3 (e = 1 ) min v(coeff Q3 ) = 0
+  prime above 7 (e = 7 ) min v(coeff Q1 ) = 0
+  prime above 7 (e = 7 ) min v(coeff Q3 ) = 0
+  prime above 439 (e = 1 ) min v(coeff Q1 ) = 0
+  prime above 439 (e = 1 ) min v(coeff Q3 ) = 0

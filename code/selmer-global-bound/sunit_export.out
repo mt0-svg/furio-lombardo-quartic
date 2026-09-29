@@ -1,0 +1,18 @@
+  ***   Warning: new maximum stack size = 1700003840 (1621.250 Mbytes).
+ok: ss_1_data: offsets, KM_w and place names are the same for both twists
+ok: inputs: 82 Pgen (pgen.bin), both twists (selmer.bin), 18 gO (M1)
+ok: the old export file is removed
+wrote sunit_export_data.gp: 350786 bytes, 117 lines
+ok: read back: SBX_pgen, SBX_pgenDen equal pgen.bin (sb_5c)
+ok: read back: G, X, D, SB, beta, kappa, kapRel equal selmer.bin (sb_5e)
+ok: read back: offsets, KM_w, W_w equal selmer_injectivity_places_twist0.bin, _twist1.bin
+ok: read back: a_T, kapT equal muT.bin (sb_5t); SBX_gO = M1's gO 0..15
+ok: SBX_pgen, SBX_pgenDen equal pgen, pgenDen of the text of SUnitData.lean
+ok: SBX_aT, SBX_kapT equal aT_k, kapT_k, kapTDen_k of the text of SUnitData.lean
+ok: from the texts: Pgen s (alpha) = gL s, Pgen s (beta) = 1 (s < 29), Pgen s (alpha) = 1, Pgen s (beta) = gN (s - 29) (s >= 29), with SBX_pgen and alpha, beta, gL, gN of SUnitData.lean: 82 x 2 exact identities
+ok: negative control: one coefficient of Pgen 39 changed by 1 breaks exactly that polynomial
+ok: from the file alone: rank G = 82; per twist X = kernel of the local conditions (dim 19), D and KM_v span W_v, beta_j in X with res_v(G beta_j) = D SB_j mod KM_v, kappa_t in X and trivial mod KM_w, span(beta, kappa) = X, a_T in X; rank kappa = 15 with relation kapRel
+ok: negative control: beta_0 (k = 0) with bit 0 flipped fails the F_2 checks
+sizes: pgen 10332 integers (231226 decimal digits), G 164 x 82, X 82 x 19, beta 82 x 4 (weights [27, 17, 20, 25], [26, 25, 15, 20]), kappa 82 x 16
+sha256 of sunit_export_data.gp: 8150388f490143735bd5f30e43747452f38dcc0660ae69e0ec40e62540308e4f
+DONE sunit_export: 13 checks passed, 0 failed (3653 ms)

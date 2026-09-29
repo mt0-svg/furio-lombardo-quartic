@@ -1,0 +1,51 @@
+  ***   Warning: new maximum stack size = 3000000512 (2861.023 Mbytes).
+ok: primes of K21 above 2 and 7 in the order v (e = 3), w2 (e = 12), w3 (e = 6), p7 (e = 7, f = 3)
+ok: fRev_0 = polrecip(F0) = c_k q h with q, h monic, the same for both twists
+ok: fRev_1 = polrecip(F1) = c_k q h with q, h monic, the same for both twists
+ok: nfK.zk = M1's zkNum / Dz
+ok: M1's fL = K21
+ok: alphaR read
+ok: place w6: M2's alpha generates the prime (p = 2, e = 6, f = 1)
+ok: CRT element E = 1 mod w^400, 0 mod w'^400
+ok: w3: eps is a unit of odd depth 11
+ok: w3: y, A, B, cA = (A/al - 1)/al, bB = B/al in O_K21
+ok: w3: the coordinates of the basis are the unit vectors
+ok: w3: (y + c Y)^2 = eps in K21[Y]/(P1)
+ok: iL(4 eN) = toF(2 ea + 2 eb y, 2 eb c)
+ok: iL(4 eN) is a square of valuation 24 in F
+ok: sF^2 = iL(4 eN) to F-valuation 560
+ok: q(tau1) = 0 exactly, h(tau2), h(tau3) = 0 to high precision
+ok: EisData.ok at precision 679
+ok: LModel.ok at precision 308
+ok: epsL read back
+ok: s0 = al^6 (unit) + al^6 (int) Y
+ok: SqrtData: d0, d1, R0, R1 integral
+ok: SqrtData.ok at precision 1189
+  model: EisData prec 679, LModel prec 308, SqrtData prec 1189, sF - s0 within al^228
+ok: kappa expressions = dyGen alpha i
+  kappa: 13 certificates (4564 ms), bits [11562, 2252, 3328, 14416, 11264, 8512, 11264, 8448, 8192, 11264, 8192, 0, 8192]
+  gensL: 29 certificates at component 1 (11918 ms)
+ok: toF(X0L, X1L) = iL(gensL s)
+  ***   Warning: increasing stack size to 16000000.
+  gensN: 106 certificates at components 2, 3 (50220 ms)
+ok: toF(X0N, X1N) within al^n0 of iN(gensN s), both signs
+ok: every n0 so far (max 39) is at most the sF precision 228
+ok: g_j = 4 fRev_k coefficient j is Lean's FE k (6 - j)
+ok: al = Lean's al3
+  twist 0: 14 points, reduction exponents d = [2, 1, 4, 8, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1], v(N') = [76, 12, 96, 158, 108, 86, 68, 44, 64, 16, 28, 28, 28, 28]
+  twist 1: 14 points, reduction exponents d = [1, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 1, 1, 1], v(N') = [14, 8, 8, 68, 64, 58, 72, 72, 180, 20, 56, 14, 20, 20]
+  points (57873 ms)
+  mu: 2 x 14 points checked, 84 certificates (78482 ms); max n0 137 (sF precision 228), max prec 1066
+ok: every n0 is at most the sF precision
+ok: alPow covers every n0
+ok: Q (independence): 35 rows annihilating kappa (rank of kappa 7)
+ok: twist 0: the 14 mu are independent modulo kappa
+ok: twist 0: left inverse T of the forms Q on the mu coordinates
+ok: twist 0: 21 rows annihilating kappa and mu (dim V_w = 21)
+  twist 0: C_w rows (Q_c times the generator coordinates), 21 x 82 (nonzero: 21)
+ok: twist 1: the 14 mu are independent modulo kappa
+ok: twist 1: left inverse T of the forms Q on the mu coordinates
+ok: twist 1: 21 rows annihilating kappa and mu (dim V_w = 21)
+  twist 1: C_w rows (Q_c times the generator coordinates), 21 x 82 (nonzero: 21)
+  232 certificates in all; max n0 137, max precision 1066
+DONE, 0 failed checks (37 ok, 208720 ms)

@@ -1,0 +1,19 @@
+  ***   Warning: new maximum stack size = 4000002048 (3814.699 Mbytes).
+  ***   at top-level: G=dat[4];Qc=dat[5]
+  ***                      ^-------------
+  ***   nonexistent component: index > 2
+... skipping file 'm1_m_twoadic.gp'
+  ***   at top-level: lc=G[15]
+  ***                     ^----
+  ***   incorrect type in _[_] OCcompo1 [not a vector] (t_POL).
+  ***   at top-level: ...r(18,j,nfeltval(nf,lift(G[j]),pc)))
+  ***                                             ^----------
+  ***   incorrect type in _[_] OCcompo1 [not a vector] (t_POL).
+  ***   at top-level: ...stack);if(Fi(P)%2^m==0,r=leafres(P,m);if(r!=0,
+  ***                                             ^---------------------
+  ***   in function leafres: ...v));for(si=1,#surv,my(wv=celt(surv[si]),vw=vP(
+  ***                                                    ^---------------------
+  ***   in function celt: prod(j=1,18,G[j]^e[j])
+  ***                                  ^---------
+  ***   incorrect type in _[_] OCcompo1 [not a vector] (t_POL).
+0 leaves

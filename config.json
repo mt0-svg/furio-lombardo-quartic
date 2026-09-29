@@ -1,0 +1,7 @@
+{
+  "challenge_module": "FurioLombardo.Challenge",
+  "solution_module": "FurioLombardo.Solution",
+  "theorem_names": ["FurioLombardo.conjecture_1_6"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": false
+}

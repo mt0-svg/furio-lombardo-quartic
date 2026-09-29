@@ -1,0 +1,3 @@
+# lake env lean ../code/lean-prior-art-r7/r7_6_qf_norm_sq.lean (cap -m 2G -c 1 -t 10min, flock /tmp/furio-lake.lock), 2026-09-28T23:31:53Z
+'FurioLombardo.Discharge.SelmerBasis.QF.norm_sq'' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0

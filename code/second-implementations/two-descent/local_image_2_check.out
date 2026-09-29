@@ -1,0 +1,20 @@
+ok   G_A normalised to coefficients in Z[a]
+== basis of L^x/L^x2 and the Hilbert symbol square class map
+ok   pi2 is a uniformizer of P2
+ok   zt reduces outside F_2
+ok   10 elements independent in L^x/L^x2 (Hilbert rows of rank 10)
+ok   their Hilbert Gram matrix has rank 10: cl(alpha) = ((alpha, beta_j))_j is an isomorphism L^x/L^x2 -> F_2^10
+ok   cl(5) = 0 and cl(-1), cl(2) independent: image of Q_2^x has dimension 2
+ok   cl(alpha) = 0 iff nfislocalpower(alpha) on the pool elements
+== Q_2-points
+ok   G_A(P1) != 0
+   certified Q_2-points used: 2403, skipped for precision: 0, exact zeros of G_A skipped (P0): 1, largest valuation of G_A: 110
+   dimension of the span of the sampled classes modulo the image of Q_2^x: 3
+ok   sampled Q_2-points span exactly dimension 3 (never 4)
+   generators found at: [["A", -300, 208, 38], ["A", -300, 29, 15], ["A", -299, 84, 14]]
+ok   nfislocalpower: the three generators are independent modulo L^x2 Q_2^x (31 nontrivial products, none a square)
+ok   nfislocalpower: 60 sampled classes all lie in the span of the three generators
+== degree 2 divisors (Galois stable pairs of Q_2-conjugate points in chart A)
+   certified degree 2 divisors: 401, skipped: 0
+ok   all 401 degree 2 divisors land in the span of the three generators (nfislocalpower)
+== summary: 0 failure(s)

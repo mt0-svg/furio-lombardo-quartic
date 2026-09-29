@@ -1,0 +1,91 @@
+  ***   Warning: new maximum stack size = 3000000512 (2861.023 Mbytes).
+ok: Lean data parsed (fL, zkNum, Dz, epsL, eaL, ebL, al7, FnData, 29 gL, 53 gN, alphaL, betaN, alphaPow, betaPow, C7Rows)
+ok: nfinit(fL).zk is Lean's basis zkNum / Dz
+ok: 7 has a single prime pr above it in K21, e = 7, f = 3
+ok: al7 generates pr (v = 1, |N(al7)| = 343), so x / al7^k is integral iff v(x) >= k
+ok: KAT: the mirror of Count.gE 1 (.lin x) 0 evaluates to 4 fRev_1(x) (x = w7k1x)
+ok: KAT: ck_w7k1sq1 (checkK 1152) and ck_w7k1sq2 (checkK 640) of Count/At7.lean pass in the emulation
+KAT: least passing precisions 1106 (Lean 1152), 625 (Lean 640)
+ok: KAT: keprec is minimal and below the Lean precisions
+ok: negative control: ck_w7k1sq1 with A_0 + 1 fails at 1152 and 4096
+ok: yh^2 = eps mod pr^240
+ok: omega -> -yh: eN a unit square; omega -> yh: v(4 eN) = 1 (F' ramified)
+ok: sh^2 = iota+(eN) mod pr^240
+ok: alphaPow_i = (92 alpha)^i and betaPow_i = (368 beta)^i in the coordinates read (conventions of alR, beR)
+alpha integral in zk coordinates: 0 0; beta: 0 0 0 0
+v(alpha) at iota+: 0, iota-: 0; v(beta coords at iota'): 0 5
+ok: fRev 1 vanishes at tq1, tq2, th1, th2 mod pr^(240 - 10)
+ok: fRev 1 vanishes at thA + thB Z in F' (both coordinates) mod pr^(240 - 10)
+  split point 1: x = root 1 truncated at pr^5 plus 1 al7^5, v(4 fRev_1(x)) = 34
+  split point 2: x = root 1 truncated at pr^6 plus -3 al7^6, v(4 fRev_1(x)) = 36
+  split point 3: x = root 2 truncated at pr^7 plus -2 al7^7, v(4 fRev_1(x)) = 38
+  split point 4: x = root 3 truncated at pr^7 plus -3 al7^7, v(4 fRev_1(x)) = 38
+split point search: 225 candidates tried, 4 points kept
+ok: four split points whose sums D_1i = P_1 + P_i (i = 2, 3, 4) give three independent classes modulo kappa
+ok: the four abscissas are integral
+largest certificate exponent 14: NEED = 15, model precision ny = ns = 19
+ok: tab: 9 entries al7^(2^i), tab_0 = al7, powOK at the precisions tabK = [178, 181, 189, 204, 237, 299, 424, 674]
+ok: tab_{i+1} = tab_i^2 in K21
+ok: alPw tab d = al7^d for 1 <= d < 512 (exact evaluation)
+tab: largest coordinate digits [1, 1, 2, 4, 9, 19, 38, 75, 151]
+ok: Model.ok at the precisions k1 .. k6 = [491, 196, 491, 196, 199, 203]
+ok: the model approximates the local values: v(y0 - r) >= ny, v(S0 - S) >= ns (S = 2 sh)
+ok: E4U is a unit and al7 E4U approximates A4 = iota-(4 eN) to pr^ny
+model: y0 digits 3, y0R digits 30, S0 digits 3, S0R digits 30, E4U digits 7
+ok: M.N = min ny ns = 19 >= 2
+  29 gensL certificates (127 ms)
+  53 gensN certificates (624 ms)
+ok: okL tab M (cL s) s for the 29 gensL
+ok: okN tab M (cN s) s for the 53 gensN
+ok: cK: FCert.ok at kapXE i, int 0 (i = 0, 1)
+ok: the 82 generator rows equal the square classes of the local values at pr^240 (method of local_data_w7.gp)
+ok: the kappa rows kapLow i + 256 cK_i.bits equal the classes of al7, -1 at the five components
+  largest precision 562; KCert 164, FCert 55; 2h, j + 2h at most 14 (N = 19) (845 ms)
+ok: PtSq.ok for the 4 points; m = [34, 36, 38, 38], precisions [[788, 340, 194], [802, 343, 194], [850, 436, 193], [847, 436, 193]]
+ok: okU, toPt.okT, okC for the 3 pairs (0, i)
+  pair (0, 1): dv 5, kd1 294, kd2 204, kP 100, kR 197, precT 235, bits 257
+  pair (0, 2): dv 4, kd1 202, kd2 206, kP 100, kR 198, precT 235, bits 557
+  pair (0, 3): dv 4, kd1 202, kd2 206, kP 101, kR 198, precT 236, bits 529
+ok: the 3 pair rows equal the sum of the classes of x1 - T and x_i - T at pr^240 (method of local_data_w7.gp)
+ok: tL, tN evaluate at the K_w components to Lambda^2 (x1 - tau)(x2 - tau) (pr^200)
+  points and pairs (342 ms)
+ok: kappa has rank 2, kappa and mu span 5 = 10 / 2 dimensions
+ok: the annihilator of span(kappa, mu) has dimension 5
+ok: the 5 annihilator forms give 5 independent rows on the generators
+ok: kap_bits
+ok: mu_bits
+ok: cgL_bits, cgN_bits
+ok: annI (nQI = 8)
+ok: leftInv
+ok: annCk
+ok: annCm
+ok: c7_rows: dotRow 10 Cg QC_q 82 = C7Rows_q for q < 5
+ok: QC equals the QC printed by local_data_w7.gp
+Akap = [597, 682], Amu = [257, 557, 529], QI = [5, 10, 17, 34, 65, 130, 256, 515], TI = [6, 2, 7], QC = [78, 130, 771, 283, 40]
+ok: negative control: KCert of gL 0 with R_0 + 1 fails
+ok: negative control: KCert of gL 0 with a1 flipped fails
+ok: negative control: KCert of gL 0 with a0 flipped fails
+ok: negative control: KCert of gL 0 at precision k1 - 1 fails (k1 minimal)
+ok: negative control: KCert of gN 0 c2 with N = 2h fails (2h < N)
+ok: negative control: the c1 certificate of gL 0 fails on the c0 approximation XLp
+ok: negative control: FCert of gN 0 with Ry_0 + 1 fails
+ok: negative control: FCert of gN 0 with a0 flipped fails
+ok: negative control: FCert of gN 0 with a1 flipped fails
+ok: negative control: the certificate of al7 fails on -1
+ok: negative control: PtSq 0 with A_0 + 1 fails
+ok: negative control: PtSq 0 with m - 2 fails
+ok: negative control: pair 0 with P_0 + 1 fails okU
+ok: negative control: pair 0 with lamL = 1 fails okT
+ok: negative control: pair 0 with i2 = 2 (wrong point) fails okU
+ok: negative control: the model with y0R_0 + 1 fails
+ok: negative control: the model with ny + 1 fails
+ok: negative control: tab_8 + (1, 0, ...) fails powOK
+ok: negative control: Cg_0 with bit 0 flipped fails c7_rows
+ok: negative control: the -1 row with bit 8 flipped fails annCk
+ok: negative control: TI with two entries swapped fails leftInv
+ok: W7Data.lean read back: tab, tabK, Akap, Amu, Cg, QI, nQI, TI, QC
+ 43433 /tmp/sp7_2/lean/W7Data.lean
+ 29559 /tmp/sp7_2/lean/W7DataL.lean
+ 92796 /tmp/sp7_2/lean/W7DataN.lean
+165788 total
+DONE, 0 failed checks (66 ok, 2975 ms)

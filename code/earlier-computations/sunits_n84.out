@@ -1,0 +1,49 @@
+ok: nf of N (degree 84, signature [6, 39])
+N: #S_N = 8 (above 2: [[12, 1], [12, 1], [12, 2], [12, 2], [6, 2]]; above 7: [[7, 3], [14, 3], [7, 3]]); target dim N(S,2) = 53 (717 ms)
+L: bnfinit + bnfunits 5579 ms, signature [6, 18], #S = 5, 29 generators (last = torsion Mat([-1, 1]))
+ok: L: number of generators = r1 + r2 + #S
+ok: L: every generator (product of 73 distinct small elements) is an S-unit (exact valuations)
+L: 9605 ms
+ok: L: the 14 factors over N (degrees [1, 1, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4]) multiply to its polynomial, squarefree
+  L factor 1 (degree 1): 73 actions, 1890 ms; character rank 0 -> 28
+  L factor 2 (degree 1): 73 actions, 1840 ms; character rank 28 -> 28
+  L factor 3 (degree 2): 73 actions, 8620 ms; character rank 28 -> 43
+  L factor 4 (degree 2): 73 actions, 8898 ms; character rank 43 -> 43
+  L factor 5 (degree 2): 73 actions, 8692 ms; character rank 43 -> 43
+  L factor 6 (degree 2): 73 actions, 8717 ms; character rank 43 -> 43
+  L factor 7 (degree 4): 73 actions, 76675 ms; character rank 43 -> 43
+  L factor 8 (degree 4): 73 actions, 78713 ms; character rank 43 -> 43
+  L factor 9 (degree 4): 73 actions, 81292 ms; character rank 43 -> 43
+  L factor 10 (degree 4): 73 actions, 77094 ms; character rank 43 -> 43
+  L factor 11 (degree 4): 73 actions, 80065 ms; character rank 43 -> 43
+  L factor 12 (degree 4): 73 actions, 77743 ms; character rank 43 -> 43
+  L factor 13 (degree 4): 73 actions, 82418 ms; character rank 43 -> 43
+  L factor 14 (degree 4): 73 actions, 77412 ms; character rank 43 -> 43
+rank from the S-units of L alone (all 14 factors) and -1: 43
+K13: bnfinit + bnfunits 3970 ms, signature [0, 21], #S = 4, 25 generators (last = torsion Mat([-1, 1]))
+ok: K13: number of generators = r1 + r2 + #S
+ok: K13: every generator (product of 75 distinct small elements) is an S-unit (exact valuations)
+K13: 8452 ms
+ok: K13: the 11 factors over N (degrees [2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]) multiply to its polynomial, squarefree
+  K13 factor 1 (degree 2): 75 actions, 8753 ms; character rank 43 -> 43
+  K13 factor 2 (degree 4): 75 actions, 79674 ms; character rank 43 -> 46
+  K13 factor 3 (degree 4): 75 actions, 81837 ms; character rank 46 -> 46
+  K13 factor 4 (degree 4): 75 actions, 79149 ms; character rank 46 -> 46
+  K13 factor 5 (degree 4): 75 actions, 84720 ms; character rank 46 -> 46
+  K13 factor 6 (degree 4): 75 actions, 85270 ms; character rank 46 -> 46
+  K13 factor 7 (degree 4): 75 actions, 85089 ms; character rank 46 -> 46
+  K13 factor 8 (degree 4): 75 actions, 73317 ms; character rank 46 -> 46
+  K13 factor 9 (degree 4): 75 actions, 73683 ms; character rank 46 -> 46
+  K13 factor 10 (degree 4): 75 actions, 75259 ms; character rank 46 -> 46
+  K13 factor 11 (degree 4): 75 actions, 77721 ms; character rank 46 -> 46
+final character rank 46, target 53 (1556277 ms)
+ok: negative control: the S-units of L alone do not reach the target
+independent candidates: [[0, 0, 0], [1, 1, 1], [1, 1, 2], [1, 1, 3], [1, 1, 4], [1, 1, 5], [1, 1, 6], [1, 1, 7], [1, 1, 8], [1, 1, 9], [1, 1, 10], [1, 1, 11], [1, 1, 12], [1, 1, 13], [1, 1, 14], [1, 1, 15], [1, 1, 16], [1, 1 ...
+  ***   at top-level: main()
+  ***                 ^------
+  ***   in function main: ...or(#idx,k,info[idx[k]]));chk(rk==target,Str("t
+  ***                                                 ^---------------------
+  ***   in function chk: if(!cc,error("FAILED: ",msg),print("ok: ",msg)
+  ***                           ^---------------------------------------
+  ***   user error: FAILED: the character matrix of the produced S-units and -1 has rank 46 = r1 + r2 + #S_N: they span N(S,2) (given Cl(N)[2] = 0)
+... skipping file 'p21_25_normrel_sunits.gp'

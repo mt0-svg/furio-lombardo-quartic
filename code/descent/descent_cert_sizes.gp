@@ -1,0 +1,33 @@
+\\ descent_cert_sizes.gp: sizes of the certificates planned for Lean M1 (char polys, inverse expressions).
+default(parisizemax, 4*10^9); default(nbthreads, 1);
+[x, y, z, X, u, w, a, t, b];
+read("../earlier-computations/bruin_form.gp");
+bnf = bnfinit(K21, 1); nf = bnf.nf;
+P2 = idealprimedec(nf, 2); P3 = idealprimedec(nf, 3); P7 = idealprimedec(nf, 7); P439 = idealprimedec(nf, 439);
+pr3 = [pr | pr <- P3, pr.f == 1][1];
+pr439 = [pr | pr <- P439, pr.f == 1 && idealval(nf, b - 125, pr) > 0][1];
+S = concat(P2, [P7[1], pr3, pr439]);
+gens = vector(6, i, Mod(nfbasistoalg(nf, bnfisprincipal(bnf, S[i], 1)[2]), K21));
+dig(n) = if (n == 0, 0, #digits(abs(n)));
+szq(e) = { my(p = lift(e), d = denominator(content(p)), n = p * d); [dig(d), vecmax(apply(dig, Vec(n)))] };
+szr(p) = { my(d = denominator(content(p)), n = p * d); [dig(d), vecmax(apply(dig, Vec(n)))] };
+info(name, e) = { my(cp = charpoly(e, 'X), r = modreverse(e)); print(name, ": elt [den, num] digits ", szq(e), "  charpoly max digits ", vecmax(apply(dig, Vec(cp))), "  inverse expr [den, num] digits ", szr(lift(r)), "  norm ", norm(e)); };
+for (i = 1, 6, info(Str("S gen ", i), gens[i]));
+e2 = 2 / (gens[1]^3 * gens[2]^12 * gens[3]^6); print("eps2 charpoly digits ", vecmax(apply(dig, Vec(charpoly(e2)))), " norm ", norm(e2), " elt ", szq(e2));
+e7 = 7 / gens[4]^7; print("eps7 norm ", norm(e7), " charpoly digits ", vecmax(apply(dig, Vec(charpoly(e7)))));
+fp = Mod(deriv(K21), K21); info("f'(b)", fp); print("disc(f) = ", factor(poldisc(K21)), " norm f'(b) = ", factor(norm(fp)));
+\\ D and w
+mons2 = [[2,0,0], [1,1,0], [1,0,1], [0,2,0], [0,1,1], [0,0,2]];
+cf(Q, i, j, k) = polcoef(polcoef(polcoef(Q, i, x), j, y), k, z);
+row(Q) = vector(6, j, Mod(cf(Q, mons2[j][1], mons2[j][2], mons2[j][3]), K21));
+Qs = [Q1, Q2, Q3];
+Jm = matrix(3, 3, i, j, deriv(Qs[i], [x, y, z][j])); J = matdet(Jm);
+M = matrix(6, 6); for (j = 1, 6, M[1,j] = row(Q1)[j]; M[2,j] = row(Q2)[j]; M[3,j] = row(Q3)[j]; M[4,j] = row(deriv(J, x))[j]; M[5,j] = row(deriv(J, y))[j]; M[6,j] = row(deriv(J, z))[j]);
+D = matdet(M); print("D elt digits ", szq(D));
+W = 2^13 * 7^13 * gens[5]^12 * gens[6]^12 / D; print("w = M/D: elt ", szq(W), " charpoly digits ", vecmax(apply(dig, Vec(charpoly(W)))), " norm ", factor(norm(W)));
+for (i = 1, 3, for (j = 1, 6, my(c = row(Qs[i])[j]); if (lift(c) != 0, print("Q", i, " coef ", j, ": elt ", szq(c), " charpoly digits ", vecmax(apply(dig, Vec(charpoly(c)))), " integral ", denominator(content(charpoly(c))) == 1))));
+for (i = 1, 11, my(u = Mod(nfbasistoalg(nf, bnf.fu[i]), K21)); print("fu ", i, " elt ", szq(u), " charpoly ", vecmax(apply(dig, Vec(charpoly(u)))), " c0 ", polcoef(charpoly(u), 0)));
+print("d0: ", szq(Mod(d0, K21)), " charpoly ", Vec(charpoly(Mod(d0,K21)))[22], "  d1: ", szq(Mod(d1, K21)));
+print("den lcm of Q coefs: ", factor(lcm(vector(3, i, denominator(content(lift(Mod(Qs[i], K21))))))));
+print("factor patterns:");
+forprime(p = 3, 400, if (p == 7, next); my(fa = factormod(K21, p)); my(dg = vecsort(vector(#fa~, i, poldegree(fa[i,1])))); if (dg == [7,7,7], print("  p = ", p, ": ", dg)));

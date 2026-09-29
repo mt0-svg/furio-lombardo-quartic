@@ -1,0 +1,56 @@
+ok: f_0 = c G1 (A^2 - d B^2) is the Prym sextic F0
+ok: f_1 = c G1 (A^2 - d B^2) is the Prym sextic F1
+  real place 1: 2 real roots of G1, 2 of h
+  real place 2: 2 real roots of G1, 2 of h
+  real place 3: 2 real roots of G1, 2 of h
+L: bnfinit + bnfunits 5790 ms, signature [6, 18], #S = 5, 29 generators (last = torsion Mat([-1, 1]))
+ok: L: number of generators = r1 + r2 + #S
+ok: L: every generator (product of 73 distinct small elements) is an S-unit (exact valuations)
+L: 9879 ms
+ok: 28 + 1 generators of L(S,2) and 53 of N(S,2)
+  L generators: 0 base coordinates computed (10597 ms)
+  N generators: 185 base coordinates computed in all (71284 ms)
+global generators: 164 x 82 coordinate matrix, rank 82 (99593 ms)
+---- twist k = 0
+ok: p21_21_li_k0_s1_e3.bin is a complete J side run
+ok: the 7 divisors of p21_21_li_k0_s1_e3.bin are certified again here
+  p = 2 (e = 3, f = 1), factor degrees [2, 4]: local image 7 of D_v = 7 (7 divisors, 22 coordinates)
+ok: p21_21_li_k0_s1_e12.bin is a complete J side run
+ok: the 26 divisors of p21_21_li_k0_s1_e12.bin are certified again here
+  p = 2 (e = 12, f = 1), factor degrees [2, 2, 2]: local image 26 of D_v = 26 (26 divisors, 78 coordinates)
+ok: p21_21_li_k0_s1_e6.bin is a complete J side run
+ok: the 14 divisors of p21_21_li_k0_s1_e6.bin are certified again here
+  p = 2 (e = 6, f = 1), factor degrees [2, 2, 2]: local image 14 of D_v = 14 (14 divisors, 42 coordinates)
+  place above 7: 4 root approximations, 48 points, 24 certified pairs
+  p = 7 (e = 7, f = 3), factor degrees [1, 1, 1, 2, 1]: local image 3 of D_v = 3 (3 divisors, 10 coordinates)
+  real place 1: 4 real roots, local image 1 of D = 1
+  real place 2: 4 real roots, local image 1 of D = 1
+  real place 3: 4 real roots, local image 1 of D = 1
+ok: coordinate layout
+  dim X = 19, dim Sel_fake = dim X - 15 = 4, rank Jac(F_0)(K21) <= 3 (140465 ms)
+  KAT T: in every local image 1; in loc(X) + sum K_v^x 1
+  KAT phi(x_0): in every local image 1; in loc(X) + sum K_v^x 1
+  KAT phi(x_2): in every local image 1; in loc(X) + sum K_v^x 1
+  KAT: the 3 known classes span 2 dimensions modulo sum K_v^x (loc(X) modulo sum K_v^x: 4)
+---- twist k = 1
+ok: p21_21_li_k1_s1_e3.bin is a complete J side run
+ok: the 7 divisors of p21_21_li_k1_s1_e3.bin are certified again here
+  p = 2 (e = 3, f = 1), factor degrees [2, 4]: local image 7 of D_v = 7 (7 divisors, 22 coordinates)
+ok: p21_21_li_k1_s1_e12.bin is a complete J side run
+ok: the 26 divisors of p21_21_li_k1_s1_e12.bin are certified again here
+  p = 2 (e = 12, f = 1), factor degrees [2, 2, 2]: local image 26 of D_v = 26 (26 divisors, 78 coordinates)
+ok: p21_21_li_k1_s1_e6.bin is a complete J side run
+ok: the 14 divisors of p21_21_li_k1_s1_e6.bin are certified again here
+  p = 2 (e = 6, f = 1), factor degrees [2, 2, 2]: local image 14 of D_v = 14 (14 divisors, 42 coordinates)
+  place above 7: 4 root approximations, 48 points, 13 certified pairs
+  p = 7 (e = 7, f = 3), factor degrees [1, 1, 1, 2, 1]: local image 3 of D_v = 3 (3 divisors, 10 coordinates)
+  real place 1: 4 real roots, local image 1 of D = 1
+  real place 2: 4 real roots, local image 1 of D = 1
+  real place 3: 4 real roots, local image 1 of D = 1
+ok: coordinate layout
+  dim X = 19, dim Sel_fake = dim X - 15 = 4, rank Jac(F_1)(K21) <= 3 (178415 ms)
+  KAT T: in every local image 1; in loc(X) + sum K_v^x 1
+  KAT phi(x_1): in every local image 1; in loc(X) + sum K_v^x 1
+  KAT phi(x_3): in every local image 1; in loc(X) + sum K_v^x 1
+  KAT: the 3 known classes span 2 dimensions modulo sum K_v^x (loc(X) modulo sum K_v^x: 4)
+RESULT [[19, 1], [19, 1]] (182532 ms)

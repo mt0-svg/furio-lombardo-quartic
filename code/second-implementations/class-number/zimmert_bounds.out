@@ -1,0 +1,178 @@
+  ***   Warning: new maximum stack size = 1000001536 (953.676 Mbytes).
+series at g = 0.47: Sa sum 3.1434548461432284494257965154740271231 (L = 1000) vs 3.1434548461432297029801796169548918330 (L = 10000); Sb sum -1.3426178569526528482581783643005443896 vs -1.3426178569526516009184262072766221882
+ok: extrapolated series stable to 1e-11
+Table 1  n=  1 r1=  1 r2= 0 g=5.35  printed 0.8991  computed 0.899105  rel 5.47 e-6
+Table 1  n=  2 r1=  2 r2= 0 g=2.41  printed 1.760  computed 1.76067  rel 3.80 e-4
+Table 1  n=  2 r1=  0 r2= 1 g=2.98  printed 1.400  computed 1.40013  rel 9.24 e-5
+Table 1  n=  3 r1=  3 r2= 0 g=1.56  printed 4.636  computed 4.63688  rel 1.90 e-4
+Table 1  n=  3 r1=  1 r2= 1 g=1.84  printed 3.355  computed 3.35575  rel 2.24 e-4
+Table 1  n=  4 r1=  4 r2= 0 g=1.18  printed 14.45  computed 14.4551  rel 3.50 e-4
+Table 1  n=  4 r1=  2 r2= 1 g=1.34  printed 9.749  computed 9.74920  rel 2.05 e-5
+Table 1  n=  4 r1=  0 r2= 2 g=1.54  printed 6.792  computed 6.79258  rel 8.50 e-5
+Table 1  n=  5 r1=  5 r2= 0 g=0.96  printed 50.21  computed 50.2115  rel 2.97 e-5
+Table 1  n=  5 r1=  3 r2= 1 g=1.07  printed 32.12  computed 32.1270  rel 2.17 e-4
+Table 1  n=  5 r1=  1 r2= 2 g=1.20  printed 21.11  computed 21.1188  rel 4.16 e-4
+Table 1  n=  6 r1=  6 r2= 0 g=0.83  printed 188.1  computed 188.116  rel 8.68 e-5
+Table 1  n=  6 r1=  0 r2= 3 g=1.09  printed 46.74  computed 46.7492  rel 1.96 e-4
+Table 1  n=  8 r1=  8 r2= 0 g=0.66  printed 3.088 e3  computed 3088.19  rel 6.26 e-5
+Table 1  n=  8 r1=  0 r2= 4 g=0.87  printed 385.5  computed 385.528  rel 7.35 e-5
+Table 1  n= 10 r1= 10 r2= 0 g=0.56  printed 5.854 e4  computed 58541.9  rel 3.21 e-5
+Table 1  n= 10 r1=  0 r2= 5 g=0.74  printed 3.560 e3  computed 3560.79  rel 2.21 e-4
+Table 1  n= 20 r1= 20 r2= 0 g=0.36  printed 4.332 e11  computed 4.33223 e11  rel 5.23 e-5
+Table 1  n= 20 r1=  0 r2=10 g=0.46  printed 5.736 e8  computed 5.73618 e8  rel 3.10 e-5
+Table 1  n=100 r1=100 r2= 0 g=0.14  printed 8.448 e72  computed 8.44838 e72  rel 4.51 e-5
+Table 1  n=100 r1=  0 r2=50 g=0.18  printed 2.417 e55  computed 2.41799 e55  rel 4.11 e-4
+ok: Satz 2 reproduces all 21 entries of Zimmert's Table 1 (printed value = computed value rounded down to 4 digits)
+Table 3  n=  1 r1=  1 r2= 0 g=5.23  printed 0.9520  computed 0.952153  rel 1.61 e-4
+Table 3  n=  2 r1=  2 r2= 0 g=2.36  printed 1.980  computed 1.98455  rel 2.30 e-3
+Table 3  n=  2 r1=  0 r2= 1 g=2.94  printed 1.550  computed 1.55528  rel 3.41 e-3
+Table 3  n=  3 r1=  3 r2= 0 g=1.53  printed 5.560  computed 5.56969  rel 1.74 e-3
+Table 3  n=  3 r1=  1 r2= 1 g=1.82  printed 3.950  computed 3.95194  rel 4.91 e-4
+Table 3  n=  4 r1=  4 r2= 0 g=1.15  printed 18.50  computed 18.5034  rel 1.83 e-4
+Table 3  n=  4 r1=  2 r2= 1 g=1.31  printed 12.10  computed 12.1921  rel 7.61 e-3
+Table 3  n=  4 r1=  0 r2= 2 g=1.53  printed 8.320  computed 8.32641  rel 7.71 e-4
+Table 3  n=  5 r1=  5 r2= 0 g=0.95  printed 68.50  computed 68.5121  rel 1.76 e-4
+Table 3  n=  5 r1=  3 r2= 1 g=1.06  printed 42.70  computed 42.7221  rel 5.16 e-4
+Table 3  n=  5 r1=  1 r2= 2 g=1.19  printed 27.40  computed 27.4391  rel 1.43 e-3
+Table 3  n=  6 r1=  6 r2= 0 g=0.82  printed 273.0  computed 273.701  rel 2.57 e-3
+Table 3  n=  6 r1=  0 r2= 3 g=1.09  printed 62.90  computed 62.9940  rel 1.49 e-3
+Table 3  n=  8 r1=  8 r2= 0 g=0.66  printed 5.110 e3  computed 5115.99  rel 1.17 e-3
+Table 3  n=  8 r1=  0 r2= 4 g=0.87  printed 570.0  computed 570.235  rel 4.13 e-4
+Table 3  n= 10 r1= 10 r2= 0 g=0.56  printed 1.100 e5  computed 1.10718 e5  rel 6.53 e-3
+Table 3  n= 10 r1=  0 r2= 5 g=0.74  printed 5.770 e3  computed 5779.40  rel 1.63 e-3
+Table 3  n= 20 r1= 20 r2= 0 g=0.36  printed 1.630 e12  computed 1.63601 e12  rel 3.68 e-3
+Table 3  n= 20 r1=  0 r2=10 g=0.47  printed 1.480 e9  computed 1.48952 e9  rel 6.44 e-3
+Table 3  n=100 r1=100 r2= 0 g=0.13  printed 1.500 e76  computed 1.51326 e76  rel 8.84 e-3
+Table 3  n=100 r1=  0 r2=50 g=0.18  printed 3.500 e57  computed 3.58720 e57  rel 2.49 e-2
+ok: Korollar 1 reproduces all 21 entries of Zimmert's Table 3 (printed value = computed value truncated to the printed digits)
+PARI  n= 2 r2= 0  PARI 0.69310000  own max 0.68539514 at g=2.3561  diff -7.70 e-3
+PARI  n= 2 r2= 1  PARI 0.45158000  own max 0.44165835 at g=2.9395  diff -9.92 e-3
+PARI  n= 3 r2= 0  PARI 1.71733859  own max 1.71733957 at g=1.5284  diff 9.80 e-7
+PARI  n= 3 r2= 1  PARI 1.37420604  own max 1.37420616 at g=1.8193  diff 1.18 e-7
+PARI  n= 4 r2= 0  PARI 2.91799837  own max 2.91800211 at g=1.1580  diff 3.74 e-6
+PARI  n= 4 r2= 1  PARI 2.50091538  own max 2.50091755 at g=1.3257  diff 2.17 e-6
+PARI  n= 4 r2= 2  PARI 2.11943331  own max 2.11943396 at g=1.5320  diff 6.48 e-7
+PARI  n= 5 r2= 0  PARI 4.22701425  own max 4.22700989 at g=0.9502  diff -4.36 e-6
+PARI  n= 5 r2= 1  PARI 3.75471588  own max 3.75471838 at g=1.0583  diff 2.50 e-6
+PARI  n= 5 r2= 2  PARI 3.31196660  own max 3.31196946 at g=1.1897  diff 2.86 e-6
+PARI  n= 6 r2= 0  PARI 5.61209925  own max 5.61206014 at g=0.8168  diff -3.91 e-5
+PARI  n= 6 r2= 1  PARI 5.09730381  own max 5.09729073 at g=0.8923  diff -1.31 e-5
+PARI  n= 6 r2= 2  PARI 4.60693851  own max 4.60693750 at g=0.9826  diff -1.01 e-6
+PARI  n= 6 r2= 3  PARI 4.14303665  own max 4.14303898 at g=1.0903  diff 2.33 e-6
+PARI  n= 7 r2= 0  PARI 7.05406203  own max 7.05395384 at g=0.7233  diff -1.08 e-4
+PARI  n= 7 r2= 1  PARI 6.50550021  own max 6.50544368 at g=0.7793  diff -5.65 e-5
+PARI  n= 7 r2= 2  PARI 5.97735406  own max 5.97733015 at g=0.8450  diff -2.39 e-5
+PARI  n= 7 r2= 3  PARI 5.47145968  own max 5.47145331 at g=0.9224  diff -6.37 e-6
+PARI  n= 8 r2= 0  PARI 8.54052636  own max 8.54031306 at g=0.6538  diff -2.13 e-4
+PARI  n= 8 r2= 1  PARI 7.96438858  own max 7.96425506 at g=0.6971  diff -1.34 e-4
+PARI  n= 8 r2= 2  PARI 7.40555445  own max 7.40547897 at g=0.7472  diff -7.55 e-5
+PARI  n= 8 r2= 3  PARI 6.86558259  own max 6.86554619 at g=0.8053  diff -3.64 e-5
+PARI  n= 8 r2= 4  PARI 6.34608077  own max 6.34606726 at g=0.8729  diff -1.35 e-5
+PARI  n= 9 r2= 0  PARI 10.06300220  own max 10.06264856 at g=0.5997  diff -3.54 e-4
+PARI  n= 9 r2= 1  PARI 9.46382812  own max 9.46358263 at g=0.6344  diff -2.45 e-4
+PARI  n= 9 r2= 2  PARI 8.87952524  own max 8.87936512 at g=0.6740  diff -1.60 e-4
+PARI  n= 9 r2= 3  PARI 8.31139202  own max 8.31129672 at g=0.7193  diff -9.53 e-5
+PARI  n= 9 r2= 4  PARI 7.76081149  own max 7.76076112 at g=0.7714  diff -5.04 e-5
+PARI  n=10 r2= 0  PARI 11.61537970  own max 11.61485420 at g=0.5563  diff -5.25 e-4
+PARI  n=10 r2= 1  PARI 10.99660200  own max 10.99621085 at g=0.5849  diff -3.91 e-4
+PARI  n=10 r2= 2  PARI 10.39076540  own max 10.39048722 at g=0.6170  diff -2.78 e-4
+PARI  n=10 r2= 3  PARI 9.79895170  own max 9.79876478 at g=0.6534  diff -1.87 e-4
+PARI  n=10 r2= 4  PARI 9.22232770  own max 9.22221153 at g=0.6947  diff -1.16 e-4
+PARI  n=10 r2= 5  PARI 8.66213267  own max 8.66206705 at g=0.7418  diff -6.56 e-5
+PARI  n=11 r2= 0  PARI 13.19309610  own max 13.19237053 at g=0.5206  diff -7.26 e-4
+PARI  n=11 r2= 1  PARI 12.55737720  own max 12.55681041 at g=0.5445  diff -5.67 e-4
+PARI  n=11 r2= 2  PARI 11.93304580  own max 11.93261766 at g=0.5713  diff -4.28 e-4
+PARI  n=11 r2= 3  PARI 11.32100610  own max 11.32069571 at g=0.6012  diff -3.10 e-4
+PARI  n=11 r2= 4  PARI 10.72224120  own max 10.72202732 at g=0.6348  diff -2.14 e-4
+PARI  n=11 r2= 5  PARI 10.13780820  own max 10.13767020 at g=0.6728  diff -1.38 e-4
+PARI  n=12 r2= 0  PARI 14.79263940  own max 14.79168917 at g=0.4905  diff -9.50 e-4
+PARI  n=12 r2= 1  PARI 14.14209150  own max 14.14132229 at g=0.5110  diff -7.69 e-4
+PARI  n=12 r2= 2  PARI 13.50166160  own max 13.50105465 at g=0.5336  diff -6.07 e-4
+PARI  n=12 r2= 3  PARI 12.87211140  own max 12.87164655 at g=0.5587  diff -4.65 e-4
+PARI  n=12 r2= 4  PARI 12.25426990  own max 12.25392745 at g=0.5867  diff -3.42 e-4
+PARI  n=12 r2= 5  PARI 11.64903740  own max 11.64879627 at g=0.6180  diff -2.41 e-4
+PARI  n=12 r2= 6  PARI 11.05737750  own max 11.05721765 at g=0.6531  diff -1.60 e-4
+PARI  n=13 r2= 0  PARI 16.41123950  own max 16.41004331 at g=0.4649  diff -1.20 e-3
+PARI  n=13 r2= 1  PARI 15.74757100  own max 15.74657508 at g=0.4826  diff -9.96 e-4
+PARI  n=13 r2= 2  PARI 15.09296800  own max 15.09215592 at g=0.5020  diff -8.12 e-4
+PARI  n=13 r2= 3  PARI 14.44807770  own max 14.44743102 at g=0.5234  diff -6.47 e-4
+PARI  n=13 r2= 4  PARI 13.81360540  own max 13.81310451 at g=0.5471  diff -5.01 e-4
+PARI  n=13 r2= 5  PARI 13.19031620  own max 13.18994181 at g=0.5734  diff -3.74 e-4
+PARI  n=13 r2= 6  PARI 12.57903810  own max 12.57876980 at g=0.6026  diff -2.68 e-4
+PARI  n=14 r2= 0  PARI 18.04666720  own max 18.04520594 at g=0.4426  diff -1.46 e-3
+PARI  n=14 r2= 1  PARI 17.37128060  own max 17.37003741 at g=0.4581  diff -1.24 e-3
+PARI  n=14 r2= 2  PARI 16.70407800  own max 16.70303753 at g=0.4751  diff -1.04 e-3
+PARI  n=14 r2= 3  PARI 16.04561270  own max 16.04475834 at g=0.4936  diff -8.54 e-4
+PARI  n=14 r2= 4  PARI 15.39648780  own max 15.39580177 at g=0.5139  diff -6.86 e-4
+PARI  n=14 r2= 5  PARI 14.75735870  own max 14.75682259 at g=0.5363  diff -5.36 e-4
+PARI  n=14 r2= 6  PARI 14.12893640  own max 14.12853031 at g=0.5610  diff -4.06 e-4
+PARI  n=14 r2= 7  PARI 13.51198480  own max 13.51168926 at g=0.5884  diff -2.96 e-4
+PARI  n=15 r2= 0  PARI 19.69709610  own max 19.69535329 at g=0.4231  diff -1.74 e-3
+PARI  n=15 r2= 1  PARI 19.01116060  own max 19.00965183 at g=0.4368  diff -1.51 e-3
+PARI  n=15 r2= 2  PARI 18.33266150  own max 18.33137271 at g=0.4517  diff -1.29 e-3
+PARI  n=15 r2= 3  PARI 17.66207570  own max 17.66099206 at g=0.4679  diff -1.08 e-3
+PARI  n=15 r2= 4  PARI 16.99992330  own max 16.99902814 at g=0.4856  diff -8.95 e-4
+PARI  n=15 r2= 5  PARI 16.34676860  own max 16.34604436 at g=0.5049  diff -7.24 e-4
+PARI  n=15 r2= 6  PARI 15.70322280  own max 15.70265179 at g=0.5262  diff -5.71 e-4
+PARI  n=15 r2= 7  PARI 15.06994800  own max 15.06951075 at g=0.5495  diff -4.37 e-4
+PARI  n=16 r2= 0  PARI 21.36100810  own max 21.35896966 at g=0.4058  diff -2.04 e-3
+PARI  n=16 r2= 1  PARI 20.66551030  own max 20.66371996 at g=0.4181  diff -1.79 e-3
+PARI  n=16 r2= 2  PARI 19.97680820  own max 19.97525369 at g=0.4313  diff -1.55 e-3
+PARI  n=16 r2= 3  PARI 19.29531760  own max 19.29398458 at g=0.4457  diff -1.33 e-3
+PARI  n=16 r2= 4  PARI 18.62148850  own max 18.62036203 at g=0.4612  diff -1.13 e-3
+PARI  n=16 r2= 5  PARI 17.95580930  own max 17.95487389 at g=0.4781  diff -9.35 e-4
+PARI  n=16 r2= 6  PARI 17.29881080  own max 17.29804909 at g=0.4965  diff -7.62 e-4
+PARI  n=16 r2= 7  PARI 16.65106520  own max 16.65045977 at g=0.5167  diff -6.05 e-4
+PARI  n=16 r2= 8  PARI 16.01319060  own max 16.01272264 at g=0.5388  diff -4.68 e-4
+PARI  n=17 r2= 0  PARI 23.03712590  own max 23.03477919 at g=0.3904  diff -2.35 e-3
+PARI  n=17 r2= 1  PARI 22.33290660  own max 22.33082087 at g=0.4015  diff -2.09 e-3
+PARI  n=17 r2= 2  PARI 21.63492990  own max 21.63309414 at g=0.4133  diff -1.84 e-3
+PARI  n=17 r2= 3  PARI 20.94356070  own max 20.94196102 at g=0.4261  diff -1.60 e-3
+PARI  n=17 r2= 4  PARI 20.25918990  own max 20.25781382 at g=0.4398  diff -1.38 e-3
+PARI  n=17 r2= 5  PARI 19.58224540  own max 19.58107763 at g=0.4548  diff -1.17 e-3
+PARI  n=17 r2= 6  PARI 18.91318780  own max 18.91221282 at g=0.4710  diff -9.75 e-4
+PARI  n=17 r2= 7  PARI 18.25251570  own max 18.25171727 at g=0.4886  diff -7.98 e-4
+PARI  n=17 r2= 8  PARI 17.60076720  own max 17.60012826 at g=0.5078  diff -6.39 e-4
+PARI  n=18 r2= 0  PARI 24.72436110  own max 24.72169595 at g=0.3765  diff -2.67 e-3
+PARI  n=18 r2= 1  PARI 24.01214490  own max 24.00975180 at g=0.3865  diff -2.39 e-3
+PARI  n=18 r2= 2  PARI 23.30569020  own max 23.30355877 at g=0.3972  diff -2.13 e-3
+PARI  n=18 r2= 3  PARI 22.60531670  own max 22.60343568 at g=0.4087  diff -1.88 e-3
+PARI  n=18 r2= 4  PARI 21.91137050  own max 21.90972718 at g=0.4210  diff -1.64 e-3
+PARI  n=18 r2= 5  PARI 21.22422470  own max 21.22280597 at g=0.4343  diff -1.42 e-3
+PARI  n=18 r2= 6  PARI 20.54428360  own max 20.54307497 at g=0.4486  diff -1.21 e-3
+PARI  n=18 r2= 7  PARI 19.87198300  own max 19.87096958 at g=0.4642  diff -1.01 e-3
+PARI  n=18 r2= 8  PARI 19.20779410  own max 19.20695963 at g=0.4810  diff -8.34 e-4
+PARI  n=18 r2= 9  PARI 18.55222340  own max 18.55155101 at g=0.4994  diff -6.72 e-4
+PARI  n=19 r2= 0  PARI 26.42177920  own max 26.41878653 at g=0.3640  diff -2.99 e-3
+PARI  n=19 r2= 1  PARI 25.70219500  own max 25.69948406 at g=0.3731  diff -2.71 e-3
+PARI  n=19 r2= 2  PARI 24.98794970  own max 24.98551137 at g=0.3828  diff -2.44 e-3
+PARI  n=19 r2= 3  PARI 24.27932710  own max 24.27715089 at g=0.3931  diff -2.18 e-3
+PARI  n=19 r2= 4  PARI 23.57663210  own max 23.57470721 at g=0.4043  diff -1.92 e-3
+PARI  n=19 r2= 5  PARI 22.88019520  own max 22.87850896 at g=0.4162  diff -1.69 e-3
+PARI  n=19 r2= 6  PARI 22.19037090  own max 22.18891080 at g=0.4290  diff -1.46 e-3
+PARI  n=19 r2= 7  PARI 21.50754370  own max 21.50629541 at g=0.4428  diff -1.25 e-3
+PARI  n=19 r2= 8  PARI 20.83212630  own max 20.83107540 at g=0.4577  diff -1.05 e-3
+PARI  n=19 r2= 9  PARI 20.16456470  own max 20.16369512 at g=0.4739  diff -8.70 e-4
+PARI  n=20 r2= 0  PARI 28.12857040  own max 28.12524170 at g=0.3525  diff -3.33 e-3
+PARI  n=20 r2= 1  PARI 27.40216740  own max 27.39912986 at g=0.3609  diff -3.04 e-3
+PARI  n=20 r2= 2  PARI 26.68073140  own max 26.67797587 at g=0.3697  diff -2.76 e-3
+PARI  n=20 r2= 3  PARI 25.96451400  own max 25.96203132 at g=0.3792  diff -2.48 e-3
+PARI  n=20 r2= 4  PARI 25.25378670  own max 25.25156686 at g=0.3892  diff -2.22 e-3
+PARI  n=20 r2= 5  PARI 24.54884200  own max 24.54687388 at g=0.4000  diff -1.97 e-3
+PARI  n=20 r2= 6  PARI 23.84999430  own max 23.84826620 at g=0.4115  diff -1.73 e-3
+PARI  n=20 r2= 7  PARI 23.15758230  own max 23.15608187 at g=0.4239  diff -1.50 e-3
+PARI  n=20 r2= 8  PARI 22.47197200  own max 22.47068494 at g=0.4372  diff -1.29 e-3
+PARI  n=20 r2= 9  PARI 21.79355480  own max 21.79246721 at g=0.4516  diff -1.09 e-3
+PARI  n=20 r2=10  PARI 21.12275370  own max 21.12184980 at g=0.4671  diff -9.04 e-4
+entries compared: 119, max |diff| for n >= 3: 0.0033286955025638405859326551147120097713
+  ***   at top-level: ...iff| for n >= 3: ",maxd);chk(nb==0,"optimised
+  ***                                             ^---------------------
+  ***   in function chk: if(!cc,error("FAILED: ",msg),print("ok: ",msg)
+  ***                           ^---------------------------------------
+  ***   user error: FAILED: optimised Korollar 1 constant agrees with every PARI entry for 3 <= n <= 20 to 1e-6
+... skipping file 'refutH1_1_zimmert.gp'
+K21: Minkowski bound 40372280.537309794658111619343497465829
+K21: Satz 2 (every class): max S2 = 22.382159186252154666836576516980961983 at g = 0.43064995966231638208943536356139478266, bound sqrt(d) exp(-S2) = 99932.157741648179725607398636824672944
+K21: Korollar 1 (twin classes): max c = 23.436193666481775950636050846608721115 at g = 0.43187261761056038647651939490379014320, bound sqrt(d) exp(-c) = 34829.232653547653122749614634305212939
+K21: Satz 2 at g = 0.45, al = 0.070581817479198821911581477087996169719: bound 100618.66521978707053179815861334201341
+K21: Korollar 1 at g = 0.45: bound 35043.407810005252070474435670362258658

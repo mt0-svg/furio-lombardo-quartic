@@ -1,0 +1,16 @@
+'FurioLombardo.Discharge.SelmerBasis.RealRoots.sgn_extend' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.RealRoots.eval₂_of_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.RealRoots.qroots_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.RealRoots.hroots_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.RealRoots.extendHom_comp_N84' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.RealRoots.roots_qIdx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.RealRoots.roots_hIdx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.RealRoots.embQ_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.RealRoots.embH_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.RealRoots.hS_of_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.RealRoots.coordCond_place' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.gKu' depends on axioms: [propext, Classical.choice, Quot.sound]

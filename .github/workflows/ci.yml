@@ -1,0 +1,343 @@
+name: CI
+
+# From source: the Mathlib cache, then every module of the package, compiled by code/formal-proof/clean_build.sh
+# in dependency order, each heavy module alone (they reach about 9 GB; a runner has 16 GB). Then the checks: the
+# axioms of the main theorems, a scan of the sources, and Comparator with the Lean kernel.
+#
+# The build runs as a chain of up to five jobs. Each one continues the build of the previous one (handed over
+# as the artifact lake-build) for at most 300 minutes, under the 6 hour limit of a job, and the chain stops at
+# the first job that ends it. The last job fails if the build is still not complete.
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    name: Source scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: sorry, admit and native_decide outside comments and strings
+        shell: bash
+        run: |
+          set -u
+          mkdir -p verify/lean verify/results
+          cat > scan.awk <<'EOF'
+          FNR == 1 { depth = 0 }
+          {
+            s = $0; out = ""; i = 1; n = length(s)
+            while (i <= n) {
+              two = substr(s, i, 2)
+              if (depth > 0) {
+                if (two == "/-") { depth++; i += 2 } else if (two == "-/") { depth--; i += 2 } else i++
+                continue
+              }
+              if (two == "/-") { depth = 1; i += 2; continue }
+              if (two == "--") break
+              c = substr(s, i, 1)
+              if (c == "\"") {
+                j = i + 1
+                while (j <= n) { d = substr(s, j, 1); if (d == "\\") { j += 2; continue }; if (d == "\"") break; j++ }
+                out = out " "; i = j + 1; continue
+              }
+              out = out c; i++
+            }
+            if (match(out, "(^|[^A-Za-z0-9_.'!?])(" W ")([^A-Za-z0-9_'!?]|$)")) print FILENAME ":" FNR ": " $0
+          }
+          EOF
+          { find FurioLombardo -name '*.lean' ! -path FurioLombardo/Challenge.lean; [ ! -f FurioLombardo.lean ] || echo FurioLombardo.lean; } | LC_ALL=C sort > files.txt
+          {
+            echo "# Uses of sorry, admit and native_decide outside comments and string literals, in the $(wc -l < files.txt) files of FurioLombardo/ other than Challenge.lean, and of admit and native_decide in Challenge.lean (whose statement ends in sorry)."
+            xargs awk -v W='sorry|admit|native_decide' -f scan.awk < files.txt
+            awk -v W='admit|native_decide' -f scan.awk FurioLombardo/Challenge.lean
+          } > scan.txt
+          cat scan.txt
+          hits=$(($(wc -l < scan.txt) - 1))
+          echo "# $hits uses" >> scan.txt
+          cp scan.txt verify/lean/source-scan.txt
+          if [ "$hits" -eq 0 ]; then r=PASS; else r=FAIL; fi
+          printf 'source-scan\tscan of FurioLombardo/ for sorry, admit and native_decide outside comments\t%s uses\t%s\tlean/source-scan.txt\n' "$hits" "$r" > verify/results/source-scan.tsv
+          [ "$r" = PASS ]
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verify-source-scan
+          path: verify/
+
+  build-1:
+    name: Build, part 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      PART: "1"
+      LAST: "false"
+    outputs:
+      done: ${{ steps.build.outputs.done }}
+    steps: &build-steps
+      - name: Free disk space
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL && df -h /
+      - uses: actions/checkout@v5
+      - name: Set up Lean and fetch the Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          use-mathlib-cache: true
+          use-github-cache: false
+      - name: Build of the previous part
+        if: env.PART != '1'
+        uses: actions/download-artifact@v4
+        with:
+          name: lake-build
+          path: .lake/build
+      - name: Build
+        id: build
+        shell: bash
+        run: |
+          set -u
+          # Each part writes its own clean_build.out and clean_build_modules.txt; parts 2 to 5 continue (RESUME=1)
+          # on the build handed over by the previous part.
+          rm -f code/formal-proof/clean_build.out code/formal-proof/clean_build_modules.txt
+          if [ "$PART" = 1 ]; then resume=0; else resume=1; fi
+          rc=0
+          timeout -k 2m 300m env RUN_WRAP= HB=1 LB=12 PEAK_HEAVY=9G PEAK_LIGHT=4G MEM_MARGIN=1G MIN_DISK_GB=3 RESUME=$resume \
+            code/formal-proof/clean_build.sh || rc=$?
+          mkdir -p "verify/build/part-$PART" verify/results
+          cp code/formal-proof/clean_build.out code/formal-proof/clean_build_modules.txt "verify/build/part-$PART/" || true
+          last=$(tail -1 code/formal-proof/clean_build.out 2> /dev/null || true)
+          if [ "$rc" -eq 0 ]; then
+            echo "done=true" >> "$GITHUB_OUTPUT"
+            printf 'build\tcode/formal-proof/clean_build.sh, parts 1 to %s\t%s\tPASS\tbuild/\n' "$PART" "$last" > verify/results/build.tsv
+          elif [ "$rc" -eq 124 ] && [ "$LAST" != true ]; then
+            echo "done=false" >> "$GITHUB_OUTPUT"
+            echo "Part $PART stopped at its time limit; the next part continues the build."
+          else
+            echo "done=false" >> "$GITHUB_OUTPUT"
+            echo "Build failed (exit $rc): $last"
+            exit 1
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lake-build
+          path: .lake/build
+          include-hidden-files: true
+          overwrite: true
+          compression-level: 1
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verify-build-part-${{ env.PART }}
+          path: verify/
+
+  build-2:
+    name: Build, part 2
+    needs: build-1
+    if: needs.build-1.outputs.done != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      PART: "2"
+      LAST: "false"
+    outputs:
+      done: ${{ steps.build.outputs.done }}
+    steps: *build-steps
+
+  build-3:
+    name: Build, part 3
+    needs: build-2
+    if: needs.build-2.outputs.done != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      PART: "3"
+      LAST: "false"
+    outputs:
+      done: ${{ steps.build.outputs.done }}
+    steps: *build-steps
+
+  build-4:
+    name: Build, part 4
+    needs: build-3
+    if: needs.build-3.outputs.done != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      PART: "4"
+      LAST: "false"
+    outputs:
+      done: ${{ steps.build.outputs.done }}
+    steps: *build-steps
+
+  build-5:
+    name: Build, part 5
+    needs: build-4
+    if: needs.build-4.outputs.done != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      PART: "5"
+      LAST: "true"
+    outputs:
+      done: ${{ steps.build.outputs.done }}
+    steps: *build-steps
+
+  axioms:
+    name: Axioms
+    needs: [build-1, build-2, build-3, build-4, build-5]
+    if: ${{ !cancelled() && !failure() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Free disk space
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL && df -h /
+      - uses: actions/checkout@v5
+      - name: Set up Lean and fetch the Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          use-mathlib-cache: true
+          use-github-cache: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: lake-build
+          path: .lake/build
+      - name: Every target up to date, no sorry warning outside Challenge.lean
+        shell: bash
+        run: |
+          set -u
+          mkdir -p verify/lean verify/results verify/versions
+          rc=0
+          lake build --no-build Statement Main Challenge Solution > up-to-date.txt 2>&1 || rc=$?
+          cat up-to-date.txt
+          cp up-to-date.txt verify/lean/up-to-date.txt
+          n=$(grep "declaration uses 'sorry'" up-to-date.txt | grep -vc "FurioLombardo/Challenge.lean" || true)
+          if [ "$rc" -eq 0 ] && [ "$n" -eq 0 ]; then r=PASS; else r=FAIL; fi
+          printf 'up-to-date\tlake build --no-build Statement Main Challenge Solution\t%s sorry warnings outside Challenge.lean\t%s\tlean/up-to-date.txt\n' "$n" "$r" > verify/results/up-to-date.tsv
+          [ "$r" = PASS ]
+      - name: '#print axioms'
+        shell: bash
+        run: |
+          set -u
+          rc=0
+          lake env lean code/formal-proof/main_axioms.lean > axioms.txt 2>&1 || rc=$?
+          cat axioms.txt
+          cp axioms.txt verify/lean/axioms.txt
+          lean --version > verify/versions/lean.txt
+          r=PASS
+          [ "$rc" -eq 0 ] || r=FAIL
+          for t in FurioLombardo.conjecture_1_6 FurioLombardo.Discharge.M4Box.onlyFourPoints; do
+            grep -q "^'$t' depends on axioms: \[" axioms.txt || { echo "no axioms line for $t"; r=FAIL; }
+          done
+          other=$(sed -n "s/^'[^']*' depends on axioms: \[\(.*\)\]$/\1/p" axioms.txt | tr ',' '\n' | tr -d ' ' \
+            | grep -vxE 'propext|Classical\.choice|Quot\.sound' | sort -u | tr '\n' ' ' || true)
+          [ -z "$other" ] || { echo "axioms outside propext, Classical.choice, Quot.sound: $other"; r=FAIL; }
+          printf 'axioms\tlake env lean code/formal-proof/main_axioms.lean\t%s theorems\t%s\tlean/axioms.txt\n' \
+            "$(grep -c 'depends on axioms' axioms.txt)" "$r" > verify/results/axioms.tsv
+          [ "$r" = PASS ]
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verify-axioms
+          path: verify/
+
+  comparator:
+    name: Comparator
+    needs: [build-1, build-2, build-3, build-4, build-5]
+    if: ${{ !cancelled() && !failure() }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    steps:
+      - name: Free disk space
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL && df -h /
+      - uses: actions/checkout@v5
+
+      - uses: actions/checkout@v5
+        with:
+          repository: leanprover/comparator
+          ref: d03acab154d269c06e60e4de7e4cc85deebff94b
+          path: .ci/comparator
+
+      - uses: actions/checkout@v5
+        with:
+          repository: Zouuup/landrun
+          ref: 811cfff51ceaf3d9843708aa6d22e9b84ccac8b4
+          path: .ci/landrun
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Build Landrun
+        working-directory: .ci/landrun
+        run: go build -o landrun cmd/landrun/main.go
+
+      - name: Set up Lean and fetch the Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          use-mathlib-cache: true
+          use-github-cache: false
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: lake-build
+          path: .lake/build
+
+      # Comparator at this commit targets Lean v4.34.0; build it with the project's toolchain so that
+      # lean4export reads the project's .olean files.
+      - name: Align the Comparator toolchain
+        run: cp lean-toolchain .ci/comparator/lean-toolchain
+
+      - name: Build Comparator
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: .ci/comparator
+          auto-config: false
+          build: true
+          build-args: lean4export comparator
+          use-mathlib-cache: false
+          use-github-cache: false
+
+      - name: Check lean4export commit
+        run: test "$(git -C .ci/comparator/.lake/packages/lean4export rev-parse HEAD)" = 076e8e57707e813375e8f9da8bf989799ace9680
+
+      - name: Start time
+        run: echo "START=$(date +%s)" >> "$GITHUB_ENV"
+
+      # config.json: FurioLombardo.conjecture_1_6 of FurioLombardo.Solution against the statement of
+      # FurioLombardo.Challenge, the axioms propext, Quot.sound and Classical.choice, the Lean kernel only.
+      - name: Run Comparator
+        id: run
+        shell: bash
+        env:
+          COMPARATOR_LANDRUN: ${{ github.workspace }}/.ci/landrun/landrun
+          COMPARATOR_LEAN4EXPORT: ${{ github.workspace }}/.ci/comparator/.lake/packages/lean4export/.lake/build/bin/lean4export
+        run: >-
+          systemd-run --property=RestrictAddressFamilies=~AF_UNIX --user --pty --pipe
+          -E PATH="$PATH"
+          -E COMPARATOR_LANDRUN="$COMPARATOR_LANDRUN"
+          -E COMPARATOR_LEAN4EXPORT="$COMPARATOR_LEAN4EXPORT"
+          --working-directory "$PWD" --
+          bash -c 'lake env .ci/comparator/.lake/build/bin/comparator config.json'
+          2>&1 | tee comparator.log
+
+      - name: Record the result
+        if: always()
+        run: |
+          mkdir -p verify/lean verify/results
+          secs=$(($(date +%s) - ${START:-$(date +%s)}))
+          cp comparator.log verify/lean/comparator.txt || true
+          if [ "${{ steps.run.outcome }}" = success ]; then r=PASS; else r=FAIL; fi
+          printf 'comparator\tcomparator config.json (FurioLombardo.Challenge against FurioLombardo.Solution, Lean kernel)\t%s s\t%s\tlean/comparator.txt\n' "$secs" "$r" > verify/results/comparator.tsv
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verify-comparator
+          path: verify/

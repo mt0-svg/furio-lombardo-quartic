@@ -1,0 +1,37 @@
+  ***   Warning: new maximum stack size = 1500000256 (1430.512 Mbytes).
+ok: Lean data parsed (fL, zkNum, epsL, eaL, ebL, al7, FnData, qData, hData, 29 gL, 53 gN, alphaL, betaN, C7Rows)
+ok: nfinit(fL).zk is Lean's basis zkNum / Dz
+ok: 7 has a single prime pr above it in K21, e = 7, f = 3
+ok: al7 generates pr (v = 1, |N(al7)| = 343)
+v(eps) = 0, residue of eps a square in F_343: 1
+ok: eps is a pr-unit with square residue, so sqrt(eps) lies in K_w (Hensel, p odd)
+ok: y0^2 = eps mod pr^240
+v(iota(eN)) at omega -> y0: 1, at omega -> -y0: 0
+classes [v mod 2, nonsquare unit]: omega -> y0: [1, 1], omega -> -y0: [0, 0]
+ok: iota+(eN) is a square in K_w (valuation 0, unit part square residue)
+ok: iota-(eN) has odd valuation 1, so F' = K_w(sqrt iota-(eN)) is ramified quadratic
+ok: s0^2 = iota+(eN) mod pr^(N - 2 kP)
+ok: fRev 1 = c q h over K21 (exact)
+v(c1) = 7
+ok: q(iota+-(alphaR)) = 0 mod pr^(N - 10)
+ok: h(iota+(betaR)) at z -> +-s0 = 0 mod pr^(N - 10)
+ok: h(iota-(betaR)) = 0 in F' (both coordinates) mod pr^(N - 10)
+root valuations: v(tq1) = 0, v(tq2) = 0, v(th1) = 0, v(th2) = 0, v(thA) = 0, v(thB) = 5
+differences: v(tq1 - tq2) = 4, v(th1 - th2) = 6, v(tq1 - th1) = 4, v(tq1 - th2) = 4, v(tq2 - th1) = 6, v(tq2 - th2) = 6, v(tq1 - thA) = 7, v(th1 - thA) = 4
+ok: v(iota-(eN)) = 1: z' itself is a uniformizer of F'
+ok: -1 has a nonsquare residue in F_343 (343 = 3 mod 4)
+generator classes computed; largest valuation met 14 (precision 240)
+ok: every valuation met is far below the precision
+kappa classes: al7 [1, 0, 1, 0, 1, 0, 1, 0, 0, 1], -1 [0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+  split point 1: x = root 1 truncated at pr^5 plus 1 al7^5, v(f(x)) = 34
+  split point 2: x = root 1 truncated at pr^6 plus -3 al7^6, v(f(x)) = 36
+  split point 3: x = root 2 truncated at pr^7 plus -2 al7^7, v(f(x)) = 38
+  split point 4: x = root 3 truncated at pr^7 plus -3 al7^7, v(f(x)) = 38
+split point search: 225 candidates tried, 4 points kept
+ok: four split points whose differences D_1i = P_1 + P_i give three independent classes modulo kappa
+ok: dim span(kappa, mu) = 5 = half of dim G/G^2 = 10
+ok: the annihilator of span(kappa, mu) has dimension 5
+ok: the rows (annihilator times generator classes) span the same space as Assembly.C7Rows (second computation of the rows at 7)
+ok: QC (5 forms) annihilates kappa and mu and QC . Cg = C7Rows exactly
+QC = [0, 1, 1, 1, 0, 0, 1, 0, 0, 0; 0, 1, 0, 0, 0, 0, 0, 1, 0, 0; 1, 1, 0, 0, 0, 0, 0, 0, 1, 1; 1, 1, 0, 1, 1, 0, 0, 0, 1, 0; 0, 0, 0, 1, 0, 1, 0, 0, 0, 0]
+DONE, 0 failed checks (21 ok)

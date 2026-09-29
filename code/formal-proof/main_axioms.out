@@ -1,0 +1,6 @@
+# Recorded 2026-09-29 at workspace commit 27b38f52 by the earlier version of this file (lf_2_axioms.lean, in git history), on a script-local conjecture_1_6 before the package restructure; FurioLombardo.conjecture_1_6 of FurioLombardo/Main.lean is printed by the CI.
+-- lake env lean ../code/lean-final/lf_2_axioms.lean at 2026-09-29 22:23 CEST, commit 27b38f52
+'FurioLombardo.Discharge.M4Box.onlyFourPoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.conjecture_iff_onlyFourPoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.listed_on_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'conjecture_1_6' depends on axioms: [propext, Classical.choice, Quot.sound]

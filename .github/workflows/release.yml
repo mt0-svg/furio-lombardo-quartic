@@ -1,0 +1,114 @@
+name: Release
+
+# On a tag v*: every check of ci.yml from source (build, source scan, axioms, Comparator) and the PDF. Only when
+# all of them pass, the GitHub release gets the PDF, the verification archive and the Lake build archive of the
+# build that the checks read.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
+
+  pdf:
+    uses: ./.github/workflows/paper.yml
+
+  release:
+    name: GitHub release
+    needs: [ci, pdf]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: verify-*
+          merge-multiple: true
+          path: verify
+      - uses: actions/download-artifact@v4
+        with:
+          name: paper
+          path: .
+      - uses: actions/download-artifact@v4
+        with:
+          name: lake-build
+          path: .lake/build
+
+      # The archive Lake looks for: the build directory less the .setup.json files (Lake writes them again).
+      # GitHub takes release files under 2 GiB; a larger archive goes out in parts, which Lake cannot download.
+      - name: Lake build archive
+        shell: bash
+        run: |
+          set -eu
+          a=furio-lombardo-quartic-x86_64-unknown-linux-gnu.tar.gz
+          tar -czf "$a" -C .lake/build --exclude='*.setup.json' .
+          size=$(stat -c %s "$a")
+          if [ "$size" -lt 2000000000 ]; then
+            sha256sum "$a" > "$a.sha256"
+            echo "ASSETS=$a $a.sha256" >> "$GITHUB_ENV"
+            echo "Lake build archive: $a, $size bytes." > archive.md
+          else
+            split -b 1900M -d -a 2 "$a" "$a.part"
+            rm "$a"
+            sha256sum "$a".part* > "$a.parts.sha256"
+            echo "ASSETS=$(ls "$a".part* | tr '\n' ' ')$a.parts.sha256" >> "$GITHUB_ENV"
+            echo "Lake build archive: $size bytes, in $(ls "$a".part* | wc -l) parts (join them with cat before use; lake build :release cannot download them)." > archive.md
+          fi
+          cat archive.md
+
+      # Expected runs: the source scan, the build, the up-to-date check, the axioms, Comparator.
+      - name: Verification archive
+        shell: bash
+        run: |
+          set -eu
+          d="verification-$GITHUB_REF_NAME"
+          run="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          for k in source-scan build up-to-date axioms comparator; do
+            [ -f "verify/results/$k.tsv" ] || { echo "missing run: $k"; ls verify/results; exit 1; }
+          done
+          if cut -f4 verify/results/*.tsv | grep -v '^PASS'; then echo "a run did not pass"; exit 1; fi
+          mkdir "$d"
+          cp -r verify/lean verify/build "$d/"
+          n=$(cat verify/results/*.tsv | wc -l)
+          {
+            echo "# Verification of $GITHUB_REF_NAME"
+            echo
+            echo "Commit $GITHUB_SHA, $(date -u +%Y-%m-%d), workflow run $run."
+            echo
+            echo "## Versions"
+            echo
+            cat verify/versions/*.txt | sort -u | sed 's/^/    /'
+            echo "    Mathlib $(jq -r '.packages[] | select(.name == "mathlib") | .rev' lake-manifest.json)"
+            echo
+            echo "## Runs"
+            echo
+            echo "| check | command | detail | result | output |"
+            echo "|---|---|---|---|---|"
+            cat verify/results/*.tsv | sort | awk -F '\t' '{printf "| %s | `%s` | %s | %s | `%s` |\n", $1, $2, $3, $4, $5}'
+            echo
+            echo "The build outputs of each part of the build chain are in build/part-N (clean_build.out, one line per lake call; clean_build_modules.txt, the time of every module)."
+          } > "$d/VERIFICATION.md"
+          (cd "$d" && find . -type f ! -name SHA256SUMS | LC_ALL=C sort | xargs sha256sum > SHA256SUMS)
+          tar -czf "$d.tar.gz" "$d"
+          cat "$d/VERIFICATION.md" >> "$GITHUB_STEP_SUMMARY"
+          echo "Verification: all $n runs passed ([workflow run]($run)); \`VERIFICATION.md\` in \`$d.tar.gz\` lists them." > summary.md
+
+      - name: GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -eu
+          cat "release-notes/$GITHUB_REF_NAME.md" - summary.md archive.md <<< "" > notes.md
+          files="furio-lombardo-quartic.pdf verification-$GITHUB_REF_NAME.tar.gz $ASSETS"
+          if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" $files --clobber
+            gh release edit "$GITHUB_REF_NAME" --notes-file notes.md
+          else
+            gh release create "$GITHUB_REF_NAME" $files --title "$GITHUB_REF_NAME" --notes-file notes.md
+          fi

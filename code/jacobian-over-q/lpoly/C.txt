@@ -1,0 +1,2 @@
+# C (Furio-Lombardo, Conjecture 1.6), twist of the Klein quartic
+x^4 + 3x^3y - 3x^2yz - 3x^2z^2 + 6xy^3 - 6xy^2z + 3xyz^2 - 2xz^3 + 4y^4 + 2y^3z - 5yz^3

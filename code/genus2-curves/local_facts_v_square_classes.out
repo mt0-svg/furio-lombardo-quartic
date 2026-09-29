@@ -1,0 +1,10 @@
+k = 0: primes of N above v: 1, [e, f] = [[6, 1]] (8352 ms)
+  -3 square in N_w: 0; d square in N_w: 1 (expected 1)
+  (irr) D square in N_w: 0, -3 D square in N_w: 1
+  (nsq, sign 1) rho square in N_w: 0, -3 rho square in N_w: 1
+  (nsq, sign -1) rho square in N_w: 0, -3 rho square in N_w: 1
+k = 1: primes of N above v: 1, [e, f] = [[6, 1]] (8362 ms)
+  -3 square in N_w: 0; d square in N_w: 1 (expected 1)
+  (irr) D square in N_w: 0, -3 D square in N_w: 1
+  (nsq, sign 1) rho square in N_w: 0, -3 rho square in N_w: 1
+  (nsq, sign -1) rho square in N_w: 0, -3 rho square in N_w: 1

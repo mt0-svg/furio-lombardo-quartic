@@ -1,0 +1,54 @@
+import took 4.16s
+type checking took 244s
+type checking took 106ms
+type checking took 299ms
+type checking took 437ms
+type checking took 659ms
+type checking took 259ms
+type checking took 674ms
+type checking took 269ms
+type checking took 741ms
+type checking took 1.25s
+cumulative profiling times:
+	attribute application 0.0811ms
+	blocked (unaccounted) 2.45e+03s
+	elaboration 14ms
+	fix level params 0.0447ms
+	import 4.16s
+	initialization 30.5ms
+	instantiate metavars 0.0531ms
+	interpretation 302ms
+	let-to-have transformation 0.0597ms
+	linting 3.43ms
+	module linting 0.00158ms
+	overlappingInstancesLinter 2.11ms
+	parsing 2.11ms
+	process pre-definitions 1.05ms
+	share common exprs 0.171ms
+	tactic execution 3.41ms
+	tacticAnalysis 5.73ms
+	type checking 249s
+	typeclass inference 1.91ms
+	Command being timed: "lake env lean -DmaxSynthPendingDepth=3 -Dprofiler=true -Dprofiler.threshold=100 ../code/selmer-basis/sb_11_kernel_probe.lean"
+	User time (seconds): 250.55
+	System time (seconds): 3.15
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:14.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8764592
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 261298
+	Voluntary context switches: 2415
+	Involuntary context switches: 15334
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

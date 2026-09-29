@@ -1,0 +1,10 @@
+# gitleaks: the default rules, and one false positive allowed (a Lean proof step named key).
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "the Lean proof step `have key := FurioLombardo.M4.stoll_log ...` in FurioLombardo/M3a/StollSat.lean"
+condition = "AND"
+regexTarget = "line"
+regexes = ['''^\s*have key := FurioLombardo\.M4\.stoll_log ''']
+paths = ['''FurioLombardo/M3a/StollSat\.lean$''']

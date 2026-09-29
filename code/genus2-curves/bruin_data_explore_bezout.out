@@ -1,0 +1,27 @@
+  ***   Warning: new maximum stack size = 4000002048 (3814.699 Mbytes).
+resultant(fZ, fZ') = -8570350497446051858808595293666336011461519865865907911223905181971605934233878528, factor: [-1, 1; 2, 72; 7, 27; 45613, 2; 462191, 2; 249279053, 2]
+k = 0: fRev = c q h: ok
+  Bezout a f + b f' = 1: deg a 4, deg b 5, dens 60332429026932605874606821588811737766 361994574161595635247640929532870426596, digits 48 48
+  d = disc q: den 1058, digits 9, square in K21: 0
+  RIN: F_k = cR G1 (A^2 - dR B^2): ok; deg A 2, deg B 1
+  d / dR square in K21: 1
+  beta_h^2 = d mod h: ok; beta_h dens 3909538206 digits 12
+  *** _/_: Warning: increasing stack size to 16000000.
+  *** _/_: Warning: increasing stack size to 32000000.
+  *** _/_: Warning: increasing stack size to 64000000.
+  beta^2 - d = fRev gamma: ok; deg beta 5, deg gamma 4, dens 47467357093707138 7886024963115282740993458992528654, digits 20 42
+  non-residue primes for 4 lc: [[13, 11], [17, 3], [23, 7]]
+  non-residue primes for den^2 d: [[13, 11], [17, 3], [31, 24]]
+k = 1: fRev = c q h: ok
+  Bezout a f + b f' = 1: deg a 4, deg b 5, dens 60332429026932605874606821588811737766 361994574161595635247640929532870426596, digits 46 46
+  d = disc q: den 1058, digits 9, square in K21: 0
+  RIN: F_k = cR G1 (A^2 - dR B^2): ok; deg A 2, deg B 1
+  d / dR square in K21: 1
+  beta_h^2 = d mod h: ok; beta_h dens 3909538206 digits 12
+  beta^2 - d = fRev gamma: ok; deg beta 5, deg gamma 4, dens 47467357093707138 7886024963115282740993458992528654, digits 20 40
+  non-residue primes for 4 lc: [[23, 5], [23, 21], [31, 24]]
+  non-residue primes for den^2 d: [[13, 11], [17, 3], [31, 24]]
+P = [0, 0, 1], twist 0: Q(P) = 0? [1, 1, 0]; r den 1 digits 0, s den 1 digits 1
+P = [2, 0, 1], twist 0: Q(P) = 0? [0, 0, 0]; r den 1 digits 2, s den 1 digits 2
+P = [1, 1, 1], twist 1: Q(P) = 0? [0, 1, 1]; r den 1 digits 2, s den 1 digits 0
+P = [-1, 0, 1], twist 1: Q(P) = 0? [0, 0, 0]; r den 1 digits 1, s den 1 digits 1

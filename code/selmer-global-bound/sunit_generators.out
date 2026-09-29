@@ -1,0 +1,755 @@
+  ***   Warning: new maximum stack size = 900001792 (858.309 Mbytes).
+  *** read: Warning: increasing stack size to 16000000.
+  *** read: Warning: increasing stack size to 32000000.
+  *** read: Warning: increasing stack size to 64000000.
+ok: the nfK of fields.bin has the zk of nfinit(K21)
+ok: L: 5 primes above 2 and 7, signature [6, 18] (r1 + r2 + #S - 1 = 28)
+ok: p21_29's L generators: 28 compact S-units and -1
+L: complex logs of the 28 generators (434 ms)
+ok: product formula: every S-log vector sums to 0
+ok: LLL transform T is 28 x 28 unimodular
+  S-log vectors after LLL: max |entry| min 1.76 median 2.68 max 5.84 (before: max 5.838 e0)
+ok: element 1: coordinates on nf.zk recovered, rounding error 1.7 e-202 < 10^-20
+ok: element 1: norm +-2^0 7^0
+ok: element 1: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 1: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 1: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 1: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 1: x w = 2^3 7^0 in L42 (exact)
+ok: element 2: coordinates on nf.zk recovered, rounding error 5.8 e-197 < 10^-20
+ok: element 2: norm +-2^0 7^0
+ok: element 2: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 2: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 2: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 2: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 2: x w = 2^3 7^0 in L42 (exact)
+ok: element 3: coordinates on nf.zk recovered, rounding error 8.3 e-199 < 10^-20
+ok: element 3: norm +-2^0 7^0
+ok: element 3: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 3: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 3: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 3: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 3: x w = 2^3 7^0 in L42 (exact)
+ok: element 4: coordinates on nf.zk recovered, rounding error 3.6 e-36 < 10^-20
+ok: element 4: norm +-2^3 7^0
+ok: element 4: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 4: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 4: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 4: cofactor w = 2^4 7^0 / x has integral format coordinates
+ok: element 4: x w = 2^4 7^0 in L42 (exact)
+ok: element 5: coordinates on nf.zk recovered, rounding error 1.0 e-36 < 10^-20
+ok: element 5: norm +-2^3 7^0
+ok: element 5: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 5: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 5: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 5: cofactor w = 2^4 7^0 / x has integral format coordinates
+ok: element 5: x w = 2^4 7^0 in L42 (exact)
+ok: element 6: coordinates on nf.zk recovered, rounding error 1.9 e-37 < 10^-20
+ok: element 6: norm +-2^42 7^0
+ok: element 6: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 6: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 6: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 6: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 6: x w = 2^3 7^0 in L42 (exact)
+ok: element 7: coordinates on nf.zk recovered, rounding error 7.5 e-37 < 10^-20
+ok: element 7: norm +-2^42 7^0
+ok: element 7: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 7: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 7: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 7: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 7: x w = 2^3 7^0 in L42 (exact)
+ok: element 8: coordinates on nf.zk recovered, rounding error 1.3 e-37 < 10^-20
+ok: element 8: norm +-2^42 7^0
+ok: element 8: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 8: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 8: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 8: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 8: x w = 2^3 7^0 in L42 (exact)
+ok: element 9: coordinates on nf.zk recovered, rounding error 4.4 e-37 < 10^-20
+ok: element 9: norm +-2^3 7^0
+ok: element 9: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 9: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 9: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 9: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 9: x w = 2^3 7^0 in L42 (exact)
+ok: element 10: coordinates on nf.zk recovered, rounding error 1.4 e-37 < 10^-20
+ok: element 10: norm +-2^42 7^0
+ok: element 10: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 10: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 10: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 10: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 10: x w = 2^3 7^0 in L42 (exact)
+ok: element 11: coordinates on nf.zk recovered, rounding error 3.3 e-36 < 10^-20
+ok: element 11: norm +-2^6 7^0
+ok: element 11: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 11: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 11: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 11: cofactor w = 2^4 7^0 / x has integral format coordinates
+ok: element 11: x w = 2^4 7^0 in L42 (exact)
+ok: element 12: coordinates on nf.zk recovered, rounding error 4.0 e-37 < 10^-20
+ok: element 12: norm +-2^39 7^0
+ok: element 12: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 12: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 12: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 12: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 12: x w = 2^3 7^0 in L42 (exact)
+ok: element 13: coordinates on nf.zk recovered, rounding error 6.6 e-37 < 10^-20
+ok: element 13: norm +-2^40 7^0
+ok: element 13: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 13: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 13: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 13: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 13: x w = 2^3 7^0 in L42 (exact)
+ok: element 14: coordinates on nf.zk recovered, rounding error 1.9 e-37 < 10^-20
+ok: element 14: norm +-2^40 7^0
+ok: element 14: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 14: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 14: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 14: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 14: x w = 2^3 7^0 in L42 (exact)
+ok: element 15: coordinates on nf.zk recovered, rounding error 4.3 e-38 < 10^-20
+ok: element 15: norm +-2^0 7^0
+ok: element 15: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 15: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 15: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 15: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 15: x w = 2^3 7^0 in L42 (exact)
+ok: element 16: coordinates on nf.zk recovered, rounding error 1.1 e-37 < 10^-20
+ok: element 16: norm +-2^0 7^0
+ok: element 16: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 16: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 16: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 16: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 16: x w = 2^3 7^0 in L42 (exact)
+ok: element 17: coordinates on nf.zk recovered, rounding error 2.4 e-36 < 10^-20
+ok: element 17: norm +-2^0 7^0
+ok: element 17: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 17: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 17: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 17: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 17: x w = 2^3 7^0 in L42 (exact)
+ok: element 18: coordinates on nf.zk recovered, rounding error 7.4 e-37 < 10^-20
+ok: element 18: norm +-2^3 7^0
+ok: element 18: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 18: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 18: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 18: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 18: x w = 2^3 7^0 in L42 (exact)
+ok: element 19: coordinates on nf.zk recovered, rounding error 1.9 e-36 < 10^-20
+ok: element 19: norm +-2^40 7^0
+ok: element 19: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 19: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 19: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 19: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 19: x w = 2^3 7^0 in L42 (exact)
+ok: element 20: coordinates on nf.zk recovered, rounding error 4.0 e-36 < 10^-20
+ok: element 20: norm +-2^40 7^0
+ok: element 20: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 20: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 20: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 20: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 20: x w = 2^3 7^0 in L42 (exact)
+ok: element 21: coordinates on nf.zk recovered, rounding error 2.4 e-36 < 10^-20
+ok: element 21: norm +-2^4 7^0
+ok: element 21: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 21: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 21: scaled by 2^0 7^0: integral format coordinates, total exponents [0, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 21: cofactor w = 2^1 7^0 / x has integral format coordinates
+ok: element 21: x w = 2^1 7^0 in L42 (exact)
+ok: element 22: coordinates on nf.zk recovered, rounding error 5.4 e-37 < 10^-20
+ok: element 22: norm +-2^3 7^0
+ok: element 22: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 22: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 22: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 22: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 22: x w = 2^3 7^0 in L42 (exact)
+ok: element 23: coordinates on nf.zk recovered, rounding error 4.9 e-36 < 10^-20
+ok: element 23: norm +-2^40 7^0
+ok: element 23: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 23: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 23: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 23: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 23: x w = 2^3 7^0 in L42 (exact)
+ok: element 24: coordinates on nf.zk recovered, rounding error 1.6 e-36 < 10^-20
+ok: element 24: norm +-2^40 7^0
+ok: element 24: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 24: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 24: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 24: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 24: x w = 2^3 7^0 in L42 (exact)
+ok: element 25: coordinates on nf.zk recovered, rounding error 1.8 e-36 < 10^-20
+ok: element 25: norm +-2^1 7^0
+ok: element 25: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 25: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 25: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 25: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 25: x w = 2^3 7^0 in L42 (exact)
+ok: element 26: coordinates on nf.zk recovered, rounding error 4.0 e-37 < 10^-20
+ok: element 26: norm +-2^42 7^0
+ok: element 26: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 26: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 26: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 26: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 26: x w = 2^3 7^0 in L42 (exact)
+ok: element 27: coordinates on nf.zk recovered, rounding error 6.6 e-36 < 10^-20
+ok: element 27: norm +-2^40 7^3
+ok: element 27: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 27: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 27: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 27: cofactor w = 2^3 7^1 / x has integral format coordinates
+ok: element 27: x w = 2^3 7^1 in L42 (exact)
+ok: element 28: coordinates on nf.zk recovered, rounding error 8.8 e-36 < 10^-20
+ok: element 28: norm +-2^40 7^3
+ok: element 28: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 28: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 28: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 28: cofactor w = 2^3 7^1 / x has integral format coordinates
+ok: element 28: x w = 2^3 7^1 in L42 (exact)
+  recovery of 28 elements: 101 ms
+ok: L: the 29 generators are independent modulo squares (F2 rank 29 of the characters at 80 degree one primes of nfL, p <= 2423)
+ok: N: 8 primes above 2 and 7, signature [6, 39] (r1 + r2 + #S - 1 = 52)
+ok: p21_28's N generators: 53, the first one -1
+  *** nfeltval: Warning: increasing stack size to 128000000.
+N: complex logs of the 52 generators, 0 base elements (118251 ms)
+ok: product formula: every S-log vector sums to 0
+  *** qflll: Warning: increasing stack size to 256000000.
+ok: LLL transform T is 52 x 52 unimodular
+  S-log vectors after LLL: max |entry| min 2.14 median 3.27 max 5.84 (before: max 2.919 e1)
+ok: element 1: coordinates on nf.zk recovered, rounding error 2.2 e-1611 < 10^-20
+ok: element 1: norm +-2^0 7^0
+ok: element 1: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 1: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 1: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 1: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 1: x w = 2^3 7^0 in N84 (exact)
+ok: element 2: coordinates on nf.zk recovered, rounding error 6.5 e-1607 < 10^-20
+ok: element 2: norm +-2^0 7^0
+ok: element 2: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 2: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 2: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 2: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 2: x w = 2^3 7^0 in N84 (exact)
+ok: element 3: coordinates on nf.zk recovered, rounding error 2.0 e-35 < 10^-20
+ok: element 3: norm +-2^6 7^0
+ok: element 3: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 3: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 3: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 3: cofactor w = 2^4 7^0 / x has integral format coordinates
+ok: element 3: x w = 2^4 7^0 in N84 (exact)
+ok: element 4: coordinates on nf.zk recovered, rounding error 1.2 e-35 < 10^-20
+ok: element 4: norm +-2^6 7^0
+ok: element 4: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 4: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 4: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 4: cofactor w = 2^4 7^0 / x has integral format coordinates
+ok: element 4: x w = 2^4 7^0 in N84 (exact)
+ok: element 5: coordinates on nf.zk recovered, rounding error 2.8 e-35 < 10^-20
+ok: element 5: norm +-2^84 7^0
+ok: element 5: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 5: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 5: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 5: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 5: x w = 2^3 7^0 in N84 (exact)
+ok: element 6: coordinates on nf.zk recovered, rounding error 7.8 e-35 < 10^-20
+ok: element 6: norm +-2^84 7^0
+ok: element 6: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 6: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 6: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 6: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 6: x w = 2^3 7^0 in N84 (exact)
+ok: element 7: coordinates on nf.zk recovered, rounding error 5.3 e-36 < 10^-20
+ok: element 7: norm +-2^84 7^0
+ok: element 7: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 7: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 7: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 7: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 7: x w = 2^3 7^0 in N84 (exact)
+ok: element 8: coordinates on nf.zk recovered, rounding error 2.0 e-35 < 10^-20
+ok: element 8: norm +-2^80 7^0
+ok: element 8: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 8: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 8: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 8: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 8: x w = 2^3 7^0 in N84 (exact)
+ok: element 9: coordinates on nf.zk recovered, rounding error 6.1 e-1607 < 10^-20
+ok: element 9: norm +-2^0 7^0
+ok: element 9: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 9: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 9: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 9: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 9: x w = 2^3 7^0 in N84 (exact)
+ok: element 10: coordinates on nf.zk recovered, rounding error 1.1 e-36 < 10^-20
+ok: element 10: norm +-2^0 7^0
+ok: element 10: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 10: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 10: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 10: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 10: x w = 2^3 7^0 in N84 (exact)
+ok: element 11: coordinates on nf.zk recovered, rounding error 2.3 e-36 < 10^-20
+ok: element 11: norm +-2^2 7^0
+ok: element 11: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 11: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 11: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 11: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 11: x w = 2^3 7^0 in N84 (exact)
+ok: element 12: coordinates on nf.zk recovered, rounding error 1.5 e-36 < 10^-20
+ok: element 12: norm +-2^84 7^0
+ok: element 12: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 12: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 12: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 12: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 12: x w = 2^3 7^0 in N84 (exact)
+ok: element 13: coordinates on nf.zk recovered, rounding error 1.6 e-35 < 10^-20
+ok: element 13: norm +-2^2 7^0
+ok: element 13: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 13: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 13: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 13: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 13: x w = 2^3 7^0 in N84 (exact)
+ok: element 14: coordinates on nf.zk recovered, rounding error 8.3 e-35 < 10^-20
+ok: element 14: norm +-2^86 7^0
+ok: element 14: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 14: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 14: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 14: cofactor w = 2^4 7^0 / x has integral format coordinates
+ok: element 14: x w = 2^4 7^0 in N84 (exact)
+ok: element 15: coordinates on nf.zk recovered, rounding error 1.9 e-36 < 10^-20
+ok: element 15: norm +-2^2 7^0
+ok: element 15: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 15: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 15: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 15: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 15: x w = 2^3 7^0 in N84 (exact)
+ok: element 16: coordinates on nf.zk recovered, rounding error 8.3 e-36 < 10^-20
+ok: element 16: norm +-2^84 7^0
+ok: element 16: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 16: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 16: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 16: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 16: x w = 2^3 7^0 in N84 (exact)
+ok: element 17: coordinates on nf.zk recovered, rounding error 1.5 e-36 < 10^-20
+ok: element 17: norm +-2^84 7^0
+ok: element 17: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 17: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 17: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 17: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 17: x w = 2^3 7^0 in N84 (exact)
+ok: element 18: coordinates on nf.zk recovered, rounding error 1.3 e-34 < 10^-20
+ok: element 18: norm +-2^4 7^0
+ok: element 18: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 18: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 18: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 18: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 18: x w = 2^3 7^0 in N84 (exact)
+ok: element 19: coordinates on nf.zk recovered, rounding error 6.4 e-36 < 10^-20
+ok: element 19: norm +-2^6 7^0
+ok: element 19: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 19: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 19: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 19: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 19: x w = 2^3 7^0 in N84 (exact)
+ok: element 20: coordinates on nf.zk recovered, rounding error 3.8 e-35 < 10^-20
+ok: element 20: norm +-2^6 7^0
+ok: element 20: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 20: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 20: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 20: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 20: x w = 2^3 7^0 in N84 (exact)
+ok: element 21: coordinates on nf.zk recovered, rounding error 7.3 e-35 < 10^-20
+ok: element 21: norm +-2^6 7^0
+ok: element 21: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 21: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 21: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 21: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 21: x w = 2^3 7^0 in N84 (exact)
+ok: element 22: coordinates on nf.zk recovered, rounding error 9.6 e-35 < 10^-20
+ok: element 22: norm +-2^80 7^0
+ok: element 22: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 22: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 22: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 22: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 22: x w = 2^3 7^0 in N84 (exact)
+ok: element 23: coordinates on nf.zk recovered, rounding error 4.7 e-35 < 10^-20
+ok: element 23: norm +-2^86 7^0
+ok: element 23: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 23: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 23: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 23: cofactor w = 2^4 7^0 / x has integral format coordinates
+ok: element 23: x w = 2^4 7^0 in N84 (exact)
+ok: element 24: coordinates on nf.zk recovered, rounding error 2.9 e-34 < 10^-20
+ok: element 24: norm +-2^90 7^0
+ok: element 24: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 24: 2^1 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 24: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 24: cofactor w = 2^4 7^0 / x has integral format coordinates
+ok: element 24: x w = 2^4 7^0 in N84 (exact)
+ok: element 25: coordinates on nf.zk recovered, rounding error 2.4 e-35 < 10^-20
+ok: element 25: norm +-2^76 7^0
+ok: element 25: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 25: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 25: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 25: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 25: x w = 2^3 7^0 in N84 (exact)
+ok: element 26: coordinates on nf.zk recovered, rounding error 1.1 e-34 < 10^-20
+ok: element 26: norm +-2^84 7^0
+ok: element 26: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 26: 2^0 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 26: scaled by 2^1 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 26: cofactor w = 2^3 7^0 / x has integral format coordinates
+ok: element 26: x w = 2^3 7^0 in N84 (exact)
+ok: element 27: coordinates on nf.zk recovered, rounding error 2.7 e-34 < 10^-20
+ok: element 27: norm +-2^80 7^0
+ok: element 27: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 27: 2^3 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 27: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 27: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 27: x w = 2^7 7^0 in N84 (exact)
+ok: element 28: coordinates on nf.zk recovered, rounding error 3.6 e-35 < 10^-20
+ok: element 28: norm +-2^85 7^0
+ok: element 28: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 28: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 28: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 28: cofactor w = 2^8 7^0 / x has integral format coordinates
+ok: element 28: x w = 2^8 7^0 in N84 (exact)
+ok: element 29: coordinates on nf.zk recovered, rounding error 2.6 e-35 < 10^-20
+ok: element 29: norm +-2^82 7^0
+ok: element 29: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 29: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 29: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 29: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 29: x w = 2^7 7^0 in N84 (exact)
+ok: element 30: coordinates on nf.zk recovered, rounding error 1.5 e-34 < 10^-20
+ok: element 30: norm +-2^83 7^0
+ok: element 30: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 30: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 30: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 30: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 30: x w = 2^7 7^0 in N84 (exact)
+ok: element 31: coordinates on nf.zk recovered, rounding error 1.1 e-34 < 10^-20
+ok: element 31: norm +-2^80 7^0
+ok: element 31: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 31: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 31: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 31: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 31: x w = 2^7 7^0 in N84 (exact)
+ok: element 32: coordinates on nf.zk recovered, rounding error 1.3 e-34 < 10^-20
+ok: element 32: norm +-2^87 7^0
+ok: element 32: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 32: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 32: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 32: cofactor w = 2^8 7^0 / x has integral format coordinates
+ok: element 32: x w = 2^8 7^0 in N84 (exact)
+ok: element 33: coordinates on nf.zk recovered, rounding error 2.6 e-34 < 10^-20
+ok: element 33: norm +-2^84 7^0
+ok: element 33: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 33: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 33: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 33: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 33: x w = 2^7 7^0 in N84 (exact)
+ok: element 34: coordinates on nf.zk recovered, rounding error 2.8 e-36 < 10^-20
+ok: element 34: norm +-2^81 7^0
+ok: element 34: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 34: 2^3 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 34: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 34: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 34: x w = 2^7 7^0 in N84 (exact)
+ok: element 35: coordinates on nf.zk recovered, rounding error 4.5 e-34 < 10^-20
+ok: element 35: norm +-2^74 7^0
+ok: element 35: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 35: 2^3 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 35: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 35: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 35: x w = 2^7 7^0 in N84 (exact)
+ok: element 36: coordinates on nf.zk recovered, rounding error 7.9 e-34 < 10^-20
+ok: element 36: norm +-2^83 7^0
+ok: element 36: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 36: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 36: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 36: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 36: x w = 2^7 7^0 in N84 (exact)
+ok: element 37: coordinates on nf.zk recovered, rounding error 2.9 e-32 < 10^-20
+ok: element 37: norm +-2^83 7^0
+ok: element 37: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 37: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 37: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 37: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 37: x w = 2^7 7^0 in N84 (exact)
+ok: element 38: coordinates on nf.zk recovered, rounding error 3.1 e-34 < 10^-20
+ok: element 38: norm +-2^86 7^0
+ok: element 38: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 38: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 38: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 38: cofactor w = 2^8 7^0 / x has integral format coordinates
+ok: element 38: x w = 2^8 7^0 in N84 (exact)
+ok: element 39: coordinates on nf.zk recovered, rounding error 4.7 e-31 < 10^-20
+ok: element 39: norm +-2^90 7^0
+ok: element 39: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 39: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 39: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 39: cofactor w = 2^8 7^0 / x has integral format coordinates
+ok: element 39: x w = 2^8 7^0 in N84 (exact)
+ok: element 40: coordinates on nf.zk recovered, rounding error 7.5 e-32 < 10^-20
+ok: element 40: norm +-2^87 7^0
+ok: element 40: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 40: 2^3 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 40: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 40: cofactor w = 2^8 7^0 / x has integral format coordinates
+ok: element 40: x w = 2^8 7^0 in N84 (exact)
+ok: element 41: coordinates on nf.zk recovered, rounding error 6.6 e-32 < 10^-20
+ok: element 41: norm +-2^80 7^0
+ok: element 41: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 41: 2^3 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 41: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 41: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 41: x w = 2^7 7^0 in N84 (exact)
+ok: element 42: coordinates on nf.zk recovered, rounding error 1.5 e-33 < 10^-20
+ok: element 42: norm +-2^85 7^0
+ok: element 42: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 42: 2^3 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 42: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 42: cofactor w = 2^8 7^0 / x has integral format coordinates
+ok: element 42: x w = 2^8 7^0 in N84 (exact)
+ok: element 43: coordinates on nf.zk recovered, rounding error 1.7 e-31 < 10^-20
+ok: element 43: norm +-2^77 7^0
+ok: element 43: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 43: 2^3 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 43: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 43: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 43: x w = 2^7 7^0 in N84 (exact)
+ok: element 44: coordinates on nf.zk recovered, rounding error 1.2 e-31 < 10^-20
+ok: element 44: norm +-2^80 7^0
+ok: element 44: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 44: 2^3 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 44: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 44: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 44: x w = 2^7 7^0 in N84 (exact)
+ok: element 45: coordinates on nf.zk recovered, rounding error 1.0 e-33 < 10^-20
+ok: element 45: norm +-2^83 7^0
+ok: element 45: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 45: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 45: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 45: cofactor w = 2^8 7^0 / x has integral format coordinates
+ok: element 45: x w = 2^8 7^0 in N84 (exact)
+ok: element 46: coordinates on nf.zk recovered, rounding error 5.2 e-35 < 10^-20
+ok: element 46: norm +-2^77 7^0
+ok: element 46: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 46: 2^3 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 46: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 46: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 46: x w = 2^7 7^0 in N84 (exact)
+ok: element 47: coordinates on nf.zk recovered, rounding error 1.0 e-30 < 10^-20
+ok: element 47: norm +-2^87 7^0
+ok: element 47: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 47: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 47: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 47: cofactor w = 2^7 7^0 / x has integral format coordinates
+ok: element 47: x w = 2^7 7^0 in N84 (exact)
+ok: element 48: coordinates on nf.zk recovered, rounding error 1.7 e-32 < 10^-20
+ok: element 48: norm +-2^87 7^0
+ok: element 48: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 48: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 48: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 48: cofactor w = 2^8 7^0 / x has integral format coordinates
+ok: element 48: x w = 2^8 7^0 in N84 (exact)
+ok: element 49: coordinates on nf.zk recovered, rounding error 3.3 e-32 < 10^-20
+ok: element 49: norm +-2^87 7^0
+ok: element 49: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 49: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 49: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 49: cofactor w = 2^8 7^0 / x has integral format coordinates
+ok: element 49: x w = 2^8 7^0 in N84 (exact)
+ok: element 50: coordinates on nf.zk recovered, rounding error 4.3 e-35 < 10^-20
+ok: element 50: norm +-2^4 7^3
+ok: element 50: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 50: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 50: scaled by 2^2 7^0: integral format coordinates, total exponents [2, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 50: cofactor w = 2^5 7^1 / x has integral format coordinates
+ok: element 50: x w = 2^5 7^1 in N84 (exact)
+ok: element 51: coordinates on nf.zk recovered, rounding error 3.7 e-34 < 10^-20
+ok: element 51: norm +-2^84 7^81
+ok: element 51: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 51: 2^3 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 51: scaled by 2^3 7^1: integral format coordinates, total exponents [4, 2] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 51: cofactor w = 2^7 7^2 / x has integral format coordinates
+ok: element 51: x w = 2^7 7^2 in N84 (exact)
+ok: element 52: coordinates on nf.zk recovered, rounding error 3.0 e-34 < 10^-20
+ok: element 52: norm +-2^84 7^3
+ok: element 52: valuations at S = the lattice prediction, integral
+ok: format coordinates have 2, 7 denominators only
+ok: element 52: 2^2 7^0 x is the least 2, 7 multiple with integral format coordinates
+ok: element 52: scaled by 2^3 7^0: integral format coordinates, total exponents [4, 0] even (same square class as prod old^T)
+ok: format coordinates map back to the nf.zk coordinates
+ok: element 52: cofactor w = 2^8 7^1 / x has integral format coordinates
+ok: element 52: x w = 2^8 7^1 in N84 (exact)
+  recovery of 52 elements: 4614 ms
+ok: N: the 53 generators are independent modulo squares (F2 rank 53 of the characters at 80 degree one primes of nfN, p <= 5147)
+L: format coordinate bits per generator [3, 4, 4, 4, 4, 5, 5, 4, 4, 4, 4, 5, 4, 3, 5, 5, 5, 5, 5, 4, 1, 5, 5, 5, 4, 3, 3, 3, 1]
+L: cofactor bits [2, 3, 3, 4, 4, 2, 2, 4, 2, 2, 4, 3, 2, 2, 4, 4, 3, 3, 4, 3, 2, 3, 4, 3, 2, 2, 6, 6, 1]
+L: (a, b) of x w = 2^a 7^b: [[3, 0], [3, 0], [3, 0], [4, 0], [4, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [4, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [1, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 1], [3, 1], [0, 0]]
+L: scaling exponents E (x = 2^E2 7^E7 prod old^T): [[2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [0, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [0, 0]]
+N: format coordinate bits per generator [1, 3, 4, 4, 4, 5, 5, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 7, 6, 6, 6, 8, 5, 7, 7, 6, 5, 6, 6, 8, 6, 7, 7, 7, 7, 6, 6, 7, 6, 7, 5, 12, 6]
+N: cofactor bits [1, 2, 3, 4, 4, 2, 2, 2, 2, 3, 4, 3, 4, 3, 4, 3, 2, 5, 5, 3, 4, 3, 3, 5, 5, 4, 3, 5, 7, 5, 5, 5, 7, 5, 4, 6, 7, 4, 6, 6, 8, 5, 6, 5, 6, 7, 6, 7, 7, 6, 8, 5, 9]
+N: (a, b) of x w = 2^a 7^b: [[0, 0], [3, 0], [3, 0], [4, 0], [4, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [4, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [3, 0], [4, 0], [4, 0], [3, 0], [3, 0], [7, 0], [8, 0], [7, 0], [7, 0], [7, 0], [8, 0], [7, 0], [7, 0], [7, 0], [7, 0], [7, 0], [8, 0], [8, 0], [8, 0], [7, 0], [8, 0], [7, 0], [7, 0], [8, 0], [7, 0], [7, 0], [8, 0], [8, 0], [5, 1], [7, 2], [8, 1]]
+N: scaling exponents E: [[0, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [2, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [4, 0], [2, 0], [4, 2], [4, 0]]
+ok: 29 L generators, 53 N generators, every zk list of length 21
+ok: cache /tmp/sb5/gens.bin written and read back
+DONE sb_5b_gens: 733 checks passed, 0 failed (161986 ms)
+exit 0

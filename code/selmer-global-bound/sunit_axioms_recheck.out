@@ -1,0 +1,60 @@
+-- host recheck by the furio solver, lake env lean ../code/selmer-basis/sunit_axioms.lean from lean/, 2026-09-29 01:44; identical to sunit_axioms.out
+'FurioLombardo.Discharge.SelmerBasis.sUnitSpan_L42' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.sUnitSpan_N84' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.gensL_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.gensN_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.gensL_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.gensN_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.gensL_indep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.gensN_indep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.rank_L42_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.rank_N84_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.S27_L42_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.ncard_S27_L42' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.S27_N84_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.ncard_S27_N84' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.clTwo_L42' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.clTwo_N84' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.sUnitSpan_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.sUnitSpan_L42_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.sUnitSpan_N84_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.isSquare_mul_prod_of_mod_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.isSquare_of_chars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.ncard_primesOver_mul_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.two_le_ramificationIdx_of_eisenstein' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.two_le_inertiaDeg_of_inert' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.inertiaDeg_eq_one_of_two_le_ramificationIdx' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.mem_of_quadratic_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.ncard_biUnion_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.mem_selmerGroup_of_even_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.mem_selmerGroup_of_mul_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.quad_coords_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.isSquare_of_isSquare_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.leftInv_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.coord_of_chars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.indep_of_chars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.SU.ιL_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.SU.exists_DL_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.SU.ιN_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.SU.exists_DN_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.SU.ρK_zkO' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.SU.ρL_mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.SU.ρN_mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.SU.isSquare_ρL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.SU.isSquare_ρN' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.SU.rowL_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.SU.rowN_spec' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,11 @@
+  ***   Warning: new maximum stack size = 7000002560 (6675.723 Mbytes).
+h: degree 4 in t; G1 degree 2
+rnfequation: M degree 42, N degree 84 (66 ms)
+  *** polredbest: Warning: increasing stack size to 16000000.
+  *** polredbest: Warning: increasing stack size to 32000000.
+  *** polredbest: Warning: increasing stack size to 64000000.
+  *** polredbest: Warning: increasing stack size to 128000000.
+  *** polredbest: Warning: increasing stack size to 256000000.
+  *** polredbest: Warning: increasing stack size to 512000000.
+polredbest(N): 119857 ms, max log10 coefficient 30
+nfinit(N) with partial factorisation: 189454 ms, signature [6, 39], disc 2^96 7^111, other primes of disc: Mat([-1, 1])

@@ -1,0 +1,24 @@
+  ***   Warning: new maximum stack size = 1000001536 (953.676 Mbytes).
+w2k0sq: square at w2, v(Y) = 16, v(Y - t^2) = 42, n = 41, m = 16, e = 12
+w2k0: nAt != 0, D has 183 digits, max |nu| has 199 digits
+w3k0sq: square at w3, v(Y) = 8, v(Y - t^2) = 21, n = 21, m = 8, e = 6
+w3k0: nAt != 0, D has 183 digits, max |nu| has 199 digits
+w2k1sq: square at w2, v(Y) = 8, v(Y - t^2) = 34, n = 33, m = 8, e = 12
+w2k1: nAt != 0, D has 723 digits, max |nu| has 717 digits
+w3k1sq: square at w3, v(Y) = 4, v(Y - t^2) = 17, n = 17, m = 4, e = 6
+w3k1: nAt != 0, D has 410 digits, max |nu| has 401 digits
+  *** _^_: Warning: increasing stack size to 16000000.
+w7k1sq: square at w7, v(Y) = 64, v(Y - t^2) = 91, n = 65, m = 64, e = 0
+w7k1: nAt != 0, D has 2533 digits, max |nu| has 2423 digits
+w3k0d: not a square at w3, v = 8, odd depth 11 (n = 19, m = 8, 2e = 12)
+w3k1d: not a square at w3, v = 8, odd depth 11 (n = 19, m = 8, 2e = 12)
+w3k0c: not a square at w3, v = 10, odd depth 7 (n = 17, m = 10, 2e = 12)
+w3k1c: not a square at w3, v = 10, odd depth 5 (n = 15, m = 10, 2e = 12)
+w2k1c: not a square at w2, v = 20, odd depth 11 (n = 31, m = 20, 2e = 24)
+w7k1c: not a square at w7, odd valuation 7
+w7k1nd: not a square at w7, odd valuation 23
+w2: 46^2 d: v = 56, depth 24 (2e = 24)
+w2: 4 c_0: v = 20, depth 24 (2e = 24)
+dnData twist independent: 1
+wrote 102 definitions to /tmp/lf7a/regen/count_certs/CertData.lean
+DONE

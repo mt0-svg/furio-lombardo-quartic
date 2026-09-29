@@ -1,0 +1,12 @@
+==== twist k = 0 ====
+ PARI rows 82, own constant boxes 82
+ per box: nu0, "in pr(W)", vM, criterion: 0 disagreements over 82 boxes
+ PARI classes (PARI basis): [(1, 1, 0, 0)]; Sage classes (Sage basis): [(1, 1, 0, 0)]
+ basis free: PARI: one class for all centres of the twist: True; Sage: one class, equal to e1 at both known lifts: True
+ box list verdicts (heuristic nu at centres, vM at constant and tail boxes): 0 disagreements over 84 constant and tail boxes
+==== twist k = 1 ====
+ PARI rows 22, own constant boxes 22
+ per box: nu0, "in pr(W)", vM, criterion: 0 disagreements over 22 boxes
+ PARI classes (PARI basis): [(0, 1, 0, 0)]; Sage classes (Sage basis): [(1, 1, 0, 0)]
+ basis free: PARI: one class for all centres of the twist: True; Sage: one class, equal to e1 at both known lifts: True
+ box list verdicts (heuristic nu at centres, vM at constant and tail boxes): 0 disagreements over 24 constant and tail boxes

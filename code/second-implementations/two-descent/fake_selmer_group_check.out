@@ -1,0 +1,15 @@
+ok   8 S-unit generators and 3 generators of Im_2 loaded
+ok   -3 is a non-square mod 7 (so 1, 3, 7, 21 represent Q_7^x/Q_7^x2)
+== 256 classes of O_S^x/O_S^x2
+   classes satisfying: norm 64; norm, 2 32; norm, 2, 7 32; norm, 2, 7, inf 32; norm, 2, valuation part at 7 (FL) 32; norm, 7, inf (no condition at 2) 64
+   exponent vectors of -1, 2, 7 on the basis: [[1, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0, 0], [0, 1, 0, 0, 1, 0, 1, 1]]
+ok   -1, 2, 7 lie in O_S^x/squares and are independent there
+ok   <-1, 2, 7> is contained in the set of classes satisfying all conditions
+ok   the classes satisfying all conditions form a subgroup (closed under addition)
+ok   its order is a power of 2
+   dimension of the classes satisfying all conditions: 5, modulo <-1, 2, 7>: 2
+ok   dim Sel_fake = 2 (norm, 2, 7, infinity)
+ok   FL's conditions (norm, 2, valuation part at 7) also give dimension 2
+ok   without the condition at 2 the dimension would be larger (the condition at 2 is doing the work)
+   Sel_fake representatives modulo <-1,2,7> (exponent vectors): [[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 1, 0, 0], [0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 1, 0, 0, 1, 0, 0], [0, 0, 1, 0, 1, 1, 0, 0], [0, 0, 1, 1, 0, 0, 0, 0], [0, 0, 1, 1, 1, 0, 0, 0], [0, 1, 0, 0, 0, 0, 1, 1], [0, 1, 0, 0, 1, 0, 1, 1], [0, 1, 0, 1, 0, 1, 1, 1], [0, 1, 0, 1, 1, 1, 1, 1], [0, 1, 1, 0, 0, 1, 1, 1], [0, 1, 1, 0, 1, 1, 1, 1], [0, 1, 1, 1, 0, 0, 1, 1], [0, 1, 1, 1, 1, 0, 1, 1], [1, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0, 0, 0], [1, 0, 0, 1, 0, 1, 0, 0], [1, 0, 0, 1, 1, 1, 0, 0], [1, 0, 1, 0, 0, 1, 0, 0], [1, 0, 1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0, 0, 0], [1, 0, 1, 1, 1, 0, 0, 0], [1, 1, 0, 0, 0, 0, 1, 1], [1, 1, 0, 0, 1, 0, 1, 1], [1, 1, 0, 1, 0, 1, 1, 1], [1, 1, 0, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 1, 1], [1, 1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0, 1, 1], [1, 1, 1, 1, 1, 0, 1, 1]]
+== summary: 0 failure(s)

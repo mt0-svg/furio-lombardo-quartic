@@ -1,0 +1,9 @@
+'FurioLombardo.Discharge.SelmerBasis.closure_of_card_indep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.span_of_local' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.H_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.imageIn_closure_of_count_indep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.selmerSpan_of_interfaces' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

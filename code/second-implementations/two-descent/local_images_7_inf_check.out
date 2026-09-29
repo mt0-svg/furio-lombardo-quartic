@@ -1,0 +1,8 @@
+== Q_7-points: delta(P - P1) should be trivial in A_7^x/A_7^x2 Q_7^x
+   certified Q_7-points: 553, skipped: 1
+ok   all 553 classes delta(P - P1), P in C(Q_7), are trivial at 7
+== real points: sign(sigma_1(alpha)) = sign(sigma_2(alpha)) for alpha = G_A(P)/G_A(P1)
+ok   two real embeddings
+   real points: 1601, skipped (near a zero of G_A): 1
+ok   all 1601 real points give the same sign at both real places (floating point, 100 digits)
+== summary: 0 failure(s)

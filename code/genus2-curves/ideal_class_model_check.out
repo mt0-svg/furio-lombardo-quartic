@@ -1,0 +1,17 @@
+places above 2: [[3, 1], [12, 1], [6, 1]] (e, f)
+places above 7: [[7, 3]] (e, f)
+signature [3, 9]
+k = 0: deg f = 6, lc(f) a square in K21: 0
+  lc local square at places above 2 (e = [3, 12, 6]): [1, 1, 1]
+  lc local square at places above 7: [0]
+  signs of lc at real places: [1, 1, 1]
+  valuations of lc at places above 2: [0, -8, -4], above 7: [7]
+  integers t0 in [-6, 6] with f(t0) a non square at v (e = 3): [-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6]
+  integers t0 in [-6, 6] with f(t0) a non square in K21: [-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6]
+k = 1: deg f = 6, lc(f) a square in K21: 0
+  lc local square at places above 2 (e = [3, 12, 6]): [0, 0, 0]
+  lc local square at places above 7: [0]
+  signs of lc at real places: [1, 1, 1]
+  valuations of lc at places above 2: [0, -8, -4], above 7: [7]
+  integers t0 in [-6, 6] with f(t0) a non square at v (e = 3): [-6, -4, -2, 0, 2, 4, 6]
+  integers t0 in [-6, 6] with f(t0) a non square in K21: [-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6]

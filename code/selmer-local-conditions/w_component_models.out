@@ -1,0 +1,28 @@
+  ***   Warning: new maximum stack size = 800002048 (762.941 Mbytes).
+ok: primes of K21 above 2 and 7 in the order v (e = 3), w2 (e = 12), w3 (e = 6), p7 (e = 7, f = 3)
+ok: fRev_0 = polrecip(F0) = c_k q h with q, h monic, the same for both twists
+ok: fRev_1 = polrecip(F1) = c_k q h with q, h monic, the same for both twists
+ok: nfK.zk = M1's zkNum / Dz
+ok: place w3: M2's alpha generates the prime (p = 2, e = 6, f = 1)
+ok: CRT element E = 1 mod w^400, 0 mod w'^400
+==== w3: v(eps) = 0
+  unit part of eps at depth 11 (2e = 12)
+ok: w3: A, B in O_K21 (zk integer coordinates)
+  bits of A, B: 23, 11; v(A) = 1, v(B) = 1
+ok: w3: Eisenstein shape
+ok: w3: om = y + c Y satisfies om^2 = eps exactly in K21[Y]/(P1)
+  v_F(iota(eN)) = 0
+  iota(eN) on the standard basis: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ok: w3: iota(eN) is a square in F (h splits into two components isomorphic to F)
+ok: place w2: M2's alpha generates the prime (p = 2, e = 12, f = 1)
+ok: CRT element E = 1 mod w^400, 0 mod w'^400
+==== w2: v(eps) = 0
+  unit part of eps at depth 24 (2e = 24)
+ok: w2: A, B in O_K21 (zk integer coordinates)
+  bits of A, B: 193, 96; v(A) = 0, v(B) = 0
+ok: w2: unramified shape, A = -1, B = 1 mod w
+ok: w2: om = y + c Y satisfies om^2 = eps exactly in K21[Y]/(P1)
+  v_F(iota(eN)) = 0
+  iota(eN) on the standard basis: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ok: w2: iota(eN) is a square in F (h splits into two components isomorphic to F)
+DONE, 0 failed checks (16 ok, 500 ms)

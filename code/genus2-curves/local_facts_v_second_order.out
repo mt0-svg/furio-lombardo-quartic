@@ -1,0 +1,10 @@
+k = 0: valuations of H_i (i = 0..4): [0, 5, 0, 8, 0]
+  H(y) has a root mod pr (y = 0, 1): [0, 0]
+  remainder of H mod y^2 + y + 1: valuations of the coefficients [y^0, y^1] = [2, 2]
+  1 - H2 + H1: v = 2; H3 - H2 + H0: v = 2
+  nsq: N_{N/K_v}(nu) square at v: 1 (then nu in K_v^x N^x2, obstruction in M)
+k = 1: valuations of H_i (i = 0..4): [0, 5, 0, 8, 0]
+  H(y) has a root mod pr (y = 0, 1): [0, 0]
+  remainder of H mod y^2 + y + 1: valuations of the coefficients [y^0, y^1] = [2, 2]
+  1 - H2 + H1: v = 2; H3 - H2 + H0: v = 2
+  nsq: N_{N/K_v}(nu) square at v: 1 (then nu in K_v^x N^x2, obstruction in M)

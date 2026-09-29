@@ -1,0 +1,108 @@
+  ***   Warning: new maximum stack size = 3000000512 (2861.023 Mbytes).
+ok: primes of K21 above 2 and 7 in the order v (e = 3), w2 (e = 12), w3 (e = 6), p7 (e = 7, f = 3)
+ok: fRev_0 = polrecip(F0) = c_k q h with q, h monic, the same for both twists
+ok: fRev_1 = polrecip(F1) = c_k q h with q, h monic, the same for both twists
+ok: nfK.zk = M1's zkNum / Dz
+ok: M1's fL = K21
+ok: alphaR read
+ok: place v: M2's alpha generates the prime (p = 2, e = 3, f = 1)
+ok: CRT element E = 1 mod w^400, 0 mod w'^400
+ok: v: e = 3, al = Lean's al1
+ok: v: eps is a unit of odd depth 5
+ok: v: y, A, B, cA = (A/al - 1)/al, bB = B/al in O_K21, A of valuation 1
+ok: F1: the coordinates of the basis bF are the unit vectors
+ok: F2: the standard basis of selmer_rows_lib is bU of PlaceUGen.lean (pi = Y, e = 6)
+ok: F2: the coordinates of the basis bU are the unit vectors
+ok: v: (y + c Y)^2 = eps in K21[Y]/(P1)
+ok: iL(4 eN) = toF(2 ea + 2 eb y, 2 eb c)
+ok: -iL(4 eN)/3 is a square in F1 (valuation 12)
+ok: rho^2 = -iL(4 eN)/3 to F1-valuation 816
+ok: iNv(w_N)^2 = iL(eN) to high precision
+ok: q(tau1) = 0 exactly, h(tau2) = 0 to high precision
+ok: EisData.ok at precision 1213
+ok: LModel.ok at precision 283
+ok: epsL read back
+ok: s0 = al^3 (unit) + al^3 (int) Y
+ok: SqrtV: d0, d1, R0, R1 integral
+ok: SqrtV.ok at precision 812
+  model: t = 5, EisData prec 1213, LModel prec 283, SqrtV j = 3 prec 812, iNv within al^114
+ok: kappa expressions = dyGen alpha i
+  ***   Warning: increasing stack size to 16000000.
+  kappa: 2 x 7 certificates (1689 ms)
+  gensL: 29 certificates at F1 (2472 ms)
+ok: toF(X0L, X1L) = iL(gensL s)
+  *** _[_.._]: Warning: increasing stack size to 32000000.
+  ***   Warning: increasing stack size to 64000000.
+  ***   Warning: increasing stack size to 128000000.
+  *** _[_.._]: Warning: increasing stack size to 256000000.
+  ***   Warning: increasing stack size to 512000000.
+  gensN: 53 certificates at F2 (605356 ms)
+ok: toU(XNv) within al^n of iNv(gensN s)
+ok: every UCert n so far (max 20) is at most the SqrtV precision 114
+ok: twist 0 point 0: P/d = pL/pM, R/d = rL/rM
+  twist 0 point 0: d 697 bits, lamL 704 bits, lamN 706 bits, prT 1613, F1 n0 27 prec 1849, F2 n 39 prec 2114 (9711 ms)
+ok: twist 0 point 1: P/d = pL/pM, R/d = rL/rM
+  twist 0 point 1: d 597 bits, lamL 603 bits, lamN 605 bits, prT 1419, F1 n0 23 prec 1637, F2 n 33 prec 1912 (20031 ms)
+ok: twist 0 point 2: P/d = pL/pM, R/d = rL/rM
+  ***   Warning: increasing stack size to 1024000000.
+  twist 0 point 2: d 705 bits, lamL 711 bits, lamN 713 bits, prT 1626, F1 n0 23 prec 1853, F2 n 33 prec 2242 (80446 ms)
+ok: twist 0 point 3: P/d = pL/pM, R/d = rL/rM
+  twist 0 point 3: d 679 bits, lamL 685 bits, lamN 687 bits, prT 1574, F1 n0 39 prec 1861, F2 n 33 prec 2246 (197590 ms)
+ok: twist 0 point 4: P/d = pL/pM, R/d = rL/rM
+  twist 0 point 4: d 683 bits, lamL 690 bits, lamN 692 bits, prT 1584, F1 n0 27 prec 1822, F2 n 41 prec 2160 (216133 ms)
+ok: twist 0 point 5: P/d = pL/pM, R/d = rL/rM
+  twist 0 point 5: d 682 bits, lamL 689 bits, lamN 691 bits, prT 1585, F1 n0 21 prec 1792, F2 n 33 prec 2059 (222421 ms)
+ok: twist 0 point 6: P/d = pL/pM, R/d = rL/rM
+  twist 0 point 6: d 682 bits, lamL 689 bits, lamN 691 bits, prT 1580, F1 n0 20 prec 1800, F2 n 32 prec 2108 (238136 ms)
+ok: twist 1 point 0: P/d = pL/pM, R/d = rL/rM
+  twist 1 point 0: d 588 bits, lamL 595 bits, lamN 597 bits, prT 1395, F1 n0 19 prec 1603, F2 n 31 prec 2001 (284483 ms)
+ok: twist 1 point 1: P/d = pL/pM, R/d = rL/rM
+  twist 1 point 1: d 567 bits, lamL 573 bits, lamN 575 bits, prT 1355, F1 n0 19 prec 1558, F2 n 31 prec 1943 (316474 ms)
+ok: twist 1 point 2: P/d = pL/pM, R/d = rL/rM
+  twist 1 point 2: d 680 bits, lamL 687 bits, lamN 689 bits, prT 1579, F1 n0 22 prec 1803, F2 n 32 prec 2250 (400214 ms)
+ok: twist 1 point 3: P/d = pL/pM, R/d = rL/rM
+  twist 1 point 3: d 687 bits, lamL 693 bits, lamN 695 bits, prT 1591, F1 n0 27 prec 1829, F2 n 41 prec 2199 (425815 ms)
+ok: twist 1 point 4: P/d = pL/pM, R/d = rL/rM
+  twist 1 point 4: d 678 bits, lamL 685 bits, lamN 687 bits, prT 1574, F1 n0 27 prec 1816, F2 n 41 prec 2172 (448147 ms)
+ok: twist 1 point 5: P/d = pL/pM, R/d = rL/rM
+  twist 1 point 5: d 686 bits, lamL 693 bits, lamN 695 bits, prT 1588, F1 n0 25 prec 1822, F2 n 33 prec 2260 (516097 ms)
+ok: twist 1 point 6: P/d = pL/pM, R/d = rL/rM
+  twist 1 point 6: d 595 bits, lamL 601 bits, lamN 603 bits, prT 1410, F1 n0 25 prec 1638, F2 n 37 prec 1865 (518937 ms)
+  mu: 2 x 7 points, 28 certificates (518938 ms); max n0 39, max UCert n 41 (SqrtV precision 114), max D 82, max prec 2260
+ok: every UCert n is at most the SqrtV precision
+ok: alPow covers every n
+ok: Ypow covers every truncation of the UCerts
+ok: the 7 kappa rows have rank 4 (K_v^x / K_v^x2 of dimension 5, kernel {1, eps})
+ok: SB of T0 and T1 read from M4/Data.lean
+ok: twist 0: kappa and mu span 11 dimensions (4 + 7)
+ok: twist 0: 11 forms annihilating kappa and mu
+ok: twist 0: the rows from the forms span the rows Cv of VPlace.lean (rank 11)
+ok: twist 0: Cv = M Cp
+ok: twist 0: dotRow(Cg, QC_r) = Cv row r for all 11 rows
+ok: twist 0: the forms QC annihilate kappa and mu
+ok: twist 0: relAtV coefficients cB = [18, 16, 8, 26]
+ok: twist 0: negative control, SB_11 flipped gives no kappa decomposition
+ok: twist 1: kappa and mu span 11 dimensions (4 + 7)
+ok: twist 1: 11 forms annihilating kappa and mu
+ok: twist 1: the rows from the forms span the rows Cv of VPlace.lean (rank 11)
+ok: twist 1: Cv = M Cp
+ok: twist 1: dotRow(Cg, QC_r) = Cv row r for all 11 rows
+ok: twist 1: the forms QC annihilate kappa and mu
+ok: twist 1: relAtV coefficients cB = [24, 10, 25, 25]
+ok: twist 1: negative control, SB_11 flipped gives no kappa decomposition
+  50 F1 certificates, 74 F2 certificates; max n0 39, max UCert n 41, max D 82, max precision 2260
+DONE, 0 failed checks (65 ok, 1132418 ms)
+    519 /tmp/lf7a/regen/local_data_v/VData.lean
+ 453293 /tmp/lf7a/regen/local_data_v/VDataP1.lean
+ 456562 /tmp/lf7a/regen/local_data_v/VDataP2.lean
+ 451196 /tmp/lf7a/regen/local_data_v/VDataP3.lean
+ 248521 /tmp/lf7a/regen/local_data_v/VDataP4.lean
+1610091 total
+   493 /tmp/lf7a/regen/local_data_v/VDataK0.lean
+466721 /tmp/lf7a/regen/local_data_v/VDataK0P1.lean
+394585 /tmp/lf7a/regen/local_data_v/VDataK0P2.lean
+861799 total
+   493 /tmp/lf7a/regen/local_data_v/VDataK1.lean
+459618 /tmp/lf7a/regen/local_data_v/VDataK1P1.lean
+369261 /tmp/lf7a/regen/local_data_v/VDataK1P2.lean
+829372 total

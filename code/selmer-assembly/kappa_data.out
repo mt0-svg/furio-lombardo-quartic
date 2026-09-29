@@ -1,0 +1,43 @@
+  ***   Warning: new maximum stack size = 3000000512 (2861.023 Mbytes).
+ok: nfK.zk = M1's zkNum / Dz
+ok: M1's fL = K21
+ok: M1's gensL (18), Assembly.kapRows (15 rows of at most 82 bits)
+ok: kappa_1: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (3 + 4 generators, 31 ms)
+ok: kappa_2: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (7 + 9 generators, 67 ms)
+ok: kappa_3: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (6 + 10 generators, 74 ms)
+ok: kappa_4: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (16 + 7 generators, 87 ms)
+ok: kappa_5: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (12 + 9 generators, 71 ms)
+ok: kappa_6: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (9 + 11 generators, 45 ms)
+ok: kappa_7: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (13 + 14 generators, 81 ms)
+ok: kappa_8: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (10 + 13 generators, 64 ms)
+ok: kappa_9: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (13 + 9 generators, 75 ms)
+ok: kappa_10: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (14 + 16 generators, 87 ms)
+ok: kappa_11: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (9 + 5 generators, 73 ms)
+ok: kappa_12: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (6 + 5 generators, 48 ms)
+ok: kappa_13: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (12 + 10 generators, 72 ms)
+ok: kappa_14: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (13 + 4 generators, 57 ms)
+ok: kappa_15: c prod gL^a = y1^2 in L42, c prod gN^b = y2^2 in N84 (11 + 18 generators, 199 ms)
+  square roots: 1132 ms
+ok: negative control: kappa_1 with bit 0 flipped leaves no square root in L42
+ok: negative control: -c_1 leaves no square root in L42 or in N84
+ok: kappa_1: the four checks pass at precisions [440, 733, 247, 349] (14 ms)
+ok: kappa_2: the four checks pass at precisions [1012, 1762, 290, 360] (444 ms)
+ok: kappa_3: the four checks pass at precisions [814, 1916, 283, 357] (416 ms)
+ok: kappa_4: the four checks pass at precisions [2229, 1406, 311, 356] (1550 ms)
+ok: kappa_5: the four checks pass at precisions [1664, 1752, 297, 358] (828 ms)
+ok: kappa_6: the four checks pass at precisions [1258, 2180, 262, 366] (922 ms)
+ok: kappa_7: the four checks pass at precisions [1825, 2682, 301, 368] (2218 ms)
+ok: kappa_8: the four checks pass at precisions [1382, 2520, 296, 366] (1450 ms)
+ok: kappa_9: the four checks pass at precisions [1860, 1763, 304, 359] (1147 ms)
+ok: kappa_10: the four checks pass at precisions [1943, 3030, 304, 372] (3865 ms)
+ok: kappa_11: the four checks pass at precisions [1293, 996, 296, 356] (303 ms)
+ok: kappa_12: the four checks pass at precisions [816, 990, 287, 349] (67 ms)
+ok: kappa_13: the four checks pass at precisions [1659, 1917, 299, 361] (968 ms)
+ok: kappa_14: the four checks pass at precisions [1848, 733, 299, 347] (867 ms)
+ok: kappa_15: the four checks pass at precisions [1568, 3517, 296, 420] (10959 ms)
+  Kronecker emulation: 26018 ms
+ok: negative control: the product check of kappa_1 fails with bit 0 flipped
+ok: negative control: the square check of kappa_1 fails with -c_1
+  wrote /tmp/sk1/KappaData.lean
+  sizes: y1T up to 19 bits, y2T up to 24 bits, prodL up to 39 bits, prodN up to 50 bits; precisions [[440, 733, 247, 349], [1012, 1762, 290, 360], [814, 1916, 283, 357], [2229, 1406, 311, 356], [1664, 1752, 297, 358], [1258, 2180, 262, 366], [1825, 2682, 301, 368], [1382, 2520, 296, 366], [1860, 1763, 304, 359], [1943, 3030, 304, 372], [1293, 996, 296, 356], [816, 990, 287, 349], [1659, 1917, 299, 361], [1848, 733, 299, 347], [1568, 3517, 296, 420]]
+DONE kappa_data: 37 checks passed, 0 failed (27286 ms)

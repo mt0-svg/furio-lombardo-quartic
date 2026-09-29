@@ -1,0 +1,15 @@
+# rerun 2026-09-30, PARI/GP 2.17.4, run: (cd code/earlier-computations && gp -q centres_cert.gp < /dev/null)
+  ***   Warning: new maximum stack size = 5000003584 (4768.375 Mbytes).
+    [10 centres, 4945 ms]
+    [20 centres, 8869 ms]
+    [30 centres, 13610 ms]
+    [40 centres, 18458 ms]
+    [50 centres, 22666 ms]
+    [60 centres, 26693 ms]
+    [70 centres, 30570 ms]
+    [80 centres, 34423 ms]
+k = 0: 82 constant boxes, 82 certified (class outside pr(W), constancy criterion), 0 not; least margin of the precision over nu + 1: 33 (35196 ms)
+    [10 centres, 5182 ms]
+    [20 centres, 9878 ms]
+k = 1: 22 constant boxes, 22 certified (class outside pr(W), constancy criterion), 0 not; least margin of the precision over nu + 1: 40 (10660 ms)
+RESULT: all 104 constant box centres certified

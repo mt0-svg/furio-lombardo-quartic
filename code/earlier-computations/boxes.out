@@ -1,0 +1,160 @@
+  ***   Warning: new maximum stack size = 5000003584 (4768.375 Mbytes).
+twist 0: mL = 6 (pi^mL O_v^2 inside Lambda)
+  x_0 (disc 1, X = 0): nu(pr g0) = 4, class [0, 1, 0, 0] not in pr(W)
+  x_2 (disc 1, X = 1): nu(pr g0) = 4, class [0, 1, 0, 0] not in pr(W)
+  *** _/_: Warning: increasing stack size to 16000000.
+    [10 lambda evaluations, stack 4, 15 boxes done, 57349 ms]
+    [20 lambda evaluations, stack 5, 22 boxes done, 89737 ms]
+    [30 lambda evaluations, stack 5, 27 boxes done, 121615 ms]
+    [40 lambda evaluations, stack 5, 32 boxes done, 159629 ms]
+    [50 lambda evaluations, stack 3, 38 boxes done, 191543 ms]
+    [60 lambda evaluations, stack 3, 43 boxes done, 223705 ms]
+    [70 lambda evaluations, stack 3, 48 boxes done, 262387 ms]
+    [80 lambda evaluations, stack 2, 54 boxes done, 294648 ms]
+    [90 lambda evaluations, stack 2, 59 boxes done, 326636 ms]
+    [100 lambda evaluations, stack 5, 65 boxes done, 365127 ms]
+    [110 lambda evaluations, stack 3, 71 boxes done, 396768 ms]
+    [120 lambda evaluations, stack 3, 76 boxes done, 429055 ms]
+    [130 lambda evaluations, stack 3, 81 boxes done, 467300 ms]
+    [140 lambda evaluations, stack 1, 87 boxes done, 499734 ms]
+    [150 lambda evaluations, stack 1, 92 boxes done, 532056 ms]
+  disc 5, X = 3 mod 2^2: constant: nu = 2, class [0, 1, 0, 0], vM = 9
+  disc 5, X = 1 mod 2^2: constant: nu = 2, class [0, 1, 0, 0], vM = 9
+  disc 5, X = 0 mod 2^1: excluded: non-square at the place with e = 3
+  disc 4, X = 3 mod 2^2: excluded: non-square at the place with e = 3
+  disc 4, X = 1 mod 2^2: excluded: non-square at the place with e = 3
+  disc 4, X = 2 mod 2^2: excluded: non-square at the place with e = 3
+  disc 4, X = 0 mod 2^2: excluded: non-square at the place with e = 3
+  disc 3, X = 3 mod 2^2: excluded: non-square at the place with e = 3
+  disc 3, X = 1 mod 2^2: excluded: non-square at the place with e = 3
+  disc 3, X = 2 mod 2^2: excluded: non-square at the place with e = 3
+  disc 3, X = 0 mod 2^2: excluded: non-square at the place with e = 3
+  disc 2, X = 1 mod 2^1: excluded: non-square at the place with e = 3
+  disc 2, X = 0 mod 2^1: excluded: non-square at the place with e = 3
+  disc 1, X = 31 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 15 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 23 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 7 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 27 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 11 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 19 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 3 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 1 mod 2^6: tail at x_2 (analytic radius 2^-1, vM = 9)
+  disc 1, X = 481 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 225 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 353 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 97 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 417 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 161 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 289 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 33 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 241 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 113 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 177 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 49 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 209 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 81 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 145 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 17 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 121 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 57 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 89 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 25 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 105 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 41 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 73 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 9 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 61 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 29 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 45 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 13 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 53 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 21 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 37 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 5 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 30 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 14 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 22 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 6 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 26 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 10 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 18 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 2 mod 2^5: constant: nu = 5, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 0 mod 2^6: tail at x_0 (analytic radius 2^-1, vM = 9)
+  disc 1, X = 480 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 224 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 352 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 96 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 416 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 160 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 288 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 32 mod 2^9: constant: nu = 9, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 240 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 112 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 176 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 48 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 208 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 80 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 144 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 16 mod 2^8: constant: nu = 8, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 120 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 56 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 88 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 24 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 104 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 40 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 72 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 8 mod 2^7: constant: nu = 7, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 60 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 28 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 44 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 12 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 52 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 20 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 36 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+  disc 1, X = 4 mod 2^6: constant: nu = 6, class [0, 1, 0, 0], vM = 9
+twist 0: 95 boxes, 153 lambda evaluations, 0 failures (538521 ms)
+twist 1: mL = 6 (pi^mL O_v^2 inside Lambda)
+  x_1 (disc 3, X = 0): nu(pr g0) = 2, class [0, 1, 0, 0] not in pr(W)
+  x_3 (disc 2, X = -1): nu(pr g0) = 1, class [0, 1, 0, 0] not in pr(W)
+    [10 lambda evaluations, stack 6, 14 boxes done, 56269 ms]
+    [20 lambda evaluations, stack 4, 20 boxes done, 88652 ms]
+    [30 lambda evaluations, stack 5, 27 boxes done, 126840 ms]
+  disc 5, X = 1 mod 2^1: excluded: non-square at the place with e = 3
+  disc 5, X = 0 mod 2^1: excluded: non-square at the place with e = 3
+  disc 4, X = 3 mod 2^2: excluded: non-square at the place with e = 3
+  disc 4, X = 1 mod 2^2: excluded: non-square at the place with e = 3
+  disc 4, X = 2 mod 2^2: excluded: non-square at the place with e = 3
+  disc 4, X = 0 mod 2^2: excluded: non-square at the place with e = 3
+  disc 3, X = 3 mod 2^2: excluded: non-square at the place with e = 3
+  disc 3, X = 1 mod 2^2: excluded: non-square at the place with e = 3
+  disc 3, X = 2 mod 2^2: excluded: non-square at the place with e = 3
+  disc 3, X = 28 mod 2^5: constant: nu = 4, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 12 mod 2^5: constant: nu = 4, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 20 mod 2^5: constant: nu = 4, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 4 mod 2^5: constant: nu = 4, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 0 mod 2^6: tail at x_1 (analytic radius 2^-2, vM = 6)
+  disc 3, X = 224 mod 2^8: constant: nu = 7, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 96 mod 2^8: constant: nu = 7, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 160 mod 2^8: constant: nu = 7, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 32 mod 2^8: constant: nu = 7, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 112 mod 2^7: constant: nu = 6, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 48 mod 2^7: constant: nu = 6, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 80 mod 2^7: constant: nu = 6, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 16 mod 2^7: constant: nu = 6, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 56 mod 2^6: constant: nu = 5, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 24 mod 2^6: constant: nu = 5, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 40 mod 2^6: constant: nu = 5, class [0, 1, 0, 0], vM = 6
+  disc 3, X = 8 mod 2^6: constant: nu = 5, class [0, 1, 0, 0], vM = 6
+  disc 2, X = 15 mod 2^4: tail at x_3 (analytic radius 2^-1, vM = 6)
+  disc 2, X = 23 mod 2^5: constant: nu = 4, class [0, 1, 0, 0], vM = 6
+  disc 2, X = 7 mod 2^5: constant: nu = 4, class [0, 1, 0, 0], vM = 6
+  disc 2, X = 11 mod 2^4: constant: nu = 3, class [0, 1, 0, 0], vM = 6
+  disc 2, X = 3 mod 2^4: constant: nu = 3, class [0, 1, 0, 0], vM = 6
+  disc 2, X = 5 mod 2^3: constant: nu = 2, class [0, 1, 0, 0], vM = 6
+  disc 2, X = 1 mod 2^3: constant: nu = 2, class [0, 1, 0, 0], vM = 6
+  disc 2, X = 0 mod 2^1: excluded: non-square at the place with e = 3
+  disc 1, X = 1 mod 2^1: excluded: non-square at the place with e = 3
+  disc 1, X = 0 mod 2^1: excluded: non-square at the place with e = 3
+twist 1: 36 boxes, 37 lambda evaluations, 0 failures (151191 ms)
+RESULT: every box of both twists is excluded, constant with a class outside pr(W), or a tail at a known lift

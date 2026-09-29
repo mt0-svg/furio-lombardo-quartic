@@ -1,0 +1,16 @@
+  ***   Warning: new maximum stack size = 800002048 (762.941 Mbytes).
+ok: primes of K21 above 2 and 7 in the order v (e = 3), w2 (e = 12), w3 (e = 6), p7 (e = 7, f = 3)
+ok: fRev_0 = polrecip(F0) = c_k q h with q, h monic, the same for both twists
+ok: fRev_1 = polrecip(F1) = c_k q h with q, h monic, the same for both twists
+ok: nfK.zk = M1's zkNum / Dz
+ok: place w6: M2's alpha generates the prime (p = 2, e = 6, f = 1)
+ok: CRT element E = 1 mod w^400, 0 mod w'^400
+ok: w3: eps is a unit of odd depth 11
+ok: w3: y, A, B in O_K21, Eisenstein (v(A) = 1, v(B) >= 1)
+ok: w3: (y + alpha^5 Y)^2 = eps in K21[Y]/(P1)
+ok: w3: 1 + alpha^j Y has depth 2j + 1 (j = 0 .. 11)
+ok: w3: the coordinates of the basis are the unit vectors
+  29 certificates of the L42 generators at the q component (12154 ms); bits: [14672, 9936, 1722, 66, 13394, 10171, 12993, 13819, 6984, 11499, 667, 5459, 8291, 418, 14772, 3492, 6248, 9948, 15917, 5040, 1420, 333, 1559, 12091, 5192, 64, 5189, 5231, 256]
+  m values: [12, 12, 12, 12, 12, 12, 12, 13, 13, 13, 14, 12, 13, 12, 12, 12, 12, 13, 12, 12, 0, 13, 12, 11, 12, 12, 12, 12, 0]
+  bits of alpha^80: 154, of Y^14: 169
+DONE, 0 failed checks (11 ok, 16202 ms)

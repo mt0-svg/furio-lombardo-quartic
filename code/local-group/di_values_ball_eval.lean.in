@@ -1,0 +1,43 @@
+
+/-! ## #eval pass -/
+
+def absR (b : Ball) : Int := (b.r : Int) - 3 * b.e
+def mumR (R : Mum Ball) : Int := min (min (absR R.u0) (absR R.u1)) (min (absR R.v0) (absR R.v1))
+def showB (b : Ball) : String := s!"⟨({b.c.1}, {b.c.2.1}, {b.c.2.2}), {b.e}, {b.r}, {b.v}⟩"
+def showM (R : Mum Ball) : String := s!"⟨{showB R.u0}, {showB R.u1}, {showB R.v0}, {showB R.v1}⟩"
+
+/-- Run the chain, print the radii and the final comparison with PARI's `t_J`. -/
+def probe (name : String) (a : Nat) (f : Sext Ball) (D E0 : Mum Ball) (J : Nat) (tJ : Ball × Ball)
+    (err : Nat) : IO Unit := do
+  let steps := chainSteps J
+  let mut R := D
+  let mut rs : Array Int := #[]
+  let mut n := 0
+  for s in steps do
+    match step f D E0 R s with
+    | none => IO.println s!"{name}: FAIL at step {n} (code {s})"; return
+    | some R' => R := R'; if n % 10 == 9 then rs := rs.push (mumR R')
+    n := n + 1
+  let Rs := if a = 0 then R else Mum.shift oB (Ball.ofInt k2 a) R
+  let t0 := Rs.u1
+  let t1 := Rs.u0
+  let rt := min (absR t0) (absR t1)
+  IO.println s!"{name}: {steps.length} steps, all succeed; min radius (r - 3e) every 10 steps: {rs.toList}; t_J radius {absR t0}, {absR t1}; err = {err}; radius - err = {rt - err}; t_J of PARI inside: {Ball.incl k2 tJ.1 t0 && Ball.incl k2 tJ.2 t1}"
+
+partial def chunksOf (C : Nat) (l : List Nat) : List (List Nat) :=
+  if l.isEmpty then [] else l.take C :: chunksOf C (l.drop C)
+
+/-- Print the chunk definitions and theorems of the kernel pass for one point. -/
+def emit (fN DN EN : String) (f : Sext Ball) (D E0 : Mum Ball) (J C : Nat) : IO Unit := do
+  let steps := chainSteps J
+  let mut R := D
+  let mut n := 0
+  IO.println s!"def S_0 : Mum Ball := {DN}"
+  for ch in chunksOf C steps do
+    match run f D E0 ch R with
+    | none => IO.println s!"-- FAIL in chunk {n + 1}"; return
+    | some R' =>
+      n := n + 1
+      IO.println s!"def S_{n} : Mum Ball := {showM R'}"
+      IO.println s!"theorem ck_{n} : run {fN} {DN} {EN} {ch} S_{n - 1} = some S_{n} := by decide +kernel"
+      R := R'

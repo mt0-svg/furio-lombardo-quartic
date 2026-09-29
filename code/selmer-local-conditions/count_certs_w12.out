@@ -1,0 +1,31 @@
+  ***   Warning: new maximum stack size = 1000001536 (953.676 Mbytes).
+ok: nf.zk = M1's zkNum / Dz
+ok: M1's fL = K21
+ok: al2 = Lean's M2.Special.al2
+ok: al2 generates w2 (e = 12, f = 1)
+  *** _^_: Warning: increasing stack size to 16000000.
+ok: dnData twist independent
+ok: w2d: v(Y - t^2) = 80 = v(t^2) + 2e exactly
+ok: w2d: a, a' are units at w2
+ok: w2d: the four tests are identities in K21
+ok: w2d: checkK passes at precisions [1090, 833, 436, 248]
+ok: w2d: negative control, checkK fails at one bit less
+ok: w2d: negative control, a flipped datum fails
+ok: w2d: Y / t^2 = 1 + 4 u with u a unit
+w2d: not a square at w2, v(Y) = 56, v(t^2) = 56, depth 2e = 24 (n = 80, m = 56), precisions [1090, 833, 436, 248]
+ok: w2k0c: v(Y - t^2) = 44 = v(t^2) + 2e exactly
+ok: w2k0c: a, a' are units at w2
+ok: w2k0c: the four tests are identities in K21
+ok: w2k0c: checkK passes at precisions [680, 544, 309, 241]
+ok: w2k0c: negative control, checkK fails at one bit less
+ok: w2k0c: negative control, a flipped datum fails
+ok: w2k0c: Y / t^2 = 1 + 4 u with u a unit
+w2k0c: not a square at w2, v(Y) = 20, v(t^2) = 20, depth 2e = 24 (n = 44, m = 20), precisions [680, 544, 309, 241]
+ok: known answer: 4 c_1 has odd depth 11 at w2
+ok: power table: the checks are identities in K21
+ok: power table: checkK passes at precision 442
+ok: power table: negative control, the largest check fails at one bit less
+ok: power table: negative control, a flipped entry fails
+wrote 101 definitions to /tmp/lf7a/regen/count_certs_w12/AtW2Data.lean
+precisions: [["w2d", [1090, 833, 436, 248]], ["w2k0c", [680, 544, 309, 241]]]
+DONE, 0 failed checks (24 ok)

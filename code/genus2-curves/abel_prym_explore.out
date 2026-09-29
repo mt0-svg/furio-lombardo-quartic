@@ -1,0 +1,53 @@
+  ***   Warning: new maximum stack size = 4000002048 (3814.699 Mbytes).
+ok: x0 on D (original and swapped)
+ok: x0 = the lift of p21_phi.gp
+ok: swapped sextic = polrecip(f) (= fRev)
+ok: apm_phi(x0) = p21_phi.gp
+x0: twist 0, U(0) != 0: 1, U irreducible over K21: 1, deg V = 1
+ok: x0: swapped U = reversed U
+ok: x0: swapped V = t^3 V(1/t) mod U'
+ok: x0: U' | V'^2 - fRev
+ok: x0: ruling in K21[t]/(U') gives the same V'
+ok: x0: T -> 3T - 5P
+ok: x0: P -> 7P, T -> -2T + P
+ok: x0: iota gives (U', -V')
+  swapped: a = [1974, 2052, 2033]
+ok: x1 on D (original and swapped)
+ok: x1 = the lift of p21_phi.gp
+ok: swapped sextic = polrecip(f) (= fRev)
+ok: apm_phi(x1) = p21_phi.gp
+x1: twist 1, U(0) != 0: 1, U irreducible over K21: 1, deg V = 1
+ok: x1: swapped U = reversed U
+ok: x1: swapped V = t^3 V(1/t) mod U'
+ok: x1: U' | V'^2 - fRev
+ok: x1: ruling in K21[t]/(U') gives the same V'
+ok: x1: T -> 3T - 5P
+ok: x1: P -> 7P, T -> -2T + P
+ok: x1: iota gives (U', -V')
+  swapped: a = [3125, 3106, 3150]
+ok: x2 on D (original and swapped)
+ok: x2 = the lift of p21_phi.gp
+ok: swapped sextic = polrecip(f) (= fRev)
+ok: apm_phi(x2) = p21_phi.gp
+x2: twist 0, U(0) != 0: 1, U irreducible over K21: 1, deg V = 1
+ok: x2: swapped U = reversed U
+ok: x2: swapped V = t^3 V(1/t) mod U'
+ok: x2: U' | V'^2 - fRev
+ok: x2: ruling in K21[t]/(U') gives the same V'
+ok: x2: T -> 3T - 5P
+ok: x2: P -> 7P, T -> -2T + P
+ok: x2: iota gives (U', -V')
+  swapped: a = [3934, 3919, 3917]
+ok: x3 on D (original and swapped)
+ok: x3 = the lift of p21_phi.gp
+ok: swapped sextic = polrecip(f) (= fRev)
+ok: apm_phi(x3) = p21_phi.gp
+x3: twist 1, U(0) != 0: 1, U irreducible over K21: 1, deg V = 1
+ok: x3: swapped U = reversed U
+ok: x3: swapped V = t^3 V(1/t) mod U'
+ok: x3: U' | V'^2 - fRev
+ok: x3: ruling in K21[t]/(U') gives the same V'
+ok: x3: T -> 3T - 5P
+ok: x3: P -> 7P, T -> -2T + P
+ok: x3: iota gives (U', -V')
+  swapped: a = [1850, 1757, 1864]

@@ -1,0 +1,17 @@
+'FurioLombardo.Discharge.SelmerBasis.Count.countBound_v' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.countBound_of_reps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.reps_dyadic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.isUnit_two_of_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.exists_tors_finset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.cnt_count_of_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.LSetup.ofSqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.lsetupAt_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.goodSextic_lsetupAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

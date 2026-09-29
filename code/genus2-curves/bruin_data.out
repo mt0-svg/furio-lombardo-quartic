@@ -1,0 +1,13 @@
+  ***   Warning: new maximum stack size = 4000002048 (3814.699 Mbytes).
+  *** _/_: Warning: increasing stack size to 16000000.
+  *** _/_: Warning: increasing stack size to 32000000.
+  *** _/_: Warning: increasing stack size to 64000000.
+k = 0: F_k ok, fRev = c q h ok (qDen 46, hDen 46), Bezout ok (bezM 40 digits, deg A 4, deg B 5), disc q non square, beta ok (betaDen 17 digits, gamDen 34 digits, deg beta 5, deg gamma 4)
+  residue primes: 4 lc [13, 11], qDen^2 disc [13, 11], 4 lc(f_k) nonzero [3, 2]
+k = 1: F_k ok, fRev = c q h ok (qDen 46, hDen 46), Bezout ok (bezM 40 digits, deg A 4, deg B 5), disc q non square, beta ok (betaDen 17 digits, gamDen 34 digits, deg beta 5, deg gamma 4)
+  residue primes: 4 lc [23, 5], qDen^2 disc [13, 11], 4 lc(f_k) nonzero [3, 2]
+P0 = [0, 0, 1] (twist 0): Q_i(P) zero: [1, 1, 0]; lift ok
+P1 = [1, 1, 1] (twist 1): Q_i(P) zero: [0, 1, 1]; lift ok
+P2 = [2, 0, 1] (twist 0): Q_i(P) zero: [0, 0, 0]; lift ok
+P3 = [-1, 0, 1] (twist 1): Q_i(P) zero: [0, 0, 0]; lift ok
+written /tmp/lf7b_regen.ljfach/FurioLombardo/Discharge/M3a/DataBruin.lean

@@ -1,0 +1,4 @@
+# lake env lean ../code/selmer-basis/sb_4_probe.lean (from lean/), 2026-09-28 19:20
+(true, true, true, true, true, true, true, true)
+wall 5.95 s, max RSS 6760936 KB
+exit 0

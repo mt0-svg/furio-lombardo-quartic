@@ -1,0 +1,708 @@
+ok: tool: f2in (positive and negative)
+ok: tool: f2eqspan (positive and negative)
+ok: tool: f2solve (solution and no solution)
+ok: tool: Xbasis on a 2 x 2 example (kernel of x1 + x2 = 0)
+ok: tool: f2canon is basis free and separates spans
+ok: tool: red2, v2vec, startswith
+ok: f_0 = c G1 (A^2 - d B^2) is the Prym sextic F0
+ok: f_1 = c G1 (A^2 - d B^2) is the Prym sextic F1
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 1: 2 real roots of G1, 2 of h
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 2: 2 real roots of G1, 2 of h
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 3: 2 real roots of G1, 2 of h
+fields, algebras, places loaded (30220 ms)
+==== twist k = 0
+ok: ss_1_data_k equals the offsets, local images, K_v^x images and names of selX_k
+ok: G is 164 x 82, seven places
+  place 1: p = 2 (e = 3, f = 1), factor degrees [2, 4], offset [0, 22], dim W_w = 11, dim KM_w = 4
+  place 2: p = 2 (e = 12, f = 1), factor degrees [2, 2, 2], offset [22, 78], dim W_w = 39, dim KM_w = 13
+  place 3: p = 2 (e = 6, f = 1), factor degrees [2, 2, 2], offset [100, 42], dim W_w = 21, dim KM_w = 7
+  place 4: p = 7 (e = 7, f = 3), factor degrees [1, 1, 1, 2, 1], offset [142, 10], dim W_w = 5, dim KM_w = 2
+  place 5: real, offset [152, 4], dim W_w = 2, dim KM_w = 1
+  place 6: real, offset [156, 4], dim W_w = 2, dim KM_w = 1
+  place 7: real, offset [160, 4], dim W_w = 2, dim KM_w = 1
+ok: place 1 = v (e = 3), 2 = e 12, 3 = e 6, 4 = above 7
+ok: KM_w is contained in W_w at place 1
+ok: KM_w is contained in W_w at place 2
+ok: KM_w is contained in W_w at place 3
+ok: KM_w is contained in W_w at place 4
+ok: KM_w is contained in W_w at place 5
+ok: KM_w is contained in W_w at place 6
+ok: KM_w is contained in W_w at place 7
+ok: complete J side run at e = 3, 7 divisors
+ok: c_1..c_7, KM_v independent
+ok: span(c_1..c_7, KM_v) = W_v
+  c_i (x - T coordinates at v of D_1..D_7, columns): [0, 0, 0, 0, 0, 0, 0; 1, 0, 1, 0, 0, 0, 0; 1, 0, 1, 0, 1, 0, 1; 1, 1, 0, 0, 1, 0, 0; 1, 1, 0, 0, 1, 0, 1; 0, 1, 1, 0, 1, 1, 0; 0, 0, 0, 0, 0, 1, 1; 0, 1, 1, 0, 0, 0, 0; 0, 0, 0, 0, 0, 0, 0; 0, 0, 0, 0, 0, 0, 0; 1, 1, 0, 0, 1, 0, 0; 0, 0, 0, 0, 0, 0, 1; 1, 0, 1, 0, 1, 0, 1; 1, 1, 0, 0, 0, 0, 0; 0, 0, 0, 0, 1, 0, 0; 1, 0, 1, 1, 1, 0, 0; 0, 1, 0, 1, 0, 0, 0; 0, 0, 1, 0, 1, 1, 1; 1, 0, 1, 1, 0, 0, 0; 1, 1, 1, 1, 0, 0, 1; 0, 1, 1, 1, 1, 0, 1; 1, 1, 1, 1, 1, 1, 1]
+ok: SelCoef recomputed from the stored G X equals m9cert/rho_k (7 x 19)
+ok: pr(W) of p21_45 recomputed from its W
+ok: W of p21_45 = span(RhoD SelCoef)
+ok: stored: centre [5, 3, 2] outside pr(W)
+ok: stored: centre [5, 1, 2] outside pr(W)
+ok: stored: centre [1, 31, 5] outside pr(W)
+ok: stored: centre [1, 15, 5] outside pr(W)
+ok: stored: centre [1, 23, 5] outside pr(W)
+ok: stored: centre [1, 7, 5] outside pr(W)
+ok: stored: centre [1, 27, 5] outside pr(W)
+ok: stored: centre [1, 11, 5] outside pr(W)
+ok: stored: centre [1, 19, 5] outside pr(W)
+ok: stored: centre [1, 3, 5] outside pr(W)
+ok: stored: centre [1, 481, 9] outside pr(W)
+ok: stored: centre [1, 225, 9] outside pr(W)
+ok: stored: centre [1, 353, 9] outside pr(W)
+ok: stored: centre [1, 97, 9] outside pr(W)
+ok: stored: centre [1, 417, 9] outside pr(W)
+ok: stored: centre [1, 161, 9] outside pr(W)
+ok: stored: centre [1, 289, 9] outside pr(W)
+ok: stored: centre [1, 33, 9] outside pr(W)
+ok: stored: centre [1, 241, 8] outside pr(W)
+ok: stored: centre [1, 113, 8] outside pr(W)
+ok: stored: centre [1, 177, 8] outside pr(W)
+ok: stored: centre [1, 49, 8] outside pr(W)
+ok: stored: centre [1, 209, 8] outside pr(W)
+ok: stored: centre [1, 81, 8] outside pr(W)
+ok: stored: centre [1, 145, 8] outside pr(W)
+ok: stored: centre [1, 17, 8] outside pr(W)
+ok: stored: centre [1, 121, 7] outside pr(W)
+ok: stored: centre [1, 57, 7] outside pr(W)
+ok: stored: centre [1, 89, 7] outside pr(W)
+ok: stored: centre [1, 25, 7] outside pr(W)
+ok: stored: centre [1, 105, 7] outside pr(W)
+ok: stored: centre [1, 41, 7] outside pr(W)
+ok: stored: centre [1, 73, 7] outside pr(W)
+ok: stored: centre [1, 9, 7] outside pr(W)
+ok: stored: centre [1, 61, 6] outside pr(W)
+ok: stored: centre [1, 29, 6] outside pr(W)
+ok: stored: centre [1, 45, 6] outside pr(W)
+ok: stored: centre [1, 13, 6] outside pr(W)
+ok: stored: centre [1, 53, 6] outside pr(W)
+ok: stored: centre [1, 21, 6] outside pr(W)
+ok: stored: centre [1, 37, 6] outside pr(W)
+ok: stored: centre [1, 5, 6] outside pr(W)
+ok: stored: centre [1, 30, 5] outside pr(W)
+ok: stored: centre [1, 14, 5] outside pr(W)
+ok: stored: centre [1, 22, 5] outside pr(W)
+ok: stored: centre [1, 6, 5] outside pr(W)
+ok: stored: centre [1, 26, 5] outside pr(W)
+ok: stored: centre [1, 10, 5] outside pr(W)
+ok: stored: centre [1, 18, 5] outside pr(W)
+ok: stored: centre [1, 2, 5] outside pr(W)
+ok: stored: centre [1, 480, 9] outside pr(W)
+ok: stored: centre [1, 224, 9] outside pr(W)
+ok: stored: centre [1, 352, 9] outside pr(W)
+ok: stored: centre [1, 96, 9] outside pr(W)
+ok: stored: centre [1, 416, 9] outside pr(W)
+ok: stored: centre [1, 160, 9] outside pr(W)
+ok: stored: centre [1, 288, 9] outside pr(W)
+ok: stored: centre [1, 32, 9] outside pr(W)
+ok: stored: centre [1, 240, 8] outside pr(W)
+ok: stored: centre [1, 112, 8] outside pr(W)
+ok: stored: centre [1, 176, 8] outside pr(W)
+ok: stored: centre [1, 48, 8] outside pr(W)
+ok: stored: centre [1, 208, 8] outside pr(W)
+ok: stored: centre [1, 80, 8] outside pr(W)
+ok: stored: centre [1, 144, 8] outside pr(W)
+ok: stored: centre [1, 16, 8] outside pr(W)
+ok: stored: centre [1, 120, 7] outside pr(W)
+ok: stored: centre [1, 56, 7] outside pr(W)
+ok: stored: centre [1, 88, 7] outside pr(W)
+ok: stored: centre [1, 24, 7] outside pr(W)
+ok: stored: centre [1, 104, 7] outside pr(W)
+ok: stored: centre [1, 40, 7] outside pr(W)
+ok: stored: centre [1, 72, 7] outside pr(W)
+ok: stored: centre [1, 8, 7] outside pr(W)
+ok: stored: centre [1, 60, 6] outside pr(W)
+ok: stored: centre [1, 28, 6] outside pr(W)
+ok: stored: centre [1, 44, 6] outside pr(W)
+ok: stored: centre [1, 12, 6] outside pr(W)
+ok: stored: centre [1, 52, 6] outside pr(W)
+ok: stored: centre [1, 20, 6] outside pr(W)
+ok: stored: centre [1, 36, 6] outside pr(W)
+ok: stored: centre [1, 4, 6] outside pr(W)
+ok: stored: tail x_0 outside pr(W)
+ok: stored: tail x_2 outside pr(W)
+ok: 82 + 22 centres and 2 + 2 tails
+ok: lane M4 has the same number of centres
+ok: M4 centre [5, 3, 2]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [5, 1, 2]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 31, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 15, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 23, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 7, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 27, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 11, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 19, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 3, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 481, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 225, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 353, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 97, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 417, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 161, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 289, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 33, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 241, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 113, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 177, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 49, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 209, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 81, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 145, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 17, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 121, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 57, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 89, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 25, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 105, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 41, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 73, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 9, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 61, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 29, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 45, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 13, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 53, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 21, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 37, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 5, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 30, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 14, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 22, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 6, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 26, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 10, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 18, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 2, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 480, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 224, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 352, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 96, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 416, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 160, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 288, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 32, 9]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 240, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 112, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 176, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 48, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 208, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 80, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 144, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 16, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 120, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 56, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 88, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 24, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 104, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 40, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 72, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 8, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 60, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 28, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 44, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 12, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 52, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 20, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 36, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [1, 4, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 tail x_0: nu from Q c / 4 = stored nu = p21_45 nu
+ok: M4 tail x_2: nu from Q c / 4 = stored nu = p21_45 nu
+ok: lane M4's pr(W) (from its 16 vectors W) has dimension 1
+ok: M4 basis: centre [5, 3, 2] outside lane M4's pr(W)
+ok: M4 basis: centre [5, 1, 2] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 31, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 15, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 23, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 7, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 27, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 11, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 19, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 3, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 481, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 225, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 353, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 97, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 417, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 161, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 289, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 33, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 241, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 113, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 177, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 49, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 209, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 81, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 145, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 17, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 121, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 57, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 89, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 25, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 105, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 41, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 73, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 9, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 61, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 29, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 45, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 13, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 53, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 21, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 37, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 5, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 30, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 14, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 22, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 6, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 26, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 10, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 18, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 2, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 480, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 224, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 352, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 96, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 416, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 160, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 288, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 32, 9] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 240, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 112, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 176, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 48, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 208, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 80, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 144, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 16, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 120, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 56, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 88, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 24, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 104, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 40, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 72, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 8, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 60, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 28, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 44, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 12, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 52, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 20, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 36, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [1, 4, 6] outside lane M4's pr(W)
+ok: M4 basis: tail x_0 outside lane M4's pr(W)
+ok: M4 basis: tail x_2 outside lane M4's pr(W)
+  ---- S' = [1, 2, 3, 4, 5, 6, 7]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 19, Selmer upper bound dim X' - 15 = 4
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 1; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 0; 0, 0, 0, 1; 0, 0, 0, 0]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [0; 0; 1; 0]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 84, lane M4 basis 0 of 84
+ok: both bases give the same failing classes
+ok: KAT: all places give dim X = 19 and the span of the stored G X
+ok: KAT: all places give an injective sigma_v on a 4 dimensional Selmer bound
+ok: KAT: span(SC') = span(SelCoef) = span(SB of lane M4)
+ok: KAT: lane M4's SB = matimage(SelCoef)
+ok: KAT: W' = W of p21_45 = the classes in Lambda/2Lambda of lane M4's 16 vectors W
+ok: KAT: pr(W') = prW of p21_45, every class outside
+  ---- S' = [1, 2, 3, 4]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 16 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 0
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 1; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 0; 0, 0, 0, 1; 0, 0, 0, 0]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [0; 0; 1; 0]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 84, lane M4 basis 0 of 84
+ok: both bases give the same failing classes
+  ---- S' = [1, 2, 3, 5]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 16 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 0
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 1; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 0; 0, 0, 0, 1; 0, 0, 0, 0]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [0; 0; 1; 0]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 84, lane M4 basis 0 of 84
+ok: both bases give the same failing classes
+  ---- S' = [1, 2, 3, 6]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 16 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 0
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 1; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 0; 0, 0, 0, 1; 0, 0, 0, 0]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [0; 0; 1; 0]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 84, lane M4 basis 0 of 84
+ok: both bases give the same failing classes
+  ---- S' = [1, 2, 3, 7]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 16 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 0
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 1; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 0; 0, 0, 0, 1; 0, 0, 0, 0]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [0; 0; 1; 0]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 84, lane M4 basis 0 of 84
+ok: both bases give the same failing classes
+  ---- S' = [1, 2, 3, 5, 6, 7]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 19, Selmer upper bound dim X' - 15 = 4
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 1; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 0; 0, 0, 0, 1; 0, 0, 0, 0]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [0; 0; 1; 0]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 84, lane M4 basis 0 of 84
+ok: both bases give the same failing classes
+  ---- S' = [1, 2, 3, 5, 6]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 19, Selmer upper bound dim X' - 15 = 4
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 1; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 0; 0, 0, 0, 1; 0, 0, 0, 0]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [0; 0; 1; 0]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 84, lane M4 basis 0 of 84
+ok: both bases give the same failing classes
+  ---- S' = [1, 2, 3, 6, 7]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 19, Selmer upper bound dim X' - 15 = 4
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 1; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 0; 0, 0, 0, 1; 0, 0, 0, 0]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [0; 0; 1; 0]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 84, lane M4 basis 0 of 84
+ok: both bases give the same failing classes
+  ---- S' = [1, 2, 3, 5, 7]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 16 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 0
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 1; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 0; 0, 0, 0, 1; 0, 0, 0, 0]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [0; 0; 1; 0]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 84, lane M4 basis 0 of 84
+ok: both bases give the same failing classes
+  ---- S' = [1, 2, 3]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 22, Selmer upper bound dim X' - 15 = 7
+  (b) dim {x in X' : res_v x in KM_v} = 18 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 0
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 1; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 0; 0, 0, 0, 1; 0, 0, 0, 0]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [0; 0; 1; 0]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 84, lane M4 basis 0 of 84
+ok: both bases give the same failing classes
+  ---- S' = [1]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 71, Selmer upper bound dim X' - 15 = 56
+  (b) dim {x in X' : res_v x in KM_v} = 64 (15 means injective); rank of sigma_v(X') in the D basis = 7; injective: 0
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0, 0, 0, 0; 0, 1, 0, 0, 0, 0, 0; 0, 0, 1, 0, 0, 0, 0; 0, 0, 0, 1, 0, 0, 0; 0, 0, 0, 0, 1, 0, 0; 0, 0, 0, 0, 0, 1, 0; 0, 0, 0, 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 6, dim pr(W') = 4, pr(W') basis (p21_45 coordinates) [1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 1]; lane M4 basis: dim pr_M4(W') = 4
+      classes in pr(W') (should be outside): p21_45 basis 84 of 84, lane M4 basis 84 of 84
+ok: both bases give the same failing classes
+      FAILING: ["centre [5, 3, 2]", "centre [5, 1, 2]", "centre [1, 31, 5]", "centre [1, 15, 5]", "centre [1, 23, 5]", "centre [1, 7, 5]", "centre [1, 27, 5]", "centre [1, 11, 5]", "centre [1, 19, 5]", "centre [1, 3, 5]", "centre [1, 481, 9]", "centre [1, 225, 9]", "centre [1, 353, 9]", "centre [1, 97, 9]", "centre [1, 417, 9]", "centre [1, 161, 9]", "centre [1, 289, 9]", "centre [1, 33, 9]", "centre [1, 241, 8]", "centre [1, 113, 8]", "centre [1, 177, 8]", "centre [1, 49, 8]", "centre [1, 209, 8]", "centre [1, 81, 8]", "centre [1, 145, 8]", "centre [1, 17, 8]", "centre [1, 121, 7]", "centre [1, 57, 7]", "centre [1, 89, 7]", "centre [1, 25, 7]", "centre [1, 105, 7]", "centre [1, 41, 7]", "centre [1, 73, 7]", "centre [1, 9, 7]", "centre [1, 61, 6]", "centre [1, 29, 6]", "centre [1, 45, 6]", "centre [1, 13, 6]", "centre [1, 53, 6]", "centre [1, 21, 6]", "centre [1, 37, 6]", "centre [1, 5, 6]", "centre [1, 30, 5]", "centre [1, 14, 5]", "centre [1, 22, 5]", "centre [1, 6, 5]", "centre [1, 26, 5]", "centre [1, 10, 5]", "centre [1, 18, 5]", "centre [1, 2, 5]", "centre [1, 480, 9]", "centre [1, 224, 9]", "centre [1, 352, 9]", "centre [1, 96, 9]", "centre [1, 416, 9]", "centre [1, 160, 9]", "centre [1, 288, 9]", "centre [1, 32, 9]", "centre [1, 240, 8]", "centre [1, 112, 8]", "centre [1, 176, 8]", "centre [1, 48, 8]", "centre [1, 208, 8]", "centre [1, 80, 8]", "centre [1, 144, 8]", "centre [1, 16, 8]", "centre [1, 120, 7]", "centre [1, 56, 7]", "centre [1, 88, 7]", "centre [1, 24, 7]", "centre [1, 104, 7]", "centre [1, 40, 7]", "centre [1, 72, 7]", "centre [1, 8, 7]", "centre [1, 60, 6]", "centre [1, 28, 6]", "centre [1, 44, 6]", "centre [1, 12, 6]", "centre [1, 52, 6]", "centre [1, 20, 6]", "centre [1, 36, 6]", "centre [1, 4, 6]", "tail x_0", "tail x_2"]
+ok: negative control: with S' = {v} the test reports classes in pr(W')
+ok: coordinates at 7: blocks [v mod 2, unit bits] per prime
+  (d) S' = [1, 2, 3, 5, 6, 7]: dim X' = 19 (all places: 19); X' with the valuation parity part of the condition at 7: 19; with the unit part: 19
+      valuation rows at 7 [1, 3, 5, 7, 9], unit rows [2, 4, 6, 8, 10] (block sizes [2, 2, 2, 2, 2])
+      0 basis vectors of X' outside X_all; res_7 of each (10 coordinates): []; W_7 (columns): [1, 0, 0, 1, 1; 0, 1, 1, 1, 0; 1, 0, 0, 0, 0; 1, 1, 0, 0, 0; 1, 0, 1, 0, 1; 1, 1, 1, 0, 1; 0, 0, 0, 1, 0; 1, 1, 0, 1, 0; 1, 0, 1, 0, 0; 0, 1, 1, 1, 0]
+  twist 0 summary [S', dim X', bound, injective, dim W', dim pr(W'), classes in pr(W')]:
+    [[1, 2, 3, 4, 5, 6, 7], 19, 4, 1, 3, 1, 0]
+    [[1, 2, 3, 4], 20, 5, 0, 3, 1, 0]
+    [[1, 2, 3, 5], 20, 5, 0, 3, 1, 0]
+    [[1, 2, 3, 6], 20, 5, 0, 3, 1, 0]
+    [[1, 2, 3, 7], 20, 5, 0, 3, 1, 0]
+    [[1, 2, 3, 5, 6, 7], 19, 4, 1, 3, 1, 0]
+    [[1, 2, 3, 5, 6], 19, 4, 1, 3, 1, 0]
+    [[1, 2, 3, 6, 7], 19, 4, 1, 3, 1, 0]
+    [[1, 2, 3, 5, 7], 20, 5, 0, 3, 1, 0]
+    [[1, 2, 3], 22, 7, 0, 3, 1, 0]
+    [[1], 71, 56, 0, 6, 4, 84]
+  (2296 ms)
+==== twist k = 1
+ok: ss_1_data_k equals the offsets, local images, K_v^x images and names of selX_k
+ok: G is 164 x 82, seven places
+  place 1: p = 2 (e = 3, f = 1), factor degrees [2, 4], offset [0, 22], dim W_w = 11, dim KM_w = 4
+  place 2: p = 2 (e = 12, f = 1), factor degrees [2, 2, 2], offset [22, 78], dim W_w = 39, dim KM_w = 13
+  place 3: p = 2 (e = 6, f = 1), factor degrees [2, 2, 2], offset [100, 42], dim W_w = 21, dim KM_w = 7
+  place 4: p = 7 (e = 7, f = 3), factor degrees [1, 1, 1, 2, 1], offset [142, 10], dim W_w = 5, dim KM_w = 2
+  place 5: real, offset [152, 4], dim W_w = 2, dim KM_w = 1
+  place 6: real, offset [156, 4], dim W_w = 2, dim KM_w = 1
+  place 7: real, offset [160, 4], dim W_w = 2, dim KM_w = 1
+ok: place 1 = v (e = 3), 2 = e 12, 3 = e 6, 4 = above 7
+ok: KM_w is contained in W_w at place 1
+ok: KM_w is contained in W_w at place 2
+ok: KM_w is contained in W_w at place 3
+ok: KM_w is contained in W_w at place 4
+ok: KM_w is contained in W_w at place 5
+ok: KM_w is contained in W_w at place 6
+ok: KM_w is contained in W_w at place 7
+ok: complete J side run at e = 3, 7 divisors
+ok: c_1..c_7, KM_v independent
+ok: span(c_1..c_7, KM_v) = W_v
+  c_i (x - T coordinates at v of D_1..D_7, columns): [0, 0, 0, 0, 0, 0, 0; 0, 0, 1, 0, 0, 0, 0; 0, 0, 1, 1, 1, 0, 0; 0, 0, 0, 1, 1, 0, 0; 1, 0, 0, 0, 0, 0, 1; 1, 1, 1, 1, 1, 0, 0; 0, 1, 1, 0, 0, 0, 0; 0, 0, 1, 0, 1, 1, 0; 0, 0, 0, 0, 0, 0, 0; 0, 0, 0, 0, 0, 0, 0; 0, 0, 0, 1, 1, 0, 0; 0, 0, 1, 0, 0, 0, 0; 0, 0, 0, 1, 1, 0, 0; 0, 0, 1, 1, 1, 0, 0; 0, 0, 0, 1, 1, 0, 0; 1, 1, 1, 1, 1, 1, 1; 0, 0, 1, 0, 1, 1, 0; 0, 1, 1, 0, 1, 0, 1; 0, 1, 0, 1, 1, 1, 1; 1, 0, 1, 1, 0, 1, 0; 0, 0, 1, 0, 0, 1, 1; 0, 1, 1, 1, 0, 1, 1]
+ok: SelCoef recomputed from the stored G X equals m9cert/rho_k (7 x 19)
+ok: pr(W) of p21_45 recomputed from its W
+ok: W of p21_45 = span(RhoD SelCoef)
+ok: stored: centre [3, 28, 5] outside pr(W)
+ok: stored: centre [3, 12, 5] outside pr(W)
+ok: stored: centre [3, 20, 5] outside pr(W)
+ok: stored: centre [3, 4, 5] outside pr(W)
+ok: stored: centre [3, 224, 8] outside pr(W)
+ok: stored: centre [3, 96, 8] outside pr(W)
+ok: stored: centre [3, 160, 8] outside pr(W)
+ok: stored: centre [3, 32, 8] outside pr(W)
+ok: stored: centre [3, 112, 7] outside pr(W)
+ok: stored: centre [3, 48, 7] outside pr(W)
+ok: stored: centre [3, 80, 7] outside pr(W)
+ok: stored: centre [3, 16, 7] outside pr(W)
+ok: stored: centre [3, 56, 6] outside pr(W)
+ok: stored: centre [3, 24, 6] outside pr(W)
+ok: stored: centre [3, 40, 6] outside pr(W)
+ok: stored: centre [3, 8, 6] outside pr(W)
+ok: stored: centre [2, 23, 5] outside pr(W)
+ok: stored: centre [2, 7, 5] outside pr(W)
+ok: stored: centre [2, 11, 4] outside pr(W)
+ok: stored: centre [2, 3, 4] outside pr(W)
+ok: stored: centre [2, 5, 3] outside pr(W)
+ok: stored: centre [2, 1, 3] outside pr(W)
+ok: stored: tail x_1 outside pr(W)
+ok: stored: tail x_3 outside pr(W)
+ok: 82 + 22 centres and 2 + 2 tails
+ok: lane M4 has the same number of centres
+ok: M4 centre [3, 28, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 12, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 20, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 4, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 224, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 96, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 160, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 32, 8]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 112, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 48, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 80, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 16, 7]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 56, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 24, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 40, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [3, 8, 6]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [2, 23, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [2, 7, 5]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [2, 11, 4]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [2, 3, 4]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [2, 5, 3]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 centre [2, 1, 3]: nu from Q c / 4 = stored nu = p21_46 nu
+ok: M4 tail x_1: nu from Q c / 4 = stored nu = p21_45 nu
+ok: M4 tail x_3: nu from Q c / 4 = stored nu = p21_45 nu
+ok: lane M4's pr(W) (from its 16 vectors W) has dimension 1
+ok: M4 basis: centre [3, 28, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 12, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 20, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 4, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 224, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 96, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 160, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 32, 8] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 112, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 48, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 80, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 16, 7] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 56, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 24, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 40, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [3, 8, 6] outside lane M4's pr(W)
+ok: M4 basis: centre [2, 23, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [2, 7, 5] outside lane M4's pr(W)
+ok: M4 basis: centre [2, 11, 4] outside lane M4's pr(W)
+ok: M4 basis: centre [2, 3, 4] outside lane M4's pr(W)
+ok: M4 basis: centre [2, 5, 3] outside lane M4's pr(W)
+ok: M4 basis: centre [2, 1, 3] outside lane M4's pr(W)
+ok: M4 basis: tail x_1 outside lane M4's pr(W)
+ok: M4 basis: tail x_3 outside lane M4's pr(W)
+  ---- S' = [1, 2, 3, 4, 5, 6, 7]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 19, Selmer upper bound dim X' - 15 = 4
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [1; 0; 0; 1]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 24, lane M4 basis 0 of 24
+ok: both bases give the same failing classes
+ok: KAT: all places give dim X = 19 and the span of the stored G X
+ok: KAT: all places give an injective sigma_v on a 4 dimensional Selmer bound
+ok: KAT: span(SC') = span(SelCoef) = span(SB of lane M4)
+ok: KAT: lane M4's SB = matimage(SelCoef)
+ok: KAT: W' = W of p21_45 = the classes in Lambda/2Lambda of lane M4's 16 vectors W
+ok: KAT: pr(W') = prW of p21_45, every class outside
+  ---- S' = [1, 2, 3, 4]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 19, Selmer upper bound dim X' - 15 = 4
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 4; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0; 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 3, dim pr(W') = 1, pr(W') basis (p21_45 coordinates) [1; 0; 0; 1]; lane M4 basis: dim pr_M4(W') = 1
+      classes in pr(W') (should be outside): p21_45 basis 0 of 24, lane M4 basis 0 of 24
+ok: both bases give the same failing classes
+  ---- S' = [1, 2, 3, 5]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 5; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0, 0; 1, 0, 0, 0, 0; 0, 1, 1, 0, 0; 0, 1, 0, 0, 0; 0, 0, 1, 0, 0; 0, 0, 0, 1, 0; 0, 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 4, dim pr(W') = 2, pr(W') basis (p21_45 coordinates) [0, 1; 1, 0; 0, 0; 0, 1]; lane M4 basis: dim pr_M4(W') = 2
+      classes in pr(W') (should be outside): p21_45 basis 24 of 24, lane M4 basis 24 of 24
+ok: both bases give the same failing classes
+      FAILING: ["centre [3, 28, 5]", "centre [3, 12, 5]", "centre [3, 20, 5]", "centre [3, 4, 5]", "centre [3, 224, 8]", "centre [3, 96, 8]", "centre [3, 160, 8]", "centre [3, 32, 8]", "centre [3, 112, 7]", "centre [3, 48, 7]", "centre [3, 80, 7]", "centre [3, 16, 7]", "centre [3, 56, 6]", "centre [3, 24, 6]", "centre [3, 40, 6]", "centre [3, 8, 6]", "centre [2, 23, 5]", "centre [2, 7, 5]", "centre [2, 11, 4]", "centre [2, 3, 4]", "centre [2, 5, 3]", "centre [2, 1, 3]", "tail x_1", "tail x_3"]
+  ---- S' = [1, 2, 3, 6]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 5; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0, 0; 1, 0, 0, 0, 0; 0, 1, 1, 0, 0; 0, 1, 0, 0, 0; 0, 0, 1, 0, 0; 0, 0, 0, 1, 0; 0, 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 4, dim pr(W') = 2, pr(W') basis (p21_45 coordinates) [0, 1; 1, 0; 0, 0; 0, 1]; lane M4 basis: dim pr_M4(W') = 2
+      classes in pr(W') (should be outside): p21_45 basis 24 of 24, lane M4 basis 24 of 24
+ok: both bases give the same failing classes
+      FAILING: ["centre [3, 28, 5]", "centre [3, 12, 5]", "centre [3, 20, 5]", "centre [3, 4, 5]", "centre [3, 224, 8]", "centre [3, 96, 8]", "centre [3, 160, 8]", "centre [3, 32, 8]", "centre [3, 112, 7]", "centre [3, 48, 7]", "centre [3, 80, 7]", "centre [3, 16, 7]", "centre [3, 56, 6]", "centre [3, 24, 6]", "centre [3, 40, 6]", "centre [3, 8, 6]", "centre [2, 23, 5]", "centre [2, 7, 5]", "centre [2, 11, 4]", "centre [2, 3, 4]", "centre [2, 5, 3]", "centre [2, 1, 3]", "tail x_1", "tail x_3"]
+  ---- S' = [1, 2, 3, 7]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 5; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0, 0; 1, 0, 0, 0, 0; 0, 1, 1, 0, 0; 0, 1, 0, 0, 0; 0, 0, 1, 0, 0; 0, 0, 0, 1, 0; 0, 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 4, dim pr(W') = 2, pr(W') basis (p21_45 coordinates) [0, 1; 1, 0; 0, 0; 0, 1]; lane M4 basis: dim pr_M4(W') = 2
+      classes in pr(W') (should be outside): p21_45 basis 24 of 24, lane M4 basis 24 of 24
+ok: both bases give the same failing classes
+      FAILING: ["centre [3, 28, 5]", "centre [3, 12, 5]", "centre [3, 20, 5]", "centre [3, 4, 5]", "centre [3, 224, 8]", "centre [3, 96, 8]", "centre [3, 160, 8]", "centre [3, 32, 8]", "centre [3, 112, 7]", "centre [3, 48, 7]", "centre [3, 80, 7]", "centre [3, 16, 7]", "centre [3, 56, 6]", "centre [3, 24, 6]", "centre [3, 40, 6]", "centre [3, 8, 6]", "centre [2, 23, 5]", "centre [2, 7, 5]", "centre [2, 11, 4]", "centre [2, 3, 4]", "centre [2, 5, 3]", "centre [2, 1, 3]", "tail x_1", "tail x_3"]
+  ---- S' = [1, 2, 3, 5, 6, 7]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 5; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0, 0; 1, 0, 0, 0, 0; 0, 1, 1, 0, 0; 0, 1, 0, 0, 0; 0, 0, 1, 0, 0; 0, 0, 0, 1, 0; 0, 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 4, dim pr(W') = 2, pr(W') basis (p21_45 coordinates) [0, 1; 1, 0; 0, 0; 0, 1]; lane M4 basis: dim pr_M4(W') = 2
+      classes in pr(W') (should be outside): p21_45 basis 24 of 24, lane M4 basis 24 of 24
+ok: both bases give the same failing classes
+      FAILING: ["centre [3, 28, 5]", "centre [3, 12, 5]", "centre [3, 20, 5]", "centre [3, 4, 5]", "centre [3, 224, 8]", "centre [3, 96, 8]", "centre [3, 160, 8]", "centre [3, 32, 8]", "centre [3, 112, 7]", "centre [3, 48, 7]", "centre [3, 80, 7]", "centre [3, 16, 7]", "centre [3, 56, 6]", "centre [3, 24, 6]", "centre [3, 40, 6]", "centre [3, 8, 6]", "centre [2, 23, 5]", "centre [2, 7, 5]", "centre [2, 11, 4]", "centre [2, 3, 4]", "centre [2, 5, 3]", "centre [2, 1, 3]", "tail x_1", "tail x_3"]
+  ---- S' = [1, 2, 3, 5, 6]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 5; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0, 0; 1, 0, 0, 0, 0; 0, 1, 1, 0, 0; 0, 1, 0, 0, 0; 0, 0, 1, 0, 0; 0, 0, 0, 1, 0; 0, 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 4, dim pr(W') = 2, pr(W') basis (p21_45 coordinates) [0, 1; 1, 0; 0, 0; 0, 1]; lane M4 basis: dim pr_M4(W') = 2
+      classes in pr(W') (should be outside): p21_45 basis 24 of 24, lane M4 basis 24 of 24
+ok: both bases give the same failing classes
+      FAILING: ["centre [3, 28, 5]", "centre [3, 12, 5]", "centre [3, 20, 5]", "centre [3, 4, 5]", "centre [3, 224, 8]", "centre [3, 96, 8]", "centre [3, 160, 8]", "centre [3, 32, 8]", "centre [3, 112, 7]", "centre [3, 48, 7]", "centre [3, 80, 7]", "centre [3, 16, 7]", "centre [3, 56, 6]", "centre [3, 24, 6]", "centre [3, 40, 6]", "centre [3, 8, 6]", "centre [2, 23, 5]", "centre [2, 7, 5]", "centre [2, 11, 4]", "centre [2, 3, 4]", "centre [2, 5, 3]", "centre [2, 1, 3]", "tail x_1", "tail x_3"]
+  ---- S' = [1, 2, 3, 6, 7]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 5; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0, 0; 1, 0, 0, 0, 0; 0, 1, 1, 0, 0; 0, 1, 0, 0, 0; 0, 0, 1, 0, 0; 0, 0, 0, 1, 0; 0, 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 4, dim pr(W') = 2, pr(W') basis (p21_45 coordinates) [0, 1; 1, 0; 0, 0; 0, 1]; lane M4 basis: dim pr_M4(W') = 2
+      classes in pr(W') (should be outside): p21_45 basis 24 of 24, lane M4 basis 24 of 24
+ok: both bases give the same failing classes
+      FAILING: ["centre [3, 28, 5]", "centre [3, 12, 5]", "centre [3, 20, 5]", "centre [3, 4, 5]", "centre [3, 224, 8]", "centre [3, 96, 8]", "centre [3, 160, 8]", "centre [3, 32, 8]", "centre [3, 112, 7]", "centre [3, 48, 7]", "centre [3, 80, 7]", "centre [3, 16, 7]", "centre [3, 56, 6]", "centre [3, 24, 6]", "centre [3, 40, 6]", "centre [3, 8, 6]", "centre [2, 23, 5]", "centre [2, 7, 5]", "centre [2, 11, 4]", "centre [2, 3, 4]", "centre [2, 5, 3]", "centre [2, 1, 3]", "tail x_1", "tail x_3"]
+  ---- S' = [1, 2, 3, 5, 7]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 20, Selmer upper bound dim X' - 15 = 5
+  (b) dim {x in X' : res_v x in KM_v} = 15 (15 means injective); rank of sigma_v(X') in the D basis = 5; injective: 1
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0, 0; 1, 0, 0, 0, 0; 0, 1, 1, 0, 0; 0, 1, 0, 0, 0; 0, 0, 1, 0, 0; 0, 0, 0, 1, 0; 0, 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 4, dim pr(W') = 2, pr(W') basis (p21_45 coordinates) [0, 1; 1, 0; 0, 0; 0, 1]; lane M4 basis: dim pr_M4(W') = 2
+      classes in pr(W') (should be outside): p21_45 basis 24 of 24, lane M4 basis 24 of 24
+ok: both bases give the same failing classes
+      FAILING: ["centre [3, 28, 5]", "centre [3, 12, 5]", "centre [3, 20, 5]", "centre [3, 4, 5]", "centre [3, 224, 8]", "centre [3, 96, 8]", "centre [3, 160, 8]", "centre [3, 32, 8]", "centre [3, 112, 7]", "centre [3, 48, 7]", "centre [3, 80, 7]", "centre [3, 16, 7]", "centre [3, 56, 6]", "centre [3, 24, 6]", "centre [3, 40, 6]", "centre [3, 8, 6]", "centre [2, 23, 5]", "centre [2, 7, 5]", "centre [2, 11, 4]", "centre [2, 3, 4]", "centre [2, 5, 3]", "centre [2, 1, 3]", "tail x_1", "tail x_3"]
+  ---- S' = [1, 2, 3]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 22, Selmer upper bound dim X' - 15 = 7
+  (b) dim {x in X' : res_v x in KM_v} = 17 (15 means injective); rank of sigma_v(X') in the D basis = 5; injective: 0
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0, 0; 1, 0, 0, 0, 0; 0, 1, 1, 0, 0; 0, 1, 0, 0, 0; 0, 0, 1, 0, 0; 0, 0, 0, 1, 0; 0, 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 4, dim pr(W') = 2, pr(W') basis (p21_45 coordinates) [0, 1; 1, 0; 0, 0; 0, 1]; lane M4 basis: dim pr_M4(W') = 2
+      classes in pr(W') (should be outside): p21_45 basis 24 of 24, lane M4 basis 24 of 24
+ok: both bases give the same failing classes
+      FAILING: ["centre [3, 28, 5]", "centre [3, 12, 5]", "centre [3, 20, 5]", "centre [3, 4, 5]", "centre [3, 224, 8]", "centre [3, 96, 8]", "centre [3, 160, 8]", "centre [3, 32, 8]", "centre [3, 112, 7]", "centre [3, 48, 7]", "centre [3, 80, 7]", "centre [3, 16, 7]", "centre [3, 56, 6]", "centre [3, 24, 6]", "centre [3, 40, 6]", "centre [3, 8, 6]", "centre [2, 23, 5]", "centre [2, 7, 5]", "centre [2, 11, 4]", "centre [2, 3, 4]", "centre [2, 5, 3]", "centre [2, 1, 3]", "tail x_1", "tail x_3"]
+  ---- S' = [1]
+ok: res_v(G X') lies in W_v
+  (a) dim X' = 71, Selmer upper bound dim X' - 15 = 56
+  (b) dim {x in X' : res_v x in KM_v} = 64 (15 means injective); rank of sigma_v(X') in the D basis = 7; injective: 0
+ok: the two readings of (b) agree
+      known classes T, phi_a, phi_b: in loc(X') + sum KM_w 1, D coordinates in span(SC') 1
+ok: the known global classes survive S'
+      span of sigma_v(X') in the D basis (reduced echelon columns): [1, 0, 0, 0, 0, 0, 0; 0, 1, 0, 0, 0, 0, 0; 0, 0, 1, 0, 0, 0, 0; 0, 0, 0, 1, 0, 0, 0; 0, 0, 0, 0, 1, 0, 0; 0, 0, 0, 0, 0, 1, 0; 0, 0, 0, 0, 0, 0, 1]
+  (c) dim W' (in Lambda/2Lambda) = 6, dim pr(W') = 4, pr(W') basis (p21_45 coordinates) [1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0; 0, 0, 0, 1]; lane M4 basis: dim pr_M4(W') = 4
+      classes in pr(W') (should be outside): p21_45 basis 24 of 24, lane M4 basis 24 of 24
+ok: both bases give the same failing classes
+      FAILING: ["centre [3, 28, 5]", "centre [3, 12, 5]", "centre [3, 20, 5]", "centre [3, 4, 5]", "centre [3, 224, 8]", "centre [3, 96, 8]", "centre [3, 160, 8]", "centre [3, 32, 8]", "centre [3, 112, 7]", "centre [3, 48, 7]", "centre [3, 80, 7]", "centre [3, 16, 7]", "centre [3, 56, 6]", "centre [3, 24, 6]", "centre [3, 40, 6]", "centre [3, 8, 6]", "centre [2, 23, 5]", "centre [2, 7, 5]", "centre [2, 11, 4]", "centre [2, 3, 4]", "centre [2, 5, 3]", "centre [2, 1, 3]", "tail x_1", "tail x_3"]
+ok: negative control: with S' = {v} the test reports classes in pr(W')
+ok: coordinates at 7: blocks [v mod 2, unit bits] per prime
+  (d) S' = [1, 2, 3, 5, 6, 7]: dim X' = 20 (all places: 19); X' with the valuation parity part of the condition at 7: 20; with the unit part: 20
+      valuation rows at 7 [1, 3, 5, 7, 9], unit rows [2, 4, 6, 8, 10] (block sizes [2, 2, 2, 2, 2])
+      1 basis vectors of X' outside X_all; res_7 of each (10 coordinates): [[1, 0, 1, 1, 0, 0, 0, 0, 0, 0]]; W_7 (columns): [1, 0, 0, 1, 1; 0, 1, 1, 0, 1; 1, 0, 0, 0, 0; 1, 1, 0, 0, 0; 1, 0, 1, 1, 0; 1, 1, 1, 1, 0; 0, 0, 0, 1, 0; 1, 1, 0, 1, 0; 1, 0, 1, 1, 1; 0, 1, 1, 0, 1]
+  twist 1 summary [S', dim X', bound, injective, dim W', dim pr(W'), classes in pr(W')]:
+    [[1, 2, 3, 4, 5, 6, 7], 19, 4, 1, 3, 1, 0]
+    [[1, 2, 3, 4], 19, 4, 1, 3, 1, 0]
+    [[1, 2, 3, 5], 20, 5, 1, 4, 2, 24]
+    [[1, 2, 3, 6], 20, 5, 1, 4, 2, 24]
+    [[1, 2, 3, 7], 20, 5, 1, 4, 2, 24]
+    [[1, 2, 3, 5, 6, 7], 20, 5, 1, 4, 2, 24]
+    [[1, 2, 3, 5, 6], 20, 5, 1, 4, 2, 24]
+    [[1, 2, 3, 6, 7], 20, 5, 1, 4, 2, 24]
+    [[1, 2, 3, 5, 7], 20, 5, 1, 4, 2, 24]
+    [[1, 2, 3], 22, 7, 0, 4, 2, 24]
+    [[1], 71, 56, 0, 6, 4, 24]
+  (1933 ms)
+DONE, 0 failed checks (34470 ms)

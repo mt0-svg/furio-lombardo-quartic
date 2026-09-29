@@ -1,0 +1,19 @@
+# rerun 2026-09-30, PARI/GP 2.17.4, run: (cd code/earlier-computations && gp -q lattice_cert.gp < /dev/null)
+  ***   Warning: new maximum stack size = 5000003584 (4768.375 Mbytes).
+K_v = Q_2(pi), E = x^3 + 37469486047374096441064*x^2 + 16418729904282180494548*x + 17325639337422721302482; theta certified to pi^3000 (v K21(theta) = 6077, v K21'(theta) = 17); valuation KAT failures: 0
+k = 0: D_1..D_7 certified, precisions of V: [1477, 1482, 1479, 1499, 1495, 1481, 1490] (345 ms)
+  logarithms: precisions [144, 153, 153, 136, 153, 135, 169, 142, 142] (D_1..D_7, phi_a, phi_b); N = 2^4 NM and 2^5 NM agree within the balls (5667 ms)
+  Lambda: pi^6 O^2 is contained in Lambda (Nakayama, certified); m_Lambda = 6; HNF diagonal 2-valuations [2, 2, 1, 1, 1, 0]
+  dim W = 3; coordinates of log phi_a, log phi_b in Lambda known modulo 2^45, 2^45
+  <log phi_a, log phi_b>: elementary divisors 2^0, 2^2; Gsat and pr known modulo 2^43 Lambda; dim pr(W) = 1
+  x_0: nu(pr c_1) = 3, class e1 = [1, 1, 0, 0], e1 in pr(W): 0
+  x_2: nu(pr c_1) = 3, class e1 = [1, 1, 0, 0], e1 in pr(W): 0
+  (5672 ms)
+k = 1: D_1..D_7 certified, precisions of V: [1493, 1492, 1493, 1495, 1495, 1492, 1490] (391 ms)
+  logarithms: precisions [158, 166, 153, 153, 153, 155, 142, 162, 156] (D_1..D_7, phi_a, phi_b); N = 2^4 NM and 2^5 NM agree within the balls (5054 ms)
+  Lambda: pi^6 O^2 is contained in Lambda (Nakayama, certified); m_Lambda = 6; HNF diagonal 2-valuations [2, 2, 1, 1, 1, 0]
+  dim W = 3; coordinates of log phi_a, log phi_b in Lambda known modulo 2^52, 2^50
+  <log phi_a, log phi_b>: elementary divisors 2^0, 2^2; Gsat and pr known modulo 2^48 Lambda; dim pr(W) = 1
+  x_1: nu(pr c_1) = 1, class e1 = [0, 1, 0, 0], e1 in pr(W): 0
+  x_3: nu(pr c_1) = 0, class e1 = [0, 1, 0, 0], e1 in pr(W): 0
+  (5059 ms)

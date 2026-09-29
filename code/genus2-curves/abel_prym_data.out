@@ -1,0 +1,6 @@
+  ***   Warning: new maximum stack size = 4000002048 (3814.699 Mbytes).
+x0 (twist 0): m = 10, Ud = 60, D = 12600, N index 0, residue prime [13, 11]; all checks passed
+x1 (twist 1): m = 52, Ud = 474323867007116050125653058244156456535065221, D = 18898582988257082361449673480001907243716694941981788408682748836171869590869180788797422644, N index 0, residue prime [13, 11]; all checks passed
+x2 (twist 0): m = 26, Ud = 138318418761186978809564159556499941451263662025052, D = 66961947390082787005888723217794143693753421193070665476304034375401808438309773978435254825164609464, N index 0, residue prime [13, 11]; all checks passed
+x3 (twist 1): m = 14, Ud = 2, D = 56, N index 1, residue prime [13, 11]; all checks passed
+written /tmp/lf7b_regen.MIkBSC/FurioLombardo/Discharge/M3a/AbelPrymData.lean

@@ -1,0 +1,40 @@
+  ***   Warning: new maximum stack size = 900001792 (858.309 Mbytes).
+ok: the generators of the data file sunit_generators_data.gp
+ok: sources: tower.bin, pgen.bin (with the power tables, betaPowDen = 2 betaDen), chars.bin (6 defs)
+wrote the candidate /tmp/sb5/SUnitData.cand.lean (338646 bytes, 482 lines)
+the candidate has 297 defs
+ok: the candidate has exactly the 297 expected defs (258 entries, 21 named data, 18 of the mu(T) certificates)
+ok: the candidate reads back to the source data
+ok: lengths: gL, gLw, gLab, chL, RL, TL 29; gN, gNw, gNab, chN, RN, TN 53; pgen, pgenDen 82; alphaPow, betaPow 6
+ok: every generator, cofactor, power: 2 (L) or 4 (N) zk lists of length exactly 21
+ok: every pgen s: 6 zk lists of length exactly 21; every pgenDen s > 0
+ok: alphaL, betaN: zk lists of length 21; alphaDen, betaDen > 0; betaPowDen = 2 betaDen
+ok: from the text: q 0 (alpha) = 0 in L42, h 0 (beta) = 0 in N84 (q k, h k of DataBruin.lean)
+ok: from the text: q 1 (alpha) = 0 in L42, h 1 (beta) = 0 in N84 (q k, h k of DataBruin.lean)
+ok: from the text: every gL s is nonzero and gL s * gLw s = 2^a 7^b in L42 (29 exact identities)
+ok: from the text: every gN s is nonzero and gN s * gNw s = 2^a 7^b in N84 (53 exact identities)
+ok: negative control: one coordinate of gL 4, of gN 10 changed by 1 breaks exactly that identity
+ok: from the text: Pgen s (alpha) = gensL s, Pgen s (beta) = 1 (s < 29); Pgen s (alpha) = 1, Pgen s (beta) = gensN (s - 29) (s >= 29): 82 x 2 exact identities (Horner)
+ok: from the text: alphaPow 0 = 1, alphaPow 1 = alphaL, alphaPow (i + 1) = alphaPow i * alphaPow 1; betaPow 0 = 1, betaPow 1 = (betaPowDen / betaDen) betaN, betaPow (i + 1) = betaPow i * betaPow 1
+ok: from the text: sum_i pgen s i alphaPow i alphaDen^(5-i) = pgenDen s alphaDen^5 Pgen s (alpha), the same at beta with betaPow, betaPowDen (82 x 2 exact identities)
+ok: from the text: every character datum is [p, t, s] (L) or [p, t, s, t2] (N), p an odd prime, p != 7, p prime to Dz and DB, fL(t) = 0, s^2 = rho(eps), t2 != 0, t2^2 = 2 (rho(ea) + s rho(eb)) mod p
+ok: from the text: RL and RN are the rows of the characters on the generators of the text (bit s of row j iff rho_j(gen s)^((p-1)/2) = -1; no generator vanishes mod any chosen p)
+ok: row and inverse bitmasks below 2^29 (L), 2^53 (N)
+ok: from the text: leftInvOK RL 29 29 TL and leftInvOK RN 53 53 TN
+ok: negative control: RN with one bit flipped fails leftInvOK
+ok: k = 0: the mu(T) certificate reads back to muT.bin
+ok: k = 0: shapes (kapT, zk lists of length 21, aT 82 bits in {0, 1}, denominators > 0)
+ok: k = 0: kappa, y1, y2 nonzero
+ok: k = 0: prodLT = prod_{s < 29, aT s = 1} gL s and prodNT = prod_{s >= 29, aT s = 1} gN (s - 29), products of the generators of the text
+ok: k = 0: -(FE k 0) [sum_i hL_i A^i D_L^(4-i)] prodLT kapTDen y1TDen^2 = 4 hDen D_L^4 kapT y1T^2 in L42 (A = alphaPow 1, D_L = alphaDen)
+ok: k = 0: [sum_i qL_i B^i D_N^(2-i)] prodNT kapTDen y2TDen^2 = qDen D_N^2 kapT y2T^2 in N84 (B = betaPow 1, D_N = betaPowDen)
+ok: k = 1: the mu(T) certificate reads back to muT.bin
+ok: k = 1: shapes (kapT, zk lists of length 21, aT 82 bits in {0, 1}, denominators > 0)
+ok: k = 1: kappa, y1, y2 nonzero
+ok: k = 1: prodLT = prod_{s < 29, aT s = 1} gL s and prodNT = prod_{s >= 29, aT s = 1} gN (s - 29), products of the generators of the text
+ok: k = 1: -(FE k 0) [sum_i hL_i A^i D_L^(4-i)] prodLT kapTDen y1TDen^2 = 4 hDen D_L^4 kapT y1T^2 in L42 (A = alphaPow 1, D_L = alphaDen)
+ok: k = 1: [sum_i qL_i B^i D_N^(2-i)] prodNT kapTDen y2TDen^2 = qDen D_N^2 kapT y2T^2 in N84 (B = betaPow 1, D_N = betaPowDen)
+ok: negative control: -kapT in place of kapT breaks the L42 identity (both twists)
+sizes: pgen 231226 digits, gN 5429 digits, gNw 5153 digits, betaPow 5479 digits (decimal digits of the integers)
+candidate sha256 3d3f9028d88f991123bd2f264aac61f424fc4c8727f8db717786268c1d0ceb21  /tmp/sb5/SUnitData.cand.lean
+DONE sunit_data_lean: 34 checks passed, 0 failed (2484 ms)

@@ -1,0 +1,40 @@
+import FurioLombardo.Discharge.M3a.Concrete
+-- Axioms of every WP2 declaration that carries a proof (theorems, the instance, the DPoint terms).
+-- Run from lean/: lake env lean ../code/genus2-curves/bruin_data_axioms.lean
+open FurioLombardo.Discharge.M3a FurioLombardo.Discharge.M3a.Bruin
+#print axioms Mmat_quad
+#print axioms Mmat_symm
+#print axioms fδ_eq_det
+#print axioms Mt_eq
+#print axioms fδ_natDegree
+#print axioms fRev_eq_reverse
+#print axioms fRev_eq_mul
+#print axioms q_monic
+#print axioms q_natDegree
+#print axioms q_dvd_fRev
+#print axioms h_monic
+#print axioms h_natDegree
+#print axioms h_dvd_fRev
+#print axioms c_not_isSquare
+#print axioms fRev_natDegree
+#print axioms fRev_leadingCoeff
+#print axioms fRev_separable
+#print axioms goodSextic_fRev
+#print axioms goodSextic_fRev_map
+#print axioms d_eq
+#print axioms d_not_isSquare
+#print axioms β_sq_sub
+#print axioms β_natDegree_le
+#print axioms γ_natDegree_le
+#print axioms d_isSquare_adjoinRoot
+#print axioms h_dvd_β_sq_sub
+#print axioms x0
+#print axioms x1
+#print axioms x2
+#print axioms x3
+#print axioms x0_over
+#print axioms x1_over
+#print axioms x2_over
+#print axioms x3_over
+#print axioms goodSextic_map
+#print axioms not_isSquare_zkE_of_res

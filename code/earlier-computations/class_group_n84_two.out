@@ -1,0 +1,19 @@
+bnfinit(L): 5823 ms, signature [6, 18]
+ok: K21 embeds into L (1 embeddings)
+ok: d is a square in L
+ok: h = G2 G3 over L
+ok: G2 is quadratic in t
+ok: e = disc(G2) is not a square in L (N/L quadratic)
+ok: E_L/E_L^2 candidate basis of size r1 + r2 = 24
+ok: the 24 units are independent modulo squares: they span E_L/E_L^2
+finite primes of L ramified in N: [[7, 3, 7, 1]]
+real places of L ramified in N (e < 0): [1, 2, 6] of 6
+t = 4 ramified places; rank of the unit symbol matrix = 3 (122272 ms)
+ok: [E_L : E_L cap N(N^x)] = 2^(t-1): |Cl(N)^G| = h(L) is odd, so Cl(N)[2] = 0
+  prime of L above 2, e = 6, f = 1: inert in N
+  prime of L above 2, e = 12, f = 1: split in N
+  prime of L above 2, e = 12, f = 2: split in N
+  prime of L above 7, e = 7, f = 3: ramified in N
+  prime of L above 7, e = 7, f = 3: split in N
+#S_L = 5, #S_N = 8; expected dim N(S,2) = r1(N) + r2(N) + #S_N = 53
+RESULT PASS

@@ -1,0 +1,18 @@
+k = 1: Hensel start v(K21(th0)) = 60 > 2 v(K21'(th0)) = 34; after Newton v(K21(th)) >= 3062, v(K21') = 17, v(gen2(th)) = 1 (place pr: True)
+  D_1..D_7 exact near the stored ones (v(rho) > 2 v(2)); phi_a, phi_b from PHI (0 s)
+  logs: chart ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x'], terms [25, 27, 25, 29, 29, 25, 23, 25, 23], c [21, 43/2, 24, 41/2, 41/2, 24, 27, 21, 24]
+  logs: absolute precisions [232, 232, 232, 232, 232, 232, 232, 232, 232]; theta-coefficient valuations (should exceed the target) [492, 464, 492, 452, 452, 496, 537, 501, 540]; branch margins [470, 440, 471, 444, 444, 474, 504, 486, 513]; min v(remainder u | f - v^2) 2532
+  log D_1, D_2 with N = 2^4 NM and 2^5 NM: valuations of the differences [229, 229]
+  my log against the certified ball of p21_45, per point: (v(difference), my precision, certified precision, consistent): [(158, 232, 158, True), (167, 232, 166, True), (155, 232, 153, True), (153, 232, 153, True), (153, 232, 153, True), (155, 232, 155, True), (145, 232, 142, True), (162, 232, 162, True), (156, 232, 156, True)]
+  Lambda (independent): pi^6 O^2 in span(l_i) + pi^9 O^2 (Nakayama test), m_Lambda = 6 (pi^5 O^2 not in Lambda: True), index [O^2 : Lambda] = 2^7, elementary divisors 2^[0, 1, 1, 1, 2, 2]
+  rank rho = 6; rho(T) = 0: True; rho(phi_a), rho(phi_b) from logs = from x - T classes: True, True; dim W = 3; coordinates of log phi_a, phi_b known mod 2^75, 2^75
+  saturation: elementary divisors 2^0, 2^2; pr known mod 2^73; dim pr(W) = 1
+  x_1: nu(pr c_1) = 1, class (1, 0, 0, 0), in pr(W): False, within precision: True
+  x_3: nu(pr c_1) = 0, class (1, 0, 0, 0), in pr(W): False, within precision: True
+  (certified by p21_45: M = 6, m_Lambda = 6, d = [0, 2], r = 48, E1 = [[1, 1, [0, 1, 0, 0], 0], [3, 0, [0, 1, 0, 0], 0]])
+  centres: 22 of 22 agree with p21_46 (nu, not in pr(W)) and satisfy the criterion with the independent m_Lambda; least precision margin 65; least valuations of GAG - Y star(A) and Y^2 - f over the centres 2984, 2981 (2 s)
+  valuations of disc U of phi(P) at the centres: min 0, max 6
+  tiny-series KAT (disc, X0, v2(X0 - X_i), v(series), v(log phi(P) - log phi(x_i) - series) for the better sign, sign): [(3, 224, 5, 21, 232, '+'), (3, 96, 5, 21, 232, '+'), (3, 160, 5, 21, 232, '+'), (3, 32, 5, 21, 232, '+'), (3, 112, 4, 18, 225, '+'), (3, 48, 4, 18, 225, '+'), (3, 80, 4, 18, 225, '+'), (3, 16, 4, 18, 225, '+'), (3, 56, 3, 15, 162, '+'), (3, 24, 3, 15, 162, '+'), (3, 40, 3, 15, 159, '+'), (3, 8, 3, 15, 159, '+'), (2, 23, 3, 15, 225, '+'), (2, 7, 3, 15, 225, '+')]
+  constant boxes, 2 random points each: 44 tests, 0 failures; least v(lambda(X) - lambda(X0)) - (vM + 3 v2(X - X0)) = 0
+  tail boxes (x_i, j = v2(X - X_i), nu, nu = nu1 + j, class = e1, certified precision): [(1, 6, 8, True, True, True), (1, 7, 9, True, True, True), (1, 9, 11, True, True, True), (3, 4, 5, True, True, True), (3, 5, 6, True, True, True), (3, 7, 8, True, True, True)]
+done (9 s)

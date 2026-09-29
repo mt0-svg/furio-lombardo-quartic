@@ -1,0 +1,9 @@
+'FurioLombardo.Discharge.SelmerBasis.Count.norm_two_w7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.w7P64_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.not_isSquare_c_w7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.not_isSquare_ndK_w7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.countBound_w7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.W7.not_isSquare_c_w7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.W7.goodSextic_w7' depends on axioms: [propext, Classical.choice, Quot.sound]

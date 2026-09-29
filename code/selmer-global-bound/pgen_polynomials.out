@@ -1,0 +1,262 @@
+  ***   Warning: new maximum stack size = 900001792 (858.309 Mbytes).
+ok: tool: q^-1 mod h and h^-1 mod q over K21
+ok: tool: negative control (q^-1 q + 1 is not 1 mod h)
+ok: 29 + 53 generators from sb_5b (data file)
+ok: generator 0 of L42 = c0 + c1 alpha
+ok: deg Pgen 0 <= 5
+ok: Pgen 0 (alpha) = gensL 0, Pgen 0 (beta) = 1 (exported data)
+ok: generator 1 of L42 = c0 + c1 alpha
+ok: deg Pgen 1 <= 5
+ok: Pgen 1 (alpha) = gensL 1, Pgen 1 (beta) = 1 (exported data)
+ok: generator 2 of L42 = c0 + c1 alpha
+ok: deg Pgen 2 <= 5
+ok: Pgen 2 (alpha) = gensL 2, Pgen 2 (beta) = 1 (exported data)
+ok: generator 3 of L42 = c0 + c1 alpha
+ok: deg Pgen 3 <= 5
+ok: Pgen 3 (alpha) = gensL 3, Pgen 3 (beta) = 1 (exported data)
+ok: generator 4 of L42 = c0 + c1 alpha
+ok: deg Pgen 4 <= 5
+ok: Pgen 4 (alpha) = gensL 4, Pgen 4 (beta) = 1 (exported data)
+ok: generator 5 of L42 = c0 + c1 alpha
+ok: deg Pgen 5 <= 5
+ok: Pgen 5 (alpha) = gensL 5, Pgen 5 (beta) = 1 (exported data)
+ok: generator 6 of L42 = c0 + c1 alpha
+ok: deg Pgen 6 <= 5
+ok: Pgen 6 (alpha) = gensL 6, Pgen 6 (beta) = 1 (exported data)
+ok: generator 7 of L42 = c0 + c1 alpha
+ok: deg Pgen 7 <= 5
+ok: Pgen 7 (alpha) = gensL 7, Pgen 7 (beta) = 1 (exported data)
+ok: generator 8 of L42 = c0 + c1 alpha
+ok: deg Pgen 8 <= 5
+ok: Pgen 8 (alpha) = gensL 8, Pgen 8 (beta) = 1 (exported data)
+ok: generator 9 of L42 = c0 + c1 alpha
+ok: deg Pgen 9 <= 5
+ok: Pgen 9 (alpha) = gensL 9, Pgen 9 (beta) = 1 (exported data)
+ok: generator 10 of L42 = c0 + c1 alpha
+ok: deg Pgen 10 <= 5
+ok: Pgen 10 (alpha) = gensL 10, Pgen 10 (beta) = 1 (exported data)
+ok: generator 11 of L42 = c0 + c1 alpha
+ok: deg Pgen 11 <= 5
+ok: Pgen 11 (alpha) = gensL 11, Pgen 11 (beta) = 1 (exported data)
+ok: generator 12 of L42 = c0 + c1 alpha
+ok: deg Pgen 12 <= 5
+ok: Pgen 12 (alpha) = gensL 12, Pgen 12 (beta) = 1 (exported data)
+ok: generator 13 of L42 = c0 + c1 alpha
+ok: deg Pgen 13 <= 5
+ok: Pgen 13 (alpha) = gensL 13, Pgen 13 (beta) = 1 (exported data)
+ok: generator 14 of L42 = c0 + c1 alpha
+ok: deg Pgen 14 <= 5
+ok: Pgen 14 (alpha) = gensL 14, Pgen 14 (beta) = 1 (exported data)
+ok: generator 15 of L42 = c0 + c1 alpha
+ok: deg Pgen 15 <= 5
+ok: Pgen 15 (alpha) = gensL 15, Pgen 15 (beta) = 1 (exported data)
+ok: generator 16 of L42 = c0 + c1 alpha
+ok: deg Pgen 16 <= 5
+ok: Pgen 16 (alpha) = gensL 16, Pgen 16 (beta) = 1 (exported data)
+ok: generator 17 of L42 = c0 + c1 alpha
+ok: deg Pgen 17 <= 5
+ok: Pgen 17 (alpha) = gensL 17, Pgen 17 (beta) = 1 (exported data)
+ok: generator 18 of L42 = c0 + c1 alpha
+ok: deg Pgen 18 <= 5
+ok: Pgen 18 (alpha) = gensL 18, Pgen 18 (beta) = 1 (exported data)
+ok: generator 19 of L42 = c0 + c1 alpha
+ok: deg Pgen 19 <= 5
+ok: Pgen 19 (alpha) = gensL 19, Pgen 19 (beta) = 1 (exported data)
+ok: generator 20 of L42 = c0 + c1 alpha
+ok: deg Pgen 20 <= 5
+ok: Pgen 20 (alpha) = gensL 20, Pgen 20 (beta) = 1 (exported data)
+ok: generator 21 of L42 = c0 + c1 alpha
+ok: deg Pgen 21 <= 5
+ok: Pgen 21 (alpha) = gensL 21, Pgen 21 (beta) = 1 (exported data)
+ok: generator 22 of L42 = c0 + c1 alpha
+ok: deg Pgen 22 <= 5
+ok: Pgen 22 (alpha) = gensL 22, Pgen 22 (beta) = 1 (exported data)
+ok: generator 23 of L42 = c0 + c1 alpha
+ok: deg Pgen 23 <= 5
+ok: Pgen 23 (alpha) = gensL 23, Pgen 23 (beta) = 1 (exported data)
+ok: generator 24 of L42 = c0 + c1 alpha
+ok: deg Pgen 24 <= 5
+ok: Pgen 24 (alpha) = gensL 24, Pgen 24 (beta) = 1 (exported data)
+ok: generator 25 of L42 = c0 + c1 alpha
+ok: deg Pgen 25 <= 5
+ok: Pgen 25 (alpha) = gensL 25, Pgen 25 (beta) = 1 (exported data)
+ok: generator 26 of L42 = c0 + c1 alpha
+ok: deg Pgen 26 <= 5
+ok: Pgen 26 (alpha) = gensL 26, Pgen 26 (beta) = 1 (exported data)
+ok: generator 27 of L42 = c0 + c1 alpha
+ok: deg Pgen 27 <= 5
+ok: Pgen 27 (alpha) = gensL 27, Pgen 27 (beta) = 1 (exported data)
+ok: generator 28 of L42 = c0 + c1 alpha
+ok: deg Pgen 28 <= 5
+ok: Pgen 28 (alpha) = gensL 28, Pgen 28 (beta) = 1 (exported data)
+ok: generator 0 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 29 <= 5
+ok: Pgen 29 (alpha) = 1, Pgen 29 (beta) = gensN 0 (exported data)
+ok: generator 1 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 30 <= 5
+ok: Pgen 30 (alpha) = 1, Pgen 30 (beta) = gensN 1 (exported data)
+ok: generator 2 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 31 <= 5
+ok: Pgen 31 (alpha) = 1, Pgen 31 (beta) = gensN 2 (exported data)
+ok: generator 3 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 32 <= 5
+ok: Pgen 32 (alpha) = 1, Pgen 32 (beta) = gensN 3 (exported data)
+ok: generator 4 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 33 <= 5
+ok: Pgen 33 (alpha) = 1, Pgen 33 (beta) = gensN 4 (exported data)
+ok: generator 5 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 34 <= 5
+ok: Pgen 34 (alpha) = 1, Pgen 34 (beta) = gensN 5 (exported data)
+ok: generator 6 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 35 <= 5
+ok: Pgen 35 (alpha) = 1, Pgen 35 (beta) = gensN 6 (exported data)
+ok: generator 7 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 36 <= 5
+ok: Pgen 36 (alpha) = 1, Pgen 36 (beta) = gensN 7 (exported data)
+ok: generator 8 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 37 <= 5
+ok: Pgen 37 (alpha) = 1, Pgen 37 (beta) = gensN 8 (exported data)
+ok: generator 9 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 38 <= 5
+ok: Pgen 38 (alpha) = 1, Pgen 38 (beta) = gensN 9 (exported data)
+ok: generator 10 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 39 <= 5
+ok: Pgen 39 (alpha) = 1, Pgen 39 (beta) = gensN 10 (exported data)
+ok: generator 11 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 40 <= 5
+ok: Pgen 40 (alpha) = 1, Pgen 40 (beta) = gensN 11 (exported data)
+ok: generator 12 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 41 <= 5
+ok: Pgen 41 (alpha) = 1, Pgen 41 (beta) = gensN 12 (exported data)
+ok: generator 13 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 42 <= 5
+ok: Pgen 42 (alpha) = 1, Pgen 42 (beta) = gensN 13 (exported data)
+ok: generator 14 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 43 <= 5
+ok: Pgen 43 (alpha) = 1, Pgen 43 (beta) = gensN 14 (exported data)
+ok: generator 15 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 44 <= 5
+ok: Pgen 44 (alpha) = 1, Pgen 44 (beta) = gensN 15 (exported data)
+ok: generator 16 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 45 <= 5
+ok: Pgen 45 (alpha) = 1, Pgen 45 (beta) = gensN 16 (exported data)
+ok: generator 17 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 46 <= 5
+ok: Pgen 46 (alpha) = 1, Pgen 46 (beta) = gensN 17 (exported data)
+ok: generator 18 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 47 <= 5
+ok: Pgen 47 (alpha) = 1, Pgen 47 (beta) = gensN 18 (exported data)
+ok: generator 19 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 48 <= 5
+ok: Pgen 48 (alpha) = 1, Pgen 48 (beta) = gensN 19 (exported data)
+ok: generator 20 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 49 <= 5
+ok: Pgen 49 (alpha) = 1, Pgen 49 (beta) = gensN 20 (exported data)
+ok: generator 21 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 50 <= 5
+ok: Pgen 50 (alpha) = 1, Pgen 50 (beta) = gensN 21 (exported data)
+ok: generator 22 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 51 <= 5
+ok: Pgen 51 (alpha) = 1, Pgen 51 (beta) = gensN 22 (exported data)
+ok: generator 23 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 52 <= 5
+ok: Pgen 52 (alpha) = 1, Pgen 52 (beta) = gensN 23 (exported data)
+ok: generator 24 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 53 <= 5
+ok: Pgen 53 (alpha) = 1, Pgen 53 (beta) = gensN 24 (exported data)
+ok: generator 25 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 54 <= 5
+ok: Pgen 54 (alpha) = 1, Pgen 54 (beta) = gensN 25 (exported data)
+ok: generator 26 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 55 <= 5
+ok: Pgen 55 (alpha) = 1, Pgen 55 (beta) = gensN 26 (exported data)
+ok: generator 27 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 56 <= 5
+ok: Pgen 56 (alpha) = 1, Pgen 56 (beta) = gensN 27 (exported data)
+ok: generator 28 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 57 <= 5
+ok: Pgen 57 (alpha) = 1, Pgen 57 (beta) = gensN 28 (exported data)
+ok: generator 29 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 58 <= 5
+ok: Pgen 58 (alpha) = 1, Pgen 58 (beta) = gensN 29 (exported data)
+ok: generator 30 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 59 <= 5
+ok: Pgen 59 (alpha) = 1, Pgen 59 (beta) = gensN 30 (exported data)
+ok: generator 31 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 60 <= 5
+ok: Pgen 60 (alpha) = 1, Pgen 60 (beta) = gensN 31 (exported data)
+ok: generator 32 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 61 <= 5
+ok: Pgen 61 (alpha) = 1, Pgen 61 (beta) = gensN 32 (exported data)
+ok: generator 33 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 62 <= 5
+ok: Pgen 62 (alpha) = 1, Pgen 62 (beta) = gensN 33 (exported data)
+ok: generator 34 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 63 <= 5
+ok: Pgen 63 (alpha) = 1, Pgen 63 (beta) = gensN 34 (exported data)
+ok: generator 35 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 64 <= 5
+ok: Pgen 64 (alpha) = 1, Pgen 64 (beta) = gensN 35 (exported data)
+ok: generator 36 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 65 <= 5
+ok: Pgen 65 (alpha) = 1, Pgen 65 (beta) = gensN 36 (exported data)
+ok: generator 37 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 66 <= 5
+ok: Pgen 66 (alpha) = 1, Pgen 66 (beta) = gensN 37 (exported data)
+ok: generator 38 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 67 <= 5
+ok: Pgen 67 (alpha) = 1, Pgen 67 (beta) = gensN 38 (exported data)
+ok: generator 39 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 68 <= 5
+ok: Pgen 68 (alpha) = 1, Pgen 68 (beta) = gensN 39 (exported data)
+ok: generator 40 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 69 <= 5
+ok: Pgen 69 (alpha) = 1, Pgen 69 (beta) = gensN 40 (exported data)
+ok: generator 41 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 70 <= 5
+ok: Pgen 70 (alpha) = 1, Pgen 70 (beta) = gensN 41 (exported data)
+ok: generator 42 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 71 <= 5
+ok: Pgen 71 (alpha) = 1, Pgen 71 (beta) = gensN 42 (exported data)
+ok: generator 43 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 72 <= 5
+ok: Pgen 72 (alpha) = 1, Pgen 72 (beta) = gensN 43 (exported data)
+ok: generator 44 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 73 <= 5
+ok: Pgen 73 (alpha) = 1, Pgen 73 (beta) = gensN 44 (exported data)
+ok: generator 45 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 74 <= 5
+ok: Pgen 74 (alpha) = 1, Pgen 74 (beta) = gensN 45 (exported data)
+ok: generator 46 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 75 <= 5
+ok: Pgen 75 (alpha) = 1, Pgen 75 (beta) = gensN 46 (exported data)
+ok: generator 47 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 76 <= 5
+ok: Pgen 76 (alpha) = 1, Pgen 76 (beta) = gensN 47 (exported data)
+ok: generator 48 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 77 <= 5
+ok: Pgen 77 (alpha) = 1, Pgen 77 (beta) = gensN 48 (exported data)
+ok: generator 49 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 78 <= 5
+ok: Pgen 78 (alpha) = 1, Pgen 78 (beta) = gensN 49 (exported data)
+ok: generator 50 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 79 <= 5
+ok: Pgen 79 (alpha) = 1, Pgen 79 (beta) = gensN 50 (exported data)
+ok: generator 51 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 80 <= 5
+ok: Pgen 80 (alpha) = 1, Pgen 80 (beta) = gensN 51 (exported data)
+ok: generator 52 of N84 = P(beta), deg P <= 3
+ok: deg Pgen 81 <= 5
+ok: Pgen 81 (alpha) = 1, Pgen 81 (beta) = gensN 52 (exported data)
+ok: alphaDen alpha = alphaL, betaDen beta = betaN (plain coordinates) of sb_5a
+power tables: denominators of (alphaDen alpha)^i [1, 1, 1, 1, 1, 1], of (betaDen beta)^i in the format of gN (b = c / 2) [1, 2, 1, 1, 1, 1]
+ok: alphaPow i = (alphaDen alpha)^i, i = 0..5: integral zk coordinates (format of gL)
+ok: betaPow i = (betaPowDen beta)^i, betaPowDen = 2 betaDen = 368, i = 0..5: integral zk coordinates in the format of gN (b = c / 2)
+power tables: bits of alphaPow [1, 10, 20, 31, 42, 53], of betaPow [1, 14, 29, 44, 60, 76]
+ok: sum_i pgen s i alphaPow i alphaDen^(5-i) = pgenDen s alphaDen^5 Pgen s (alpha), sum_i pgen s i betaPow i betaPowDen^(5-i) = pgenDen s betaPowDen^5 Pgen s (beta) (82 x 2 exact identities on the exported integers)
+ok: negative control: pgen 2 with its X coefficient changed by 1 misses gensL 2
+pgenDen: bits min 61 max 66; the distinct prime factors below 10^6 of the denominators: [2, 3, 7, 439]
+pgen numerators: max bits per polynomial [79, 80, 77, 78, 81, 81, 80, 75, 82, 77, 77, 80, 77, 81, 81, 76, 79, 79, 81, 81, 80, 80, 80, 79, 80, 80, 79, 79, 78, 78, 80, 75, 80, 81, 80, 77, 79, 80, 78, 79, 79, 80, 79, 80, 79, 80, 75, 78, 79, 78, 79, 81, 80, 80, 80, 74, 79, 75, 82, 82, 80, 79, 82, 79, 80, 81, 76, 81, 82, 83, 80, 81, 83, 82, 81, 79, 80, 82, 79, 75, 86, 81]
+pgen: total size 10332 integers, 231226 decimal digits in all
+ok: cache /tmp/sb5/pgen.bin written and read back
+DONE sb_5c_pgen: 255 checks passed, 0 failed (2684 ms)

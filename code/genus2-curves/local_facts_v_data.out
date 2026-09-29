@@ -1,0 +1,10 @@
+  ***   Warning: new maximum stack size = 4000002048 (3814.699 Mbytes).
+k = 0: h = A^2 - d B^2, denominators of a: 92, of b: 184; v(d) = 8, d square at v: 0
+  sigma(46^2 d): v = 14, test scaling [0, 2] at precision 7
+  D: v(z0) = 2, v(z1) = 7, v(N) = 4, v(n) = 2; v((z0+n)/2) = 2 scaled by [0, 0], v((z0-n)/2) = 14 scaled by [0, 2]; b = [1704, 1886, 345], M = 11, r = 3, P = 8; denominators z0 2116, N 2116
+  rho: v(z0) = 4, v(z1) = 9, v(N) = 8, v(n) = 4; v((z0+n)/2) = 16 scaled by [1, 3], v((z0-n)/2) = 4 scaled by [1, 1]; b = [13304, 10998, 2528], M = 14, r = 4, P = 10; denominators z0 2116, N 4477456
+k = 1: h = A^2 - d B^2, denominators of a: 92, of b: 184; v(d) = 8, d square at v: 0
+  sigma(46^2 d): v = 14, test scaling [0, 2] at precision 7
+  D: v(z0) = 2, v(z1) = 7, v(N) = 4, v(n) = 2; v((z0+n)/2) = 2 scaled by [0, 0], v((z0-n)/2) = 14 scaled by [0, 2]; b = [1704, 1886, 345], M = 11, r = 3, P = 8; denominators z0 2116, N 2116
+  rho: v(z0) = 4, v(z1) = 9, v(N) = 8, v(n) = 4; v((z0+n)/2) = 16 scaled by [1, 3], v((z0-n)/2) = 4 scaled by [1, 1]; b = [13304, 10998, 2528], M = 14, r = 4, P = 10; denominators z0 2116, N 4477456
+written /tmp/lf7b_regen.zRPzHZ/FurioLombardo/Discharge/M3a/LocalData.lean

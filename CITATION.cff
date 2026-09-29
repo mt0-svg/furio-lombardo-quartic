@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "The plane quartic of Furio and Lombardo has exactly four rational points"
+authors:
+  - name: mt0-svg
+repository-code: "https://github.com/mt0-svg/furio-lombardo-quartic"
+license: Apache-2.0
+version: v1.0
+keywords:
+  - Furio-Lombardo conjecture
+  - rational points
+  - plane quartic
+  - twist of the Klein quartic
+  - Selmer group Chabauty
+  - Prym variety
+  - genus 2 Jacobian
+  - 7-adic Galois representation
+  - Lean 4
+  - formal verification
+preferred-citation:
+  type: article
+  title: "The plane quartic of Furio and Lombardo has exactly four rational points"
+  authors:
+    - name: mt0-svg
+  url: "https://github.com/mt0-svg/furio-lombardo-quartic"

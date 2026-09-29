@@ -1,0 +1,11 @@
+import FurioLombardo.M1.SieveBlocks
+
+/-! Kernel check of the certificates of block 5 of the sieve (the rings above p = 23 and the characters of
+the chosen conics at the listed points of C(F_23)). -/
+
+namespace FurioLombardo.M1
+
+set_option maxRecDepth 100000 in
+theorem blockOK_5 : blockOK 5 = true := by decide +kernel
+
+end FurioLombardo.M1

@@ -1,0 +1,56 @@
+  ***   Warning: new maximum stack size = 5000003584 (4768.375 Mbytes).
+k = 0 (MRED 240, P 60, a 4): Lambda = HNF with diagonal 2-valuations [2, 2, 1, 1, 1, 0] (42341 ms)
+  dim W = rho(sigma_v(Sel)) = 3
+  x_0, x_2: coordinates in Lambda (2-valuations) 0, 0; dim W_Gamma = 1
+  elementary divisors of <log phi_a, log R> in Lambda: 2-valuations [1, 0]
+  (ii) for Gamma: dim(image(Gsat) meet W) = 2, dim W_Gamma = 1: FAIL
+  halvings: combinations (alpha, beta) of (phi_a, R) in 2J(K_v) + <T>: Mat([1, 1])
+  (ii) for the saturated Gamma': dim W_Gamma' = 2, image(Gsat) meet W = W_Gamma': PASS
+  image of W in (Lambda/Gsat)/2: dimension 1 (basis dependent coordinates: Mat([0, 0, 0, 1]))
+  x_0: v_2(pr c_m), m = 1..22: [3, 2, 3, 1, 2, 2, 3, 0, 2, 1, 1, 1, 0, -1, 0, -4, -1, -1, 0, -2, -1, -2]
+  x_0: (iii) leading class of the linear term in pr(W): 0 (PASS); linear term leading for v(tau) > 1
+  x_2: v_2(pr c_m), m = 1..22: [3, 2, 3, 1, 2, 2, 3, 0, 2, 1, 1, 1, 0, -1, 0, -4, -1, -1, 0, -2, -1, -2]
+  x_2: (iii) leading class of the linear term in pr(W): 0 (PASS); linear term leading for v(tau) > 1
+  (68169 ms)
+  *** nfeltreduce: Warning: increasing stack size to 16000000.
+k = 0 (MRED 330, P 90, a 5): Lambda = HNF with diagonal 2-valuations [2, 2, 1, 1, 1, 0] (62898 ms)
+  dim W = rho(sigma_v(Sel)) = 3
+  x_0, x_2: coordinates in Lambda (2-valuations) 0, 0; dim W_Gamma = 1
+  elementary divisors of <log phi_a, log R> in Lambda: 2-valuations [1, 0]
+  (ii) for Gamma: dim(image(Gsat) meet W) = 2, dim W_Gamma = 1: FAIL
+  halvings: combinations (alpha, beta) of (phi_a, R) in 2J(K_v) + <T>: Mat([1, 1])
+  (ii) for the saturated Gamma': dim W_Gamma' = 2, image(Gsat) meet W = W_Gamma': PASS
+  image of W in (Lambda/Gsat)/2: dimension 1 (basis dependent coordinates: Mat([0, 0, 1, 0]))
+  x_0: v_2(pr c_m), m = 1..22: [3, 2, 3, 1, 2, 2, 3, 0, 2, 1, 1, 1, 0, -1, 0, -4, -1, -1, 0, -2, -1, -2]
+  x_0: (iii) leading class of the linear term in pr(W): 0 (PASS); linear term leading for v(tau) > 1
+  x_2: v_2(pr c_m), m = 1..22: [3, 2, 3, 1, 2, 2, 3, 0, 2, 1, 1, 1, 0, -1, 0, -4, -1, -1, 0, -2, -1, -2]
+  x_2: (iii) leading class of the linear term in pr(W): 0 (PASS); linear term leading for v(tau) > 1
+  (106896 ms)
+k = 0: W, W_Gamma, rho(D_i), dim pr(W) and the class tests agree at both precisions
+k = 1 (MRED 240, P 60, a 4): Lambda = HNF with diagonal 2-valuations [2, 2, 1, 1, 1, 0] (41154 ms)
+  dim W = rho(sigma_v(Sel)) = 3
+  x_1, x_3: coordinates in Lambda (2-valuations) 0, 0; dim W_Gamma = 1
+  elementary divisors of <log phi_a, log R> in Lambda: 2-valuations [1, 0]
+  (ii) for Gamma: dim(image(Gsat) meet W) = 2, dim W_Gamma = 1: FAIL
+  halvings: combinations (alpha, beta) of (phi_a, R) in 2J(K_v) + <T>: Mat([0, 1])
+  (ii) for the saturated Gamma': dim W_Gamma' = 2, image(Gsat) meet W = W_Gamma': PASS
+  image of W in (Lambda/Gsat)/2: dimension 1 (basis dependent coordinates: Mat([1, 0, 1, 1]))
+  x_1: v_2(pr c_m), m = 1..22: [1, 1, -2, -2, -6, -6, -9, -9, -14, -14, -17, -17, -21, -21, -24, -24, -30, -30, -33, -33, -37, -37]
+  x_1: (iii) leading class of the linear term in pr(W): 0 (PASS); linear term leading for v(tau) > 31/16
+  x_3: v_2(pr c_m), m = 1..22: [0, -1, -1, -4, 0, -2, -5, -8, -6, -8, -7, -8, -11, -12, -12, -17, -12, -13, -16, -18, -17, -19]
+  x_3: (iii) leading class of the linear term in pr(W): 0 (PASS); linear term leading for v(tau) > 4/3
+  (70832 ms)
+k = 1 (MRED 330, P 90, a 5): Lambda = HNF with diagonal 2-valuations [2, 2, 1, 1, 1, 0] (60357 ms)
+  dim W = rho(sigma_v(Sel)) = 3
+  x_1, x_3: coordinates in Lambda (2-valuations) 0, 0; dim W_Gamma = 1
+  elementary divisors of <log phi_a, log R> in Lambda: 2-valuations [1, 0]
+  (ii) for Gamma: dim(image(Gsat) meet W) = 2, dim W_Gamma = 1: FAIL
+  halvings: combinations (alpha, beta) of (phi_a, R) in 2J(K_v) + <T>: Mat([0, 1])
+  (ii) for the saturated Gamma': dim W_Gamma' = 2, image(Gsat) meet W = W_Gamma': PASS
+  image of W in (Lambda/Gsat)/2: dimension 1 (basis dependent coordinates: Mat([0, 0, 1, 1]))
+  x_1: v_2(pr c_m), m = 1..22: [1, 1, -2, -2, -6, -6, -9, -9, -14, -14, -17, -17, -21, -21, -24, -24, -30, -30, -33, -33, -37, -37]
+  x_1: (iii) leading class of the linear term in pr(W): 0 (PASS); linear term leading for v(tau) > 31/16
+  x_3: v_2(pr c_m), m = 1..22: [0, -1, -1, -4, 0, -2, -5, -8, -6, -8, -7, -8, -11, -12, -12, -17, -12, -13, -16, -18, -17, -19]
+  x_3: (iii) leading class of the linear term in pr(W): 0 (PASS); linear term leading for v(tau) > 4/3
+  (110849 ms)
+k = 1: W, W_Gamma, rho(D_i), dim pr(W) and the class tests agree at both precisions

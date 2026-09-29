@@ -1,0 +1,84 @@
+  ***   Warning: new maximum stack size = 5000003584 (4768.375 Mbytes).
+twist 0: 45 random points
+    k = 0, disc 1, X = 675330: constant box [1, 2, 5], nu = 5 (predicted 5), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 492461: constant box [1, 45, 6], nu = 6 (predicted 6), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 144435: constant box [1, 19, 5], nu = 5 (predicted 5), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 956647: constant box [1, 7, 5], nu = 5 (predicted 5), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 394239: constant box [1, 31, 5], nu = 5 (predicted 5), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 2, X = 133684: excluded box [2, 0, 1], non-square confirmed
+    k = 0, disc 2, X = 692761: excluded box [2, 1, 1], non-square confirmed
+    k = 0, disc 2, X = 352094: excluded box [2, 0, 1], non-square confirmed
+    k = 0, disc 2, X = 757183: excluded box [2, 1, 1], non-square confirmed
+    k = 0, disc 2, X = 444465: excluded box [2, 1, 1], non-square confirmed
+    k = 0, disc 3, X = 673416: excluded box [3, 0, 2], non-square confirmed
+    k = 0, disc 3, X = 329952: excluded box [3, 0, 2], non-square confirmed
+    k = 0, disc 3, X = 279892: excluded box [3, 0, 2], non-square confirmed
+    k = 0, disc 3, X = 322505: excluded box [3, 1, 2], non-square confirmed
+    k = 0, disc 3, X = 580632: excluded box [3, 0, 2], non-square confirmed
+    k = 0, disc 4, X = 459272: excluded box [4, 0, 2], non-square confirmed
+    k = 0, disc 4, X = 997748: excluded box [4, 0, 2], non-square confirmed
+    k = 0, disc 4, X = 711890: excluded box [4, 2, 2], non-square confirmed
+    k = 0, disc 4, X = 320696: excluded box [4, 0, 2], non-square confirmed
+    k = 0, disc 4, X = 225832: excluded box [4, 0, 2], non-square confirmed
+    k = 0, disc 5, X = 8217: constant box [5, 1, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 112406: excluded box [5, 0, 1], non-square confirmed
+    k = 0, disc 5, X = 431791: constant box [5, 3, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 556954: excluded box [5, 0, 1], non-square confirmed
+    k = 0, disc 5, X = 931919: constant box [5, 3, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 2664: constant box [1, 104, 7], nu = 7 (predicted 7), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 10016: constant box [1, 288, 9], nu = 9 (predicted 9), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 58112: tail box [1, 0, 6], nu = 12 (predicted 12), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 100352: tail box [1, 0, 6], nu = 15 (predicted 15), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 3913: constant box [1, 73, 7], nu = 7 (predicted 7), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 10273: constant box [1, 33, 9], nu = 9 (predicted 9), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 23297: tail box [1, 1, 6], nu = 12 (predicted 12), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 1, X = 264193: tail box [1, 1, 6], nu = 15 (predicted 15), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 589463: constant box [5, 3, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 495713: constant box [5, 1, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 842927: constant box [5, 3, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 22187: constant box [5, 3, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 131741: constant box [5, 1, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 287667: constant box [5, 3, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 332765: constant box [5, 1, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 972577: constant box [5, 1, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 748163: constant box [5, 3, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 171953: constant box [5, 1, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 793195: constant box [5, 3, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 0, disc 5, X = 251793: constant box [5, 1, 2], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+twist 0 done (251394 ms)
+twist 1: 33 random points
+    k = 1, disc 1, X = 211562: excluded box [1, 0, 1], non-square confirmed
+    k = 1, disc 1, X = 114935: excluded box [1, 1, 1], non-square confirmed
+    k = 1, disc 1, X = 239981: excluded box [1, 1, 1], non-square confirmed
+    k = 1, disc 1, X = 690572: excluded box [1, 0, 1], non-square confirmed
+    k = 1, disc 1, X = 653218: excluded box [1, 0, 1], non-square confirmed
+    k = 1, disc 2, X = 769601: constant box [2, 1, 3], nu = 2 (predicted 2), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 2, X = 715548: excluded box [2, 0, 1], non-square confirmed
+    k = 1, disc 2, X = 816375: constant box [2, 23, 5], nu = 4 (predicted 4), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 2, X = 1013011: constant box [2, 3, 4], nu = 3 (predicted 3), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 2, X = 535855: tail box [2, 15, 4], nu = 5 (predicted 5), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 3, X = 736422: excluded box [3, 2, 2], non-square confirmed
+    k = 1, disc 3, X = 711202: excluded box [3, 2, 2], non-square confirmed
+    k = 1, disc 3, X = 241642: excluded box [3, 2, 2], non-square confirmed
+    k = 1, disc 3, X = 259804: constant box [3, 28, 5], nu = 4 (predicted 4), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 3, X = 202868: constant box [3, 20, 5], nu = 4 (predicted 4), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 4, X = 922020: excluded box [4, 0, 2], non-square confirmed
+    k = 1, disc 4, X = 449515: excluded box [4, 3, 2], non-square confirmed
+    k = 1, disc 4, X = 507928: excluded box [4, 0, 2], non-square confirmed
+    k = 1, disc 4, X = 363978: excluded box [4, 2, 2], non-square confirmed
+    k = 1, disc 4, X = 113193: excluded box [4, 1, 2], non-square confirmed
+    k = 1, disc 5, X = 346216: excluded box [5, 0, 1], non-square confirmed
+    k = 1, disc 5, X = 732262: excluded box [5, 0, 1], non-square confirmed
+    k = 1, disc 5, X = 640829: excluded box [5, 1, 1], non-square confirmed
+    k = 1, disc 5, X = 479909: excluded box [5, 1, 1], non-square confirmed
+    k = 1, disc 5, X = 343352: excluded box [5, 0, 1], non-square confirmed
+    k = 1, disc 3, X = 2680: constant box [3, 56, 6], nu = 5 (predicted 5), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 3, X = 10528: constant box [3, 32, 8], nu = 7 (predicted 7), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 3, X = 40704: tail box [3, 0, 6], nu = 10 (predicted 10), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 3, X = 51200: tail box [3, 0, 6], nu = 13 (predicted 13), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 2, X = 3575: constant box [2, 23, 5], nu = 4 (predicted 4), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 2, X = 8223: tail box [2, 15, 4], nu = 6 (predicted 6), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 2, X = 126207: tail box [2, 15, 4], nu = 9 (predicted 9), class [0, 1, 0, 0], in pr(W): 0
+    k = 1, disc 2, X = 866303: tail box [2, 15, 4], nu = 12 (predicted 12), class [0, 1, 0, 0], in pr(W): 0
+twist 1 done (142353 ms)
+RESULT: all known-answer tests pass

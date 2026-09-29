@@ -1,0 +1,23 @@
+pi: zk coordinates [-2, 2, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, -1, 1, 0, 0, -1, 0, 0, 0] (max 2 bits), norm 1317; 0 s
+twist 0: m1 = Mat([2, 2]), F 69 bits, A 218 bits (deg 4), B 226 bits (deg 5), e1 212 bits, N(e1) = [2, 336; 7, 633], N1 = 31; 0 s
+  i = 0: F2 69 bits, A2 386 bits (deg 4), B2 383 bits (deg 5), R2 283 bits
+  i = 1: F2 69 bits, A2 386 bits (deg 4), B2 383 bits (deg 5), R2 283 bits
+  i = 2: F2 69 bits, A2 386 bits (deg 4), B2 383 bits (deg 5), R2 283 bits
+twist 1: m1 = Mat([2, 2]), F 70 bits, A 236 bits (deg 4), B 241 bits (deg 5), e1 226 bits, N(e1) = [2, 336; 7, 633], N1 = 31; 0 s
+  i = 0: F2 70 bits, A2 399 bits (deg 4), B2 397 bits (deg 5), R2 298 bits
+  i = 1: F2 70 bits, A2 399 bits (deg 4), B2 397 bits (deg 5), R2 298 bits
+  i = 2: F2 70 bits, A2 399 bits (deg 4), B2 397 bits (deg 5), R2 298 bits
+  *** mathnf: Warning: increasing stack size to 16000000.
+  *** mathnf: Warning: increasing stack size to 32000000.
+  *** mathnf: Warning: increasing stack size to 64000000.
+  *** mathnf: Warning: increasing stack size to 128000000.
+twist 0, i = 0: y 355 bits, z 11 bits, exponent 31
+twist 0, i = 1: y 356 bits, z 11 bits, exponent 31
+twist 0, i = 2: y 354 bits, z 11 bits, exponent 31
+twist 1, i = 0: y 370 bits, z 11 bits, exponent 31
+twist 1, i = 1: y 371 bits, z 11 bits, exponent 31
+twist 1, i = 2: y 369 bits, z 11 bits, exponent 31
+exponent N = 31
+written /tmp/lf7a/regen/schaefer_certs/SchaeferCertData.lean
+checks 64, failures 0; total 2 s
+RESULT PASS

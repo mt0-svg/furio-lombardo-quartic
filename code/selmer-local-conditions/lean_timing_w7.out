@@ -1,0 +1,8 @@
+# lake env lean on the w7 check modules, 2026-09-29T20:05:37Z, 24 cores, cap -m 7G -c 3
+W7CheckM: rc=0, 14.47 s wall, 12.03 s user, 7330164 KB max RSS
+W7CheckL: rc=0, 13.91 s wall, 11.61 s user, 7191904 KB max RSS
+W7CheckN0: rc=0, 20.26 s wall, 17.80 s user, 7264052 KB max RSS
+W7CheckN1: rc=0, 21.46 s wall, 19.08 s user, 7339348 KB max RSS
+W7CheckN: rc=0, 4.44 s wall, 2.36 s user, 6933140 KB max RSS
+W7CheckB: rc=0, 5.44 s wall, 3.11 s user, 7032604 KB max RSS
+W7Check: rc=0, 4.21 s wall, 2.33 s user, 6926924 KB max RSS

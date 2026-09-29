@@ -1,0 +1,9 @@
+  ***   Warning: new maximum stack size = 1000001536 (953.676 Mbytes).
+ok: maximal order certified (nfcertify, no GRH)
+ok: disc(O_K) = -2^22 7^27, signature [3, 9]
+Minkowski bound M_K = 40372280.537309794658111619343497465829, B = floor(M_K) = 40372280
+ok: class group trivial under GRH (only used to find generators)
+primes dividing the polynomial discriminant: [2, 7, 45613, 462191, 249279053]
+range (20200000, 24240000]: 238769 primes, 240231 prime ideals of norm <= B, each principal with a verified generator (824 s wall)
+ok: every prime of the range visited
+RESULT PASS

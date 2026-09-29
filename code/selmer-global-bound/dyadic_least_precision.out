@@ -1,0 +1,9 @@
+  ***   Warning: new maximum stack size = 4000002048 (3814.699 Mbytes).
+ok: u is a unit
+ok: (u, d)_P3 = -1
+k = 1: normalised solution with c = 1 (0 ms)
+k = 2: normalised solution with a = 1 (0 ms)
+k = 3: normalised solution with a = 1 (1 ms)
+k = 4: normalised solution with a = 1 (0 ms)
+k = 5: normalised solution with a = 1 (0 ms)
+k = 6: NO normalised solution (1733 ms)

@@ -1,0 +1,14 @@
+'FurioLombardo.Discharge.SelmerBasis.Count.countBound_w2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.not_isSquare_c_w2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.not_isSquare_d_w2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.cert_not_isSquare_depth_two_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.ck_not_isSquare_depth_two_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.not_isSquare_one_add_four_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.Count.w2alPow_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FurioLombardo.Discharge.SelmerBasis.W2.not_isSquare_c_w2' depends on axioms: [propext, Classical.choice, Quot.sound]

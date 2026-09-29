@@ -1,0 +1,76 @@
+sb_2_certs.gp sha256 827c126b7852b6d7, sb_lib.gp sha256 d34eeaca5aa25f7e, SUnitData.lean sha256 65108bf5b6b9e078, gp 2.17.4
+  ***   Warning: new maximum stack size = 1800003584 (1716.617 Mbytes).
+==== stage 0 (tools, global data) (1 ms)
+ok: tool: f2eqspan (positive and negative)
+ok: tool: f2annih (kills the span, not a vector outside)
+ok: primes of K21 above 2 and 7 in the order v (e = 3), w2 (e = 12), w3 (e = 6), p7 (e = 7, f = 3)
+ok: fRev_0 = polrecip(F0) = c_k q h with q, h monic, the same for both twists
+ok: fRev_1 = polrecip(F1) = c_k q h with q, h monic, the same for both twists
+ok: place p7: M2's alpha generates the prime (p = 7, e = 7, f = 3)
+==== stage 1 (components, roots) (39 ms)
+  7: delta =  alpha: 2 roots of h in K_7(sqrt delta), 0 of them outside K_7
+  7: delta = - alpha: 4 roots of h in K_7(sqrt delta), 2 of them outside K_7
+ok: 7: the ramified quadratic factor field of h found
+  component 1 (q, n = 1): 2 roots of the scaled factor in O_F, [v(gh(t')), v(gh'(t'))] = [[520, 4], [520, 4]]
+ok: component 1: a root generating F over K_w, not conjugate to a root already used
+ok: component 1: Hensel certificate v(gh(t')) = 520 > 2 v(gh'(t')) = 8, t' integral; v(tau' - t') >= 516
+  component 2 (q, n = 1): 2 roots of the scaled factor in O_F, [v(gh(t')), v(gh'(t'))] = [[520, 4], [520, 4]]
+ok: component 2: a root generating F over K_w, not conjugate to a root already used
+ok: component 2: Hensel certificate v(gh(t')) = 520 > 2 v(gh'(t')) = 8, t' integral; v(tau' - t') >= 516
+  component 3 (h, n = 1): 2 roots of the scaled factor in O_F, [v(gh(t')), v(gh'(t'))] = [[596, 14], [596, 14]]
+ok: component 3: a root generating F over K_w, not conjugate to a root already used
+ok: component 3: Hensel certificate v(gh(t')) = 596 > 2 v(gh'(t')) = 28, t' integral; v(tau' - t') >= 582
+  component 4 (h, n = 2): 4 roots of the scaled factor in O_F, [v(gh(t')), v(gh'(t'))] = [[616, 28], [616, 28], [582, 27], [582, 27]]
+ok: component 4: a root generating F over K_w, not conjugate to a root already used
+ok: component 4: Hensel certificate v(gh(t')) = 582 > 2 v(gh'(t')) = 54, t' integral; v(tau' - t') >= 555
+  component 5 (h, n = 1): 2 roots of the scaled factor in O_F, [v(gh(t')), v(gh'(t'))] = [[596, 14], [596, 14]]
+ok: component 5: a root generating F over K_w, not conjugate to a root already used
+ok: component 5: Hensel certificate v(gh(t')) = 596 > 2 v(gh'(t')) = 28, t' integral; v(tau' - t') >= 582
+==== stage 2 (standard basis KAT, negative controls) (7014 ms)
+ok: component 1: the coordinates of the standard basis (2 elements) are the unit vectors
+ok: component 1: 4 random products of basis elements: coordinates = exponents, never a square (verC with zero bits fails)
+ok: component 1: negative control, a certificate with one flipped bit fails
+ok: component 1: coordinates additive on 4 random pairs, zero on 4 random squares
+ok: component 2: the coordinates of the standard basis (2 elements) are the unit vectors
+ok: component 2: 4 random products of basis elements: coordinates = exponents, never a square (verC with zero bits fails)
+ok: component 2: negative control, a certificate with one flipped bit fails
+ok: component 2: coordinates additive on 4 random pairs, zero on 4 random squares
+ok: component 3: the coordinates of the standard basis (2 elements) are the unit vectors
+ok: component 3: 4 random products of basis elements: coordinates = exponents, never a square (verC with zero bits fails)
+ok: component 3: negative control, a certificate with one flipped bit fails
+ok: component 3: coordinates additive on 4 random pairs, zero on 4 random squares
+ok: component 4: the coordinates of the standard basis (2 elements) are the unit vectors
+ok: component 4: 4 random products of basis elements: coordinates = exponents, never a square (verC with zero bits fails)
+ok: component 4: negative control, a certificate with one flipped bit fails
+ok: component 4: coordinates additive on 4 random pairs, zero on 4 random squares
+ok: component 5: the coordinates of the standard basis (2 elements) are the unit vectors
+ok: component 5: 4 random products of basis elements: coordinates = exponents, never a square (verC with zero bits fails)
+ok: component 5: negative control, a certificate with one flipped bit fails
+ok: component 5: coordinates additive on 4 random pairs, zero on 4 random squares
+==== stage 3 (kappa) (7069 ms)
+ok: 7: u7 = -1 has a nonsquare residue in F_343
+  kappa: 2 elements, 10 certificates, all verified (6 ms)
+  dim of the image of K_w^x (kappa) in G/G^2: 2 (e_w + 1 = 8); dim G/G^2 = 10
+  lc(fRev_1) in K_w^x/K_w^x2 on [Pi, u7]: [1, 1], m = 1
+ok: lc(fRev_k) is not a square in K_w (nonzero coordinates, verified certificate)
+==== stage 4 (points, mu) (7076 ms)
+  split points: 15 candidates tested, 4 points kept, rank mod kappa 3 of D = 3 (68 ms)
+ok: every f(x_i) is a square in K_w (verified square certificates, zero coordinates)
+  points used: split points
+  mu: 3 elements, 15 certificates, all verified (34 ms)
+ok: (i) the 3 mu are independent modulo span(kappa)
+  dim V_w = dim span(kappa, mu) = 5, dim G/G^2 = 10
+ok: dim V_w = half of dim G/G^2
+==== stage 5 (generators) (7186 ms)
+ok: SUnitData.lean: 82 Pgen, 6 zk lists of length 21 each
+ok: the 82 Pgen coefficient lists are pairwise different (one def read per s)
+  generators Pgen s (tau_j): 82 elements, 410 certificates, all verified (2384 ms)
+ok: Pgen s (tau_j) has zero coordinates at the components of the other factor (Pgen s = 1 there: s < 29 at h, s >= 29 at q)
+  ***   Warning: increasing stack size to 16000000.
+==== stage 6 (F_2 checks at the place) (9944 ms)
+  dim V_w = 5 (half of dim G/G^2 = 5), annihilator rows 5; preimage of V_w in F_2^82: dim 77
+ok: dim V_w = half of dim G/G^2
+ok: negative control: some generator lies outside V_w (the rows C_w are nonzero)
+  C_w rows (annihilator of V_w times generator coordinates), 5 x 82: [0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1; 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0; 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0; 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0; 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0]
+DONE, 0 failed checks (47 ok, 9945 ms)
+exit 0

@@ -1,0 +1,122 @@
+  ***   Warning: new maximum stack size = 1700003840 (1621.250 Mbytes).
+  *** read: Warning: increasing stack size to 16000000.
+  *** read: Warning: increasing stack size to 32000000.
+  *** read: Warning: increasing stack size to 64000000.
+ok: nfK of fields.bin (sb_5f) = nfinit(K21)
+ok: tool: the maps L42 -> nfL, N84 -> nfN of sb_5a (MTL, MTN) are multiplicative on two products of generators
+bnfinit(K21): class number 1 (272 ms)
+ok: h(K21) = 1 in bnfinit (lane M1 proves it; here it only guides the search, the generator is checked)
+---- twist k = 0
+ok: x1 = -c_k h(alpha), x2 = q(beta) nonzero, c_k = FnData[k][0] / 4
+ok: N(x1), N(x2) agree in the tower and in nfL, nfN
+  rational primes outside 2, 7 dividing N(x1) N(x2): [3, 23, 439]
+ok: p = 3, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [2], [4]), unramified
+  p = 3, f = 1: v(x1) at the primes of L above [4], v(x2) at the primes of N above [2]
+ok: p = 3, prime of K21 of degree 4: the primes of L42, N84 above it (degrees [2], [2, 2]), unramified
+ok: p = 3, prime of K21 of degree 8: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 3, prime of K21 of degree 8: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+  *** idealprimedec: Warning: increasing stack size to 128000000.
+  *** idealprimedec: Warning: increasing stack size to 256000000.
+ok: p = 23, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [2], [2, 2]), unramified
+ok: p = 23, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+  p = 23, f = 1: v(x1) at the primes of L above [1, -3], v(x2) at the primes of N above [-1, -1, -1, -1]
+ok: p = 23, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [2], [2, 2]), unramified
+ok: p = 23, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [2], [2, 2]), unramified
+ok: p = 23, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [2], [2, 2]), unramified
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+  p = 23, f = 2: v(x1) at the primes of L above [1, -3], v(x2) at the primes of N above [-1, -1, -1, -1]
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+  p = 23, f = 2: v(x1) at the primes of L above [0, 0], v(x2) at the primes of N above [0, 0, 0, -2]
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+  p = 23, f = 2: v(x1) at the primes of L above [0, 0], v(x2) at the primes of N above [-2, 0, 0, 0]
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+  p = 23, f = 2: v(x1) at the primes of L above [0, 0], v(x2) at the primes of N above [0, 0, -2, 0]
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 2]), unramified
+ok: p = 439, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 2]), unramified
+ok: p = 439, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 2]), unramified
+  p = 439, f = 1: v(x1) at the primes of L above [4, 4], v(x2) at the primes of N above [2, 2, 2]
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: at every prime of K21 outside 2, 7 the valuations of x1 (primes of L above) and x2 (primes of N above) have one parity
+ok: the ideal prod P0^e(P0) is principal
+ok: kappa generates prod P0^e(P0) (valuations and norm)
+  kappa: norm [-1, 1; 23, 3], 2 bits
+ok: x1 / kappa, x2 / kappa have even valuations at every prime of L42, N84 above the primes of ps
+---- twist k = 1
+ok: x1 = -c_k h(alpha), x2 = q(beta) nonzero, c_k = FnData[k][0] / 4
+ok: N(x1), N(x2) agree in the tower and in nfL, nfN
+  rational primes outside 2, 7 dividing N(x1) N(x2): [3, 23, 439]
+ok: p = 3, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [2], [4]), unramified
+  p = 3, f = 1: v(x1) at the primes of L above [4], v(x2) at the primes of N above [2]
+ok: p = 3, prime of K21 of degree 4: the primes of L42, N84 above it (degrees [2], [2, 2]), unramified
+ok: p = 3, prime of K21 of degree 8: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 3, prime of K21 of degree 8: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 23, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [2], [2, 2]), unramified
+ok: p = 23, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+  p = 23, f = 1: v(x1) at the primes of L above [1, -3], v(x2) at the primes of N above [-1, -1, -1, -1]
+ok: p = 23, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [2], [2, 2]), unramified
+ok: p = 23, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [2], [2, 2]), unramified
+ok: p = 23, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [2], [2, 2]), unramified
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+  p = 23, f = 2: v(x1) at the primes of L above [1, -3], v(x2) at the primes of N above [-1, -1, -1, -1]
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+  p = 23, f = 2: v(x1) at the primes of L above [0, 0], v(x2) at the primes of N above [0, 0, 0, -2]
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+  p = 23, f = 2: v(x1) at the primes of L above [0, 0], v(x2) at the primes of N above [-2, 0, 0, 0]
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+  p = 23, f = 2: v(x1) at the primes of L above [0, 0], v(x2) at the primes of N above [0, 0, -2, 0]
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 23, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 2]), unramified
+ok: p = 439, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 2]), unramified
+ok: p = 439, prime of K21 of degree 1: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 2]), unramified
+  p = 439, f = 1: v(x1) at the primes of L above [4, 4], v(x2) at the primes of N above [2, 2, 2]
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: p = 439, prime of K21 of degree 2: the primes of L42, N84 above it (degrees [1, 1], [1, 1, 1, 1]), unramified
+ok: at every prime of K21 outside 2, 7 the valuations of x1 (primes of L above) and x2 (primes of N above) have one parity
+ok: the ideal prod P0^e(P0) is principal
+ok: kappa generates prod P0^e(P0) (valuations and norm)
+  kappa: norm [-1, 1; 23, 3], 2 bits
+ok: x1 / kappa, x2 / kappa have even valuations at every prime of L42, N84 above the primes of ps
+ok: 29, 53 characters of full rank on the generators, nonzero on x1 / kappa, x2 / kappa (primes 43 to 881, 71 to 3191)
+---- twist k = 0: a_T (L part) [1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0], (N part) [0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+ok: x1 prod gensL^a = kappa y1^2 with y1 in L42 (exact square root)
+ok: x2 prod gensN^a = kappa y2^2 with y2 in N84 (exact square root)
+  square roots: 180 ms
+ok: negative control: a with one bit flipped (L bit 0, N bit 1) leaves no square root
+ok: negative control: -kappa in place of kappa leaves no square root in L42 or in N84
+---- twist k = 1: a_T (L part) [1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0], (N part) [0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+ok: x1 prod gensL^a = kappa y1^2 with y1 in L42 (exact square root)
+ok: x2 prod gensN^a = kappa y2^2 with y2 in N84 (exact square root)
+  square roots: 201 ms
+ok: negative control: a with one bit flipped (L bit 0, N bit 1) leaves no square root
+ok: negative control: -kappa in place of kappa leaves no square root in L42 or in N84
+ok: k = 0: -(FE k 0) [sum_i hL_i A^i D_L^(4-i)] prodLT kapTDen y1TDen^2 = 4 hDen D_L^4 kapT y1T^2 (exact, on the exported integers)
+ok: k = 0: [sum_i qL_i B^i D_N^(2-i)] prodNT kapTDen y2TDen^2 = qDen D_N^2 kapT y2T^2 (exact, on the exported integers)
+  k = 0 sizes: kapT 2 bits (kapTDen 1), y1T 34 bits (y1TDen 529), y2T 25 bits (y2TDen 23), prodLT 33 bits, prodNT 29 bits; 15 + 12 bits of a_T set
+ok: k = 1: -(FE k 0) [sum_i hL_i A^i D_L^(4-i)] prodLT kapTDen y1TDen^2 = 4 hDen D_L^4 kapT y1T^2 (exact, on the exported integers)
+ok: k = 1: [sum_i qL_i B^i D_N^(2-i)] prodNT kapTDen y2TDen^2 = qDen D_N^2 kapT y2T^2 (exact, on the exported integers)
+  k = 1 sizes: kapT 2 bits (kapTDen 1), y1T 42 bits (y1TDen 529), y2T 25 bits (y2TDen 23), prodLT 42 bits, prodNT 29 bits; 17 + 12 bits of a_T set
+ok: cache /tmp/sb5/muT.bin written and read back
+DONE mu_t_cert: 87 checks passed, 0 failed (305382 ms)
+muT.bin: content identical to the cache of the previous run (read back in GP; the bytes differ where the binary format stores addresses)

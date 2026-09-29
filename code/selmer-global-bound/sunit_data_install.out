@@ -1,0 +1,83 @@
+ok: DONE sb_5w_lean: 34 checks passed, 0 failed (2409 ms)
+ok: the candidate is the file checked by sb_5w_lean.gp (sha256 4f709da46eeb36c2fb0dc77ca8a4670cd172df7f9109a81b42beb9c67dab9e31)
+ok: the candidate compiles alone (lake env lean, 56 s wall)
+ok: installed problems/furio-lombardo-quartic/lean/FurioLombardo/Discharge/SelmerBasis/SUnitData.lean (sha256 4f709da46eeb36c2fb0dc77ca8a4670cd172df7f9109a81b42beb9c67dab9e31)
+⚠ [8931/8942] Replayed FurioLombardo.M1.ZK
+warning: FurioLombardo/M1/ZK.lean:50:52: This simp argument is unused:
+  eq_intCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_neg, map_ofNat, map_one, map_zero, Int.cast_ofNat, C_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: FurioLombardo/M1/ZK.lean:50:64: This simp argument is unused:
+  Int.cast_ofNat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_neg, map_ofNat, map_one, map_zero, eq_intCast, C_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: FurioLombardo/M1/ZK.lean:50:80: This simp argument is unused:
+  C_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_neg, map_ofNat, map_one, map_zero, eq_intCast, Int.cast_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8933/8942] Replayed FurioLombardo.M1.Residue
+warning: FurioLombardo/M1/Residue.lean:63:36: This simp argument is unused:
+  derivative_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofListL, fdL, fZ, derivative_add, derivative_sub, derivative_mul, derivative_X_pow,
+    derivative_ofNat, derivative_X, derivative_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: FurioLombardo/M1/Residue.lean:63:52: This simp argument is unused:
+  derivative_C
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofListL, fdL, fZ, derivative_add, derivative_sub, derivative_mul, derivative_X_pow,
+    derivative_ofNat, derivative_X, derivative_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: FurioLombardo/M1/Residue.lean:64:33: This simp argument is unused:
+  map_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_neg, map_ofNat, map_zero, eq_intCast, Int.cast_ofNat, C_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: FurioLombardo/M1/Residue.lean:64:64: This simp argument is unused:
+  Int.cast_ofNat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_neg, map_ofNat, map_one, map_zero, eq_intCast, C_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: FurioLombardo/M1/Residue.lean:64:80: This simp argument is unused:
+  C_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_neg, map_ofNat, map_one, map_zero, eq_intCast, Int.cast_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: FurioLombardo/M1/Residue.lean:142:22: This simp argument is unused:
+  aeval_C
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, aeval_X, algebraMap_int_eq, eq_intCast, map_intCast]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: FurioLombardo/M1/Residue.lean:142:40: This simp argument is unused:
+  algebraMap_int_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, aeval_C, aeval_X, eq_intCast, map_intCast]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8941/8942] Built FurioLombardo.Discharge.SelmerBasis.SUnitData (20s)
+✔ [8942/8942] Built FurioLombardo.Discharge.SelmerBasis.SUnitDefs (5.8s)
+Build completed successfully (8942 jobs).
+ok: lake build FurioLombardo.Discharge.SelmerBasis.SUnitDefs (144 s wall)
+DONE sb_5w_install

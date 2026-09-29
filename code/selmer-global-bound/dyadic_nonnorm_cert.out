@@ -1,0 +1,9 @@
+  ***   Warning: new maximum stack size = 4000002048 (3814.699 Mbytes).
+E = x^3 + 37469486047374096441064*x^2 + 16418729904282180494548*x + 17325639337422721302482 (Eisenstein at 2), root precision 200
+ok: PI maps to a uniformizer
+ok: precision of the images: u 185, d' 182
+U = [3, 3, 3]; D = [1, 0, 2]
+ok: R has 64 elements
+ok: no (a, b, c) in R^3 with a, b or c equal to 1 and U c^2 = a^2 - D b^2
+ok: known answer: with u = 1 there are 504 normalised solutions
+E coefficients mod 4 (constant first): [2, 0, 0, 1]

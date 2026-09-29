@@ -1,0 +1,89 @@
+  ***   Warning: new maximum stack size = 2000003072 (1907.352 Mbytes).
+twist 0: deg q = 2, deg h = 4, fRev = lc q h: 1, lc(fRev) = F(0): 1
+  odd primes != 7 of N(lc(fRev)): [23]
+  odd primes != 7 of N(lc(F)): [253447]
+  odd primes != 7 of N(disc(fRev)): [3, 439]
+  odd primes != 7 of N(Res(q,h)): [3, 23, 439]
+  odd primes != 7 of N(disc(q)): [3, 23, 439]
+  odd primes != 7 of N(disc(h)): [3, 23, 439]
+  lcm of the coefficient denominators of fRev: [2, 5; 45613, 1; 462191, 1; 249279053, 1]
+  pr above 3 (f = 1, e = 1): v(lc fRev) = 0, v(lc F) = 0, v(disc) = 30, min v(coeff fRev) = 0, v(Res(q,h)) = 8, v(disc q) = 2, v(disc h) = 12
+     fRev mod pr = Mat([t + 1, 6])
+     hypotheses on fRev at pr: integral 1, lc unit 1, disc unit (so f'(theta) units) 0
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 0
+  pr above 23 (f = 1, e = 1): v(lc fRev) = 1, v(lc F) = 0, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = -4, v(disc q) = -2, v(disc h) = 0
+     fRev mod pr = [t + 4, 1; t + 13, 1; t + 14, 1; t + 17, 1; t + 18, 1]
+     hypotheses on fRev at pr: integral 1, lc unit 0, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 1
+  pr above 23 (f = 2, e = 1): v(lc fRev) = 1, v(lc F) = 0, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = -4, v(disc q) = -2, v(disc h) = 0
+     fRev mod pr = [t + 8, 1; t + (3*b + 5), 1; t + (7*b + 1), 1; t + (11*b + 20), 1; t + (14*b + 17), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 0, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 1
+  pr above 23 (f = 2, e = 1): v(lc fRev) = 1, v(lc F) = 0, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = -2, v(disc q) = 0, v(disc h) = -6
+     fRev mod pr = [t + (2*b + 1), 1; t + (8*b + 3), 1; t + (10*b + 19), 1; t + (12*b + 12), 1; t + (21*b + 15), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 0, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 1
+  pr above 23 (f = 2, e = 1): v(lc fRev) = 1, v(lc F) = 0, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = -2, v(disc q) = 0, v(disc h) = -6
+     fRev mod pr = [t + 8, 1; t + (12*b + 2), 1; t + (15*b + 12), 1; t + 16*b, 1; t + (20*b + 21), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 0, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 1
+  pr above 23 (f = 2, e = 1): v(lc fRev) = 1, v(lc F) = 0, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = -2, v(disc q) = 0, v(disc h) = -6
+     fRev mod pr = [t + (3*b + 1), 1; t + (4*b + 3), 1; t + (12*b + 19), 1; t + (21*b + 14), 1; t + (22*b + 16), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 0, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 1
+  pr above 439 (f = 1, e = 1): v(lc fRev) = 0, v(lc F) = 0, v(disc) = 30, min v(coeff fRev) = 0, v(Res(q,h)) = 8, v(disc q) = 2, v(disc h) = 12
+     fRev mod pr = Mat([t + 30, 6])
+     hypotheses on fRev at pr: integral 1, lc unit 1, disc unit (so f'(theta) units) 0
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 0
+  pr above 253447 (f = 3, e = 1): v(lc fRev) = 0, v(lc F) = 1, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = 0, v(disc q) = 0, v(disc h) = 0
+     fRev mod pr = [t, 1; t + (147340*b^2 + 33801*b + 229318), 1; t + (189071*b^2 + 250385*b + 233116), 1; t + (240316*b^2 + 106660*b + 212833), 1; t^2 + (185589*b^2 + 20669*b + 236149)*t + (184321*b^2 + 161704*b + 105555), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 1, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 0, disc unit 1
+  pr above 253447 (f = 6, e = 1): v(lc fRev) = 0, v(lc F) = 1, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = 0, v(disc q) = 0, v(disc h) = 0
+     fRev mod pr = [t, 1; t + (10231*b^5 + 11346*b^4 + 82739*b^3 + 68941*b^2 + 5534*b + 232781), 1; t + (165366*b^5 + 17845*b^4 + 111502*b^3 + 94551*b^2 + 131612*b + 224280), 1; t + (211348*b^5 + 185019*b^4 + 181772*b^3 + 80980*b^2 + 71327*b + 237010), 1; t + (235351*b^5 + 42136*b^4 + 209592*b^3 + 213837*b^2 + 248760*b + 104102), 1; t + (248508*b^5 + 99175*b^4 + 181200*b^3 + 69528*b^2 + 231324*b + 53414), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 1, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 0, disc unit 1
+twist 1: deg q = 2, deg h = 4, fRev = lc q h: 1, lc(fRev) = F(0): 1
+  odd primes != 7 of N(lc(fRev)): [23]
+  odd primes != 7 of N(lc(F)): [253447]
+  odd primes != 7 of N(disc(fRev)): [3, 439]
+  odd primes != 7 of N(Res(q,h)): [3, 23, 439]
+  odd primes != 7 of N(disc(q)): [3, 23, 439]
+  odd primes != 7 of N(disc(h)): [3, 23, 439]
+  lcm of the coefficient denominators of fRev: [2, 7; 45613, 1; 462191, 1; 249279053, 1]
+  pr above 3 (f = 1, e = 1): v(lc fRev) = 0, v(lc F) = 0, v(disc) = 30, min v(coeff fRev) = 0, v(Res(q,h)) = 8, v(disc q) = 2, v(disc h) = 12
+     fRev mod pr = Mat([t + 1, 6])
+     hypotheses on fRev at pr: integral 1, lc unit 1, disc unit (so f'(theta) units) 0
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 0
+  pr above 23 (f = 1, e = 1): v(lc fRev) = 1, v(lc F) = 0, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = -4, v(disc q) = -2, v(disc h) = 0
+     fRev mod pr = [t + 4, 1; t + 13, 1; t + 14, 1; t + 17, 1; t + 18, 1]
+     hypotheses on fRev at pr: integral 1, lc unit 0, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 1
+  pr above 23 (f = 2, e = 1): v(lc fRev) = 1, v(lc F) = 0, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = -4, v(disc q) = -2, v(disc h) = 0
+     fRev mod pr = [t + 8, 1; t + (3*b + 5), 1; t + (7*b + 1), 1; t + (11*b + 20), 1; t + (14*b + 17), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 0, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 1
+  pr above 23 (f = 2, e = 1): v(lc fRev) = 1, v(lc F) = 0, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = -2, v(disc q) = 0, v(disc h) = -6
+     fRev mod pr = [t + (2*b + 1), 1; t + (8*b + 3), 1; t + (10*b + 19), 1; t + (12*b + 12), 1; t + (21*b + 15), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 0, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 1
+  pr above 23 (f = 2, e = 1): v(lc fRev) = 1, v(lc F) = 0, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = -2, v(disc q) = 0, v(disc h) = -6
+     fRev mod pr = [t + 8, 1; t + (12*b + 2), 1; t + (15*b + 12), 1; t + 16*b, 1; t + (20*b + 21), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 0, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 1
+  pr above 23 (f = 2, e = 1): v(lc fRev) = 1, v(lc F) = 0, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = -2, v(disc q) = 0, v(disc h) = -6
+     fRev mod pr = [t + (3*b + 1), 1; t + (4*b + 3), 1; t + (12*b + 19), 1; t + (21*b + 14), 1; t + (22*b + 16), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 0, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 1
+  pr above 439 (f = 1, e = 1): v(lc fRev) = 0, v(lc F) = 0, v(disc) = 30, min v(coeff fRev) = 0, v(Res(q,h)) = 8, v(disc q) = 2, v(disc h) = 12
+     fRev mod pr = Mat([t + 30, 6])
+     hypotheses on fRev at pr: integral 1, lc unit 1, disc unit (so f'(theta) units) 0
+     hypotheses on F at pr: integral 1, lc unit 1, disc unit 0
+  pr above 253447 (f = 3, e = 1): v(lc fRev) = 0, v(lc F) = 1, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = 0, v(disc q) = 0, v(disc h) = 0
+     fRev mod pr = [t, 1; t + (147340*b^2 + 33801*b + 229318), 1; t + (189071*b^2 + 250385*b + 233116), 1; t + (240316*b^2 + 106660*b + 212833), 1; t^2 + (185589*b^2 + 20669*b + 236149)*t + (184321*b^2 + 161704*b + 105555), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 1, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 0, disc unit 1
+  pr above 253447 (f = 6, e = 1): v(lc fRev) = 0, v(lc F) = 1, v(disc) = 0, min v(coeff fRev) = 0, v(Res(q,h)) = 0, v(disc q) = 0, v(disc h) = 0
+     fRev mod pr = [t, 1; t + (10231*b^5 + 11346*b^4 + 82739*b^3 + 68941*b^2 + 5534*b + 232781), 1; t + (165366*b^5 + 17845*b^4 + 111502*b^3 + 94551*b^2 + 131612*b + 224280), 1; t + (211348*b^5 + 185019*b^4 + 181772*b^3 + 80980*b^2 + 71327*b + 237010), 1; t + (235351*b^5 + 42136*b^4 + 209592*b^3 + 213837*b^2 + 248760*b + 104102), 1; t + (248508*b^5 + 99175*b^4 + 181200*b^3 + 69528*b^2 + 231324*b + 53414), 1]
+     hypotheses on fRev at pr: integral 1, lc unit 1, disc unit (so f'(theta) units) 1
+     hypotheses on F at pr: integral 1, lc unit 0, disc unit 1

@@ -1,0 +1,65 @@
+  ***   Warning: new maximum stack size = 900001792 (858.309 Mbytes).
+ok: tool: strrepl5 (replacement and no match)
+ok: tool: strtrim5
+ok: tool: leandef5 reads qDen = [46, 46] of DataBruin.lean
+ok: tool: leandef5 raises an error on a missing def (negative control)
+ok: tool: leandef5 reads the matrix SB of namespace T1 of M4/Data.lean (!![ syntax)
+ok: M1's fL has 22 coefficients, monic
+ok: M1's fL (constant first) is the polynomial K21 of p21_bruin_red.gp
+ok: M1's zkNum: 21 lists of 21 numerators
+ok: PARI's nfK.zk equals M1's zkNum / Dz (the same integral basis, the same order)
+  *** read: Warning: increasing stack size to 16000000.
+  *** read: Warning: increasing stack size to 32000000.
+  *** read: Warning: increasing stack size to 64000000.
+ok: the nfK of fields.bin (p21_29) has the same polynomial and zk
+ok: nfL, nfN of fields.bin: |disc| = 2^48 7^54, 2^96 7^111 (only 2, 7 divide the discriminant of the order, which nfinit made maximal at 2, 7: the maximal orders)
+ok: eps epsInv = 1 (eps is a unit)
+ok: N_{L/K21}(eN) = mL (DataL.lean)
+ok: eps is not a square in K21 and eN is not a square in L42 (Lsqrt returns 0)
+ok: tool: om^2 = eps, on^2 = eN
+ok: tool: Nmul associative, commutative, distributive (random elements)
+ok: tool: inverses in L42, N84
+ok: tool: Lsqrt, Nsqrt find square roots of squares
+ok: tool: eN is a square in N84, on is not (negative control of Nsqrt)
+ok: q and h are the same for k = 0, 1 (DataBruin.lean)
+ok: fRev 0 = c_0 q h (c_k = FnData[k][0] / 4, fRev_j = FnData[k][6 - j] / 4)
+ok: fRev 1 = c_1 q h (c_k = FnData[k][0] / 4, fRev_j = FnData[k][6 - j] / 4)
+ok: q and h are irreducible over K21
+ok: disc(q) / eps is a square in K21 (so q splits in L42)
+ok: q(alpha) = 0 in L42, alpha = (-q1 + z om) / 2 with z^2 = disc(q) / eps
+ok: negative control: q(alpha + 1) != 0
+ok: tool: KtoL is multiplicative on zk_2^2 (images of the zk basis in nfL)
+ok: q(1/thL) = 0 in nfL (thL the root of G1 of p21_29)
+ok: iotaL(om)^2 = eps in nfL
+ok: iotaL(alpha) = 1/thL
+ok: iotaL is multiplicative and additive (random elements)
+ok: MTL (42 x 42): the format basis zk, zk om of L42 lies in O_L (integral coordinates on nfL.zk)
+ok: index [O_L : O_K21 + O_K21 om] = |det MTL| = 2^19 7^0
+ok: conversion nfL -> L42 by MTL^-1 inverts iotaL (random elements both ways)
+ok: h splits over nfL into two quadratics
+ok: the factor is monic
+ok: the factor is monic
+ok: the two quadratic factors (converted to L42) multiply to h
+ok: the two factors are conjugate under om -> -om
+  factor 1 of h over L42: disc / eN is a square in L42
+  factor 2 of h over L42: disc / eN is not a square in L42
+ok: exactly one quadratic factor G2 of h over L42 has disc(G2) / eN a square in L42
+ok: h(beta) = 0 in N84, beta = (-g1 + y on) / 2 with y^2 = disc(G2) / eN
+ok: negative control: h(beta + 1) != 0
+ok: tool: KtoN is multiplicative on zk_3 zk_5
+ok: h(1/thN) = 0 in nfN (thN the root of h_unrev of p21_29)
+ok: om = sum c_i beta^i over K21 (4 x 4 solve)
+ok: iotaN(om)^2 = eps in nfN
+ok: iotaN(on)^2 = iotaN(eN) in nfN
+ok: iotaN(beta) = 1/thN
+ok: iotaN is multiplicative and additive (random elements)
+ok: MTN (84 x 84): the format basis zk, zk om, 2 zk on, 2 zk om on of N84 lies in O_N
+ok: index [O_N : format order] = |det MTN| = 2^122 7^0
+ok: conversion nfN -> N84 by MTN^-1 inverts iotaN (random elements both ways)
+  iotaN and MTN: 12241 ms
+alphaDen = 92, alphaL = [[-177, 134, 198, 111, 137, 86, 8, 116, -26, 77, -38, 79, 6, -33, 104, 150, 138, -15, 108, 30, 237], [-722, 288, 245, 157, -10, -117, 352, -2, 11, 87, 182, 121, 300, -41, 193, 550, 223, -99, 153, 57, 12]]
+betaDen = 184, betaN (plain on coordinates) = [[1396, -278, -255, -730, 337, -416, 1164, 204, 228, 553, 239, -752, 1020, -24, -359, -813, -438, 1090, -652, 242, -317], [-2777, 2700, 1456, 365, 160, 283, 934, -101, -120, 470, 378, 920, 1850, -905, 972, 902, 1164, 149, 674, 628, 151], [4935, -714, -2805, -1481, -1934, 5662, 1582, 1843, -3414, -3530, -1793, -2583, -6260, 2796, -4388, -3129, -4466, 901, -2477, -4697, 1347], [4952, 7289, -4959, -1743, -2141, 10652, 3905, 710, -6042, -4689, 650, 1312, -3443, -391, -5046, -3244, -4667, 2677, -3381, -3785, 943]]
+ok: the exported alphaL / alphaDen, betaN / betaDen are roots of q, h
+sizes: alpha 10 bits, beta 14 bits (largest numerator coordinate)
+ok: cache /tmp/sb5/tower.bin written and read back
+DONE sb_5a_tower: 54 checks passed, 0 failed (14799 ms)

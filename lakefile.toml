@@ -1,0 +1,156 @@
+name = "furio-lombardo-quartic"
+version = "1.0.0"
+description = "Conjecture 1.6 of Furio and Lombardo: the plane quartic twist of the Klein quartic has exactly four rational points, proved in Lean 4"
+keywords = ["math", "rational points", "plane quartic", "Selmer group Chabauty", "Prym variety", "genus 2 Jacobian", "formal verification"]
+license = "Apache-2.0"
+licenseFiles = ["LICENSE", "NOTICE"]
+preferReleaseBuild = true
+releaseRepo = "https://github.com/mt0-svg/furio-lombardo-quartic"
+defaultTargets = ["Statement", "Main", "Challenge", "Solution"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.34.1"
+
+# The frozen statement.
+[[lean_lib]]
+name = "Statement"
+roots = ["FurioLombardo.Statement"]
+
+[[lean_lib]]
+name = "Main"
+roots = ["FurioLombardo.Main"]
+[lean_lib.leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+
+[[lean_lib]]
+name = "M3a"
+globs = ["FurioLombardo.M3a.+"]
+
+[[lean_lib]]
+name = "M4"
+globs = ["FurioLombardo.M4.+"]
+
+[[lean_lib]]
+name = "M3b"
+globs = ["FurioLombardo.M3b.+"]
+
+[[lean_lib]]
+name = "M2"
+globs = ["FurioLombardo.M2.+"]
+
+[[lean_lib]]
+name = "M1"
+globs = ["FurioLombardo.M1.+"]
+
+[[lean_lib]]
+name = "DischargeM3a"
+globs = ["FurioLombardo.Discharge.M3a.+"]
+
+[[lean_lib]]
+name = "DischargeAnalytic"
+globs = ["FurioLombardo.Discharge.Analytic.+"]
+
+[[lean_lib]]
+name = "M4Cert"
+globs = ["FurioLombardo.Discharge.M4Cert.+"]
+
+[[lean_lib]]
+name = "DischargeM3b"
+globs = ["FurioLombardo.Discharge.M3b.+"]
+
+[[lean_lib]]
+name = "DischargeSelmerSpan"
+globs = ["FurioLombardo.Discharge.SelmerSpan.+"]
+
+# Vendored AINTLIB (CBirkbeck/AINTLIB, projects/DedekindResidue/DedekindResidue/CompletedZeta), modules
+# renamed FurioLombardo.Vendor.AINTLIB.CompletedZeta.*, see THIRD_PARTY.md; the options of the source.
+[[lean_lib]]
+name = "VendorAINTLIB"
+globs = ["FurioLombardo.Vendor.AINTLIB.+"]
+[lean_lib.leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+
+# Vendored Lean Pool file (Vilin97/lean-pool, LeanPool/Odlyzko/FromPrimeNumberTheoremAnd/RectangleIntegral.lean,
+# adapted there from PNT+), module FurioLombardo.Vendor.LeanPool.RectangleIntegral, see THIRD_PARTY.md.
+[[lean_lib]]
+name = "VendorLeanPool"
+globs = ["FurioLombardo.Vendor.LeanPool.+"]
+[lean_lib.leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+
+# Copy of the Toolbox modules the proof uses (the shared Lean library of the development workspace, with its
+# ports of Stoll's EllipticCurves and of TauCeti), modules FurioLombardo.Vendor.Toolbox.*, see THIRD_PARTY.md;
+# the options the Toolbox package builds them with.
+[[lean_lib]]
+name = "VendorToolbox"
+globs = ["FurioLombardo.Vendor.Toolbox.+"]
+[lean_lib.leanOptions]
+autoImplicit = true
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+weak.linter.mathlibStandardSet = true
+
+# The formal group of Jac(F) at v and LogChartFin.
+[[lean_lib]]
+name = "DischargeR7"
+globs = ["FurioLombardo.Discharge.R7.+"]
+[lean_lib.leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+
+# SelmerBasisK21: Schaefer's lemma, field isomorphisms, echelon certificates.
+[[lean_lib]]
+name = "DischargeSelmerBasis"
+globs = ["FurioLombardo.Discharge.SelmerBasis.+"]
+[lean_lib.leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+
+# The box inputs: lane M4's chain with the box inputs in the weak form (HConstLip, HTailQuad).
+[[lean_lib]]
+name = "DischargeM4Box"
+globs = ["FurioLombardo.Discharge.M4Box.+"]
+[lean_lib.leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+
+# Certified evaluation layer over K_v (balls, Taylor models, Cantor, chart).
+[[lean_lib]]
+name = "DischargeKvArith"
+globs = ["FurioLombardo.Discharge.KvArith.+"]
+[lean_lib.leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+
+# Lane M4's logarithm at v through R7's chart (lam, lamD, ChartLog, certificates).
+[[lean_lib]]
+name = "DischargeM4Log"
+globs = ["FurioLombardo.Discharge.M4Log.+"]
+[lean_lib.leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+
+# The statement with `sorry`, which nothing imports, and the module that proves it: the pair
+# Comparator checks (config.json).
+[[lean_lib]]
+name = "Challenge"
+roots = ["FurioLombardo.Challenge"]
+
+[[lean_lib]]
+name = "Solution"
+roots = ["FurioLombardo.Solution"]

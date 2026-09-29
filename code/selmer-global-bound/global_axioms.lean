@@ -1,0 +1,31 @@
+import FurioLombardo.Discharge.SelmerBasis.GlobalSpan
+open FurioLombardo.Discharge.SelmerBasis
+#print axioms GlobalK21.globalSpan_gK
+#print axioms GlobalK21.globalSpan_fRev
+#print axioms GlobalK21.psi
+#print axioms GlobalK21.psi_mk
+#print axioms GlobalK21.aeval_alphaR
+#print axioms GlobalK21.aeval_betaR
+#print axioms GlobalK21.Pgen_alphaR_left
+#print axioms GlobalK21.Pgen_alphaR_right
+#print axioms GlobalK21.Pgen_betaR_left
+#print axioms GlobalK21.Pgen_betaR_right
+#print axioms GlobalK21.gensL_ne_zero
+#print axioms GlobalK21.gensN_ne_zero
+#print axioms GlobalK21.muT_components
+#print axioms GlobalK21.isUnit_mk_Pgen
+#print axioms isUnit_Pgen
+#print axioms gKu_coe
+#print axioms GlobalGen.crtEquiv_mk
+#print axioms GlobalGen.globalSpan_of_components
+#print axioms GlobalGen.components_of_isSquare
+#print axioms GlobalGen.mk_eq_prod_of_components
+#print axioms MuTCert.compCond_muT
+#print axioms TowerFacts.tabA_spec
+#print axioms TowerFacts.tabB_spec
+#print axioms Tower.evL_sumPL
+#print axioms Tower.evN_sumPN
+#print axioms Tower.aeval_pQ_of_checkL
+#print axioms Tower.aeval_pQ_of_checkN
+#print axioms schaeferGlobal
+#print axioms schaefer_global_of_certs

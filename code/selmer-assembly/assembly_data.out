@@ -1,0 +1,35 @@
+  ***   Warning: new maximum stack size = 2000003072 (1907.352 Mbytes).
+ok: primes of K21 above 2 and 7 in the order v (e = 3), w2 (e = 12), w3 (e = 6), p7 (e = 7, f = 3)
+ok: fRev_0 = polrecip(F0) = c_k q h with q, h monic, the same for both twists
+ok: fRev_1 = polrecip(F1) = c_k q h with q, h monic, the same for both twists
+ok: SUnitData.lean: 82 Pgen
+ok: twist 0: VPlace.CvRows = the stage 6 rows at v
+ok: twist 0: 39 rows of rank 39 at w2
+ok: twist 0: the Lean rows C3 and the stage 6 rows at w3 have the same row space (rank 21)
+ok: twist 1: VPlace.CvRows = the stage 6 rows at v
+ok: twist 1: 39 rows of rank 39 at w2
+ok: twist 1: the Lean rows C3 and the stage 6 rows at w3 have the same row space (rank 21)
+ok: twist 1: 5 rows of rank 5 at the place above 7
+ok: fRev_0 has 4 real roots at the real embedding 1: [-4.6514845964404035482395488786641312989, 0.367687072678576249087220740750999959802, 5.1178132246243267019248319963557787320, 177.599397580877844461742351804495279545]~
+ok: fRev_0 has 4 real roots at the real embedding 2: [-0.105172760597182014306501730014548351708, 0.0351023141850365015025179335675469155852, 0.150440686750183333772682558074150806152, 1.33271566305513128873126054268704273491]~
+ok: real place 5: 2 rows of rank 2
+ok: real place 6: 2 rows of rank 2
+ok: kappa_0 is the sum of the kappa_t in the relation SBX_kapRel (bit 0 set), so kappa_1..kappa_15 span the same space
+ok: twist 0: VPlace.betaRows = SBX_beta
+ok: twist 0: beta_0..3, kappa_1..15 independent (dim 19)
+  twist 0: 75 stacked rows, rank 63, kernel dimension 19
+ok: twist 0: the stacked rows have rank 63 (kernel of dimension 19)
+ok: twist 0: every kernel vector is a combination of beta and kappa
+ok: twist 0: kerSpanOK holds (emulated)
+ok: twist 0: negative control: one bit of U flipped fails
+ok: twist 0: negative control: without w2 the rank drops to 36
+ok: twist 1: VPlace.betaRows = SBX_beta
+ok: twist 1: beta_0..3, kappa_1..15 independent (dim 19)
+  twist 1: 76 stacked rows, rank 63, kernel dimension 19
+ok: twist 1: the stacked rows have rank 63 (kernel of dimension 19)
+ok: twist 1: every kernel vector is a combination of beta and kappa
+ok: twist 1: kerSpanOK holds (emulated)
+ok: twist 1: negative control: one bit of U flipped fails
+ok: twist 1: negative control: without w2 the rank drops to 36
+wrote /tmp/sa2/AssemblyData.lean
+DONE, 0 failed checks (30 ok, 650 ms)

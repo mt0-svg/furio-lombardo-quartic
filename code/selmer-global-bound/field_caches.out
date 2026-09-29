@@ -1,0 +1,44 @@
+  ***   Warning: new maximum stack size = 1700003840 (1621.250 Mbytes).
+  *** nfinit: Warning: increasing stack size to 16000000.
+  *** nfinit: Warning: increasing stack size to 32000000.
+  *** nfinit: Warning: increasing stack size to 64000000.
+  *** nfinit: Warning: increasing stack size to 128000000.
+  *** nfinit: Warning: increasing stack size to 256000000.
+ok: nf of N (degree 84, signature [6, 39]), as p21_25
+nfN: 61066 ms
+faL = nffactor(nfN, Lpol): factor degrees [1, 1, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4] (74384 ms)
+ok: G1, A, B, d are the same for both twists
+ok: K21 has a unique embedding into L
+ok: images of b in L and N are roots of K21
+ok: G1 splits in L
+ok: d is a square in N
+ok: G2 splits in N
+ok: thL is a root of G1, thN a root of h
+fields and embeddings: 100642 ms
+ok: |disc nfL| = 2^48 7^54, |disc nfN| = 2^96 7^111
+fields: 175048 ms
+ok: f_0 = c G1 (A^2 - d B^2) is the Prym sextic F0
+  p = 2 (e = 3, f = 1), factor degrees [2, 4]: tors2 1, eps 0, D_v = 7, coordinates 22, rank of K_v^x image 4 (1604 ms)
+  p = 2 (e = 12, f = 1), factor degrees [2, 2, 2]: tors2 2, eps 0, D_v = 26, coordinates 78, rank of K_v^x image 13 (8610 ms)
+  p = 2 (e = 6, f = 1), factor degrees [2, 2, 2]: tors2 2, eps 0, D_v = 14, coordinates 42, rank of K_v^x image 7 (12346 ms)
+  p = 7 (e = 7, f = 3), factor degrees [1, 1, 1, 2, 1]: tors2 3, eps 0, D_v = 3, coordinates 10, rank of K_v^x image 2 (13444 ms)
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 1: 2 real roots of G1, 2 of h
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 2: 2 real roots of G1, 2 of h
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 3: 2 real roots of G1, 2 of h
+places: 4 finite, 3 real (209773 ms)
+DONE sb_5f_fields (209773 ms)

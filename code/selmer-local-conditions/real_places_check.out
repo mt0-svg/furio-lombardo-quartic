@@ -1,0 +1,561 @@
+ok: Lean data parsed: fL (22 coefficients, monic), zkNum (21), FnData (2 x 7), qData, hData
+ok: fL is the polynomial fZ of M1/Basic.lean
+ok: fZ irreducible
+ok: twist 0: fRev = c q h exactly over K21
+ok: twist 0: lc(fRev) = c
+ok: twist 0: degree 6, disc != 0 (squarefree)
+ok: twist 1: fRev = c q h exactly over K21
+ok: twist 1: lc(fRev) = c
+ok: twist 1: degree 6, disc != 0 (squarefree)
+ok: K21 of p21_bruin_red.gp = fZ
+ok: f_k of the Lean data = F0, F1 of p21_bruin_red.gp
+ok: K21 has exactly 3 real embeddings (polrootsreal, sorted increasingly)
+ok: isolating interval of beta_1
+ok: isolating interval of beta_2
+ok: isolating interval of beta_3
+ok: sgnK on known values
+ok: nfinit(K21).roots[1..3] = the sorted real roots (place 4 + i = beta_i)
+==== twist 0, real place 5 (beta_1 = -0.879914734047)
+  sign lc(fRev) = -1, sign lc(f_k) (unreversed model) = 1, sign disc(q) = 1, sign disc(h) = -1, sign f_k(0) = -1
+ok: q has exactly 2 real roots (disc > 0), h exactly 2 (quartic with disc < 0)
+ok: numerically 4 real roots and one complex pair
+  real roots r1..r4 of fRev: [-4.6514845964404035482395488786641312989, 0.367687072678576249087220740750999959802, 5.1178132246243267019248319963557787320, 177.599397580877844461742351804495279545]
+  complex pair: [4.0096065620221970217801317212964174393 - 3.09810892758996640132368147742584684384*I, 4.0096065620221970217801317212964174393 + 3.09810892758996640132368147742584684384*I]
+ok: separators interlace the numeric roots
+  separators [-6, -1546241/721902, 1083976/395215, 90798029/993864, 179]
+  exact signs at the separators: fRev [-1, 1, -1, 1, -1], q [1, -1, -1, 1, 1], h [1, 1, -1, -1, 1]
+ok: exact: each interval (s_(j-1), s_j) holds one sign change of exactly one of q, h; two for q, two for h (so exactly one root per interval)
+  origin of r1..r4 (exact): ["q", "h", "q", "h"]
+ok: exact: lc < 0 and fRev < 0, > 0, < 0, > 0, < 0 at s0..s4: f > 0 exactly on (r1, r2), (r3, r4)
+ok: x - T at a point of (r1, r2) is (+,-,-,-), at a point of (r3, r4) is (+,+,+,-)
+ok: (B) u = (x - a)(x - b), a, b = points 1, 1: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 4: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 6, 6: [1, 1, 1, 1] in W_r
+ok: (B) u irreducible over R: trivial sign vector, in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-4.651484596440403549 + 0.E-211*I, 0.3676870726785762491 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-4.651484596440403549 + 0.E-211*I, 5.117813224624326702 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-4.651484596440403549 + 0.E-211*I, 177.59939758087784446 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.3676870726785762491 + 0.E-211*I, 5.117813224624326702 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.3676870726785762491 + 0.E-211*I, 177.59939758087784446 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [5.117813224624326702 + 0.E-211*I, 177.59939758087784446 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [4.009606562022197022 - 3.098108927589966401*I, 4.009606562022197022 + 3.098108927589966401*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (D) i = 1, b = -2.141898761880913650: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 1, b = 91.35860540275108558: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = -2.141898761880913650: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = 91.35860540275108558: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = -2.141898761880913650: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = 91.35860540275108558: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = -2.141898761880913650: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = 91.35860540275108558: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: f'(r1..r4) signs (+,-,+,-)
+  image of the sampled classes modulo the diagonal: [[1, -1, -1, 1], [1, 1, 1, 1]]; smallest |value| used 3.111 e-1
+ok: the sampled classes fill W_r modulo the diagonal (dimension 1)
+==== twist 0, real place 6 (beta_2 = -0.836062323054)
+  sign lc(fRev) = -1, sign lc(f_k) (unreversed model) = 1, sign disc(q) = 1, sign disc(h) = -1, sign f_k(0) = -1
+ok: q has exactly 2 real roots (disc > 0), h exactly 2 (quartic with disc < 0)
+ok: numerically 4 real roots and one complex pair
+  real roots r1..r4 of fRev: [-0.105172760597182014306501730014548351708, 0.0351023141850365015025179335675469155852, 0.150440686750183333772682558074150806152, 1.33271566305513128873126054268704273491]
+  complex pair: [0.0368641597606502891122740414172148061322 - 0.0477816935418979981962215760487157369626*I, 0.0368641597606502891122740414172148061322 + 0.0477816935418979981962215760487157369626*I]
+ok: separators interlace the numeric roots
+  separators [-2, -11369/324502, 9401/101335, 726074/979093, 3]
+  exact signs at the separators: fRev [-1, 1, -1, 1, -1], q [1, 1, -1, -1, 1], h [1, -1, -1, 1, 1]
+ok: exact: each interval (s_(j-1), s_j) holds one sign change of exactly one of q, h; two for q, two for h (so exactly one root per interval)
+  origin of r1..r4 (exact): ["h", "q", "h", "q"]
+ok: exact: lc < 0 and fRev < 0, > 0, < 0, > 0, < 0 at s0..s4: f > 0 exactly on (r1, r2), (r3, r4)
+ok: x - T at a point of (r1, r2) is (+,-,-,-), at a point of (r3, r4) is (+,+,+,-)
+ok: (B) u = (x - a)(x - b), a, b = points 1, 1: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 4: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 6, 6: [1, 1, 1, 1] in W_r
+ok: (B) u irreducible over R: trivial sign vector, in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-0.10517276059718201431 + 0.E-211*I, 0.03510231418503650150 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-0.10517276059718201431 + 0.E-211*I, 0.15044068675018333377 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-0.10517276059718201431 + 0.E-211*I, 1.3327156630551312888 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.03510231418503650150 + 0.E-211*I, 0.15044068675018333377 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.03510231418503650150 + 0.E-211*I, 1.3327156630551312888 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.15044068675018333377 + 0.E-211*I, 1.3327156630551312888 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.03686415976065028911 - 0.04778169354189799820*I, 0.03686415976065028911 + 0.04778169354189799820*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (D) i = 1, b = -0.03503522320607275640: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 1, b = 0.7415781749026573113: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = -0.03503522320607275640: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = 0.7415781749026573113: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = -0.03503522320607275640: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = 0.7415781749026573113: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = -0.03503522320607275640: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = 0.7415781749026573113: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: f'(r1..r4) signs (+,-,+,-)
+  image of the sampled classes modulo the diagonal: [[1, -1, -1, 1], [1, 1, 1, 1]]; smallest |value| used 4.265 e-6
+ok: the sampled classes fill W_r modulo the diagonal (dimension 1)
+==== twist 0, real place 7 (beta_3 = 1.894031220801)
+  sign lc(fRev) = -1, sign lc(f_k) (unreversed model) = 1, sign disc(q) = 1, sign disc(h) = -1, sign f_k(0) = -1
+ok: q has exactly 2 real roots (disc > 0), h exactly 2 (quartic with disc < 0)
+ok: numerically 4 real roots and one complex pair
+  real roots r1..r4 of fRev: [-20.7936383062544168646662062030833400359, 1.10057252869386342200357852407325825791, 4.5457692743254914904164753082711150783, 9.2776885037329884116235613116629368166]
+  complex pair: [1.67621540390768210444494265267885308384 - 2.09182547815154462116535287435020371483*I, 1.67621540390768210444494265267885308384 + 2.09182547815154462116535287435020371483*I]
+ok: separators interlace the numeric roots
+  separators [-22, -8286783/841594, 709652/251367, 198650/28741, 11]
+  exact signs at the separators: fRev [-1, 1, -1, 1, -1], q [1, 1, -1, -1, 1], h [1, -1, -1, 1, 1]
+ok: exact: each interval (s_(j-1), s_j) holds one sign change of exactly one of q, h; two for q, two for h (so exactly one root per interval)
+  origin of r1..r4 (exact): ["h", "q", "h", "q"]
+ok: exact: lc < 0 and fRev < 0, > 0, < 0, > 0, < 0 at s0..s4: f > 0 exactly on (r1, r2), (r3, r4)
+ok: x - T at a point of (r1, r2) is (+,-,-,-), at a point of (r3, r4) is (+,+,+,-)
+ok: (B) u = (x - a)(x - b), a, b = points 1, 1: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 4: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 6, 6: [1, 1, 1, 1] in W_r
+ok: (B) u irreducible over R: trivial sign vector, in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-20.793638306254416864 + 0.E-211*I, 1.1005725286938634220 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-20.793638306254416864 + 0.E-211*I, 4.545769274325491491 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-20.793638306254416864 + 0.E-211*I, 9.277688503732988412 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [1.1005725286938634220 + 0.E-211*I, 4.545769274325491491 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [1.1005725286938634220 + 0.E-211*I, 9.277688503732988412 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [4.545769274325491491 + 0.E-211*I, 9.277688503732988412 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [1.6762154039076821044 - 2.091825478151544621*I, 1.6762154039076821044 + 2.091825478151544621*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (D) i = 1, b = -9.846532888780276722: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 1, b = 6.911728889029239951: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = -9.846532888780276722: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = 6.911728889029239951: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = -9.846532888780276722: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = 6.911728889029239951: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = -9.846532888780276722: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = 6.911728889029239951: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: f'(r1..r4) signs (+,-,+,-)
+  image of the sampled classes modulo the diagonal: [[1, -1, -1, 1], [1, 1, 1, 1]]; smallest |value| used 3.111 e-1
+ok: the sampled classes fill W_r modulo the diagonal (dimension 1)
+==== twist 1, real place 5 (beta_1 = -0.879914734047)
+  sign lc(fRev) = -1, sign lc(f_k) (unreversed model) = 1, sign disc(q) = 1, sign disc(h) = -1, sign f_k(0) = -1
+ok: q has exactly 2 real roots (disc > 0), h exactly 2 (quartic with disc < 0)
+ok: numerically 4 real roots and one complex pair
+  real roots r1..r4 of fRev: [-4.6514845964404035482395488786641312989, 0.367687072678576249087220740750999959802, 5.1178132246243267019248319963557787320, 177.599397580877844461742351804495279545]
+  complex pair: [4.0096065620221970217801317212964174393 - 3.09810892758996640132368147742584684384*I, 4.0096065620221970217801317212964174393 + 3.09810892758996640132368147742584684384*I]
+ok: separators interlace the numeric roots
+  separators [-6, -1546241/721902, 1083976/395215, 90798029/993864, 179]
+  exact signs at the separators: fRev [-1, 1, -1, 1, -1], q [1, -1, -1, 1, 1], h [1, 1, -1, -1, 1]
+ok: exact: each interval (s_(j-1), s_j) holds one sign change of exactly one of q, h; two for q, two for h (so exactly one root per interval)
+  origin of r1..r4 (exact): ["q", "h", "q", "h"]
+ok: exact: lc < 0 and fRev < 0, > 0, < 0, > 0, < 0 at s0..s4: f > 0 exactly on (r1, r2), (r3, r4)
+ok: x - T at a point of (r1, r2) is (+,-,-,-), at a point of (r3, r4) is (+,+,+,-)
+ok: (B) u = (x - a)(x - b), a, b = points 1, 1: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 4: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 6, 6: [1, 1, 1, 1] in W_r
+ok: (B) u irreducible over R: trivial sign vector, in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-4.651484596440403549 + 0.E-211*I, 0.3676870726785762491 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-4.651484596440403549 + 0.E-211*I, 5.117813224624326702 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-4.651484596440403549 + 0.E-211*I, 177.59939758087784446 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.3676870726785762491 + 0.E-211*I, 5.117813224624326702 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.3676870726785762491 + 0.E-211*I, 177.59939758087784446 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [5.117813224624326702 + 0.E-211*I, 177.59939758087784446 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [4.009606562022197022 - 3.098108927589966401*I, 4.009606562022197022 + 3.098108927589966401*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (D) i = 1, b = -2.141898761880913650: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 1, b = 91.35860540275108558: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = -2.141898761880913650: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = 91.35860540275108558: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = -2.141898761880913650: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = 91.35860540275108558: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = -2.141898761880913650: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = 91.35860540275108558: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: f'(r1..r4) signs (+,-,+,-)
+  image of the sampled classes modulo the diagonal: [[1, -1, -1, 1], [1, 1, 1, 1]]; smallest |value| used 3.111 e-1
+ok: the sampled classes fill W_r modulo the diagonal (dimension 1)
+==== twist 1, real place 6 (beta_2 = -0.836062323054)
+  sign lc(fRev) = -1, sign lc(f_k) (unreversed model) = 1, sign disc(q) = 1, sign disc(h) = -1, sign f_k(0) = -1
+ok: q has exactly 2 real roots (disc > 0), h exactly 2 (quartic with disc < 0)
+ok: numerically 4 real roots and one complex pair
+  real roots r1..r4 of fRev: [-0.105172760597182014306501730014548351708, 0.0351023141850365015025179335675469155852, 0.150440686750183333772682558074150806152, 1.33271566305513128873126054268704273491]
+  complex pair: [0.0368641597606502891122740414172148061322 - 0.0477816935418979981962215760487157369626*I, 0.0368641597606502891122740414172148061322 + 0.0477816935418979981962215760487157369626*I]
+ok: separators interlace the numeric roots
+  separators [-2, -11369/324502, 9401/101335, 726074/979093, 3]
+  exact signs at the separators: fRev [-1, 1, -1, 1, -1], q [1, 1, -1, -1, 1], h [1, -1, -1, 1, 1]
+ok: exact: each interval (s_(j-1), s_j) holds one sign change of exactly one of q, h; two for q, two for h (so exactly one root per interval)
+  origin of r1..r4 (exact): ["h", "q", "h", "q"]
+ok: exact: lc < 0 and fRev < 0, > 0, < 0, > 0, < 0 at s0..s4: f > 0 exactly on (r1, r2), (r3, r4)
+ok: x - T at a point of (r1, r2) is (+,-,-,-), at a point of (r3, r4) is (+,+,+,-)
+ok: (B) u = (x - a)(x - b), a, b = points 1, 1: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 4: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 6, 6: [1, 1, 1, 1] in W_r
+ok: (B) u irreducible over R: trivial sign vector, in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-0.10517276059718201431 + 0.E-211*I, 0.03510231418503650150 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-0.10517276059718201431 + 0.E-211*I, 0.15044068675018333377 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-0.10517276059718201431 + 0.E-211*I, 1.3327156630551312888 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.03510231418503650150 + 0.E-211*I, 0.15044068675018333377 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.03510231418503650150 + 0.E-211*I, 1.3327156630551312888 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.15044068675018333377 + 0.E-211*I, 1.3327156630551312888 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [0.03686415976065028911 - 0.04778169354189799820*I, 0.03686415976065028911 + 0.04778169354189799820*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (D) i = 1, b = -0.03503522320607275640: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 1, b = 0.7415781749026573113: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = -0.03503522320607275640: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = 0.7415781749026573113: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = -0.03503522320607275640: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = 0.7415781749026573113: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = -0.03503522320607275640: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = 0.7415781749026573113: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: f'(r1..r4) signs (+,-,+,-)
+  image of the sampled classes modulo the diagonal: [[1, -1, -1, 1], [1, 1, 1, 1]]; smallest |value| used 6.123 e-4
+ok: the sampled classes fill W_r modulo the diagonal (dimension 1)
+==== twist 1, real place 7 (beta_3 = 1.894031220801)
+  sign lc(fRev) = -1, sign lc(f_k) (unreversed model) = 1, sign disc(q) = 1, sign disc(h) = -1, sign f_k(0) = -1
+ok: q has exactly 2 real roots (disc > 0), h exactly 2 (quartic with disc < 0)
+ok: numerically 4 real roots and one complex pair
+  real roots r1..r4 of fRev: [-20.7936383062544168646662062030833400359, 1.10057252869386342200357852407325825791, 4.5457692743254914904164753082711150783, 9.2776885037329884116235613116629368166]
+  complex pair: [1.67621540390768210444494265267885308384 - 2.09182547815154462116535287435020371483*I, 1.67621540390768210444494265267885308384 + 2.09182547815154462116535287435020371483*I]
+ok: separators interlace the numeric roots
+  separators [-22, -8286783/841594, 709652/251367, 198650/28741, 11]
+  exact signs at the separators: fRev [-1, 1, -1, 1, -1], q [1, 1, -1, -1, 1], h [1, -1, -1, 1, 1]
+ok: exact: each interval (s_(j-1), s_j) holds one sign change of exactly one of q, h; two for q, two for h (so exactly one root per interval)
+  origin of r1..r4 (exact): ["h", "q", "h", "q"]
+ok: exact: lc < 0 and fRev < 0, > 0, < 0, > 0, < 0 at s0..s4: f > 0 exactly on (r1, r2), (r3, r4)
+ok: x - T at a point of (r1, r2) is (+,-,-,-), at a point of (r3, r4) is (+,+,+,-)
+ok: (B) u = (x - a)(x - b), a, b = points 1, 1: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 1, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 2: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 2, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 3: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 4: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 5: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 3, 6: [1, -1, -1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 4: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 4, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 5: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 5, 6: [1, 1, 1, 1] in W_r
+ok: (B) u = (x - a)(x - b), a, b = points 6, 6: [1, 1, 1, 1] in W_r
+ok: (B) u irreducible over R: trivial sign vector, in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-20.793638306254416864 + 0.E-211*I, 1.1005725286938634220 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-20.793638306254416864 + 0.E-211*I, 4.545769274325491491 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [-20.793638306254416864 + 0.E-211*I, 9.277688503732988412 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [1.1005725286938634220 + 0.E-211*I, 4.545769274325491491 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [1.1005725286938634220 + 0.E-211*I, 9.277688503732988412 + 0.E-211*I]~: muJ_Tpt sign vector [1, -1, -1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [4.545769274325491491 + 0.E-211*I, 9.277688503732988412 + 0.E-211*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (C) u divides f
+ok: (C) u | f, u roots [1.6762154039076821044 - 2.091825478151544621*I, 1.6762154039076821044 + 2.091825478151544621*I]~: muJ_Tpt sign vector [1, 1, 1, 1] in W_r
+ok: (D) i = 1, b = -9.846532888780276722: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 1, b = 6.911728889029239951: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = -9.846532888780276722: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 2, b = 6.911728889029239951: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = -9.846532888780276722: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 3, b = 6.911728889029239951: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = -9.846532888780276722: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, -1, -1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: (D) i = 4, b = 6.911728889029239951: u | v^2 - f, w of degree 4
+ok: (D) w coprime to f (nonzero at the six roots)
+ok: (D) sign vector [1, 1, 1, 1] = the predicted (sgn u(r_j), j != i; -sgn f'(r_i) sgn(r_i - b) at i)
+ok: (D) in W_r
+ok: f'(r1..r4) signs (+,-,+,-)
+  image of the sampled classes modulo the diagonal: [[1, -1, -1, 1], [1, 1, 1, 1]]; smallest |value| used 3.111 e-1
+ok: the sampled classes fill W_r modulo the diagonal (dimension 1)
+ok: negative control: inWR rejects (+,-,+,-), (+,+,-,-), (+,+,+,-)
+ok: negative control: for -fRev at place 5, the pair of points over 2.742750148651451476 and 178.59939758087784446 has sign vector [1, 1, -1, -1], outside W_r
+ok: fields.bin: nfK.pol = fZ (binary files keep variable numbers, not names)
+ok: twist 0, place 5: two real embeddings of L and of N above beta_1
+ok: W_w has dimension 2 and contains the diagonal (the image of R^x)
+ok: the non-diagonal class of W_w has weight 2 (a partition into two pairs)
+ok: 1/theta at the L, N embeddings are the four real roots of fRev
+  twist 0, place 5: coordinates (L, L, N, N) are the roots r_[1, 3, 4, 2] of fRev; W_w pair [1, 3] = {r_1, r_4}; sign lc(fRev) = -1
+ok: lc < 0: the p21_29 local image is W_r = {sgn(r1) = sgn(r4), sgn(r2) = sgn(r3)}
+ok: twist 0, place 6: two real embeddings of L and of N above beta_2
+ok: W_w has dimension 2 and contains the diagonal (the image of R^x)
+ok: the non-diagonal class of W_w has weight 2 (a partition into two pairs)
+ok: 1/theta at the L, N embeddings are the four real roots of fRev
+  twist 0, place 6: coordinates (L, L, N, N) are the roots r_[2, 4, 3, 1] of fRev; W_w pair [2, 4] = {r_4, r_1}; sign lc(fRev) = -1
+ok: lc < 0: the p21_29 local image is W_r = {sgn(r1) = sgn(r4), sgn(r2) = sgn(r3)}
+ok: twist 0, place 7: two real embeddings of L and of N above beta_3
+ok: W_w has dimension 2 and contains the diagonal (the image of R^x)
+ok: the non-diagonal class of W_w has weight 2 (a partition into two pairs)
+ok: 1/theta at the L, N embeddings are the four real roots of fRev
+  twist 0, place 7: coordinates (L, L, N, N) are the roots r_[2, 4, 3, 1] of fRev; W_w pair [1, 3] = {r_2, r_3}; sign lc(fRev) = -1
+ok: lc < 0: the p21_29 local image is W_r = {sgn(r1) = sgn(r4), sgn(r2) = sgn(r3)}
+ok: twist 1, place 5: two real embeddings of L and of N above beta_1
+ok: W_w has dimension 2 and contains the diagonal (the image of R^x)
+ok: the non-diagonal class of W_w has weight 2 (a partition into two pairs)
+ok: 1/theta at the L, N embeddings are the four real roots of fRev
+  twist 1, place 5: coordinates (L, L, N, N) are the roots r_[1, 3, 4, 2] of fRev; W_w pair [1, 3] = {r_1, r_4}; sign lc(fRev) = -1
+ok: lc < 0: the p21_29 local image is W_r = {sgn(r1) = sgn(r4), sgn(r2) = sgn(r3)}
+ok: twist 1, place 6: two real embeddings of L and of N above beta_2
+ok: W_w has dimension 2 and contains the diagonal (the image of R^x)
+ok: the non-diagonal class of W_w has weight 2 (a partition into two pairs)
+ok: 1/theta at the L, N embeddings are the four real roots of fRev
+  twist 1, place 6: coordinates (L, L, N, N) are the roots r_[2, 4, 3, 1] of fRev; W_w pair [2, 4] = {r_4, r_1}; sign lc(fRev) = -1
+ok: lc < 0: the p21_29 local image is W_r = {sgn(r1) = sgn(r4), sgn(r2) = sgn(r3)}
+ok: twist 1, place 7: two real embeddings of L and of N above beta_3
+ok: W_w has dimension 2 and contains the diagonal (the image of R^x)
+ok: the non-diagonal class of W_w has weight 2 (a partition into two pairs)
+ok: 1/theta at the L, N embeddings are the four real roots of fRev
+  twist 1, place 7: coordinates (L, L, N, N) are the roots r_[2, 4, 3, 1] of fRev; W_w pair [1, 3] = {r_2, r_3}; sign lc(fRev) = -1
+ok: lc < 0: the p21_29 local image is W_r = {sgn(r1) = sgn(r4), sgn(r2) = sgn(r3)}
+DONE, 0 failed checks

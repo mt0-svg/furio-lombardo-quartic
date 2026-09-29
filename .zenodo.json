@@ -1,0 +1,71 @@
+{
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "title": "The plane quartic of Furio and Lombardo has exactly four rational points",
+  "creators": [
+    {
+      "name": "mt0-svg"
+    }
+  ],
+  "description": "<p><i>This is AI-generated research: the results, proofs and code were found and written by AI. Credit goes to all the humans whose work it builds on.</i></p><p>Furio and Lombardo (<a href=\"https://doi.org/10.1112/plms.70193\">Proc. Lond. Math. Soc. 2026</a>; <a href=\"https://arxiv.org/abs/2507.17967\">arXiv:2507.17967</a>) conjectured that the plane quartic curve $X_{E_3}$, a twist of the Klein quartic that arises in their classification of the $7$-adic images of Galois for elliptic curves over $\\mathbb{Q}$, has exactly four rational points. We prove this. A descent over a number field of degree $21$ lifts every rational point to one of two étale double covers of the curve. The Prym varieties of these covers are Jacobians of genus $2$ curves, and Stoll's Selmer group Chabauty at one $2$-adic place, applied to them, leaves only the four known points. The proof is formalized in Lean 4 with Mathlib. With the work of Furio and Lombardo, it completes the classification of the $7$-adic images.</p><p>The theorem is proved in Lean 4 with Mathlib, with no hypothesis and only the standard axioms; the Lean kernel checks every finite computation of the proof. The certificates it checks were written by PARI/GP scripts and Lean programs. A second program written separately in Sage recomputes the $2$-adic logarithms, the lattice, the centres and the boxes of the covering of the $2$-adic points of the curve, from the exact data and the local Selmer image of the first programs, and agrees with them; another Sage program redoes the descent and finds the same two classes.</p><p>Code, Lean proofs and certificates: <a href=\"https://github.com/mt0-svg/furio-lombardo-quartic\">github.com/mt0-svg/furio-lombardo-quartic</a></p>",
+  "license": "Apache-2.0",
+  "keywords": [
+    "Furio-Lombardo conjecture",
+    "rational points",
+    "plane quartic",
+    "twist of the Klein quartic",
+    "generalized Fermat equation",
+    "7-adic Galois representation",
+    "Selmer group Chabauty",
+    "Prym variety",
+    "genus 2 Jacobian",
+    "2-descent",
+    "2-adic logarithm",
+    "Lean 4",
+    "Mathlib",
+    "formal verification"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "references",
+      "identifier": "10.1112/plms.70193",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "arXiv:2507.17967",
+      "scheme": "arxiv"
+    },
+    {
+      "relation": "isSupplementedBy",
+      "identifier": "https://github.com/mt0-svg/furio-lombardo-quartic",
+      "scheme": "url"
+    }
+  ],
+  "references": [
+    "J. S. Balakrishnan, L. A. Betts, D. R. Hast, A. Jha and J. S. Müller, Rational points on the non-split Cartan modular curve of level 27 and quadratic Chabauty over number fields, preprint, arXiv:2501.07833 (2025).",
+    "C. Birkbeck, AINTLIB: an AI-reviewed number-theory library, Lean 4 library, commit 8ad96111, https://github.com/CBirkbeck/AINTLIB.",
+    "N. Bruin, The arithmetic of Prym varieties in genus 3, Compos. Math. 144 (2008), 317-338, doi:10.1112/S0010437X07003314.",
+    "D. G. Cantor, Computing in the Jacobian of a hyperelliptic curve, Math. Comp. 48 (1987), 95-101, doi:10.1090/S0025-5718-1987-0866101-0.",
+    "J. W. S. Cassels and E. V. Flynn, Prolegomena to a middlebrow arithmetic of curves of genus 2, London Math. Soc. Lecture Note Ser. 230, Cambridge University Press (1996), doi:10.1017/CBO9780511526084.",
+    "C. Chevalley, Sur la théorie du corps de classes dans les corps finis et les corps locaux, J. Fac. Sci. Univ. Tokyo Sect. I 2 (1933), 365-476.",
+    "L. de Moura and S. Ullrich, The Lean 4 theorem prover and programming language, in: Automated Deduction, CADE 28, Lecture Notes in Comput. Sci. 12699, Springer (2021), 625-635, doi:10.1007/978-3-030-79876-5_37.",
+    "L. Furio and D. Lombardo, On 7-adic Galois representations for elliptic curves over Q, Proc. Lond. Math. Soc. (3) 133 (2026), e70193, doi:10.1112/plms.70193; arXiv:2507.17967.",
+    "E. Karabiyik, Rational points on a twist of the Klein quartic and the classification of 7-adic images of Galois representations for elliptic curves over Q, abstract of a paper in preparation (2026), https://eekarabiyik.github.io/files/7adic_abstract.pdf.",
+    "B. Mazur, Rational points on modular curves, in: Modular Functions of One Variable V, Lecture Notes in Math. 601, Springer (1977), 107-148, doi:10.1007/BFb0063947.",
+    "Nguyen Xuan Tho, Complete classification of 7-adic Galois images for non-CM elliptic curves over Q, preprint, arXiv:2609.35460 (2026).",
+    "B. Poonen and E. F. Schaefer, Explicit descent for Jacobians of cyclic covers of the projective line, J. Reine Angew. Math. 488 (1997), 141-188, doi:10.1515/crll.1997.488.141.",
+    "B. Poonen, E. F. Schaefer and M. Stoll, Twists of X(7) and primitive solutions to x^2+y^3=z^7, Duke Math. J. 137 (2007), 103-158, doi:10.1215/S0012-7094-07-13714-1.",
+    "E. F. Schaefer, 2-descent on the Jacobians of hyperelliptic curves, J. Number Theory 51 (1995), 219-232, doi:10.1006/jnth.1995.1044.",
+    "M. Stoll, Implementing 2-descent for Jacobians of hyperelliptic curves, Acta Arith. 98 (2001), 245-277, doi:10.4064/aa98-3-4.",
+    "M. Stoll, Chabauty without the Mordell-Weil group, in: Algorithmic and Experimental Methods in Algebra, Geometry, and Number Theory, Springer (2017), 623-663, doi:10.1007/978-3-319-70566-8_28.",
+    "M. Stoll, EllipticCurves, Lean 4 library, commit 1e470949, https://github.com/MichaelStollBayreuth/EllipticCurves.",
+    "The Comparator contributors, Comparator: a judge for Lean proofs, commit d03acab1, https://github.com/leanprover/comparator.",
+    "The Lean Pool contributors, Lean Pool, Lean 4 library, commit 504c1718, https://github.com/Vilin97/lean-pool.",
+    "The mathlib Community, The Lean mathematical library, in: CPP 2020, ACM (2020), 367-381, doi:10.1145/3372885.3373824.",
+    "The PARI Group, PARI/GP, version 2.17.4, Université de Bordeaux, https://pari.math.u-bordeaux.fr/.",
+    "The Sage Developers, SageMath, the Sage Mathematics Software System, version 10.9 (2026), https://www.sagemath.org.",
+    "The Tau Ceti contributors, Tau Ceti, Lean 4 library, https://github.com/TauCetiProject/TauCeti.",
+    "R. Zimmert, Ideale kleiner Norm in Idealklassen und eine Regulatorabschätzung, Invent. Math. 62 (1981), 367-380, doi:10.1007/BF01394249."
+  ]
+}

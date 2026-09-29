@@ -1,0 +1,67 @@
+  ***   Warning: new maximum stack size = 900001792 (858.309 Mbytes).
+ok: Lean data parsed (fL, zkNum, FnData, qData, hData, qDen, hDen, epsL, Dr, rtA, rtB)
+ok: fZ irreducible
+ok: zkc inverts zkE
+ok: fRev 0 = c q h over K21
+ok: K21 has exactly 3 real embeddings
+ok: realEmb 0 (root interval (rtA, rtB) / Dr) is beta_1 = -0.8799147340465381349
+ok: realEmb 1 (root interval (rtA, rtB) / Dr) is beta_2 = -0.8360623230535504948
+ok: realEmb 2 (root interval (rtA, rtB) / Dr) is beta_3 = 1.8940312208011191848
+ok: nfinit(K21).roots[1..3] = beta_1 < beta_2 < beta_3, so place 4 + i = beta_i = realEmb (i - 1): places 5, 6 are realEmb 0, 1
+ok: isolating interval of beta_1
+ok: isolating interval of beta_2
+ok: isolating interval of beta_3
+ok: eps > 0 at beta_1
+ok: eps > 0 at beta_2
+ok: eps > 0 at beta_3
+ok: refined interval of beta_1: sign change of fL, inside (rtA, rtB) / Dr
+ok: refined interval of beta_2: sign change of fL, inside (rtA, rtB) / Dr
+ok: refined interval of beta_3: sign change of fL, inside (rtA, rtB) / Dr
+resolvent cubic: 1 roots in K21
+ok: a root u of the resolvent in K21 with u / eps a nonzero square in K21
+ok: tool: redw on b w^2, 3 + w, w^3
+ok: h 0 = (X^2 + (p0 + p1 w) X + r0 + r1 w) (X^2 + (p0 - p1 w) X + r0 - r1 w) exactly, w^2 = eps (negative control: adding w X breaks it)
+ok: the four K21 identities h3 = 2 p0, h2 = 2 r0 + p0^2 - eps p1^2, h1 = 2 (p0 r0 - eps p1 r1), h0 = r0^2 - eps r1^2
+Dh = 92, max |coordinate| of P0, P1, R0, R1: 4414
+ok: Dh^2 Delta1 and Dh^4 N(Delta) have integral zk coordinates
+==== place 5 = realEmb 0 (beta_1 = -0.879914734047)
+ok: lc(fRev 0) = c < 0
+  separators [-5, 0, 1, 6, 178]; signs of q 0: [1, -1, -1, 1, 1], of h 0: [1, 1, -1, -1, 1]
+ok: N(Delta) < 0: exactly one of the two quadratic factors of h over R has real roots
+  sign Delta1 = -1: the factor with real roots is X^2 + (p0 - t p1) X + (r0 - t r1), t = sqrt(eps) > 0
+ok: root layout ["q", "h", "q", "h"] (expected (q, h, q, h) at 5, (h, q, h, q) at 6)
+ok: q, h > 0 at s0 and s4 (monic, roots inside)
+ok: numerically the 4 real roots [-4.651484596440403549, 0.3676870726785762491, 5.117813224624326702, 177.59939758087784446]~ interlace the separators
+ok: scaled q(s)
+ok: scaled q(s)
+ok: scaled q(s)
+ok: scaled q(s)
+ok: scaled q(s)
+ok: scaled h(s)
+ok: scaled h(s)
+ok: scaled h(s)
+ok: scaled h(s)
+ok: scaled h(s)
+  signs at the three embeddings: Delta1 [-1, 1, 1], N(Delta) [-1, -1, -1]
+==== place 6 = realEmb 1 (beta_2 = -0.836062323054)
+ok: lc(fRev 0) = c < 0
+  separators [-1, 0, 1/10, 1, 2]; signs of q 0: [1, 1, -1, -1, 1], of h 0: [1, -1, -1, 1, 1]
+ok: N(Delta) < 0: exactly one of the two quadratic factors of h over R has real roots
+  sign Delta1 = 1: the factor with real roots is X^2 + (p0 + t p1) X + (r0 + t r1), t = sqrt(eps) > 0
+ok: root layout ["h", "q", "h", "q"] (expected (q, h, q, h) at 5, (h, q, h, q) at 6)
+ok: q, h > 0 at s0 and s4 (monic, roots inside)
+ok: numerically the 4 real roots [-0.10517276059718201431, 0.03510231418503650150, 0.15044068675018333377, 1.3327156630551312888]~ interlace the separators
+ok: scaled q(s)
+ok: scaled q(s)
+ok: scaled q(s)
+ok: scaled q(s)
+ok: scaled q(s)
+ok: scaled h(s)
+ok: scaled h(s)
+ok: scaled h(s)
+ok: scaled h(s)
+ok: scaled h(s)
+  signs at the three embeddings: Delta1 [-1, 1, 1], N(Delta) [-1, -1, -1]
+wrote /tmp/lf7a/regen/real_roots/RealRootData.lean
+signs: q at separators [[1, -1, -1, 1, 1], [1, 1, -1, -1, 1]], h at separators [[1, 1, -1, -1, 1], [1, -1, -1, 1, 1]]
+DONE, 0 failed checks (53 checks ran)

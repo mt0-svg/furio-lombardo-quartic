@@ -1,0 +1,56 @@
+# Redacted 2026-09-30: the path of the resource wrapper in the command line below is written as cap; nothing else changed.
+type checking took 690ms
+type checking took 704ms
+type checking took 774ms
+type checking took 809ms
+type checking took 694ms
+type checking took 769ms
+type checking took 735ms
+type checking took 778ms
+type checking took 849ms
+type checking took 804ms
+type checking took 773ms
+type checking took 819ms
+type checking took 767ms
+type checking took 745ms
+cumulative profiling times:
+	attribute application 0.441ms
+	compilation (IR) 2.89ms
+	compilation (LCNF base) 28.3ms
+	compilation (LCNF impure) 17.5ms
+	compilation (LCNF mono) 24.8ms
+	elaboration 233ms
+	fix level params 0.423ms
+	instantiate metavars 0.906ms
+	let-to-have transformation 0.32ms
+	linting 8.87ms
+	module linting 0.00088ms
+	parsing 15.8ms
+	process pre-definitions 90.7ms
+	share common exprs 2.27ms
+	tactic execution 3.39ms
+	type checking 10.7s
+	typeclass inference 43.6ms
+	Command being timed: "cap -m 2G -c 1 -t 30min flock /tmp/furio-lake.lock lake env lean -j1 ../code/lean-kv-arith/dprobe/kv_d2_kernel_P600_k0_7.lean"
+	User time (seconds): 11.46
+	System time (seconds): 0.54
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.06
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 826272
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 52476
+	Voluntary context switches: 1183
+	Involuntary context switches: 670
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

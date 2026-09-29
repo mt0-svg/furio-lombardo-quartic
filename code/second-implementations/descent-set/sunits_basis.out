@@ -1,0 +1,6 @@
+expected dim K(S,2) = 18
+number of generators from S_unit_group: 18  torsion order: 2
+(a) all 18 generators are S-units: exact factorization of (u) supported on S
+max height (digits) of generator coefficients: 45
+(b) characters used: 20  up to p = 131  F_2-rank = 18
+saved ssb_3_sunits.sobj

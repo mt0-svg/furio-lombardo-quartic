@@ -1,0 +1,21 @@
+  ***   Warning: new maximum stack size = 1500000256 (1430.512 Mbytes).
+ok: Lean data parsed (fL, zkNum, epsL, eaL, ebL, 29 gL, 53 gN, alphaL, betaN, Dr2, rA2, rB2, SgRows, qIdx, hIdx)
+ok: gL: 2 zk lists, gN: 4 zk lists, each of length 21
+ok: zkc inverts zkE
+ok: beta_(k+1) in (rA2, rB2) / Dr2 (realEmb k)
+ok: elemCert: eps > 0 at realEmb 0, 1, and the wrong sign fails
+ok: M = A^2 - eN B'^2 over L42 (PARI arithmetic in K21[w]/(w^2 - eps)) equals the closed form m0 + m1 w, for the 53 gensN
+ok: norms integral: max |coordinate| of nL 96, of nM 1214363566080
+ok: realEmb 0: N(eN) < 0 and tau'(eN) > 0
+ok: realEmb 0: the tower signs of the 82 generators at the four roots equal the bits of SgRows
+ok: realEmb 0: the two roots of a factor have equal signs iff the relevant norm is positive
+ok: realEmb 0: all 274 sign certificates pass (Lean elemCertAt emulation)
+ok: realEmb 1: N(eN) < 0 and tau'(eN) > 0
+ok: realEmb 1: the tower signs of the 82 generators at the four roots equal the bits of SgRows
+ok: realEmb 1: the two roots of a factor have equal signs iff the relevant norm is positive
+ok: realEmb 1: all 274 sign certificates pass (Lean elemCertAt emulation)
+ok: negative control: the certificate with the flipped sign fails
+sAl = [-1, -1], sEb = [-1, 1], sV = [1, -1]
+wrote /tmp/sr1/RealSignData.lean
+certificates emulated: 548
+DONE, 0 failed checks (16 ok)

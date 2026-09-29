@@ -1,0 +1,15 @@
+  ***   Warning: new maximum stack size = 2000003072 (1907.352 Mbytes).
+v(pi7) = 1
+twist 0: g mod P7 factors of degrees [1] multiplicities [6]
+  hits [root mod P7, digits c1..c3 of x - lift(root) on pi7^1..3, v(f0)]: []
+twist 1: g mod P7 factors of degrees [1] multiplicities [6]
+  hits [root mod P7, digits c1..c3 of x - lift(root) on pi7^1..3, v(f0)]: []
+DONE
+  *** nfeltreduce: Warning: increasing stack size to 16000000.
+  *** subst: Warning: increasing stack size to 32000000.
+  *** subst: Warning: increasing stack size to 64000000.
+twist 0: v(f(r)) = 163, v(q(r)) = 136 (precision of the root), v(f'(r)) = 31
+  *** nfeltreduce: Warning: increasing stack size to 128000000.
+  *** subst: Warning: increasing stack size to 256000000.
+  *** subst: Warning: increasing stack size to 512000000.
+  *** _/_: Warning: increasing stack size to 1024000000.

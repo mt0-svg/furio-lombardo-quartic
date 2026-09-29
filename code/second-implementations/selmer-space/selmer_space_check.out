@@ -1,0 +1,28 @@
+G: 164 x 82, rank 82
+---- twist k = 0
+  place 1 (p = 2 (e = 3, f = 1), factor degrees [2, 4]): 22 coordinates, local image of dimension 11, dim X so far 71
+  place 2 (p = 2 (e = 12, f = 1), factor degrees [2, 2, 2]): 78 coordinates, local image of dimension 39, dim X so far 36
+  place 3 (p = 2 (e = 6, f = 1), factor degrees [2, 2, 2]): 42 coordinates, local image of dimension 21, dim X so far 22
+  place 4 (p = 7 (e = 7, f = 3), factor degrees [1, 1, 1, 2, 1]): 10 coordinates, local image of dimension 5, dim X so far 20
+  place 5 (real 1): 4 coordinates, local image of dimension 2, dim X so far 19
+  place 6 (real 2): 4 coordinates, local image of dimension 2, dim X so far 19
+  place 7 (real 3): 4 coordinates, local image of dimension 2, dim X so far 19
+PASS dim X = 19 (k = 0)
+PASS G X equals the span of the cached columns GX (k = 0)
+PASS place 1 is the place v with e = 3
+PASS image of X at v modulo the local scalars has dimension 4 (k = 0)
+PASS the same subspace at v as the columns GXv of sigma_check (k = 0)
+---- twist k = 1
+  place 1 (p = 2 (e = 3, f = 1), factor degrees [2, 4]): 22 coordinates, local image of dimension 11, dim X so far 71
+  place 2 (p = 2 (e = 12, f = 1), factor degrees [2, 2, 2]): 78 coordinates, local image of dimension 39, dim X so far 36
+  place 3 (p = 2 (e = 6, f = 1), factor degrees [2, 2, 2]): 42 coordinates, local image of dimension 21, dim X so far 22
+  place 4 (p = 7 (e = 7, f = 3), factor degrees [1, 1, 1, 2, 1]): 10 coordinates, local image of dimension 5, dim X so far 19
+  place 5 (real 1): 4 coordinates, local image of dimension 2, dim X so far 19
+  place 6 (real 2): 4 coordinates, local image of dimension 2, dim X so far 19
+  place 7 (real 3): 4 coordinates, local image of dimension 2, dim X so far 19
+PASS dim X = 19 (k = 1)
+PASS G X equals the span of the cached columns GX (k = 1)
+PASS place 1 is the place v with e = 3
+PASS image of X at v modulo the local scalars has dimension 4 (k = 1)
+PASS the same subspace at v as the columns GXv of sigma_check (k = 1)
+RESULT PASS

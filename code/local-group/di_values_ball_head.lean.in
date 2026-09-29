@@ -1,0 +1,12 @@
+/- kv_d2 probe: the D_i value chain R_0 = N D_i + E0, R_{j+1} = 2 R_j - E0 on balls
+(`ballOps`, KvArith/Comp), at P = @P@ bits. Assembled by di_values_ball_run.sh from di_values_ball_head.lean.in, di_values_ball_data.lean
+(di_values_ball_export.gp), di_values_ball_prog.lean and either di_values_ball_eval.lean.in (#eval pass: success of every step, radii,
+t_J against the exact t_J of PARI) or the chunk theorems it prints (kernel pass, `decide +kernel`). -/
+import FurioLombardo.Discharge.KvArith.Comp.Cantor
+import FurioLombardo.Discharge.KvArith.Comp.BallOps
+open FurioLombardo.Discharge.KvArith
+set_option maxRecDepth 1000000
+
+def k2 : Ctx := Ctx.ofP @P@
+/-- A ball from exported data, the radius capped at `3P`. -/
+def mkB (c : N3) (e r : Nat) : Ball := let c' := redN k2 c; ⟨c', e, min r (3 * k2.P), vN k2 c'⟩

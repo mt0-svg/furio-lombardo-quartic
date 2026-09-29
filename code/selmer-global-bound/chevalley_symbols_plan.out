@@ -1,0 +1,27 @@
+  ***   Warning: new maximum stack size = 4000002048 (3814.699 Mbytes).
+ok: both twists share G1, A, B, d (same L and N)
+index [O_K : Z[b]] = 176337954699919588346298368, v_2 = 25, v_7 = 0
+torsion units: 2
+ramified primes of K21 in L: [[2, 3, 1, 2], [2, 6, 1, 2]]
+signs of d at the real places of K21: [1, 1, 1]
+unit 1: symbols [1, 1], signs [-1, -1, -1], size 24
+unit 2: symbols [1, 1], signs [1, -1, -1], size 2688
+unit 3: symbols [1, 1], signs [1, -1, -1], size 2712
+unit 4: symbols [-1, -1], signs [1, 1, -1], size 2736
+unit 5: symbols [1, 1], signs [1, 1, 1], size 2648
+unit 6: symbols [1, 1], signs [-1, -1, 1], size 2688
+unit 7: symbols [-1, -1], signs [-1, 1, -1], size 2736
+unit 8: symbols [-1, -1], signs [-1, 1, 1], size 2736
+unit 9: symbols [-1, -1], signs [1, -1, -1], size 2728
+unit 10: symbols [1, 1], signs [-1, -1, -1], size 2720
+unit 11: symbols [-1, -1], signs [-1, -1, 1], size 2704
+unit 12: symbols [1, 1], signs [-1, 1, -1], size 2688
+valuations of d at S: [18, 60, 36, 8] (e: [3, 12, 6, 7])
+norm of d: [2, 114; 3, 2; 7, 24; 13, 4; 43, 2; 439, 2; 45613, 42; 253447, 72; 268913, 2; 462191, 42; 249279053, 42]
+  *** _ZM_inv_worker: Warning: increasing stack size to 16000000.
+signs of e at the 6 real places of L: [-1, -1, 1, 1, 1, -1]
+real place of K21 below each real place of L [index, |gap|]: [[2, 3.789301872052594569 E-31], [3, 1.1402295202976188827 E-36], [2, 3.377430368782596468 E-34], [3, 3.420603090698608360 E-30], [1, 1.5615875984060658511 E-28], [1, 5.9699670521180468830134937695825876296 E-15]]
+real places of L ramified in N: [1, 2, 6], below them in K21: [2, 3, 1]
+sign matrix of E_K21 at the 3 real places (rows = units, 1 = negative): [1, 1, 1; 0, 1, 1; 0, 1, 1; 0, 0, 1; 0, 0, 0; 1, 1, 0; 1, 0, 1; 1, 0, 0; 0, 1, 1; 1, 1, 1; 1, 1, 0; 1, 0, 1], rank over F2 3
+ok: the ramified prime with e = 3 has f = 1
+v_P3(d) = 18

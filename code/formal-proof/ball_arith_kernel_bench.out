@@ -1,0 +1,53 @@
+# Redacted 2026-09-30: the path of the resource wrapper in the command line below is written as cap; nothing else changed.
+type checking took 271ms
+type checking took 531ms
+type checking took 979ms
+type checking took 477ms
+type checking took 3.18s
+type checking took 1.12s
+type checking took 463ms
+type checking took 547ms
+type checking took 2.66s
+type checking took 15.3s
+cumulative profiling times:
+	attribute application 0.182ms
+	compilation (IR) 2.31ms
+	compilation (LCNF base) 5.78ms
+	compilation (LCNF impure) 2.35ms
+	compilation (LCNF mono) 3.86ms
+	elaboration 42ms
+	fix level params 0.159ms
+	instantiate metavars 0.263ms
+	let-to-have transformation 0.129ms
+	linting 4.64ms
+	module linting 0.00111ms
+	parsing 5.83ms
+	process pre-definitions 31.7ms
+	share common exprs 0.887ms
+	tactic execution 3.14ms
+	type checking 25.5s
+	typeclass inference 11.6ms
+	Command being timed: "cap -m 2G -c 1 -t 20min lake env lean -j1 ../code/lean-kv-arith/k1_bench.lean"
+	User time (seconds): 23.71
+	System time (seconds): 2.91
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:26.79
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2207504
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6
+	Minor (reclaiming a frame) page faults: 275333
+	Voluntary context switches: 687
+	Involuntary context switches: 1382
+	Swaps: 0
+	File system inputs: 640
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+exit 0

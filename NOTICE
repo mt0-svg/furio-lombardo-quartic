@@ -1,0 +1,9 @@
+The plane quartic of Furio and Lombardo has exactly four rational points
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This project contains code taken from EllipticCurves (Michael Stoll), Tau Ceti (The Tau Ceti
+contributors), AINTLIB (Chris Birkbeck) and Lean Pool (a file of The FLT Project), all under the
+Apache License, Version 2.0, and built on Mathlib, Copyright (c) the respective Mathlib authors,
+Apache License 2.0. None of these sources has a NOTICE file. Each file taken keeps its licence
+header and names its source in its header; the sources, commits and changes are listed in
+README.md, section Built on.

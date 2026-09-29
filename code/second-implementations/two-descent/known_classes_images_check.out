@@ -1,0 +1,32 @@
+# Redacted 2026-09-30: the path of a workspace note in the check message on kappa below is removed; the message reads as the edited script prints it; nothing else changed.
+ok   h = 1 (bnfinit, certified in refut2D_3_arith.gp without GRH)
+ok   8 auxiliary degree 1 primes with an invertible character matrix
+== auxiliary divisors
+ok   y = -x meets C at P0 once (x | F(x,-x,1), x^2 does not)
+ok   G_A does not vanish on A (so A avoids P0, R and the flexes)
+ok   G_A does not vanish on H1 = (y = 2x + 3).C
+ok   G_A does not vanish on H2 = (y = -3x + 5).C
+ok   conics through R: a 3-dimensional family
+ok   a conic kappa through R, not through P0, with Res_y(F, kappa) = r3 * r5, r5 squarefree of degree 5 prime to r3 and x
+   kappa = 2040*x^2 + (-2670*y - 250*z)*x + (2300*y^2 - 1250*z*y - 6250*z^2)
+ok   kappa is not the conic of the first two-descent computation
+ok   G_A does not vanish on R'
+ok   Qb lies on C
+ok   G_A does not vanish at Qb
+ok   G_A does not vanish at P1, P2, P3
+== elements
+   candidate primes: 33 (largest 41388523993294225913484211)
+   delta(D1): exponent vector [1, 1, 1, 1, 0, 0, 1, 1], rational primes removed: [17, 61, 15061], class mod <-1,2,7>: [0, 0, 0, 0, 1, 0, 0, 0]
+   delta(D2): exponent vector [0, 0, 1, 1, 0, 0, 0, 0], rational primes removed: [17, 61, 15061], class mod <-1,2,7>: [0, 0, 0, 0, 0, 0, 0, 0]
+   delta(D3): exponent vector [0, 0, 1, 1, 1, 0, 0, 0], rational primes removed: [11, 17, 61, 15061], class mod <-1,2,7>: [0, 0, 0, 0, 1, 0, 0, 0]
+   delta(Qb - 2P0): exponent vector [0, 0, 1, 0, 0, 1, 0, 0], rational primes removed: [71], class mod <-1,2,7>: [0, 0, 0, 1, 0, 1, 0, 0]
+   delta(gen3): exponent vector [1, 1, 1, 1, 1, 0, 1, 1], rational primes removed: [17, 43, 47, 61, 179, 743, 15061, 3332670071], class mod <-1,2,7>: [0, 0, 0, 0, 0, 0, 0, 0]
+   delta(H1 - H2) (principal, control): exponent vector [0, 0, 1, 1, 0, 0, 0, 0], rational primes removed: [3, 11, 17, 7687, 15061], class mod <-1,2,7>: [0, 0, 0, 0, 0, 0, 0, 0]
+ok   control: the principal divisor H1 - H2 maps to 0
+ok   delta(gen3) = 0 (Proposition 3)
+ok   delta(D2) = 0
+ok   delta(D1) = delta(D3)
+ok   delta(D1), delta(Qb - 2P0) and their sum are nonzero
+ok   Sel_fake has 4 classes modulo <-1,2,7>
+ok   delta(D1), delta(Qb - 2P0), their sum and 0 are exactly the 4 classes of Sel_fake
+== summary: 0 failure(s)

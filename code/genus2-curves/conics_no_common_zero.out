@@ -1,0 +1,6 @@
+  ***   Warning: new maximum stack size = 4000002048 (3814.699 Mbytes).
+rank of the 15 x 18 system over K21: 15
+j = 0: D = 83290161780 (11 digits), max coefficient digits 12
+j = 1: D = 70499534725307510565174572261861880 (35 digits), max coefficient digits 36
+j = 2: D = 35249767362653755282587286130930940 (35 digits), max coefficient digits 36
+written /tmp/lf7b_regen.IHPdKb/FurioLombardo/Discharge/M3a/AbelPrymData2.lean

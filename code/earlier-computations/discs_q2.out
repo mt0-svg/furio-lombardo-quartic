@@ -1,0 +1,8 @@
+# rerun 2026-09-30, PARI/GP 2.17.4, run: (cd code/earlier-computations && gp -q discs_q2.gp < /dev/null)
+  ***   Warning: new maximum stack size = 2000003072 (1907.352 Mbytes).
+5 discs; charts [3, 2, 0]; depths [1, 1, 1, 1, 1]
+P0: chart 1, in discs [[1, 0, 0, 1, 2]]
+P1: chart 1, in discs [[1, 1, 1, 1, 2]]
+P2: chart 1, in discs [[1, 0, 0, 1, 2]]
+P3: chart 1, in discs [[1, 1, 0, 1, 2]]
+independent Newton points in chart z = 1: 244 found, 244 in exactly one disc

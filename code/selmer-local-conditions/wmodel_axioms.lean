@@ -1,0 +1,30 @@
+import FurioLombardo.Discharge.SelmerBasis.PlaceWModel
+open FurioLombardo.Discharge.SelmerBasis
+#print axioms LModel.ok
+#print axioms SqrtData.ok
+#print axioms LModel.ok_eps
+#print axioms LModel.ok_B
+#print axioms omF
+#print axioms omF_sq
+#print axioms iL
+#print axioms iL_apply
+#print axioms iL_algebraMap
+#print axioms iL_comp_algebraMap
+#print axioms iL_four_eN
+#print axioms toF_mul
+#print axioms norm_toF_unit
+#print axioms exists_sF
+#print axioms sF
+#print axioms sF_sq
+#print axioms sF_near
+#print axioms two_ne_zero_CF
+#print axioms half_sF_sq
+#print axioms iN
+#print axioms iN_apply
+#print axioms iN_algebraMap
+#print axioms iN_comp_algebraMap
+#print axioms eval₂_map_eq_psi
+#print axioms evAt
+#print axioms evAt_mk
+#print axioms evAt_etaleMap
+#print axioms evAt_algebraMap

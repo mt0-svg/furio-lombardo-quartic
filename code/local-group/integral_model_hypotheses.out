@@ -1,0 +1,12 @@
+  ***   Warning: new maximum stack size = 1000001536 (953.676 Mbytes).
+PARI/GP [2, 17, 4], 2-adic precision 2^400, v = v_pi, v(2) = 3
+k = 0: v(f_j), j = 0..6: [0, 8, 6, 9, 0, 0, -6]
+  a = 0: v(tb1 p, tb2 p^2, tb3 p^3) = [5, 3, 6]  H1 ok; v(R0, R1, R2) = [0, 0, -6]  H2 FAILS  H3 FAILS
+  a = 1: v(tb1 p, tb2 p^2, tb3 p^3) = [6, 5, 9]  H1 ok; v(R0, R1, R2) = [4, 5, 0]  H2 FAILS  H3 FAILS
+  a = 2: v(tb1 p, tb2 p^2, tb3 p^3) = [7, 7, 12]  H1 ok; v(R0, R1, R2) = [8, 10, 6]  H2 ok  H3 ok
+  a = 3: v(tb1 p, tb2 p^2, tb3 p^3) = [8, 9, 15]  H1 ok; v(R0, R1, R2) = [12, 15, 12]  H2 ok  H3 FAILS
+k = 1: v(f_j), j = 0..6: [-6, -3, -6, 0, -6, -3, -6]
+  a = 0: v(tb1 p, tb2 p^2, tb3 p^3) = [0, 0, 0]  H1 ok; v(R0, R1, R2) = [8, 9, 6]  H2 ok  H3 ok
+  a = 1: v(tb1 p, tb2 p^2, tb3 p^3) = [1, 2, 3]  H1 ok; v(R0, R1, R2) = [12, 14, 12]  H2 ok  H3 FAILS
+  a = 2: v(tb1 p, tb2 p^2, tb3 p^3) = [2, 4, 6]  H1 ok; v(R0, R1, R2) = [16, 19, 18]  H2 ok  H3 FAILS
+  a = 3: v(tb1 p, tb2 p^2, tb3 p^3) = [3, 6, 9]  H1 ok; v(R0, R1, R2) = [20, 24, 24]  H2 ok  H3 FAILS

@@ -1,0 +1,108 @@
+  ***   Warning: new maximum stack size = 1700003840 (1621.250 Mbytes).
+ok: tool: f2in (positive and negative)
+ok: tool: f2eqspan (positive and negative)
+ok: tool: f2solve (solution, and no solution)
+ok: tool: Xbasis on a 2 x 2 example (kernel of x1 + x2 = 0; no condition when W is everything)
+ok: tool: vpi in Q_2(2^(1/3)) (v(2) = 3, v(pi) = 1, v(pi^2 + 4) = 2, v(0) = 3 Nw)
+  *** read: Warning: increasing stack size to 16000000.
+  *** read: Warning: increasing stack size to 32000000.
+  *** read: Warning: increasing stack size to 64000000.
+ok: f_0 = c G1 (A^2 - d B^2) is the Prym sextic F0
+  ***   Warning: increasing stack size to 128000000.
+  ***   Warning: increasing stack size to 256000000.
+ok: f_1 = c G1 (A^2 - d B^2) is the Prym sextic F1
+ok: clear nearest root
+ok: clear nearest root
+  *** nfeltembed: Warning: increasing stack size to 512000000.
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 1: 2 real roots of G1, 2 of h
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 2: 2 real roots of G1, 2 of h
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: clear nearest root
+ok: even numbers of real roots of G1 and h at a real place
+  real place 3: 2 real roots of G1, 2 of h
+ok: nfK of fields.bin has lane M1's integral basis zkNum / Dz
+fields, algebras, places, caches loaded (28981 ms)
+primes of K21 above 2: [e, f] = [[3, 1], [12, 1], [6, 1]]
+ok: exactly one prime of K21 above 2 has local degree <= 3 = [K_v : Q_2]: pr_v (e = 3, f = 1), the place 1 of p21_29
+ok: E of M4Cert/Kv.lean is Eisenstein at 2
+ok: v_pi(fL(theta0)) >= 120 (theta0 approximates a root of fL in K_v; negative control theta0 + 1)
+  v_(pr_v) of the test elements: [13, 15, 9, 3, 0, 15, 16, 15, 17, 12, 15]
+ok: v_pi(sigma(z)) = v_(pr_v)(z) for the generators of the 3 primes above 2, for 2, 7 and 6 random elements (sigma(theta) ~ theta0): sigma is the embedding at pr_v
+ok: the offsets equal and the images KM_w of K_w^x at the 4 finite places span the same spaces as those of ss_1_data_k0, k1 (p21_29); 164 coordinates, place v first (22 coordinates); G_old is the same for both twists
+  G_new: 20 columns (3214 ms)
+  G_new: 40 columns (12604 ms)
+  G_new: 60 columns (28799 ms)
+  G_new: 80 columns (47194 ms)
+G_new: 164 x 82 (49420 ms)
+ok: G_new is 164 x 82 of rank 82
+ok: span(G_new) = span(G_old) (the image of A(S,2) under the local coordinates)
+ok: G_new = G_old C with C invertible over F_2
+ok: gL 28 = -1 and its column equals column 28 of G_old (the class of -1 in L of p21_29): a known answer of the coordinate map
+  columns of C that are unit vectors (generators with the same class as an old one): 8
+ok: M1's gensL: 18 generators, the first is -1
+ok: the character matrices of sb_5d agree with the rows RL, RN and are invertible
+ok: kappa_t (t = 0..15): c prod gensL^a and c prod gensN^b are squares in L42, N84 (exact square roots)
+ok: kappa_t (t = 0..15): G_new kappa_t = loc(c, c)
+ok: negative control: kappa_1 with bit 0 flipped leaves no square root in L42
+  kappa: 8010 ms
+ok: dim span(kappa_0..kappa_15) = 15, one relation
+  the relation among the kappa_t: [1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+ok: the relation is the class of eps: eps prod gO^rel is a square in K21, prod gO^rel is not
+ok: DData.lean: 2 x 7 entries of pData, rData, pDen, rDen
+---- twist k = 0
+ok: dim X = 19 on the new and on the old generators
+ok: C X_new = X_old: the Selmer space of p21_29 under the change of generators
+ok: p21_21_li_k0_s1_e3.bin: complete J side run at e = 3, 7 divisors
+ok: DData.lean: p_i = u1 / u0, r_i = 1 / u0 for the monic u_i = x^2 + u1 x + u0 of the 7 divisors, in the order of Dpt (i = 0..6)
+ok: U_i(alpha), U_i(beta) are nonzero, and their coordinates at v (DData.lean, reversed model) equal those of the divisors of p21_21 modulo KM_v (i = 0..6)
+ok: negative control: c_0 differs from the class of divisor 1 modulo KM_v
+ok: c_0..c_6 (Dpt order) and KM_v are independent and span W_v
+ok: T0.data.SB of M4/Data.lean: 7 x 4, entries 0, 1
+  SB = [1, 0, 1, 1; 0, 0, 0, 1; 0, 0, 1, 0; 1, 1, 0, 0; 0, 0, 0, 0; 1, 0, 1, 0; 0, 0, 0, 0]
+ok: the images at v of X in the D basis (7 x 19, rank 4) span the columns of SB
+ok: {x in X : res_v(G_new x) in KM_v} = span(kappa) (dim 15)
+  weights of beta_j: [33, 23, 26, 33] before, [27, 17, 20, 25] after the reduction by span(kappa)
+ok: beta_j (j = 0..3) in X with res_v(G_new beta_j) = sum_i SB_ij c_i modulo KM_v: the coordinate form of RelAtV at sigma
+ok: negative control: beta_0 + beta_1 fails the relation of column 0
+ok: kappa_t in X, and span(beta_0..beta_3, kappa_0..kappa_15) = X (dim 4 + 15 = 19)
+ok: the kappa_t are trivial at every place modulo KM_w
+ok: G_new a_T = loc(x1 / kappa, x2 / kappa) (a_T, kappa of sb_5t)
+ok: a_T lies in X (mu(T) is a Selmer class)
+  mu(T) modulo sum KM_w: nontrivial
+ok: known classes ["T", "phi(x_0)", "phi(x_2)"] lie in loc(X) + sum KM_w; T of p21_29 = loc(x1 / kappa, x2 / kappa) modulo sum KM_w
+  beta_j (rows, 82 bits): [0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0; 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1; 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0; 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1]
+---- twist k = 1
+ok: dim X = 19 on the new and on the old generators
+ok: C X_new = X_old: the Selmer space of p21_29 under the change of generators
+ok: p21_21_li_k1_s1_e3.bin: complete J side run at e = 3, 7 divisors
+ok: DData.lean: p_i = u1 / u0, r_i = 1 / u0 for the monic u_i = x^2 + u1 x + u0 of the 7 divisors, in the order of Dpt (i = 0..6)
+ok: U_i(alpha), U_i(beta) are nonzero, and their coordinates at v (DData.lean, reversed model) equal those of the divisors of p21_21 modulo KM_v (i = 0..6)
+ok: negative control: c_0 differs from the class of divisor 1 modulo KM_v
+ok: c_0..c_6 (Dpt order) and KM_v are independent and span W_v
+ok: T1.data.SB of M4/Data.lean: 7 x 4, entries 0, 1
+  SB = [0, 1, 0, 0; 0, 1, 0, 0; 1, 1, 0, 0; 0, 0, 0, 0; 1, 1, 0, 0; 1, 0, 1, 1; 0, 0, 0, 1]
+ok: the images at v of X in the D basis (7 x 19, rank 4) span the columns of SB
+ok: {x in X : res_v(G_new x) in KM_v} = span(kappa) (dim 15)
+  weights of beta_j: [30, 35, 16, 33] before, [26, 25, 15, 20] after the reduction by span(kappa)
+ok: beta_j (j = 0..3) in X with res_v(G_new beta_j) = sum_i SB_ij c_i modulo KM_v: the coordinate form of RelAtV at sigma
+ok: negative control: beta_0 + beta_1 fails the relation of column 0
+ok: kappa_t in X, and span(beta_0..beta_3, kappa_0..kappa_15) = X (dim 4 + 15 = 19)
+ok: the kappa_t are trivial at every place modulo KM_w
+ok: G_new a_T = loc(x1 / kappa, x2 / kappa) (a_T, kappa of sb_5t)
+ok: a_T lies in X (mu(T) is a Selmer class)
+  mu(T) modulo sum KM_w: nontrivial
+ok: known classes ["T", "phi(x_1)", "phi(x_3)"] lie in loc(X) + sum KM_w; T of p21_29 = loc(x1 / kappa, x2 / kappa) modulo sum KM_w
+  beta_j (rows, 82 bits): [0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0; 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0; 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0]
+kappa_t (rows, 82 bits): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0; 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+ok: cache /tmp/sb5/selmer.bin written and read back
+DONE sb_5e_selmer: 58 checks passed, 0 failed (129007 ms)
