@@ -105,7 +105,7 @@ jobs:
           rm -f code/formal-proof/clean_build.out code/formal-proof/clean_build_modules.txt
           if [ "$PART" = 1 ]; then resume=0; else resume=1; fi
           rc=0
-          timeout -k 2m 300m env RUN_WRAP= HB=1 LB=12 PEAK_HEAVY=9G PEAK_LIGHT=4G MEM_MARGIN=1G MIN_DISK_GB=3 RESUME=$resume \
+          timeout -k 2m 300m env RUN_WRAP= HB=1 LB=2 PEAK_HEAVY=9G PEAK_LIGHT=4G MEM_MARGIN=1G MIN_DISK_GB=3 RESUME=$resume \
             code/formal-proof/clean_build.sh || rc=$?
           mkdir -p "verify/build/part-$PART" verify/results
           cp code/formal-proof/clean_build.out code/formal-proof/clean_build_modules.txt "verify/build/part-$PART/" || true
