@@ -1,7 +1,7 @@
 <h1 align="center">The plane quartic of Furio and Lombardo has exactly four rational points</h1>
 
 <p align="center">
-  <a href="https://zenodo.org/records/23049095/files/furio-lombardo-quartic.pdf"><img alt="Paper" src="https://img.shields.io/badge/Paper-PDF-b31b1b"></a>
+  <a href="https://zenodo.org/records/23062256/files/furio-lombardo-quartic.pdf"><img alt="Paper" src="https://img.shields.io/badge/Paper-PDF-b31b1b"></a>
   <a href="https://doi.org/10.5281/zenodo.23049094"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.23049094.svg"></a>
   <a href="https://github.com/mt0-svg/furio-lombardo-quartic/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/mt0-svg/furio-lombardo-quartic/actions/workflows/ci.yml/badge.svg"></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue"></a>
@@ -68,7 +68,7 @@ As a dependency (Lean and Mathlib `v4.34.1`):
 [[require]]
 name = "furio-lombardo-quartic"
 git = "https://github.com/mt0-svg/furio-lombardo-quartic"
-rev = "v1.0.1"
+rev = "v1.1.0"
 ```
 
 then `lake update furio-lombardo-quartic`, `lake exe cache get` and `lake build`, which downloads the build archive of the release.
