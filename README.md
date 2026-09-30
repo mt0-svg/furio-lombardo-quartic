@@ -1,6 +1,8 @@
 <h1 align="center">The plane quartic of Furio and Lombardo has exactly four rational points</h1>
 
 <p align="center">
+  <a href="https://zenodo.org/records/23049095/files/furio-lombardo-quartic.pdf"><img alt="Paper" src="https://img.shields.io/badge/Paper-PDF-b31b1b"></a>
+  <a href="https://doi.org/10.5281/zenodo.23049094"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.23049094.svg"></a>
   <a href="https://github.com/mt0-svg/furio-lombardo-quartic/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/mt0-svg/furio-lombardo-quartic/actions/workflows/ci.yml/badge.svg"></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue"></a>
 </p>
@@ -90,7 +92,9 @@ The computations: `code/README.md` gives the command of each script and its reco
   title     = {The plane quartic of {F}urio and {L}ombardo has exactly four rational points},
   author    = {{mt0-svg}},
   year      = {2026},
-  url       = {https://github.com/mt0-svg/furio-lombardo-quartic}
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23049094},
+  url       = {https://doi.org/10.5281/zenodo.23049094}
 }
 ```
 
