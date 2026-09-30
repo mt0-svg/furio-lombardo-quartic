@@ -1,32 +1,67 @@
 name: Release
 
-# On a tag v*: every check of ci.yml from source (build, source scan, axioms, Comparator) and the PDF. Only when
-# all of them pass, the GitHub release gets the PDF, the verification archive and the Lake build archive of the
-# build that the checks read.
+# On a tag v* (or by hand for a given tag): the GitHub release of the tagged commit, from the green CI run of
+# that commit. Nothing is compiled again: the Lake build that CI built and checked (build, source scan, axioms,
+# Comparator) is packed as it is, with the PDF and the outputs of every check of that run. With no green CI run
+# on the commit, the release stops: run ci.yml on it first, then start this workflow by hand with the tag.
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag to release
+        required: true
 
 permissions:
   contents: read
 
+env:
+  TAG: ${{ inputs.tag || github.ref_name }}
+
 jobs:
-  ci:
-    uses: ./.github/workflows/ci.yml
+  ci-run:
+    name: Green CI run of the tagged commit
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+    outputs:
+      run: ${{ steps.find.outputs.run }}
+      sha: ${{ steps.find.outputs.sha }}
+    steps:
+      - id: find
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -eu
+          sha=$(gh api "repos/$GITHUB_REPOSITORY/commits/$TAG" --jq .sha)
+          run=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?head_sha=$sha&status=success" --jq '.workflow_runs[0].id // empty')
+          [ -n "$run" ] || { echo "no successful CI run on $TAG ($sha): run ci.yml on it, then this workflow by hand"; exit 1; }
+          echo "CI run $run on $TAG ($sha)"
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
 
   pdf:
     uses: ./.github/workflows/paper.yml
+    with:
+      ref: ${{ inputs.tag || github.ref_name }}
 
   release:
     name: GitHub release
-    needs: [ci, pdf]
+    needs: [ci-run, pdf]
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.TAG }}
       - uses: actions/download-artifact@v4
         with:
+          run-id: ${{ needs.ci-run.outputs.run }}
+          github-token: ${{ github.token }}
           pattern: verify-*
           merge-multiple: true
           path: verify
@@ -36,6 +71,8 @@ jobs:
           path: .
       - uses: actions/download-artifact@v4
         with:
+          run-id: ${{ needs.ci-run.outputs.run }}
+          github-token: ${{ github.token }}
           name: lake-build
           path: .lake/build
 
@@ -66,8 +103,8 @@ jobs:
         shell: bash
         run: |
           set -eu
-          d="verification-$GITHUB_REF_NAME"
-          run="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          d="verification-$TAG"
+          run="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/${{ needs.ci-run.outputs.run }}"
           for k in source-scan build up-to-date axioms comparator; do
             [ -f "verify/results/$k.tsv" ] || { echo "missing run: $k"; ls verify/results; exit 1; }
           done
@@ -76,9 +113,9 @@ jobs:
           cp -r verify/lean verify/build "$d/"
           n=$(cat verify/results/*.tsv | wc -l)
           {
-            echo "# Verification of $GITHUB_REF_NAME"
+            echo "# Verification of $TAG"
             echo
-            echo "Commit $GITHUB_SHA, $(date -u +%Y-%m-%d), workflow run $run."
+            echo "Commit ${{ needs.ci-run.outputs.sha }}, $(date -u +%Y-%m-%d), workflow run $run."
             echo
             echo "## Versions"
             echo
@@ -104,11 +141,11 @@ jobs:
         shell: bash
         run: |
           set -eu
-          cat "release-notes/$GITHUB_REF_NAME.md" - summary.md archive.md <<< "" > notes.md
-          files="furio-lombardo-quartic.pdf verification-$GITHUB_REF_NAME.tar.gz $ASSETS"
-          if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then
-            gh release upload "$GITHUB_REF_NAME" $files --clobber
-            gh release edit "$GITHUB_REF_NAME" --notes-file notes.md
+          cat "release-notes/$TAG.md" - summary.md archive.md <<< "" > notes.md
+          files="furio-lombardo-quartic.pdf verification-$TAG.tar.gz $ASSETS"
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            gh release upload "$TAG" $files --clobber
+            gh release edit "$TAG" --notes-file notes.md
           else
-            gh release create "$GITHUB_REF_NAME" $files --title "$GITHUB_REF_NAME" --notes-file notes.md
+            gh release create "$TAG" $files --title "$TAG" --verify-tag --notes-file notes.md
           fi

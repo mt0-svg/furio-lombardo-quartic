@@ -3,6 +3,11 @@ name: Paper
 on:
   workflow_dispatch:
   workflow_call:
+    inputs:
+      ref:
+        description: Commit, branch or tag to build (the calling ref by default)
+        type: string
+        default: ""
 
 permissions:
   contents: read
@@ -12,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: ${{ inputs.ref }}
       - uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
