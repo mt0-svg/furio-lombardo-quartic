@@ -28,7 +28,7 @@ theorem FurioLombardo.conjecture_1_6 : FurioLombardo.Conjecture
 - **Lean 4**: the theorem, with Mathlib, no `sorry`, no `native_decide`, and only the axioms `propext`, `Classical.choice` and `Quot.sound`. Every finite computation of the proof, from the class number certificate to the boxes that cover the $`2`$-adic points of $`C`$, is checked by the Lean kernel, mostly with `decide +kernel`, so no compiled code is trusted. Comparator replays the proof in the Lean kernel and checks the theorem against the statement of `FurioLombardo/Challenge.lean`, which imports only Mathlib. The paper names the Lean declaration of each numbered statement.
 - **Computation**: the certificates that the kernel checks were written by PARI/GP scripts and by Lean programs run outside the proof (`code/`). To guard against a bug in the PARI/GP programs that first computed the local group at the $`2`$-adic place and the covering of $`C(\mathbb{Q}_2)`$, a second program written separately in Sage recomputes the logarithms, the lattice and its saturation, the leading classes at the 104 centres and the bounds on the boxes, and agrees at every centre and every box. It takes the exact data, the local points, the list of boxes, the local Selmer image and one matrix of the logarithm from the first programs, and it does not redo the independence of the local points. Another Sage program redoes the descent over the field of degree $`21`$ and finds the same two classes. The details are in section 9 of the paper and in `code/README.md`.
 
-The workflow `ci.yml` checks the Lean part at each push, on GitHub's runners: it builds the package from source, prints the axioms of `FurioLombardo.conjecture_1_6` and of `FurioLombardo.Discharge.M4Box.onlyFourPoints` and fails on any axiom other than these three, scans the sources for `sorry`, `admit` and `native_decide`, and runs Comparator. On a tag, `release.yml` runs the same checks and attaches the PDF, the logs of the checks and the build archive to the release only if they all pass.
+The workflow `ci.yml` checks the Lean part at each push that touches it, on GitHub's runners: it builds the package, compiling only what changed since the last build (restored from the cache or from the latest release), prints the axioms of `FurioLombardo.conjecture_1_6` and of `FurioLombardo.Discharge.M4Box.onlyFourPoints` and fails on any axiom other than these three, scans the sources for `sorry`, `admit` and `native_decide`, and runs Comparator. On a tag, `release.yml` takes the green `ci.yml` run of the tagged commit and attaches the PDF, the logs of its checks and the build that Comparator checked to the release; it compiles nothing again.
 
 ## Layout
 
@@ -68,7 +68,7 @@ As a dependency (Lean and Mathlib `v4.34.1`):
 [[require]]
 name = "furio-lombardo-quartic"
 git = "https://github.com/mt0-svg/furio-lombardo-quartic"
-rev = "v1.0"
+rev = "v1.0.1"
 ```
 
 then `lake update furio-lombardo-quartic`, `lake exe cache get` and `lake build`, which downloads the build archive of the release.

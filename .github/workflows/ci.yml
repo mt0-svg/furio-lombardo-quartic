@@ -1,18 +1,34 @@
 name: CI
 
-# From source: the Mathlib cache, then every module of the package, compiled by code/formal-proof/clean_build.sh
-# in dependency order, each heavy module alone (they reach about 9 GB; a runner has 16 GB). Then the checks: the
-# axioms of the main theorems, a scan of the sources, and Comparator with the Lean kernel.
+# Mathlib from its cache, then the package's own modules, compiled by code/formal-proof/clean_build.sh in dependency
+# order, each heavy module alone (they reach about 9 GB; a runner has 16 GB). The package's .lake/build is restored
+# first, from the actions cache (the last build on this toolchain and manifest), else from the Lake build archive of
+# the latest release, so only the modules that changed and those that import them are compiled; Comparator replays
+# the whole environment in the kernel whatever was restored. Then the checks: the axioms of the main theorems, a scan
+# of the sources, and Comparator with the Lean kernel.
 #
 # The build runs as a chain of up to five jobs. Each one continues the build of the previous one (handed over
 # as the artifact lake-build) for at most 300 minutes, under the 6 hour limit of a job, and the chain stops at
 # the first job that ends it. The last job fails if the build is still not complete.
+# Only commits that touch the build run it; a newer push cancels the older run on the same branch.
 on:
   push:
     branches: ["**"]
+    paths: &build-paths
+      - "**.lean"
+      - lakefile.toml
+      - lake-manifest.json
+      - lean-toolchain
+      - config.json
+      - code/formal-proof/**
+      - .github/workflows/ci.yml
   pull_request:
+    paths: *build-paths
   workflow_dispatch:
-  workflow_call:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -95,6 +111,30 @@ jobs:
         with:
           name: lake-build
           path: .lake/build
+      - name: Earlier build from the cache
+        id: cache
+        if: env.PART == '1'
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .lake/build
+            !.lake/build/**/*.setup.json
+          key: lake-build-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ github.sha }}
+          restore-keys: lake-build-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
+      - name: Earlier build from the latest release
+        if: env.PART == '1' && steps.cache.outputs.cache-matched-key == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -u
+          a=furio-lombardo-quartic-x86_64-unknown-linux-gnu.tar.gz
+          if gh release download --pattern "$a" -D /tmp 2> /dev/null; then
+            mkdir -p .lake/build && tar -xzf "/tmp/$a" -C .lake/build && rm "/tmp/$a"
+            echo "Restored the build of the latest release."
+          else
+            echo "No release build archive: a build from scratch."
+          fi
       - name: Build
         id: build
         shell: bash
@@ -103,7 +143,8 @@ jobs:
           # Each part writes its own clean_build.out and clean_build_modules.txt; parts 2 to 5 continue (RESUME=1)
           # on the build handed over by the previous part.
           rm -f code/formal-proof/clean_build.out code/formal-proof/clean_build_modules.txt
-          if [ "$PART" = 1 ]; then resume=0; else resume=1; fi
+          # Part 1 starts from scratch unless an earlier build was restored; the traces decide what is rebuilt.
+          if [ "$PART" = 1 ] && [ ! -d .lake/build/lib ]; then resume=0; else resume=1; fi
           rc=0
           timeout -k 2m 300m env RUN_WRAP= HB=1 LB=2 PEAK_HEAVY=9G PEAK_LIGHT=4G MEM_MARGIN=1G MIN_DISK_GB=3 RESUME=$resume \
             code/formal-proof/clean_build.sh || rc=$?
@@ -121,6 +162,14 @@ jobs:
             echo "Build failed (exit $rc): $last"
             exit 1
           fi
+      - name: Save the build to the cache
+        if: always() && steps.build.outputs.done == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .lake/build
+            !.lake/build/**/*.setup.json
+          key: lake-build-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ github.sha }}
       - uses: actions/upload-artifact@v4
         with:
           name: lake-build
@@ -288,6 +337,9 @@ jobs:
         with:
           name: lake-build
           path: .lake/build
+      # The statement side is compiled again from its source inside Comparator's sandbox, not taken from the build.
+      - name: Drop the build outputs of the challenge module
+        run: find .lake/build -path '*/FurioLombardo/Challenge.*' -print -delete
 
       # Comparator at this commit targets Lean v4.34.0; build it with the project's toolchain so that
       # lean4export reads the project's .olean files.

@@ -30,15 +30,28 @@ jobs:
       run: ${{ steps.find.outputs.run }}
       sha: ${{ steps.find.outputs.sha }}
     steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      # The green CI run of the tagged commit, else of the latest commit with the same build inputs (CI runs only
+      # on commits that touch them).
       - id: find
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -eu
-          sha=$(gh api "repos/$GITHUB_REPOSITORY/commits/$TAG" --jq .sha)
-          run=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?head_sha=$sha&status=success" --jq '.workflow_runs[0].id // empty')
-          [ -n "$run" ] || { echo "no successful CI run on $TAG ($sha): run ci.yml on it, then this workflow by hand"; exit 1; }
+          sha=$(git rev-parse "$TAG^{commit}")
+          inputs=(':(glob)**/*.lean' lakefile.toml lake-manifest.json lean-toolchain config.json code/formal-proof .github/workflows/ci.yml)
+          run=""
+          for r in $(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?status=success&per_page=100" --jq '.workflow_runs[] | "\(.id):\(.head_sha)"'); do
+            h=${r#*:}
+            git cat-file -e "$h^{commit}" 2> /dev/null || continue
+            if [ "$h" = "$sha" ] || { git merge-base --is-ancestor "$h" "$sha" && git diff --quiet "$h" "$sha" -- "${inputs[@]}"; }; then
+              run=${r%%:*}; break
+            fi
+          done
+          [ -n "$run" ] || { echo "no successful CI run with the build inputs of $TAG ($sha): run ci.yml on it, then this workflow by hand"; exit 1; }
           echo "CI run $run on $TAG ($sha)"
           echo "run=$run" >> "$GITHUB_OUTPUT"
           echo "sha=$sha" >> "$GITHUB_OUTPUT"
@@ -86,14 +99,12 @@ jobs:
           tar -czf "$a" -C .lake/build --exclude='*.setup.json' .
           size=$(stat -c %s "$a")
           if [ "$size" -lt 2000000000 ]; then
-            sha256sum "$a" > "$a.sha256"
-            echo "ASSETS=$a $a.sha256" >> "$GITHUB_ENV"
+            echo "ASSETS=$a" >> "$GITHUB_ENV"
             echo "Lake build archive: $a, $size bytes." > archive.md
           else
             split -b 1900M -d -a 2 "$a" "$a.part"
             rm "$a"
-            sha256sum "$a".part* > "$a.parts.sha256"
-            echo "ASSETS=$(ls "$a".part* | tr '\n' ' ')$a.parts.sha256" >> "$GITHUB_ENV"
+            echo "ASSETS=$(ls "$a".part* | tr '\n' ' ')" >> "$GITHUB_ENV"
             echo "Lake build archive: $size bytes, in $(ls "$a".part* | wc -l) parts (join them with cat before use; lake build :release cannot download them)." > archive.md
           fi
           cat archive.md
@@ -130,7 +141,6 @@ jobs:
             echo
             echo "The build outputs of each part of the build chain are in build/part-N (clean_build.out, one line per lake call; clean_build_modules.txt, the time of every module)."
           } > "$d/VERIFICATION.md"
-          (cd "$d" && find . -type f ! -name SHA256SUMS | LC_ALL=C sort | xargs sha256sum > SHA256SUMS)
           tar -czf "$d.tar.gz" "$d"
           cat "$d/VERIFICATION.md" >> "$GITHUB_STEP_SUMMARY"
           echo "Verification: all $n runs passed ([workflow run]($run)); \`VERIFICATION.md\` in \`$d.tar.gz\` lists them." > summary.md
