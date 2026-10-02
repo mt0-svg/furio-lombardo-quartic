@@ -2,7 +2,10 @@ CPU(s):                                  24
 Model name:                              AMD Ryzen 9 5900X 12-Core Processor
 Thread(s) per core:                      2
 Core(s) per socket:                      12
-Memory (GB): 62
+Firmware memory map, System RAM (GiB): 63.92
+lsmem, total online memory (address range): 66G
+free, total usable by the kernel (GiB): 60.7
+Installed memory (the size of the installed modules, stated; the three lines above are what the system reads): 64 GB
 PARI/GP: [2, 17, 4]
 Sage: 10.9
 Lean toolchain: leanprover/lean4:v4.34.1
