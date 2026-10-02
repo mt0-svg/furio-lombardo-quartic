@@ -7,5 +7,4 @@ lsmem, total online memory (address range): 66G
 free, total usable by the kernel (GiB): 60.7
 Installed memory (the size of the installed modules, stated; the three lines above are what the system reads): 64 GB
 PARI/GP: [2, 17, 4]
-Sage: 10.9
 Lean toolchain: leanprover/lean4:v4.34.1

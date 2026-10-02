@@ -1,6 +1,0 @@
-  ***   Warning: new maximum stack size = 2000003072 (1907.352 Mbytes).
-twist 1 place w2 (e = 12, f = 1, precision 8): 768 abscissas tried, hits [[2, [1, 0, 1, 1, 1, 1, 0, 0], -4]] (29952 ms)
-twist 1 place w3 (e = 6, f = 1, precision 8): 222 abscissas tried, hits [[-2, [1, 1, 0, 1, 0, 0, 0, 0], -16], [-2, [1, 1, 0, 1, 0, 0, 1, 1], -16], [-2, [1, 1, 0, 1, 1, 1, 0, 1], -16]] (10979 ms)
-twist 0 place 7 (e = 7, f = 3, precision 2): 21240 abscissas tried, hits [] (218441 ms)
-twist 1 place 7 (e = 7, f = 3, precision 2): 21240 abscissas tried, hits [] (226216 ms)
-DONE

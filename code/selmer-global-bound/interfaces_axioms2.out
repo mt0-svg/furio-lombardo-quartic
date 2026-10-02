@@ -1,7 +1,0 @@
--- lake env lean ../code/selmer-basis/interfaces_axioms2.lean, run from lean/ on 2026-09-29 00:28 at commit bc654f81
-'FurioLombardo.Discharge.SelmerBasis.selmerBasis_of_interfaces' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.selmerSpan_of_interfaces' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

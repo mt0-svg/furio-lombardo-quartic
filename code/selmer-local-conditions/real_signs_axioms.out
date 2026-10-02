@@ -1,3 +1,0 @@
-'FurioLombardo.Discharge.SelmerBasis.RealRoots.signOK' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.RealRoots.certL_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.RealRoots.normN_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

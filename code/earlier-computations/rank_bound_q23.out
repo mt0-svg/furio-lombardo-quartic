@@ -1,8 +1,0 @@
-x0: log vector of length 42, min valuation 1, min absolute precision 58
-x1: log vector of length 42, min valuation 1, min absolute precision 58
-x2: log vector of length 42, min valuation 1, min absolute precision 40
-x3: log vector of length 42, min valuation 1, min absolute precision 58
-PASS log vectors have dimension 42 = 2 [K21 : Q]
-PASS twist delta0: log phi(x0), log phi(x2) are Q_23-independent (a 2x2 minor of valuation 2, known to p^83): rank P_delta0(K21) >= 2
-PASS twist delta1: log phi(x1), log phi(x3) are Q_23-independent (a 2x2 minor of valuation 2, known to p^85): rank P_delta1(K21) >= 2
-RESULT PASS

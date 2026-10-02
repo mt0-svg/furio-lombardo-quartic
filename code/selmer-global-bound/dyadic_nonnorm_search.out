@@ -1,7 +1,0 @@
-  ***   Warning: new maximum stack size = 4000002048 (3814.699 Mbytes).
-ok: the two ramified primes P3 (e = 3) and P6 (e = 6)
-K21 polynomial constant term -4, N(b) = 4
-small units of K21 (degree <= 2, |coeff| <= 3): 0
-ok: pi3 is a uniformizer at P3
-ok: d' = d / pi3^18 is a unit at P3
-ok: same square class check (sanity)

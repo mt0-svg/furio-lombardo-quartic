@@ -1,3 +1,0 @@
-import FurioLombardo.Discharge.SelmerBasis.Interfaces
-#print axioms FurioLombardo.Discharge.SelmerBasis.selmerBasis_of_interfaces
-#print axioms FurioLombardo.Discharge.SelmerBasis.selmerSpan_of_interfaces

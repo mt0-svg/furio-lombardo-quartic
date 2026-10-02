@@ -1,6 +1,4 @@
 /.lake
-/code/jacobian-over-q/mw-sieve/target
-/code/jacobian-over-q/lpoly/target
 paper/main.aux
 paper/main.log
 paper/main.fls

@@ -1,7 +1,0 @@
-'FurioLombardo.Discharge.M3b.routeRClassInputs' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.M3b.routeRClassInputs_of_pid' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.M3b.classGroups_L42_N84' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.M3b.ramBound_L42' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.M3b.dyadic_L42' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.M3b.ramBound_N84' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.M3b.signPattern_N84' depends on axioms: [propext, Classical.choice, Quot.sound]

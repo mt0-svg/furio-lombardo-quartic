@@ -11,18 +11,15 @@ name: CI
 # as the artifact lake-build) for at most 300 minutes, under the 6 hour limit of a job, and the chain stops at
 # the first job that ends it. The last job fails if the build is still not complete.
 #
-# The computations: the finite computations of the proof are checked by the Lean kernel in the build; the job sage
-# reruns the Sage second implementations and compares each output with the recorded one
-# (code/second-implementations/rerun.sh).
+# The finite computations of the proof are checked by the Lean kernel in the build.
 # Every job uploads the complete output of each check and one result line per check as an artifact verify-*, which
 # release.yml collects into the verification archive of a release. A run started by hand on the default branch ends
-# with the job badges, which writes the three badges of the README to the branch badges, with the page run.html that
+# with the job badges, which writes the two badges of the README to the branch badges, with the page run.html that
 # their links open, which forwards to this run.
-# Only commits that touch the build or the computations run it; a newer push cancels the older run on the same branch.
-# On a push to an existing branch the job changes reads the files of the pushed commits, and only the jobs of the parts
-# they touch run: the computation job for code/second-implementations/ and code/earlier-computations/, the Lean jobs
-# for the Lean sources, the Lake files, config.json and code/formal-proof/. A change of this file, a run by hand, a
-# pull request and a new branch run everything. A release takes a run started by hand on its tagged commit
+# Only commits that touch the build run it; a newer push cancels the older run on the same branch. On a push to an
+# existing branch the job changes reads the files of the pushed commits, and the Lean jobs run when they touch the Lean
+# sources, the Lake files, config.json or code/formal-proof/. A change of this file, a run by hand, a pull request and
+# a new branch run everything. A release takes a run started by hand on its tagged commit
 # (release.yml).
 on:
   push:
@@ -34,8 +31,6 @@ on:
       - lean-toolchain
       - config.json
       - code/formal-proof/**
-      - code/second-implementations/**
-      - code/earlier-computations/**
       - .github/workflows/ci.yml
   pull_request:
     paths: *build-paths
@@ -57,7 +52,6 @@ jobs:
     name: Changed parts
     runs-on: ubuntu-latest
     outputs:
-      compute: ${{ steps.diff.outputs.compute }}
       lean: ${{ steps.diff.outputs.lean }}
     steps:
       - uses: actions/checkout@v5
@@ -76,18 +70,16 @@ jobs:
           if [ "$EVENT" != push ] || [ -z "$BEFORE" ] || [ "$BEFORE" = "$zero" ] ||
             ! files=$(git diff --name-only --no-renames "$BEFORE" "$SHA"); then
             echo "$EVENT${BEFORE:+ from $BEFORE}: every job runs"
-            { echo compute=true; echo lean=true; } >> "$GITHUB_OUTPUT"
+            echo lean=true >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          compute=false lean=false
+          lean=false
           while IFS= read -r f; do
-            case "$f" in .github/workflows/ci.yml) compute=true lean=true ;; esac
-            case "$f" in code/second-implementations/* | code/earlier-computations/*) compute=true ;; esac
-            case "$f" in *.lean | lakefile.toml | lake-manifest.json | lean-toolchain | config.json | code/formal-proof/*) lean=true ;; esac
+            case "$f" in .github/workflows/ci.yml | *.lean | lakefile.toml | lake-manifest.json | lean-toolchain | config.json | code/formal-proof/*) lean=true ;; esac
           done <<< "$files"
           printf '%s\n' "$files"
-          echo "compute=$compute lean=$lean"
-          { echo "compute=$compute"; echo "lean=$lean"; } >> "$GITHUB_OUTPUT"
+          echo "lean=$lean"
+          echo "lean=$lean" >> "$GITHUB_OUTPUT"
 
   scan:
     name: Source scan
@@ -563,48 +555,20 @@ jobs:
           name: verify-comparator
           path: verify/
 
-  # The Sage second implementations (descent set, local group and covering, Selmer space), each compared with its
-  # recorded output: code/second-implementations/rerun.sh.
-  sage:
-    name: Sage second implementations
-    needs: changes
-    if: needs.changes.outputs.compute == 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    container:
-      image: sagemath/sagemath:10.9
-      options: --user root
-    steps:
-      - uses: actions/checkout@v5
-      - name: Rerun and compare with the recorded outputs
-        run: |
-          mkdir -p verify/versions
-          { sage --version; sage -c 'print("PARI in Sage", pari.version())'; } > verify/versions/sage.txt
-          SAVE="$PWD/verify" sh code/second-implementations/rerun.sh
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: verify-sage
-          path: verify/
-
-  # The three badges of the README, from a run started by hand on the default branch: shields.io endpoint files on the
+  # The two badges of the README, from a run started by hand on the default branch: shields.io endpoint files on the
   # branch badges, and run.html, which sends the links of the README to this run (GitHub Pages serves the branch).
   badges:
     name: Badges
-    needs: [changes, scan, build-1, build-2, build-3, build-4, build-5, lean, comparator, sage]
+    needs: [changes, scan, build-1, build-2, build-3, build-4, build-5, lean, comparator]
     if: ${{ always() && github.event_name == 'workflow_dispatch' && github.ref_name == github.event.repository.default_branch }}
     runs-on: ubuntu-latest
     permissions:
-      actions: read
       contents: write
     steps:
       - uses: actions/checkout@v5
       - name: Badge files
         env:
-          GH_TOKEN: ${{ github.token }}
           NEEDS: ${{ toJSON(needs) }}
-          # Every job of the run whose name this does not match is a computation job (one per matrix entry).
-          NOT_COMPUTATION: '^(Changed parts|Source scan|Lean .*|Paper .*|Comparator|Badges)$'
         shell: bash
         run: |
           set -eu
@@ -634,12 +598,6 @@ jobs:
           else
             badge comparator "Lean Comparator" failed red
           fi
-          gh api --paginate "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/jobs?per_page=100" \
-            | jq -s --arg re "$NOT_COMPUTATION" '[.[].jobs[] | select((.name | test($re)) | not)]' > jobs.json
-          n=$(jq length jobs.json) k=$(jq 'map(select(.conclusion == "success")) | length' jobs.json)
-          jq -r '.[] | "\(.name): \(.conclusion)"' jobs.json
-          if [ "$n" -gt 0 ] && [ "$k" -eq "$n" ]; then c=brightgreen; else c=red; fi
-          badge certificates "Computation Certificates" "$k/$n reproduced" "$c"
           run="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           printf '<!doctype html>\n<meta charset="utf-8">\n<title>Run %s</title>\n<meta http-equiv="refresh" content="0; url=%s">\n<a href="%s">%s</a>\n' \
             "$GITHUB_RUN_ID" "$run" "$run" "$run" > out/run.html

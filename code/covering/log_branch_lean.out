@@ -1,6 +1,0 @@
-# Redacted 2026-09-30: in the command line below, the path of the resource wrapper is written as cap and the directory it ran from as lean/; nothing else changed.
-command (from lean/): cap -m 3G -c 1 -t 10min flock /tmp/furio-lake.lock lake env lean FurioLombardo/Discharge/M4Log/BranchData.lean
-sha256 of the file checked: 788720207b87c905a44ba281281666b2af509f6ae9e4d1ecb3c2135058bc497c
-entries (anonymous constructors) in the file: 109 (108 table entries and the one in the docstring)
---- lean messages (empty means none):
---- exit status: 0

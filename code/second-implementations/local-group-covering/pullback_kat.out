@@ -1,9 +1,0 @@
- k = 0, disc [1, 0, 0, 1, 2], X0 = 49372: v(pred) = [6, 21], relative agreement of the difference quotient with (a12 s, a21 r) eps/F_u: pi^[183, 168] (h = 2^60): True
- k = 0, disc [1, 0, 0, 1, 2], X0 = 6837: v(pred) = [6, 15], relative agreement of the difference quotient with (a12 s, a21 r) eps/F_u: pi^[183, 174] (h = 2^60): True
- k = 0, disc [2, 1, 0, 1, 2], X0 = 56599: v(pred) = [6, 9], relative agreement of the difference quotient with (a12 s, a21 r) eps/F_u: pi^[177, 177] (h = 2^60): True
- k = 0, disc [2, 1, 0, 1, 2], X0 = 56315: v(pred) = [6, 9], relative agreement of the difference quotient with (a12 s, a21 r) eps/F_u: pi^[177, 177] (h = 2^60): True
- k = 1, disc [1, 1, 0, 1, 2], X0 = 31967: v(pred) = [6, 3], relative agreement of the difference quotient with (a12 s, a21 r) eps/F_u: pi^[177, 177] (h = 2^60): True
- k = 1, disc [1, 1, 0, 1, 2], X0 = 34685: v(pred) = [6, 3], relative agreement of the difference quotient with (a12 s, a21 r) eps/F_u: pi^[177, 177] (h = 2^60): True
- k = 1, disc [1, 1, 1, 1, 2], X0 = 37676: v(pred) = [15, 3], relative agreement of the difference quotient with (a12 s, a21 r) eps/F_u: pi^[168, 174] (h = 2^60): True
- k = 1, disc [1, 1, 1, 1, 2], X0 = 2128: v(pred) = [21, 3], relative agreement of the difference quotient with (a12 s, a21 r) eps/F_u: pi^[162, 174] (h = 2^60): True
-ALL PASS

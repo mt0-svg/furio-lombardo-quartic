@@ -1,8 +1,0 @@
-'FurioLombardo.Discharge.SelmerBasis.Count.tendsto_evO' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.Count.chart_lemma' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.Count.zPair_mem_B1' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.Count.key' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.Count.propT' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.Count.exists_finiteIndex_chart' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

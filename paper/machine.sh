@@ -10,5 +10,4 @@ lsmem --summary | awk -F': *' '/^Total online memory/ { print "lsmem, total onli
 free -b | awk '/^Mem:/ { printf "free, total usable by the kernel (GiB): %.1f\n", $2 / 2^30 }'
 echo "Installed memory (the size of the installed modules, stated; the three lines above are what the system reads): 64 GB"
 echo "PARI/GP: $(echo 'version()' | gp -q)"
-echo "Sage: $(sage --version 2>/dev/null)"
 echo "Lean toolchain: $(cat ../lean-toolchain)"

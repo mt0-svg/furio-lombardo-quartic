@@ -1,5 +1,0 @@
-primes above 2: e = [12, 6, 3]  uniformizers checked
-primes above 3: S prime of degree 1 ; outside S, degrees [8, 8, 4]
-KAT p = 2: (213, {'A': 91, 'B': 122, 'C': 0}, 0)
-KAT p = 3: (63, {'A': 63, 'B': 0, 'C': 0}, 0)
-KAT 3 (step 5 local decisions vs nfislocalpower): 1120 decisions, 0 mismatches

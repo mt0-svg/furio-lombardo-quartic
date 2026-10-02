@@ -1,4 +1,0 @@
-ok   384 unit squares modulo P2^9
-   certified Q_2-rational divisors: degree 2: 2658, degree 3: 0, skipped: 0
-ok   all 2658 divisors D - deg(D) P1 have delta in the span of the three generators (dim Im_2 stays 3)
-== summary: 0 failure(s)

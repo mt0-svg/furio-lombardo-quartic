@@ -1,7 +1,0 @@
-# final check of lane selmer-p7, 2026-09-29T20:17:41Z, commit bab9e816
-lake build W7Place: rc=0, 31.47 s wall, 1007844 KB max RSS
-  Build completed successfully (9215 jobs).
-sp7_6_axioms.lean: rc=0, 126 axiom lines, 0 without axioms, 0 with sorryAx, 0 with ofReduceBool or trustCompiler
-sorry-leaves of FurioLombardo.Discharge.SelmerBasis.W7.coordCond_w7:
-0 declarations with sorry in the closure of FurioLombardo.Discharge.SelmerBasis.W7.coordCond_w7
-sorry-leaves rc=0

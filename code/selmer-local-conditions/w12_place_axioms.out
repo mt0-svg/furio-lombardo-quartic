@@ -1,6 +1,0 @@
-'FurioLombardo.Discharge.SelmerBasis.W2.not_isSquare_c_w2' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.W2.coordCond_w2' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.W2.wplace' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.W2.facts' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.W2.cmat_rows' depends on axioms: [propext]
-'FurioLombardo.Discharge.SelmerBasis.W2.Cmat_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

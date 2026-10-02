@@ -1,5 +1,0 @@
-primes of L above pr: 1, (e, f) = [[6, 1]]
-primes of N above 2: [[12, 1, 0], [12, 1, 0], [12, 2, 0], [12, 2, 0], [6, 2, 2]]
-primes of N above pr: 1
----- twist 0
-  bad combination [1, 1, 1, 1, 0, 0, 0]: z = x_N phi(x_L) square in N_w: 0 (x_N alone: 0)

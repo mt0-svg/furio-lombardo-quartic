@@ -2,7 +2,7 @@ name: Release
 
 # On a tag v* (or by hand for a given tag): the GitHub release of the tagged commit, from the green CI run of
 # that commit. Nothing is compiled again: the Lake build that CI built and checked (build, source scan, axioms,
-# Comparator, the Sage checks) is packed as it is, with the PDF and the outputs of every check of that run. It takes
+# Comparator) is packed as it is, with the PDF and the outputs of every check of that run. It takes
 # the green CI run started by hand on the tagged commit; with none, the release stops: run ci.yml on it first, then
 # start this workflow by hand with the tag.
 on:
@@ -122,8 +122,7 @@ jobs:
           fi
           cat archive.md
 
-      # Expected runs: the source scan, the build, the up-to-date check, the axioms, Comparator (the computation jobs
-      # are covered by the job check of ci-run).
+      # Expected runs: the source scan, the build, the up-to-date check, the axioms, Comparator.
       - name: Verification archive
         shell: bash
         run: |
@@ -135,7 +134,7 @@ jobs:
           done
           if cut -f4 verify/results/*.tsv | grep -v '^PASS'; then echo "a run did not pass"; exit 1; fi
           mkdir "$d"
-          cp -r verify/lean verify/build verify/sage "$d/"
+          cp -r verify/lean verify/build "$d/"
           n=$(cat verify/results/*.tsv | wc -l)
           {
             echo "# Verification of $TAG"

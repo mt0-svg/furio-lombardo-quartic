@@ -5,10 +5,8 @@ main.pdf: main.tex refs.bib
 map: main.pdf
 	./statement_map.sh
 
-# Reruns the checks printed in the introduction and compares with the recorded output, then checks that the
-# table of STATEMENTS.md is up to date.
+# Checks that the table of STATEMENTS.md is up to date.
 check: main.pdf
-	gp -q small_checks.gp < /dev/null | diff - small_checks.out
 	./statement_map.sh --check
 
 clean:

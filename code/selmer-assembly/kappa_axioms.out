@@ -1,4 +1,0 @@
-'FurioLombardo.Discharge.SelmerBasis.Kappa.kappa_rel' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.Kappa.prod_gK_eq_one_of_checks' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

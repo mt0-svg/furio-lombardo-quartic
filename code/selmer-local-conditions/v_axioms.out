@@ -1,5 +1,0 @@
-'FurioLombardo.Discharge.SelmerBasis.V.coordCond_v' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.V.relAtV_v' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.V.hAmu' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.V.hCg' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FurioLombardo.Discharge.SelmerBasis.V.hAkap' depends on axioms: [propext, Classical.choice, Quot.sound]
