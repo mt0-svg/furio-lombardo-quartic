@@ -121,7 +121,7 @@ def ChartLog (k : Fin 2) (lam : Additive (Jac ((fRev k).map σ)) →+ (Fin 6 →
           L *ᵥ coordEquiv
             (logVal ((baseKv k).toSetup.fglO hM.good) (unitBall Kv).subtype (pvO ^ (3 + 1)) y)
 
-/-- `ChartLog` gives `LogChartFin`. -/
+/-- `ChartLog` gives `LogChartFin`. Proposition 6.2 of the paper. -/
 theorem ChartLog.logChartFin {k : Fin 2} {lam : Additive (Jac ((fRev k).map σ)) →+ (Fin 6 → ℤ_[2])}
     (h : ChartLog k lam) : Analytic.LogChartFin lam := by
   obtain ⟨M, hM, c, L, hc, hL, hcomp⟩ := h

@@ -1,0 +1,185 @@
+# comparator_time.sh: the job logs comparator_trial_kernel.log.gz (job furio-lombardo-quartic kernel: Comparator
+# with the Lean kernel alone) and comparator_trial_nanoda4.log.gz (job furio-lombardo-quartic nanoda-4: the export
+# of the solution on the same targets as Comparator, then nanoda_bin, which prints no verdict line: its exit status
+# is the verdict), repository mt0-svg/nanoda-trials, GitHub hosted runners, 2026-09-30. Both check out tag v1.1.0
+# (d3f8953), the Lean code of this version up to comments (comment_only_build_sources.out). Provenance only, not
+# in the logs: run 36763054119, logs downloaded 2026-10-01 with trailing blanks stripped.
+== comparator_trial_kernel.log.gz (sha256 ab7ddc7c7ee76df3478bf0aa78df958cbd00fc025ed3fd50e9e42f2e4290cc3b)
+2026-09-30T19:04:14.5289701Z Complete job name: furio-lombardo-quartic kernel
+2026-09-30T19:06:33.1685192Z Syncing repository: mt0-svg/furio-lombardo-quartic
+2026-09-30T19:06:34.8825936Z HEAD is now at d3f8953 v1.1.0: the paper follows the Lean proof; each numbered statement has the hypotheses of its Lean declaration
+2026-09-30T19:06:35.0027393Z Syncing repository: leanprover/comparator
+2026-09-30T19:06:35.5503313Z HEAD is now at d03acab chore: bump toolchain to v4.34.0 (#90)
+2026-09-30T19:06:35.6678010Z Syncing repository: Zouuup/landrun
+2026-09-30T19:06:36.4008109Z HEAD is now at 811cfff Update README.md
+2026-09-30T19:09:48.5249139Z ##[start-action display=build mt0-svg/nanoda-trials;id=__leanprover_lean-action.build]
+2026-09-30T19:09:48.5364060Z ##[group]Run lake build :release
+2026-09-30T19:10:12.3104405Z ##[start-action display=build mt0-svg/nanoda-trials;id=__leanprover_lean-action_2.build]
+2026-09-30T19:10:24.9818913Z ##[group]Run test "$(git -C .ci/comparator/.lake/packages/lean4export rev-parse HEAD)" = 076e8e57707e813375e8f9da8bf989799ace9680
+2026-09-30T19:10:24.9819859Z test "$(git -C .ci/comparator/.lake/packages/lean4export rev-parse HEAD)" = 076e8e57707e813375e8f9da8bf989799ace9680
+2026-09-30T19:10:24.9883929Z shell: /usr/bin/bash -e {0}
+2026-09-30T19:10:24.9884239Z ##[endgroup]
+2026-09-30T19:10:25.0032112Z ##[group]Run jq '.enable_nanoda = false' config.json > trial.json; cat trial.json
+2026-09-30T19:10:25.0033143Z jq '.enable_nanoda = false' config.json > trial.json; cat trial.json
+2026-09-30T19:10:25.0033910Z nproc; free -g
+2026-09-30T19:10:25.0034577Z systemd-run --property=RestrictAddressFamilies=~AF_UNIX --user --pty --pipe \
+2026-09-30T19:10:25.0035393Z   -E PATH="$PATH" \
+2026-09-30T19:10:25.0035966Z   -E COMPARATOR_LANDRUN="$PWD/.ci/landrun/landrun" \
+2026-09-30T19:10:25.0037052Z   -E COMPARATOR_LEAN4EXPORT="$PWD/.ci/comparator/.lake/packages/lean4export/.lake/build/bin/lean4export" \
+2026-09-30T19:10:25.0038330Z   --working-directory "$PWD" -- \
+2026-09-30T19:10:25.0039204Z   /usr/bin/time -v bash -c 'lake env .ci/comparator/.lake/build/bin/comparator trial.json'
+2026-09-30T19:10:25.0122861Z shell: /usr/bin/bash -e {0}
+2026-09-30T19:10:25.0123353Z ##[endgroup]
+2026-09-30T19:10:25.0254778Z {
+2026-09-30T19:10:25.0255330Z   "challenge_module": "FurioLombardo.Challenge",
+2026-09-30T19:10:25.0256024Z   "solution_module": "FurioLombardo.Solution",
+2026-09-30T19:10:25.0256616Z   "theorem_names": [
+2026-09-30T19:10:25.0257107Z     "FurioLombardo.conjecture_1_6"
+2026-09-30T19:10:25.0257555Z   ],
+2026-09-30T19:10:25.0258131Z   "permitted_axioms": [
+2026-09-30T19:10:25.0258541Z     "propext",
+2026-09-30T19:10:25.0258936Z     "Quot.sound",
+2026-09-30T19:10:25.0259364Z     "Classical.choice"
+2026-09-30T19:10:25.0259738Z   ],
+2026-09-30T19:10:25.0260096Z   "enable_nanoda": false
+2026-09-30T19:10:25.0260483Z }
+2026-09-30T19:10:25.0270204Z 4
+2026-09-30T19:10:25.0298013Z                total        used        free      shared  buff/cache   available
+2026-09-30T19:10:25.0299261Z Mem:              15           1           0           0          14          14
+2026-09-30T19:10:25.0299847Z Swap:              2           0           2
+2026-09-30T19:10:26.1496397Z Building FurioLombardo.Challenge
+2026-09-30T19:10:31.1174222Z Build completed successfully (8924 jobs).
+2026-09-30T19:10:36.9762588Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, FurioLombardo.conjecture_1_6, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from FurioLombardo.Challenge
+2026-09-30T19:10:36.9766301Z Building FurioLombardo.Solution
+2026-09-30T19:10:42.3100996Z Build completed successfully (9833 jobs).
+2026-09-30T22:16:26.7579914Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, FurioLombardo.conjecture_1_6, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from FurioLombardo.Solution
+2026-09-30T22:16:26.7590251Z Running Lean default kernel on solution.
+2026-09-30T22:16:26.7591012Z Lean default kernel accepts the solution
+2026-09-30T22:16:26.7591695Z Your solution is okay!
+2026-09-30T22:16:26.8097379Z 	Command being timed: "bash -c lake env .ci/comparator/.lake/build/bin/comparator trial.json"
+2026-09-30T22:16:26.8098655Z 	User time (seconds): 11089.66
+2026-09-30T22:16:26.8099145Z 	System time (seconds): 82.74
+2026-09-30T22:16:26.8107360Z 	Percent of CPU this job got: 100%
+2026-09-30T22:16:26.8108764Z 	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:06:01
+2026-09-30T22:16:26.8109844Z 	Average shared text size (kbytes): 0
+2026-09-30T22:16:26.8110733Z 	Average unshared data size (kbytes): 0
+2026-09-30T22:16:26.8111618Z 	Average stack size (kbytes): 0
+2026-09-30T22:16:26.8112482Z 	Average total size (kbytes): 0
+2026-09-30T22:16:26.8113462Z 	Maximum resident set size (kbytes): 8294904
+2026-09-30T22:16:26.8114283Z 	Average resident set size (kbytes): 0
+2026-09-30T22:16:26.8115049Z 	Major (requiring I/O) page faults: 7014
+2026-09-30T22:16:26.8115872Z 	Minor (reclaiming a frame) page faults: 23752828
+2026-09-30T22:16:26.8116772Z 	Voluntary context switches: 504053
+2026-09-30T22:16:26.8117627Z 	Involuntary context switches: 105456
+2026-09-30T22:16:26.8118457Z 	Swaps: 0
+2026-09-30T22:16:26.8118993Z 	File system inputs: 769368
+2026-09-30T22:16:26.8119645Z 	File system outputs: 0
+2026-09-30T22:16:26.8120554Z 	Socket messages sent: 0
+2026-09-30T22:16:26.8121183Z 	Socket messages received: 0
+2026-09-30T22:16:26.8121768Z 	Signals delivered: 0
+2026-09-30T22:16:26.8122293Z 	Page size (bytes): 4096
+2026-09-30T22:16:26.8122811Z 	Exit status: 0
+== comparator_trial_nanoda4.log.gz (sha256 9ec20af32a9fddeadabacd97dc1082dbc9351cb073573d05e025d8effef67479)
+2026-09-30T19:04:14.1303115Z Complete job name: furio-lombardo-quartic nanoda-4
+2026-09-30T19:07:28.4057979Z Syncing repository: mt0-svg/furio-lombardo-quartic
+2026-09-30T19:07:31.0914207Z HEAD is now at d3f8953 v1.1.0: the paper follows the Lean proof; each numbered statement has the hypotheses of its Lean declaration
+2026-09-30T19:07:31.1878893Z Syncing repository: leanprover/comparator
+2026-09-30T19:07:31.9204021Z HEAD is now at d03acab chore: bump toolchain to v4.34.0 (#90)
+2026-09-30T19:07:53.7578586Z    Installed package `nanoda_lib v0.4.19 (https://github.com/ammkrn/nanoda_lib?rev=3a2407216ee84a75f9e1aead6803d0578be06ae7#3a240721)` (executable `nanoda_bin`)
+2026-09-30T19:10:35.5958315Z ##[start-action display=build mt0-svg/nanoda-trials;id=__leanprover_lean-action.build]
+2026-09-30T19:10:35.6375962Z ##[group]Run lake build :release
+2026-09-30T19:10:56.0791205Z ##[start-action display=build mt0-svg/nanoda-trials;id=__leanprover_lean-action_2.build]
+2026-09-30T19:11:07.4774411Z ##[group]Run test "$(git -C .ci/comparator/.lake/packages/lean4export rev-parse HEAD)" = 076e8e57707e813375e8f9da8bf989799ace9680
+2026-09-30T19:11:07.4775416Z test "$(git -C .ci/comparator/.lake/packages/lean4export rev-parse HEAD)" = 076e8e57707e813375e8f9da8bf989799ace9680
+2026-09-30T19:11:07.4832625Z shell: /usr/bin/bash -e {0}
+2026-09-30T19:11:07.4832915Z ##[endgroup]
+2026-09-30T19:11:07.5244409Z ##[group]Run mod=$(jq -r .solution_module config.json)
+2026-09-30T19:11:07.5244765Z mod=$(jq -r .solution_module config.json)
+2026-09-30T19:11:07.5245117Z targets="$(jq -r '.theorem_names[], .permitted_axioms[]' config.json | tr '\n' ' ')"
+2026-09-30T19:11:07.5246044Z targets="$targets Quot Quot.mk Quot.lift Quot.ind Nat.add Nat.sub Nat.mul Nat.pow Nat.gcd Nat.div Nat.mod Nat.beq Nat.ble Nat.land Nat.lor Nat.xor Nat.shiftLeft Nat.shiftRight String.ofList Char.ofNat List eagerReduce Nat String String.mk Char optParam autoParam semiOutParam outParam"
+2026-09-30T19:11:07.5246862Z echo "$mod -- $targets"
+2026-09-30T19:11:07.5247359Z /usr/bin/time -v lake env .ci/comparator/.lake/packages/lean4export/.lake/build/bin/lean4export $mod -- $targets > "$RUNNER_TEMP/solution.export"
+2026-09-30T19:11:07.5247890Z ls -l "$RUNNER_TEMP/solution.export"
+2026-09-30T19:11:07.5305082Z shell: /usr/bin/bash -e {0}
+2026-09-30T19:11:07.5305557Z ##[endgroup]
+2026-09-30T19:11:07.5917788Z FurioLombardo.Solution -- FurioLombardo.conjecture_1_6 propext Quot.sound Classical.choice  Quot Quot.mk Quot.lift Quot.ind Nat.add Nat.sub Nat.mul Nat.pow Nat.gcd Nat.div Nat.mod Nat.beq Nat.ble Nat.land Nat.lor Nat.xor Nat.shiftLeft Nat.shiftRight String.ofList Char.ofNat List eagerReduce Nat String String.mk Char optParam autoParam semiOutParam outParam
+2026-09-30T19:12:34.0730337Z 	Command being timed: "lake env .ci/comparator/.lake/packages/lean4export/.lake/build/bin/lean4export FurioLombardo.Solution -- FurioLombardo.conjecture_1_6 propext Quot.sound Classical.choice Quot Quot.mk Quot.lift Quot.ind Nat.add Nat.sub Nat.mul Nat.pow Nat.gcd Nat.div Nat.mod Nat.beq Nat.ble Nat.land Nat.lor Nat.xor Nat.shiftLeft Nat.shiftRight String.ofList Char.ofNat List eagerReduce Nat String String.mk Char optParam autoParam semiOutParam outParam"
+2026-09-30T19:12:34.0732525Z 	User time (seconds): 70.56
+2026-09-30T19:12:34.0732825Z 	System time (seconds): 5.00
+2026-09-30T19:12:34.0733298Z 	Percent of CPU this job got: 87%
+2026-09-30T19:12:34.0733681Z 	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:26.43
+2026-09-30T19:12:34.0734060Z 	Average shared text size (kbytes): 0
+2026-09-30T19:12:34.0734376Z 	Average unshared data size (kbytes): 0
+2026-09-30T19:12:34.0734654Z 	Average stack size (kbytes): 0
+2026-09-30T19:12:34.0734914Z 	Average total size (kbytes): 0
+2026-09-30T19:12:34.0735187Z 	Maximum resident set size (kbytes): 8252356
+2026-09-30T19:12:34.0735485Z 	Average resident set size (kbytes): 0
+2026-09-30T19:12:34.0735781Z 	Major (requiring I/O) page faults: 10511
+2026-09-30T19:12:34.0736109Z 	Minor (reclaiming a frame) page faults: 463972
+2026-09-30T19:12:34.0736440Z 	Voluntary context switches: 10821
+2026-09-30T19:12:34.0736732Z 	Involuntary context switches: 746
+2026-09-30T19:12:34.0736996Z 	Swaps: 0
+2026-09-30T19:12:34.0737217Z 	File system inputs: 757560
+2026-09-30T19:12:34.0737483Z 	File system outputs: 2690256
+2026-09-30T19:12:34.0737908Z 	Socket messages sent: 0
+2026-09-30T19:12:34.0738343Z 	Socket messages received: 0
+2026-09-30T19:12:34.0738684Z 	Signals delivered: 0
+2026-09-30T19:12:34.0738893Z 	Page size (bytes): 4096
+2026-09-30T19:12:34.0739062Z 	Exit status: 0
+2026-09-30T19:12:34.0751430Z -rw-r--r-- 1 runner runner 1377409375 Sep 30 19:12 /home/runner/work/_temp/solution.export
+2026-09-30T19:12:34.0814967Z ##[group]Run n=${MODE#nanoda-}
+2026-09-30T19:12:34.0815220Z n=${MODE#nanoda-}
+2026-09-30T19:12:34.0815616Z jq -n --arg f "$RUNNER_TEMP/solution.export" --argjson n "$n" --argjson ax "$(jq .permitted_axioms config.json)" \
+2026-09-30T19:12:34.0816178Z   '{use_stdin: false, export_file_path: $f, permitted_axioms: $ax, unpermitted_axiom_hard_error: true,
+2026-09-30T19:12:34.0816664Z     num_threads: $n, nat_extension: true, string_extension: true}' > "$RUNNER_TEMP/nanoda.json"
+2026-09-30T19:12:34.0817011Z cat "$RUNNER_TEMP/nanoda.json"
+2026-09-30T19:12:34.0817239Z nproc; free -g
+2026-09-30T19:12:34.0817533Z /usr/bin/time -v "$RUNNER_TEMP/nanoda/bin/nanoda_bin" "$RUNNER_TEMP/nanoda.json"
+2026-09-30T19:12:34.0885694Z shell: /usr/bin/bash -e {0}
+2026-09-30T19:12:34.0885907Z env:
+2026-09-30T19:12:34.0886060Z   MODE: nanoda-4
+2026-09-30T19:12:34.0886230Z ##[endgroup]
+2026-09-30T19:12:34.1031632Z {
+2026-09-30T19:12:34.1031957Z   "use_stdin": false,
+2026-09-30T19:12:34.1032329Z   "export_file_path": "/home/runner/work/_temp/solution.export",
+2026-09-30T19:12:34.1032640Z   "permitted_axioms": [
+2026-09-30T19:12:34.1032820Z     "propext",
+2026-09-30T19:12:34.1032977Z     "Quot.sound",
+2026-09-30T19:12:34.1033343Z     "Classical.choice"
+2026-09-30T19:12:34.1033507Z   ],
+2026-09-30T19:12:34.1033668Z   "unpermitted_axiom_hard_error": true,
+2026-09-30T19:12:34.1033874Z   "num_threads": 4,
+2026-09-30T19:12:34.1034045Z   "nat_extension": true,
+2026-09-30T19:12:34.1034223Z   "string_extension": true
+2026-09-30T19:12:34.1034391Z }
+2026-09-30T19:12:34.1044669Z 4
+2026-09-30T19:12:34.1066082Z                total        used        free      shared  buff/cache   available
+2026-09-30T19:12:34.1066652Z Mem:              15           1           1           0          13          14
+2026-09-30T19:12:34.1066911Z Swap:              2           0           2
+2026-09-30T20:09:26.3935242Z 	Command being timed: "/home/runner/work/_temp/nanoda/bin/nanoda_bin /home/runner/work/_temp/nanoda.json"
+2026-09-30T20:09:26.3936751Z 	User time (seconds): 13455.99
+2026-09-30T20:09:26.3936955Z 	System time (seconds): 47.23
+2026-09-30T20:09:26.3937159Z 	Percent of CPU this job got: 395%
+2026-09-30T20:09:26.3937406Z 	Elapsed (wall clock) time (h:mm:ss or m:ss): 56:52.28
+2026-09-30T20:09:26.3937667Z 	Average shared text size (kbytes): 0
+2026-09-30T20:09:26.3937886Z 	Average unshared data size (kbytes): 0
+2026-09-30T20:09:26.3938097Z 	Average stack size (kbytes): 0
+2026-09-30T20:09:26.3938292Z 	Average total size (kbytes): 0
+2026-09-30T20:09:26.3938500Z 	Maximum resident set size (kbytes): 11169876
+2026-09-30T20:09:26.3938742Z 	Average resident set size (kbytes): 0
+2026-09-30T20:09:26.3938983Z 	Major (requiring I/O) page faults: 10269
+2026-09-30T20:09:26.3939228Z 	Minor (reclaiming a frame) page faults: 7478748
+2026-09-30T20:09:26.3939464Z 	Voluntary context switches: 11850
+2026-09-30T20:09:26.3939679Z 	Involuntary context switches: 2058006
+2026-09-30T20:09:26.3939876Z 	Swaps: 0
+2026-09-30T20:09:26.3940036Z 	File system inputs: 150040
+2026-09-30T20:09:26.3940235Z 	File system outputs: 0
+2026-09-30T20:09:26.3940416Z 	Socket messages sent: 0
+2026-09-30T20:09:26.3940599Z 	Socket messages received: 0
+2026-09-30T20:09:26.3940785Z 	Signals delivered: 0
+2026-09-30T20:09:26.3940954Z 	Page size (bytes): 4096
+2026-09-30T20:09:26.3941151Z 	Exit status: 0
+== summary: wall time and exit status of each timed command
+comparator_trial_kernel.log.gz: Comparator (Lean kernel alone), wall 3:06:01, exit status 0
+comparator_trial_nanoda4.log.gz: lean4export (export of the solution), wall 1:26.43, exit status 0
+comparator_trial_nanoda4.log.gz: nanoda_bin (4 threads), wall 56:52.28, exit status 0

@@ -1,5 +1,5 @@
 name = "furio-lombardo-quartic"
-version = "1.0.0"
+version = "1.2.0"
 description = "Conjecture 1.6 of Furio and Lombardo: the plane quartic twist of the Klein quartic has exactly four rational points, proved in Lean 4"
 keywords = ["math", "rational points", "plane quartic", "Selmer group Chabauty", "Prym variety", "genus 2 Jacobian", "formal verification"]
 license = "Apache-2.0"

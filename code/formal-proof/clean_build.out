@@ -1,0 +1,829 @@
+# clean_build.sh at 2026-09-29 23:21 UTC
+# Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+# Lake version 5.0.0-src+5045d00 (Lean version 4.34.1)
+# machine: AMD Ryzen 9 5900X 12-Core Processor, 24 logical CPUs, 62.7 GiB RAM
+# package: 913 modules; sources sha256 e002e675297778c0ca078a371e5a86c06343126c764988ba050881fff1c6ebdd; FurioLombardo bad68224053fd174d484c56dc837a73edf72453978b3e5bea3b7ae2fff8760e3, lakefile.toml 6438c9cd09105f14ab3f56707de3e2a587012e3c339c910f556084291f966a1e, lake-manifest.json 2694d3750a4f8beb2eafbea411f155a8683eb24d55ab3e916bf8c62d5af27eae
+# (sha256 of a set of files: that of the sha256sum listing of the files, paths from the package root in LC_ALL=C order; FurioLombardo: the .lean files of FurioLombardo/, and FurioLombardo.lean if present)
+# settings: HB=3 LB=12 PEAK_HEAVY=7G PEAK_LIGHT=4G MEM_MARGIN=4G MEM_POLL=60 MEM_LOWER=600 MIN_DISK_GB=8; RUN_WRAP: cap -m 24G -c 12 -t 90min; lock: held for the run
+# memory peak per call: memory.peak of the cgroup of RUN_WRAP (all processes of the call)
+# at start: MemAvailable 43.9 GiB, load average 13.03 19.23 27.52
+# .lake/build moved to .lake/build.prev
+ok 20 s, peak 4.2 GiB: FurioLombardo.Discharge.Analytic.TwoIndex FurioLombardo.Discharge.KvArith.Comp.Ball FurioLombardo.Discharge.KvArith.Comp.Ops FurioLombardo.Discharge.M3a.AbelPrymData FurioLombardo.Discharge.M3a.AbelPrymData2 FurioLombardo.Discharge.M3a.DataBruin FurioLombardo.Discharge.M3a.LocalData FurioLombardo.Discharge.M3a.LocalQuad FurioLombardo.Discharge.M3b.DataDyadic FurioLombardo.Discharge.M3b.DataK21 FurioLombardo.Discharge.M3b.DataL FurioLombardo.Discharge.M3b.Ramification
+ok 18 s, peak 7.5 GiB: FurioLombardo.Discharge.M4Cert.Data FurioLombardo.Discharge.M4Cert.DataRes FurioLombardo.Discharge.M4Cert.Hensel FurioLombardo.Discharge.M4Cert.Kv FurioLombardo.Discharge.M4Log.BranchData FurioLombardo.Discharge.SelmerBasis.AssemblyData FurioLombardo.Discharge.SelmerBasis.Count.AtW2Data FurioLombardo.Discharge.SelmerBasis.Count.Poly FurioLombardo.Discharge.SelmerBasis.EtaleCRT FurioLombardo.Discharge.SelmerBasis.KappaData FurioLombardo.Discharge.SelmerBasis.QuadField FurioLombardo.Discharge.SelmerBasis.RealRootData
+ok 17 s, peak 4.5 GiB: FurioLombardo.Discharge.SelmerBasis.RealSignData FurioLombardo.Discharge.SelmerBasis.SUnitCountData FurioLombardo.Discharge.SelmerBasis.SUnitCountGen FurioLombardo.Discharge.SelmerBasis.SchaeferAux FurioLombardo.Discharge.SelmerBasis.SquareLemmas FurioLombardo.Discharge.SelmerSpan.IData FurioLombardo.Discharge.SelmerSpan.QuadSq FurioLombardo.M1.Basic FurioLombardo.M1.Data2 FurioLombardo.M1.Data3 FurioLombardo.M1.DataAvoid FurioLombardo.M1.DataBezout
+ok 37 s, peak 3.8 GiB: FurioLombardo.M1.DataBruin FurioLombardo.M1.DataField FurioLombardo.M1.DataGens FurioLombardo.M1.DataKnown FurioLombardo.M1.DataSieve FurioLombardo.M1.DataSqrt FurioLombardo.M1.Primitive FurioLombardo.M1.Valuation FurioLombardo.M1.Vendor.NetOfConics FurioLombardo.M1.Vendor.Stoll.Basic FurioLombardo.M1.Vendor.Stoll.FractionalIdeal FurioLombardo.M2.Defs
+ok 26 s, peak 6.7 GiB: FurioLombardo.M2.Field FurioLombardo.M2.Frame FurioLombardo.M2.ZimmertDefs FurioLombardo.M3a.CoordRing FurioLombardo.M3a.IdealDeg FurioLombardo.M3a.Moving FurioLombardo.M3b.Abstract FurioLombardo.M3b.DyadicCert FurioLombardo.M3b.Factorization FurioLombardo.M3b.FixedPoints FurioLombardo.M3b.GroupRank FurioLombardo.M4.Defs
+ok 15 s, peak 6.2 GiB: FurioLombardo.M4.Stoll FurioLombardo.Statement FurioLombardo.Vendor.AINTLIB.CompletedZeta.DualLattice FurioLombardo.Vendor.AINTLIB.CompletedZeta.GammaStrip FurioLombardo.Vendor.AINTLIB.CompletedZeta.Normalisation FurioLombardo.Vendor.AINTLIB.CompletedZeta.PoissonSummation FurioLombardo.Vendor.LeanPool.RectangleIntegral FurioLombardo.Vendor.Toolbox.GroupTheory.FiniteIndexSeq FurioLombardo.Vendor.Toolbox.GroupTheory.NsmulIndex FurioLombardo.Vendor.Toolbox.Polynomial.CoeffLim FurioLombardo.Vendor.Toolbox.Polynomial.SubPoly FurioLombardo.Vendor.Toolbox.PowerSeries.FormalFix
+ok 7 s, peak 2.0 GiB: FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.AdicTopology FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.LocalRing FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.MvPowerSeriesPDeriv FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.PadicInt FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.PadicValNat FurioLombardo.Vendor.Toolbox.TauCeti.Algebra.Group.PowMonoidHom FurioLombardo.Vendor.Toolbox.TauCeti.Algebra.Group.Units.Basic FurioLombardo.Vendor.Toolbox.TauCeti.Data.Int.WithZero FurioLombardo.Vendor.Toolbox.TauCeti.Data.Nat.Factorization.MulDvd FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.UnitFiltration.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.AdicCompletion.Pi FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Finite.ArtinSchreier
+ok 4 s, peak 2.3 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Henselian.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.Finite FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.IntegrallyClosed FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.AbsoluteValue FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.Discrete.Order FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.RootMonic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.ValuationRing FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.ValuativeRel.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.ValuativeRel.Extension
+ok 18 s, peak 2.1 GiB: FurioLombardo.Discharge.SelmerBasis.Count.CertData FurioLombardo.Discharge.SelmerBasis.RealPlaceAux FurioLombardo.Discharge.SelmerBasis.SUnitData
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferCertData FurioLombardo.Discharge.SelmerSpan.DData
+ok 22 s, peak 6.0 GiB: FurioLombardo.Discharge.KvArith.Ops FurioLombardo.Discharge.KvArith.Comp.Cantor FurioLombardo.Discharge.KvArith.Comp.BallOps FurioLombardo.Discharge.SelmerBasis.Echelon FurioLombardo.M1.ListPoly FurioLombardo.M1.Hypotheses FurioLombardo.Discharge.M3a.K1Res FurioLombardo.M1.Vendor.Stoll.SIntegers FurioLombardo.Discharge.SelmerBasis.SchaeferLocal FurioLombardo.M2.Spec FurioLombardo.M2.Global FurioLombardo.M2.Hypotheses
+FAILED 16 s, peak 6.8 GiB: FurioLombardo.M2.ZimmertNum FurioLombardo.M2.Zimmert.Defs FurioLombardo.M2.Zimmert FurioLombardo.M3a.Dedekind FurioLombardo.M3a.ClassGroupLift FurioLombardo.M3b.Chevalley FurioLombardo.M3b.AbstractUnits FurioLombardo.M4.Data FurioLombardo.M4.Boxes FurioLombardo.M4.Analytic FurioLombardo.M3a.StollSat FurioLombardo.M3a.Sections
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 5 s, peak 0.3 GiB: FurioLombardo.M2.ZimmertNum
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Zimmert.Defs
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Zimmert
+ok 4 s, peak 0.3 GiB: FurioLombardo.M3a.Dedekind
+ok 3 s, peak 0.3 GiB: FurioLombardo.M3a.ClassGroupLift
+ok 2 s, peak 0.2 GiB: FurioLombardo.M3b.Chevalley
+ok 9 s, peak 0.9 GiB: FurioLombardo.M3b.AbstractUnits
+ok 3 s, peak 0.3 GiB: FurioLombardo.M4.Data
+ok 4 s, peak 0.3 GiB: FurioLombardo.M4.Boxes
+ok 4 s, peak 0.3 GiB: FurioLombardo.M4.Analytic
+ok 3 s, peak 0.3 GiB: FurioLombardo.M3a.StollSat
+ok 4 s, peak 0.3 GiB: FurioLombardo.M3a.Sections
+ok 21 s, peak 4.1 GiB: FurioLombardo.Vendor.AINTLIB.CompletedZeta.FunctionalEquation FurioLombardo.Vendor.AINTLIB.CompletedZeta.PoissonLattice FurioLombardo.M2.Zimmert.Contour FurioLombardo.Vendor.Toolbox.Polynomial.CoeffLimRoot FurioLombardo.Vendor.Toolbox.Polynomial.CoeffLimFibre FurioLombardo.Vendor.Toolbox.PowerSeries.SqrtMod FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.MvPowerSeriesComp FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.PSeries FurioLombardo.Vendor.Toolbox.TauCeti.GroupTheory.OrderOfElement.Basic FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Henselian FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.LocalRing FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.NormalizedValuation
+ok 18 s, peak 6.2 GiB: FurioLombardo.Discharge.M4Box.Comp.AbelPrym FurioLombardo.Discharge.KvArith.Comp.DChain FurioLombardo.Discharge.KvArith.Comp.TM FurioLombardo.Discharge.KvArith.Comp.DCert FurioLombardo.Discharge.SelmerBasis.LocalLemmas FurioLombardo.M1.Kron FurioLombardo.Discharge.M3b.RealCert FurioLombardo.Discharge.M3a.K1Quad FurioLombardo.Discharge.M3a.K1Norm FurioLombardo.M1.Vendor.Stoll.SelmerGroup FurioLombardo.Discharge.SelmerBasis.SchaeferModel FurioLombardo.M2.PackedSpec
+ok 17 s, peak 7.7 GiB: FurioLombardo.M2.Zimmert.Positivity FurioLombardo.M2.Zimmert.Leaves FurioLombardo.M2.Zimmert.Growth FurioLombardo.M3a.Basic FurioLombardo.M3b.Glue FurioLombardo.Discharge.M3b.QuadReal FurioLombardo.M4.Leading FurioLombardo.M4.Hypotheses FurioLombardo.Discharge.M3a.Transfer FurioLombardo.Vendor.AINTLIB.CompletedZeta.GRH FurioLombardo.Vendor.AINTLIB.CompletedZeta.ThetaLattice FurioLombardo.Vendor.Toolbox.PowerSeries.Conv
+ok 10 s, peak 2.1 GiB: FurioLombardo.Discharge.M4Log.SqrtModTwo FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.MvPSeries FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.Henselian FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Uniformizer FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.RamificationIndex FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.NormedField FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.NatCastValuation
+ok 19 s, peak 2.0 GiB: FurioLombardo.M2.Check FurioLombardo.M4.Checks FurioLombardo.M2.Data.P002
+ok 35 s, peak 1.5 GiB: FurioLombardo.M2.Data.P001 FurioLombardo.M2.Data.P000 FurioLombardo.M2.Check2
+ok 216 s, peak 1.3 GiB: FurioLombardo.M2.BasisData
+ok 24 s, peak 6.8 GiB: FurioLombardo.Discharge.KvArith.Comp.DRun FurioLombardo.Discharge.SelmerBasis.QuadLocal FurioLombardo.M1.ZK FurioLombardo.Discharge.M4Cert.DataOnC FurioLombardo.M1.SelmerBound FurioLombardo.M2.Poly FurioLombardo.M2.Cover FurioLombardo.M2.Zimmert.Satz1 FurioLombardo.M3a.Pic FurioLombardo.M3b.UnitsIndex FurioLombardo.M3b.Ideals FurioLombardo.M4.Sigma
+ok 72 s, peak 5.7 GiB: FurioLombardo.M4.Series FurioLombardo.Vendor.AINTLIB.CompletedZeta.IdealLattice FurioLombardo.Discharge.R7.Formal FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Basic FurioLombardo.Vendor.Toolbox.PowerSeries.EvalLip FurioLombardo.Vendor.Toolbox.PowerSeries.Bounded FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Henselian.Teichmuller FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.IntegerRing FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.FiniteExtension.Basic FurioLombardo.M1.ZKInt FurioLombardo.M1.Conics FurioLombardo.Discharge.M4Cert.Embed
+FAILED 27 s, peak 7.2 GiB: FurioLombardo.Discharge.M3a.LocalQE FurioLombardo.Discharge.SelmerBasis.SUnitMemGen FurioLombardo.Discharge.SelmerBasis.SUnitIndepGen FurioLombardo.M2.Factor FurioLombardo.M2.DiscrData FurioLombardo.M2.Basis FurioLombardo.M2.Zimmert.Limit FurioLombardo.M3a.BaseChange FurioLombardo.M3b.Formula FurioLombardo.M4.Lattice FurioLombardo.Vendor.AINTLIB.CompletedZeta.HeckeTheta FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Points
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.LocalQE
+ok 11 s, peak 1.0 GiB: FurioLombardo.Discharge.SelmerBasis.SUnitMemGen
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SUnitIndepGen
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Factor
+ok 2 s, peak 0.1 GiB: FurioLombardo.M2.DiscrData
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Basis
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Zimmert.Limit
+ok 5 s, peak 0.3 GiB: FurioLombardo.M3a.BaseChange
+ok 4 s, peak 0.3 GiB: FurioLombardo.M3b.Formula
+ok 4 s, peak 0.3 GiB: FurioLombardo.M4.Lattice
+ok 4 s, peak 0.3 GiB: FurioLombardo.Vendor.AINTLIB.CompletedZeta.HeckeTheta
+ok 1 s, peak 0.2 GiB: FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Points
+ok 7 s, peak 0.8 GiB: FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Invariance FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.GaloisAction
+ok 26 s, peak 2.3 GiB: FurioLombardo.M2.Data.P005 FurioLombardo.M2.Data.P004 FurioLombardo.M2.Data.P003
+ok 21 s, peak 2.4 GiB: FurioLombardo.M2.SpecialData FurioLombardo.M2.Data.P008 FurioLombardo.M2.Data.P007
+ok 20 s, peak 0.9 GiB: FurioLombardo.M2.Data.P006
+ok 15 s, peak 6.8 GiB: FurioLombardo.M1.Residue FurioLombardo.Discharge.M4Cert.Resid FurioLombardo.M2.Exponent FurioLombardo.M3a.XminusT FurioLombardo.M3a.TwoTorsion FurioLombardo.M3b.Characters FurioLombardo.M4.QCert FurioLombardo.M4.Local FurioLombardo.Discharge.Analytic.Saturation FurioLombardo.Vendor.AINTLIB.CompletedZeta.ClassTheta FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Log FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Teichmuller
+ok 20 s, peak 8.7 GiB: FurioLombardo.M1.ResRing FurioLombardo.M1.Gens FurioLombardo.Discharge.M3a.PolyK FurioLombardo.Discharge.M4Cert.Curve FurioLombardo.Discharge.KvArith.Ball FurioLombardo.M2.Gen FurioLombardo.Discharge.SelmerBasis.Interfaces FurioLombardo.M3a.Hypotheses FurioLombardo.Discharge.M3a.Reduction FurioLombardo.M3b.Tower FurioLombardo.M3b.Dyadic FurioLombardo.M4.Main
+ok 9 s, peak 1.2 GiB: FurioLombardo.Vendor.AINTLIB.CompletedZeta.ThetaEstimates FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.UnitsDecomposition
+ok 19 s, peak 2.1 GiB: FurioLombardo.M2.Data.P011 FurioLombardo.M2.Data.P010 FurioLombardo.M2.Data.P009
+ok 21 s, peak 3.6 GiB: FurioLombardo.M1.BruinCheck FurioLombardo.M2.Data.P014 FurioLombardo.M2.Data.P013
+ok 18 s, peak 0.8 GiB: FurioLombardo.M2.Data.P012
+ok 14 s, peak 8.6 GiB: FurioLombardo.M1.Norms FurioLombardo.Discharge.M3b.K21Defs FurioLombardo.Discharge.M3a.ConcreteDefs FurioLombardo.Discharge.M4Cert.OnCurve FurioLombardo.Discharge.KvArith.BallOps FurioLombardo.M2.Sound FurioLombardo.M2.Mul FurioLombardo.Discharge.SelmerBasis.AssemblyGen FurioLombardo.M3a.Route FurioLombardo.Discharge.M3a.XTKernelK1 FurioLombardo.Discharge.M3a.SelmerK2 FurioLombardo.Discharge.Analytic.LogChart
+ok 21 s, peak 6.7 GiB: FurioLombardo.Discharge.R7.LineStep FurioLombardo.Discharge.M3a.TwoTorsionClass FurioLombardo.Discharge.M3a.K1Half FurioLombardo.Discharge.M3a.AbelPrym FurioLombardo.M3b.SUnits FurioLombardo.M4.Cover FurioLombardo.Vendor.AINTLIB.CompletedZeta.FEPair FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.ExpConverge FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.MultiplicativeGroup FurioLombardo.M1.SSet FurioLombardo.Discharge.M3b.K21Real FurioLombardo.Discharge.M3b.K21Primes
+FAILED 35 s, peak 7.8 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferCertDefs FurioLombardo.Discharge.M3a.AbelPrymDefs FurioLombardo.Discharge.KvArith.TM FurioLombardo.Discharge.KvArith.Sigma FurioLombardo.M2.Norm FurioLombardo.Discharge.SelmerBasis.GlobalSpanGen FurioLombardo.Discharge.Analytic.ModTwo FurioLombardo.Discharge.R7.FGLK FurioLombardo.Discharge.KvArith.Cantor FurioLombardo.Discharge.M3a.LocalTwoTorsion FurioLombardo.Discharge.M3a.K1Kernel FurioLombardo.Discharge.M3a.AbelPrymRuling
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferCertDefs
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.AbelPrymDefs
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.KvArith.TM
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.KvArith.Sigma
+ok 3 s, peak 0.3 GiB: FurioLombardo.M2.Norm
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.GlobalSpanGen
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.Analytic.ModTwo
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.R7.FGLK
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.KvArith.Cantor
+ok 9 s, peak 1.0 GiB: FurioLombardo.Discharge.M3a.LocalTwoTorsion
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.K1Kernel
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.AbelPrymRuling
+FAILED 9 s, peak 2.3 GiB: FurioLombardo.M3b.Hypotheses FurioLombardo.M4.Twist FurioLombardo.Discharge.M4Box.Weak FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.LogIso FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.PowerSubgroup
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 4 s, peak 0.3 GiB: FurioLombardo.M3b.Hypotheses
+ok 3 s, peak 0.3 GiB: FurioLombardo.M4.Twist
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.Weak
+ok 2 s, peak 0.1 GiB: FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.LogIso
+ok 6 s, peak 0.5 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.PowerSubgroup
+ok 21 s, peak 2.6 GiB: FurioLombardo.Discharge.M3a.ConcreteCheck FurioLombardo.Discharge.M3a.AbelPrymCheck2 FurioLombardo.M2.Data.P017
+ok 20 s, peak 2.3 GiB: FurioLombardo.M2.Data.P016 FurioLombardo.M2.Data.P015 FurioLombardo.Vendor.AINTLIB.CompletedZeta.MellinAgreement
+ok 15 s, peak 2.8 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferCertCheck FurioLombardo.Discharge.M3a.AbelPrymCheck FurioLombardo.M2.Data.P020
+ok 13 s, peak 1.3 GiB: FurioLombardo.M2.Data.P019 FurioLombardo.M2.Data.P018
+ok 14 s, peak 8.6 GiB: FurioLombardo.M1.Descent FurioLombardo.M1.Signature FurioLombardo.Discharge.M3b.Fields FurioLombardo.Discharge.M3b.DyadicMap FurioLombardo.Discharge.M3a.Concrete FurioLombardo.M2.Residue FurioLombardo.M2.Discr FurioLombardo.Discharge.M4Box.AbelPrymRel FurioLombardo.Discharge.KvArith.DChain FurioLombardo.Discharge.M3a.MuT FurioLombardo.Discharge.M3a.CertSmul FurioLombardo.Discharge.M3a.CertMap
+ok 14 s, peak 6.9 GiB: FurioLombardo.Discharge.M3a.AbelPrymExists FurioLombardo.M4.Instances FurioLombardo.Vendor.AINTLIB.CompletedZeta.Existence FurioLombardo.Vendor.Toolbox.FormalGroup.ScaledLog FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Squares FurioLombardo.M1.SieveRing FurioLombardo.M2.Signature FurioLombardo.Discharge.SelmerBasis.SUnitTower FurioLombardo.Discharge.SelmerBasis.SUnitDefs FurioLombardo.Discharge.M3b.RamN FurioLombardo.Discharge.M3b.RamL FurioLombardo.Discharge.M3b.DyadicRho
+ok 16 s, peak 7.7 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferCertGlue FurioLombardo.Discharge.M3a.AbelPrymKnown FurioLombardo.M2.Special FurioLombardo.Discharge.SelmerSpan.Mumford FurioLombardo.Discharge.M4Box.AbelPrymSpec FurioLombardo.Discharge.M4Cert.Excl FurioLombardo.Discharge.M4Cert.Discs FurioLombardo.Discharge.M4Box.Chain FurioLombardo.Discharge.M3a.Plug FurioLombardo.Discharge.Analytic.Route FurioLombardo.M2.Zimmert.ClassZeta FurioLombardo.Vendor.Toolbox.FormalGroup.ScaledPoints
+ok 11 s, peak 1.1 GiB: FurioLombardo.Discharge.SelmerBasis.Bridge
+ok 15 s, peak 2.2 GiB: FurioLombardo.M2.Data.P023 FurioLombardo.M2.Data.P022 FurioLombardo.M2.Data.P021
+ok 28 s, peak 2.8 GiB: FurioLombardo.Vendor.AINTLIB.CompletedZeta.AnalyticControl FurioLombardo.M2.Data.P026 FurioLombardo.M2.Data.P025
+ok 13 s, peak 2.2 GiB: FurioLombardo.M2.Data.P024 FurioLombardo.Discharge.SelmerBasis.RealPlace FurioLombardo.Discharge.SelmerBasis.PlaceWGen
+ok 15 s, peak 8.8 GiB: FurioLombardo.M1.SqCond FurioLombardo.M2.ZimmertBound FurioLombardo.Discharge.SelmerBasis.TowerEval FurioLombardo.Discharge.SelmerBasis.SUnitOrder FurioLombardo.Discharge.SelmerBasis.SUnitCount FurioLombardo.Discharge.M3b.Signs FurioLombardo.Discharge.M3a.AbelPrymTotal FurioLombardo.M2.Special45613 FurioLombardo.Discharge.M3a.LocalRes FurioLombardo.Discharge.M3a.LocalLead FurioLombardo.Discharge.M4Cert.Bridge FurioLombardo.Discharge.M3a.Quarter
+ok 31 s, peak 8.7 GiB: FurioLombardo.M2.Zimmert.Satz2 FurioLombardo.Vendor.Toolbox.Padic.UnitBall FurioLombardo.Vendor.Toolbox.FormalGroup.Resc FurioLombardo.Discharge.SelmerBasis.Spanning FurioLombardo.M1.SieveBlocks FurioLombardo.M1.Local3 FurioLombardo.M1.Local2 FurioLombardo.Discharge.SelmerBasis.SUnitRes FurioLombardo.Discharge.SelmerBasis.SUnitRank FurioLombardo.Discharge.M3b.Main FurioLombardo.Discharge.SelmerSpan.Sigma FurioLombardo.Discharge.SelmerSpan.ApproxT
+ok 12 s, peak 5.2 GiB: FurioLombardo.Discharge.M3a.QuarterInst FurioLombardo.Discharge.SelmerBasis.Count.Abstract FurioLombardo.Discharge.R7.KvBall FurioLombardo.Vendor.Toolbox.PowerSeries.BoundedRes FurioLombardo.Discharge.R7.FGLO FurioLombardo.Discharge.SelmerBasis.LocalGlue FurioLombardo.Discharge.SelmerBasis.W7Gen
+ok 46 s, peak 2.7 GiB: FurioLombardo.Discharge.SelmerBasis.TowerChecks FurioLombardo.M2.Data.P029 FurioLombardo.M2.Data.P028
+ok 12 s, peak 2.4 GiB: FurioLombardo.M2.Data.P027 FurioLombardo.Discharge.M3a.LocalCheck FurioLombardo.Discharge.SelmerBasis.PlaceReal
+ok 19 s, peak 3.6 GiB: FurioLombardo.Discharge.SelmerBasis.AdicPlace FurioLombardo.Discharge.SelmerBasis.PlaceWCert FurioLombardo.M1.SieveCheck5
+FAILED 25 s, peak 11.8 GiB: FurioLombardo.M1.SieveCheck4 FurioLombardo.M1.SieveCheck3 FurioLombardo.M1.SieveCheck2
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 3 s, peak 0.3 GiB: FurioLombardo.M1.SieveCheck4
+ok 3 s, peak 0.3 GiB: FurioLombardo.M1.SieveCheck3
+ok 20 s, peak 4.0 GiB: FurioLombardo.M1.SieveCheck2
+ok 23 s, peak 7.7 GiB: FurioLombardo.M1.SieveCheck1 FurioLombardo.M1.SieveCheck0 FurioLombardo.Discharge.SelmerBasis.SUnitMem
+ok 13 s, peak 2.1 GiB: FurioLombardo.M2.Data.P032 FurioLombardo.M2.Data.P031 FurioLombardo.M2.Data.P030
+ok 28 s, peak 9.1 GiB: FurioLombardo.M1.SieveComb FurioLombardo.Discharge.SelmerBasis.TowerFacts FurioLombardo.Discharge.SelmerSpan.Dpt FurioLombardo.Discharge.SelmerSpan.ApproxN FurioLombardo.Discharge.SelmerBasis.RealRoots FurioLombardo.Discharge.M3a.Assembly FurioLombardo.Discharge.SelmerBasis.Count.Cert FurioLombardo.Discharge.R7.LogChart FurioLombardo.Discharge.R7.ConcreteBase FurioLombardo.Discharge.KvArith.LogTail FurioLombardo.Discharge.M4Log.Transport FurioLombardo.Discharge.R7.Psi
+ok 33 s, peak 6.6 GiB: FurioLombardo.Discharge.SelmerBasis.VGlue FurioLombardo.M1.Sieve FurioLombardo.Discharge.SelmerBasis.MuTCert FurioLombardo.Discharge.SelmerBasis.RealInst FurioLombardo.Discharge.M3a.Refined FurioLombardo.Discharge.M4Log.ModelLeaves FurioLombardo.Discharge.SelmerBasis.Count.Setup FurioLombardo.Discharge.R7.FinIdx.ZSet FurioLombardo.Discharge.R7.ChartKv
+ok 44 s, peak 3.4 GiB: FurioLombardo.Discharge.SelmerBasis.SUnitIndep FurioLombardo.M2.Data.P035 FurioLombardo.M2.Data.P034
+ok 109 s, peak 6.5 GiB: FurioLombardo.M2.Data.P033 FurioLombardo.Discharge.SelmerBasis.KappaCheck FurioLombardo.M2.Data.P038
+ok 13 s, peak 1.4 GiB: FurioLombardo.M2.Data.P037 FurioLombardo.M2.Data.P036
+ok 18 s, peak 6.6 GiB: FurioLombardo.M1.SelmerSet FurioLombardo.Discharge.M3a.ConcreteInputs FurioLombardo.Discharge.M4Log.Model FurioLombardo.Discharge.SelmerBasis.Count.Chart FurioLombardo.Discharge.R7.FinIdx.PencilB0 FurioLombardo.Discharge.R7.FinIdx.Comp FurioLombardo.Discharge.R7.FinIdx.Chart FurioLombardo.Discharge.R7.ConcreteKv FurioLombardo.Discharge.KvArith.Chart FurioLombardo.M1.DescentM3a FurioLombardo.Discharge.M3a.ConcreteRoute FurioLombardo.Discharge.R7.FinIdx.PencilAux
+ok 9 s, peak 3.8 GiB: FurioLombardo.Discharge.R7.FinIdx.BadSet FurioLombardo.Discharge.SelmerBasis.Count.Base FurioLombardo.Discharge.M4Box.Comp.Cert FurioLombardo.Discharge.KvArith.DCert FurioLombardo.Discharge.KvArith.ChartBranch
+ok 14 s, peak 2.0 GiB: FurioLombardo.M2.Data.P041 FurioLombardo.M2.Data.P040 FurioLombardo.M2.Data.P039
+ok 13 s, peak 2.2 GiB: FurioLombardo.M2.Data.P044 FurioLombardo.M2.Data.P043 FurioLombardo.M2.Data.P042
+ok 23 s, peak 5.1 GiB: FurioLombardo.Discharge.M3a.LocalFacts FurioLombardo.Discharge.R7.FinIdx.Pencil FurioLombardo.Discharge.SelmerBasis.Count.Key FurioLombardo.Discharge.R7.FinIdx.Key FurioLombardo.Discharge.M4Box.DCertData.Twist1 FurioLombardo.Discharge.M4Box.DCertData.Twist0 FurioLombardo.Discharge.M4Box.Comp.BoxTM FurioLombardo.Discharge.SelmerSpan.Chars FurioLombardo.Discharge.SelmerBasis.Count.Tors FurioLombardo.Discharge.M3a.K1Concrete FurioLombardo.Discharge.SelmerBasis.Count.FinIdx FurioLombardo.Discharge.R7.FinIdx.Assembly
+ok 12 s, peak 2.1 GiB: FurioLombardo.M2.Data.P047 FurioLombardo.M2.Data.P046 FurioLombardo.M2.Data.P045
+ok 11 s, peak 2.0 GiB: FurioLombardo.M2.Data.P050 FurioLombardo.M2.Data.P049 FurioLombardo.M2.Data.P048
+ok 7 s, peak 1.0 GiB: FurioLombardo.Discharge.SelmerBasis.Count.Place
+ok 22 s, peak 4.5 GiB: FurioLombardo.Discharge.SelmerSpan.Indep FurioLombardo.Discharge.SelmerBasis.Count.KE FurioLombardo.Discharge.SelmerBasis.GlobalCRT FurioLombardo.Discharge.M3a.ConcreteKv FurioLombardo.Discharge.R7.Transfer FurioLombardo.Discharge.SelmerBasis.GlobalGens FurioLombardo.Discharge.SelmerSpan.Basis FurioLombardo.Discharge.M4Box.ChainM3a FurioLombardo.Discharge.M3a.ConcretePhi FurioLombardo.Discharge.SelmerBasis.Count.AtV
+ok 12 s, peak 2.0 GiB: FurioLombardo.M2.Data.P053 FurioLombardo.M2.Data.P052 FurioLombardo.M2.Data.P051
+ok 15 s, peak 1.8 GiB: FurioLombardo.Discharge.SelmerBasis.Count.AtPlace FurioLombardo.M2.Data.P056 FurioLombardo.M2.Data.P055
+ok 10 s, peak 2.1 GiB: FurioLombardo.M2.Data.P054 FurioLombardo.Discharge.SelmerBasis.PlaceWModel FurioLombardo.Discharge.SelmerBasis.PlaceV
+ok 26 s, peak 4.9 GiB: FurioLombardo.Discharge.SelmerBasis.Count.AtW3 FurioLombardo.Discharge.SelmerBasis.Count.AtW2
+ok 19 s, peak 6.8 GiB: FurioLombardo.Discharge.SelmerBasis.RealCoord FurioLombardo.Discharge.SelmerBasis.Kappa FurioLombardo.Discharge.M4Log.Defs FurioLombardo.Discharge.SelmerBasis.Count.At7 FurioLombardo.Discharge.SelmerBasis.RealSignDefs FurioLombardo.Discharge.SelmerBasis.PointGen FurioLombardo.Discharge.M4Log.IntModelKv FurioLombardo.Discharge.M4Box.LogBound FurioLombardo.Discharge.M4Box.DiscRoot FurioLombardo.Discharge.M4Box.Coord FurioLombardo.Discharge.M4Box.Amat
+ok 13 s, peak 2.1 GiB: FurioLombardo.M2.Data.P059 FurioLombardo.M2.Data.P058 FurioLombardo.M2.Data.P057
+ok 21 s, peak 2.4 GiB: FurioLombardo.Discharge.SelmerBasis.W3Data FurioLombardo.Discharge.SelmerBasis.PlaceWElem FurioLombardo.Discharge.SelmerBasis.VPlace
+ok 11 s, peak 1.9 GiB: FurioLombardo.M2.Data.P062 FurioLombardo.M2.Data.P061 FurioLombardo.M2.Data.P060
+ok 40 s, peak 4.1 GiB: FurioLombardo.Discharge.SelmerBasis.RealSignCheckN FurioLombardo.Discharge.SelmerBasis.RealSignCheckM FurioLombardo.Discharge.SelmerBasis.RealSignCheckL
+ok 204 s, peak 3.7 GiB: FurioLombardo.Discharge.SelmerBasis.RealSignCheckI1 FurioLombardo.Discharge.SelmerBasis.RealSignCheckI0 FurioLombardo.Discharge.SelmerBasis.W3CheckE
+ok 90 s, peak 3.5 GiB: FurioLombardo.Discharge.SelmerBasis.W3DataK1 FurioLombardo.Discharge.SelmerBasis.W3DataK0 FurioLombardo.Discharge.SelmerBasis.W3CheckN
+ok 28 s, peak 1.9 GiB: FurioLombardo.Discharge.SelmerBasis.W3CheckK FurioLombardo.Discharge.SelmerBasis.PlaceWRows
+ok 23 s, peak 11.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7Spec FurioLombardo.Discharge.M4Box.PhiCertData.P3 FurioLombardo.Discharge.M4Box.PhiCertData.P2 FurioLombardo.Discharge.M4Box.PhiCertData.P1 FurioLombardo.Discharge.M4Box.PhiCertData.P0 FurioLombardo.Discharge.M4Box.DCertData.K1I6 FurioLombardo.Discharge.M4Box.DCertData.K1I5 FurioLombardo.Discharge.M4Box.DCertData.K1I4 FurioLombardo.Discharge.M4Box.DCertData.K1I3 FurioLombardo.Discharge.M4Box.DCertData.K1I2 FurioLombardo.Discharge.M4Box.DCertData.K1I1 FurioLombardo.Discharge.M4Box.DCertData.K1I0
+FAILED 30 s, peak 14.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I6 FurioLombardo.Discharge.M4Box.DCertData.K0I5 FurioLombardo.Discharge.M4Box.DCertData.K0I4 FurioLombardo.Discharge.M4Box.DCertData.K0I3 FurioLombardo.Discharge.M4Box.DCertData.K0I2 FurioLombardo.Discharge.M4Box.DCertData.K0I1 FurioLombardo.Discharge.M4Box.DCertData.K0I0 FurioLombardo.Discharge.M4Box.CentreData.K1C9 FurioLombardo.Discharge.M4Box.CentreData.K1C8 FurioLombardo.Discharge.M4Box.CentreData.K1C7 FurioLombardo.Discharge.M4Box.CentreData.K1C6 FurioLombardo.Discharge.M4Box.CentreData.K1C5
+error: Lean exited with code 139
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 17 s, peak 1.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I6
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I5
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I4
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I3
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I2
+ok 17 s, peak 1.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I1
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I0
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C9
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C8
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C7
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C6
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C5
+FAILED 35 s, peak 22.4 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C4 FurioLombardo.Discharge.M4Box.CentreData.K1C3 FurioLombardo.Discharge.M4Box.CentreData.K1C21 FurioLombardo.Discharge.M4Box.CentreData.K1C20 FurioLombardo.Discharge.M4Box.CentreData.K1C2 FurioLombardo.Discharge.M4Box.CentreData.K1C19 FurioLombardo.Discharge.M4Box.CentreData.K1C18 FurioLombardo.Discharge.M4Box.CentreData.K1C17 FurioLombardo.Discharge.M4Box.CentreData.K1C16 FurioLombardo.Discharge.M4Box.CentreData.K1C15 FurioLombardo.Discharge.M4Box.CentreData.K1C14 FurioLombardo.Discharge.M4Box.CentreData.K1C13
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 23 s, peak 2.2 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C4
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C3
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C21
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C20
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C2
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C19
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C18
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C17
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C16
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C15
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C14
+ok 2 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C13
+ok 38 s, peak 22.5 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C12 FurioLombardo.Discharge.M4Box.CentreData.K1C11 FurioLombardo.Discharge.M4Box.CentreData.K1C10 FurioLombardo.Discharge.M4Box.CentreData.K1C1 FurioLombardo.Discharge.M4Box.CentreData.K1C0 FurioLombardo.Discharge.M4Box.CentreData.K0C9 FurioLombardo.Discharge.M4Box.CentreData.K0C81 FurioLombardo.Discharge.M4Box.CentreData.K0C80 FurioLombardo.Discharge.M4Box.CentreData.K0C8 FurioLombardo.Discharge.M4Box.CentreData.K0C79 FurioLombardo.Discharge.M4Box.CentreData.K0C78 FurioLombardo.Discharge.M4Box.CentreData.K0C77
+FAILED 34 s, peak 22.5 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C76 FurioLombardo.Discharge.M4Box.CentreData.K0C75 FurioLombardo.Discharge.M4Box.CentreData.K0C74 FurioLombardo.Discharge.M4Box.CentreData.K0C73 FurioLombardo.Discharge.M4Box.CentreData.K0C72 FurioLombardo.Discharge.M4Box.CentreData.K0C71 FurioLombardo.Discharge.M4Box.CentreData.K0C70 FurioLombardo.Discharge.M4Box.CentreData.K0C7 FurioLombardo.Discharge.M4Box.CentreData.K0C69 FurioLombardo.Discharge.M4Box.CentreData.K0C68 FurioLombardo.Discharge.M4Box.CentreData.K0C67 FurioLombardo.Discharge.M4Box.CentreData.K0C66
+error: Lean exited with code 139
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 21 s, peak 2.2 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C76
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C75
+ok 23 s, peak 2.1 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C74
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C73
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C72
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C71
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C70
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C7
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C69
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C68
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C67
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C66
+ok 46 s, peak 22.5 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C65 FurioLombardo.Discharge.M4Box.CentreData.K0C64 FurioLombardo.Discharge.M4Box.CentreData.K0C63 FurioLombardo.Discharge.M4Box.CentreData.K0C62 FurioLombardo.Discharge.M4Box.CentreData.K0C61 FurioLombardo.Discharge.M4Box.CentreData.K0C60 FurioLombardo.Discharge.M4Box.CentreData.K0C6 FurioLombardo.Discharge.M4Box.CentreData.K0C59 FurioLombardo.Discharge.M4Box.CentreData.K0C58 FurioLombardo.Discharge.M4Box.CentreData.K0C57 FurioLombardo.Discharge.M4Box.CentreData.K0C56 FurioLombardo.Discharge.M4Box.CentreData.K0C55
+ok 46 s, peak 22.6 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C54 FurioLombardo.Discharge.M4Box.CentreData.K0C53 FurioLombardo.Discharge.M4Box.CentreData.K0C52 FurioLombardo.Discharge.M4Box.CentreData.K0C51 FurioLombardo.Discharge.M4Box.CentreData.K0C50 FurioLombardo.Discharge.M4Box.CentreData.K0C5 FurioLombardo.Discharge.M4Box.CentreData.K0C49 FurioLombardo.Discharge.M4Box.CentreData.K0C48 FurioLombardo.Discharge.M4Box.CentreData.K0C47 FurioLombardo.Discharge.M4Box.CentreData.K0C46 FurioLombardo.Discharge.M4Box.CentreData.K0C45 FurioLombardo.Discharge.M4Box.CentreData.K0C44
+FAILED 41 s, peak 22.6 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C43 FurioLombardo.Discharge.M4Box.CentreData.K0C42 FurioLombardo.Discharge.M4Box.CentreData.K0C41 FurioLombardo.Discharge.M4Box.CentreData.K0C40 FurioLombardo.Discharge.M4Box.CentreData.K0C4 FurioLombardo.Discharge.M4Box.CentreData.K0C39 FurioLombardo.Discharge.M4Box.CentreData.K0C38 FurioLombardo.Discharge.M4Box.CentreData.K0C37 FurioLombardo.Discharge.M4Box.CentreData.K0C36 FurioLombardo.Discharge.M4Box.CentreData.K0C35 FurioLombardo.Discharge.M4Box.CentreData.K0C34 FurioLombardo.Discharge.M4Box.CentreData.K0C33
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 5 s, peak 0.7 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C43
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C42
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C41
+FAILED 26 s, peak 2.1 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C40
+error: FurioLombardo/Discharge/M4Box/CentreData/K0C40.lean:76:2: (kernel) application type mismatch
+error: FurioLombardo/Discharge/M4Box/CentreData/K0C40.lean:81:2: (kernel) application type mismatch
+error: FurioLombardo/Discharge/M4Box/CentreData/K0C40.lean:86:2: (kernel) application type mismatch
+error: FurioLombardo/Discharge/M4Box/CentreData/K0C40.lean:96:2: (kernel) application type mismatch
+error: build failed
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C4
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C39
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C38
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C37
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C36
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C35
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C34
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C33
+FAILED 41 s, peak 22.1 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C32 FurioLombardo.Discharge.M4Box.CentreData.K0C31 FurioLombardo.Discharge.M4Box.CentreData.K0C30 FurioLombardo.Discharge.M4Box.CentreData.K0C3 FurioLombardo.Discharge.M4Box.CentreData.K0C29 FurioLombardo.Discharge.M4Box.CentreData.K0C28 FurioLombardo.Discharge.M4Box.CentreData.K0C27 FurioLombardo.Discharge.M4Box.CentreData.K0C26 FurioLombardo.Discharge.M4Box.CentreData.K0C25 FurioLombardo.Discharge.M4Box.CentreData.K0C24 FurioLombardo.Discharge.M4Box.CentreData.K0C23 FurioLombardo.Discharge.M4Box.CentreData.K0C22
+error: Lean exited with code 139
+error: Lean exited with code 139
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 5 s, peak 0.7 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C32
+ok 23 s, peak 2.1 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C31
+ok 22 s, peak 2.1 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C30
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C3
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C29
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C28
+ok 22 s, peak 2.1 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C27
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C26
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C25
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C24
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C23
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C22
+ok 39 s, peak 22.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C21 FurioLombardo.Discharge.M4Box.CentreData.K0C20 FurioLombardo.Discharge.M4Box.CentreData.K0C2 FurioLombardo.Discharge.M4Box.CentreData.K0C19 FurioLombardo.Discharge.M4Box.CentreData.K0C18 FurioLombardo.Discharge.M4Box.CentreData.K0C17 FurioLombardo.Discharge.M4Box.CentreData.K0C16 FurioLombardo.Discharge.M4Box.CentreData.K0C15 FurioLombardo.Discharge.M4Box.CentreData.K0C14 FurioLombardo.Discharge.M4Box.CentreData.K0C13 FurioLombardo.Discharge.M4Box.CentreData.K0C12 FurioLombardo.Discharge.M4Box.CentreData.K0C11
+FAILED 24 s, peak not recorded: FurioLombardo.Discharge.M4Box.CentreData.K0C10 FurioLombardo.Discharge.M4Box.CentreData.K0C1 FurioLombardo.Discharge.M4Box.CentreData.K0C0 FurioLombardo.Discharge.M4Box.BoxData.K1B9 FurioLombardo.Discharge.M4Box.BoxData.K1B8 FurioLombardo.Discharge.M4Box.BoxData.K1B7 FurioLombardo.Discharge.M4Box.BoxData.K1B6 FurioLombardo.Discharge.M4Box.BoxData.K1B5 FurioLombardo.Discharge.M4Box.BoxData.K1B4 FurioLombardo.Discharge.M4Box.BoxData.K1B3 FurioLombardo.Discharge.M4Box.BoxData.K1B23 FurioLombardo.Discharge.M4Box.BoxData.K1B22
+# retry module by module
+ok 23 s, peak 2.6 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C10
+ok 24 s, peak 2.1 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C1
+ok 22 s, peak 2.2 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C0
+ok 19 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B9
+ok 19 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B8
+ok 19 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B7
+ok 19 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B6
+ok 19 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B5
+ok 18 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B4
+ok 19 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B3
+ok 19 s, peak 2.9 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B23
+ok 20 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B22
+FAILED 19 s, peak not recorded: FurioLombardo.Discharge.M4Box.BoxData.K1B21 FurioLombardo.Discharge.M4Box.BoxData.K1B20 FurioLombardo.Discharge.M4Box.BoxData.K1B2 FurioLombardo.Discharge.M4Box.BoxData.K1B19 FurioLombardo.Discharge.M4Box.BoxData.K1B18 FurioLombardo.Discharge.M4Box.BoxData.K1B17 FurioLombardo.Discharge.M4Box.BoxData.K1B16 FurioLombardo.Discharge.M4Box.BoxData.K1B15 FurioLombardo.Discharge.M4Box.BoxData.K1B14 FurioLombardo.Discharge.M4Box.BoxData.K1B13 FurioLombardo.Discharge.M4Box.BoxData.K1B12 FurioLombardo.Discharge.M4Box.BoxData.K1B11
+# retry module by module
+ok 20 s, peak 3.4 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B21
+ok 18 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B20
+ok 19 s, peak 3.1 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B2
+ok 21 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B19
+ok 23 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B18
+ok 25 s, peak 3.2 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B17
+ok 22 s, peak 3.2 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B16
+ok 23 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B15
+ok 23 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B14
+ok 25 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B13
+ok 23 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B12
+ok 23 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B11
+FAILED 28 s, peak not recorded: FurioLombardo.Discharge.M4Box.BoxData.K1B10 FurioLombardo.Discharge.M4Box.BoxData.K1B1 FurioLombardo.Discharge.M4Box.BoxData.K1B0 FurioLombardo.Discharge.M4Box.BoxData.K0B9 FurioLombardo.Discharge.M4Box.BoxData.K0B83 FurioLombardo.Discharge.M4Box.BoxData.K0B82 FurioLombardo.Discharge.M4Box.BoxData.K0B81 FurioLombardo.Discharge.M4Box.BoxData.K0B80 FurioLombardo.Discharge.M4Box.BoxData.K0B8 FurioLombardo.Discharge.M4Box.BoxData.K0B79 FurioLombardo.Discharge.M4Box.BoxData.K0B78 FurioLombardo.Discharge.M4Box.BoxData.K0B77
+# retry module by module
+ok 23 s, peak 3.4 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B10
+ok 22 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B1
+ok 22 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B0
+ok 20 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B9
+ok 21 s, peak 3.1 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B83
+ok 21 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B82
+ok 29 s, peak 3.9 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B81
+ok 35 s, peak 3.9 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B80
+ok 25 s, peak 3.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B8
+ok 34 s, peak 3.9 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B79
+ok 35 s, peak 3.9 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B78
+ok 38 s, peak 3.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B77
+FAILED 52 s, peak not recorded: FurioLombardo.Discharge.M4Box.BoxData.K0B76 FurioLombardo.Discharge.M4Box.BoxData.K0B75 FurioLombardo.Discharge.M4Box.BoxData.K0B74 FurioLombardo.Discharge.M4Box.BoxData.K0B73 FurioLombardo.Discharge.M4Box.BoxData.K0B72 FurioLombardo.Discharge.M4Box.BoxData.K0B71 FurioLombardo.Discharge.M4Box.BoxData.K0B70 FurioLombardo.Discharge.M4Box.BoxData.K0B7 FurioLombardo.Discharge.M4Box.BoxData.K0B69 FurioLombardo.Discharge.M4Box.BoxData.K0B68 FurioLombardo.Discharge.M4Box.BoxData.K0B67 FurioLombardo.Discharge.M4Box.BoxData.K0B66
+# retry module by module
+ok 42 s, peak 3.7 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B76
+ok 39 s, peak 3.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B75
+ok 47 s, peak 3.4 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B74
+ok 58 s, peak 3.8 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B73
+ok 59 s, peak 3.8 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B72
+# result: interrupted (SIGTERM); rerun with RESUME=1 to continue
+# clean_build.sh at 2026-09-30 00:35 UTC
+# Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+# Lake version 5.0.0-src+5045d00 (Lean version 4.34.1)
+# machine: AMD Ryzen 9 5900X 12-Core Processor, 24 logical CPUs, 62.7 GiB RAM
+# package: 913 modules; sources sha256 e002e675297778c0ca078a371e5a86c06343126c764988ba050881fff1c6ebdd; FurioLombardo bad68224053fd174d484c56dc837a73edf72453978b3e5bea3b7ae2fff8760e3, lakefile.toml 6438c9cd09105f14ab3f56707de3e2a587012e3c339c910f556084291f966a1e, lake-manifest.json 2694d3750a4f8beb2eafbea411f155a8683eb24d55ab3e916bf8c62d5af27eae
+# (sha256 of a set of files: that of the sha256sum listing of the files, paths from the package root in LC_ALL=C order; FurioLombardo: the .lean files of FurioLombardo/, and FurioLombardo.lean if present)
+# settings: HB=2 LB=6 PEAK_HEAVY=7G PEAK_LIGHT=12G MEM_MARGIN=4G MEM_POLL=60 MEM_LOWER=600 MIN_DISK_GB=8; RUN_WRAP: cap -m 24G -c 12 -t 90min; lock: held for the run
+# memory peak per call: memory.peak of the cgroup of RUN_WRAP (all processes of the call)
+# at start: MemAvailable 25.4 GiB, load average 46.00 38.52 25.52
+# RESUME=1: continues on the present build directory (not a clean build)
+ok 11 s, peak 0.3 GiB: FurioLombardo.Discharge.Analytic.TwoIndex FurioLombardo.Discharge.KvArith.Comp.Ball FurioLombardo.Discharge.KvArith.Comp.Ops FurioLombardo.Discharge.M3a.AbelPrymData FurioLombardo.Discharge.M3a.AbelPrymData2 FurioLombardo.Discharge.M3a.DataBruin
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.LocalData FurioLombardo.Discharge.M3a.LocalQuad FurioLombardo.Discharge.M3b.DataDyadic FurioLombardo.Discharge.M3b.DataK21 FurioLombardo.Discharge.M3b.DataL FurioLombardo.Discharge.M3b.Ramification
+ok 12 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Cert.Data FurioLombardo.Discharge.M4Cert.DataRes FurioLombardo.Discharge.M4Cert.Hensel FurioLombardo.Discharge.M4Cert.Kv FurioLombardo.Discharge.M4Log.BranchData FurioLombardo.Discharge.SelmerBasis.AssemblyData
+ok 12 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Count.AtW2Data FurioLombardo.Discharge.SelmerBasis.Count.Poly FurioLombardo.Discharge.SelmerBasis.EtaleCRT FurioLombardo.Discharge.SelmerBasis.KappaData FurioLombardo.Discharge.SelmerBasis.QuadField FurioLombardo.Discharge.SelmerBasis.RealRootData
+ok 11 s, peak 0.4 GiB: FurioLombardo.Discharge.SelmerBasis.RealSignData FurioLombardo.Discharge.SelmerBasis.SUnitCountData FurioLombardo.Discharge.SelmerBasis.SUnitCountGen FurioLombardo.Discharge.SelmerBasis.SchaeferAux FurioLombardo.Discharge.SelmerBasis.SquareLemmas FurioLombardo.Discharge.SelmerSpan.IData
+ok 9 s, peak 0.7 GiB: FurioLombardo.Discharge.SelmerSpan.QuadSq FurioLombardo.M1.Basic FurioLombardo.M1.Data2 FurioLombardo.M1.Data3 FurioLombardo.M1.DataAvoid FurioLombardo.M1.DataBezout
+ok 1 s, peak 0.1 GiB: FurioLombardo.M1.DataBruin FurioLombardo.M1.DataField FurioLombardo.M1.DataGens FurioLombardo.M1.DataKnown FurioLombardo.M1.DataSieve FurioLombardo.M1.DataSqrt
+ok 7 s, peak 0.5 GiB: FurioLombardo.M1.Primitive FurioLombardo.M1.Valuation FurioLombardo.M1.Vendor.NetOfConics FurioLombardo.M1.Vendor.Stoll.Basic FurioLombardo.M1.Vendor.Stoll.FractionalIdeal FurioLombardo.M2.Defs
+ok 7 s, peak 0.7 GiB: FurioLombardo.M2.Field FurioLombardo.M2.Frame FurioLombardo.M2.ZimmertDefs FurioLombardo.M3a.CoordRing FurioLombardo.M3a.IdealDeg FurioLombardo.M3a.Moving
+ok 11 s, peak 0.5 GiB: FurioLombardo.M3b.Abstract FurioLombardo.M3b.DyadicCert FurioLombardo.M3b.Factorization FurioLombardo.M3b.FixedPoints FurioLombardo.M3b.GroupRank FurioLombardo.M4.Defs
+ok 11 s, peak 0.3 GiB: FurioLombardo.M4.Stoll FurioLombardo.Statement FurioLombardo.Vendor.AINTLIB.CompletedZeta.DualLattice FurioLombardo.Vendor.AINTLIB.CompletedZeta.GammaStrip FurioLombardo.Vendor.AINTLIB.CompletedZeta.Normalisation FurioLombardo.Vendor.AINTLIB.CompletedZeta.PoissonSummation
+ok 12 s, peak 0.5 GiB: FurioLombardo.Vendor.LeanPool.RectangleIntegral FurioLombardo.Vendor.Toolbox.GroupTheory.FiniteIndexSeq FurioLombardo.Vendor.Toolbox.GroupTheory.NsmulIndex FurioLombardo.Vendor.Toolbox.Polynomial.CoeffLim FurioLombardo.Vendor.Toolbox.Polynomial.SubPoly FurioLombardo.Vendor.Toolbox.PowerSeries.FormalFix
+ok 4 s, peak 0.2 GiB: FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.AdicTopology FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.LocalRing FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.MvPowerSeriesPDeriv FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.PadicInt FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.PadicValNat FurioLombardo.Vendor.Toolbox.TauCeti.Algebra.Group.PowMonoidHom
+ok 3 s, peak 0.1 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.Algebra.Group.Units.Basic FurioLombardo.Vendor.Toolbox.TauCeti.Data.Int.WithZero FurioLombardo.Vendor.Toolbox.TauCeti.Data.Nat.Factorization.MulDvd FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.UnitFiltration.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.AdicCompletion.Pi FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Finite.ArtinSchreier
+ok 3 s, peak 0.1 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Henselian.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.Finite FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.IntegrallyClosed FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.AbsoluteValue FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.Discrete.Order
+ok 3 s, peak 0.1 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.RootMonic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.ValuationRing FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.ValuativeRel.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.ValuativeRel.Extension
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Count.CertData FurioLombardo.Discharge.SelmerBasis.RealPlaceAux
+ok 1 s, peak 0.1 GiB: FurioLombardo.Discharge.SelmerBasis.SUnitData FurioLombardo.Discharge.SelmerBasis.SchaeferCertData
+ok 2 s, peak 0.1 GiB: FurioLombardo.Discharge.SelmerSpan.DData
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.KvArith.Ops FurioLombardo.Discharge.KvArith.Comp.Cantor FurioLombardo.Discharge.KvArith.Comp.BallOps FurioLombardo.Discharge.SelmerBasis.Echelon FurioLombardo.M1.ListPoly FurioLombardo.M1.Hypotheses
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.K1Res FurioLombardo.M1.Vendor.Stoll.SIntegers FurioLombardo.Discharge.SelmerBasis.SchaeferLocal FurioLombardo.M2.Spec FurioLombardo.M2.Global FurioLombardo.M2.Hypotheses
+ok 10 s, peak 0.4 GiB: FurioLombardo.M2.ZimmertNum FurioLombardo.M2.Zimmert.Defs FurioLombardo.M2.Zimmert FurioLombardo.M3a.Dedekind FurioLombardo.M3a.ClassGroupLift FurioLombardo.M3b.Chevalley
+ok 9 s, peak 0.3 GiB: FurioLombardo.M3b.AbstractUnits FurioLombardo.M4.Data FurioLombardo.M4.Boxes FurioLombardo.M4.Analytic FurioLombardo.M3a.StollSat FurioLombardo.M3a.Sections
+ok 9 s, peak 0.3 GiB: FurioLombardo.Vendor.AINTLIB.CompletedZeta.FunctionalEquation FurioLombardo.Vendor.AINTLIB.CompletedZeta.PoissonLattice FurioLombardo.M2.Zimmert.Contour FurioLombardo.Vendor.Toolbox.Polynomial.CoeffLimRoot FurioLombardo.Vendor.Toolbox.Polynomial.CoeffLimFibre FurioLombardo.Vendor.Toolbox.PowerSeries.SqrtMod
+ok 4 s, peak 0.2 GiB: FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.MvPowerSeriesComp FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.PSeries FurioLombardo.Vendor.Toolbox.TauCeti.GroupTheory.OrderOfElement.Basic FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Henselian FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.LocalRing FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.NormalizedValuation
+ok 10 s, peak 0.2 GiB: FurioLombardo.Discharge.M4Box.Comp.AbelPrym FurioLombardo.Discharge.KvArith.Comp.DChain FurioLombardo.Discharge.KvArith.Comp.TM FurioLombardo.Discharge.KvArith.Comp.DCert FurioLombardo.Discharge.SelmerBasis.LocalLemmas FurioLombardo.M1.Kron
+ok 10 s, peak 0.2 GiB: FurioLombardo.Discharge.M3b.RealCert FurioLombardo.Discharge.M3a.K1Quad FurioLombardo.Discharge.M3a.K1Norm FurioLombardo.M1.Vendor.Stoll.SelmerGroup FurioLombardo.Discharge.SelmerBasis.SchaeferModel FurioLombardo.M2.PackedSpec
+ok 10 s, peak 0.3 GiB: FurioLombardo.M2.Zimmert.Positivity FurioLombardo.M2.Zimmert.Leaves FurioLombardo.M2.Zimmert.Growth FurioLombardo.M3a.Basic FurioLombardo.M3b.Glue FurioLombardo.Discharge.M3b.QuadReal
+ok 10 s, peak 0.3 GiB: FurioLombardo.M4.Leading FurioLombardo.M4.Hypotheses FurioLombardo.Discharge.M3a.Transfer FurioLombardo.Vendor.AINTLIB.CompletedZeta.GRH FurioLombardo.Vendor.AINTLIB.CompletedZeta.ThetaLattice FurioLombardo.Vendor.Toolbox.PowerSeries.Conv
+ok 11 s, peak 0.5 GiB: FurioLombardo.Discharge.M4Log.SqrtModTwo FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.MvPSeries FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.Henselian FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Uniformizer FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.RamificationIndex FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.NormedField
+ok 5 s, peak 0.2 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.NatCastValuation
+ok 11 s, peak 0.3 GiB: FurioLombardo.M2.Check FurioLombardo.M4.Checks
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P002 FurioLombardo.M2.Data.P001
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P000 FurioLombardo.M2.Check2
+ok 2 s, peak 0.1 GiB: FurioLombardo.M2.BasisData
+ok 11 s, peak 0.3 GiB: FurioLombardo.Discharge.KvArith.Comp.DRun FurioLombardo.Discharge.SelmerBasis.QuadLocal FurioLombardo.M1.ZK FurioLombardo.Discharge.M4Cert.DataOnC FurioLombardo.M1.SelmerBound FurioLombardo.M2.Poly
+ok 9 s, peak 0.3 GiB: FurioLombardo.M2.Cover FurioLombardo.M2.Zimmert.Satz1 FurioLombardo.M3a.Pic FurioLombardo.M3b.UnitsIndex FurioLombardo.M3b.Ideals FurioLombardo.M4.Sigma
+ok 9 s, peak 0.3 GiB: FurioLombardo.M4.Series FurioLombardo.Vendor.AINTLIB.CompletedZeta.IdealLattice FurioLombardo.Discharge.R7.Formal FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Basic FurioLombardo.Vendor.Toolbox.PowerSeries.EvalLip FurioLombardo.Vendor.Toolbox.PowerSeries.Bounded
+ok 11 s, peak 0.4 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Henselian.Teichmuller FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.IntegerRing FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.FiniteExtension.Basic FurioLombardo.M1.ZKInt FurioLombardo.M1.Conics FurioLombardo.Discharge.M4Cert.Embed
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.LocalQE FurioLombardo.Discharge.SelmerBasis.SUnitMemGen FurioLombardo.Discharge.SelmerBasis.SUnitIndepGen FurioLombardo.M2.Factor FurioLombardo.M2.DiscrData FurioLombardo.M2.Basis
+ok 9 s, peak 0.2 GiB: FurioLombardo.M2.Zimmert.Limit FurioLombardo.M3a.BaseChange FurioLombardo.M3b.Formula FurioLombardo.M4.Lattice FurioLombardo.Vendor.AINTLIB.CompletedZeta.HeckeTheta FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Points
+ok 4 s, peak 0.1 GiB: FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Invariance FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.GaloisAction
+ok 2 s, peak 0.1 GiB: FurioLombardo.M2.Data.P005 FurioLombardo.M2.Data.P004
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P003 FurioLombardo.M2.SpecialData
+ok 2 s, peak 0.1 GiB: FurioLombardo.M2.Data.P008 FurioLombardo.M2.Data.P007
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P006
+ok 9 s, peak 0.3 GiB: FurioLombardo.M1.Residue FurioLombardo.Discharge.M4Cert.Resid FurioLombardo.M2.Exponent FurioLombardo.M3a.XminusT FurioLombardo.M3a.TwoTorsion FurioLombardo.M3b.Characters
+ok 9 s, peak 0.3 GiB: FurioLombardo.M4.QCert FurioLombardo.M4.Local FurioLombardo.Discharge.Analytic.Saturation FurioLombardo.Vendor.AINTLIB.CompletedZeta.ClassTheta FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Log FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Teichmuller
+ok 9 s, peak 0.2 GiB: FurioLombardo.M1.ResRing FurioLombardo.M1.Gens FurioLombardo.Discharge.M3a.PolyK FurioLombardo.Discharge.M4Cert.Curve FurioLombardo.Discharge.KvArith.Ball FurioLombardo.M2.Gen
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Interfaces FurioLombardo.M3a.Hypotheses FurioLombardo.Discharge.M3a.Reduction FurioLombardo.M3b.Tower FurioLombardo.M3b.Dyadic FurioLombardo.M4.Main
+ok 10 s, peak 0.3 GiB: FurioLombardo.Vendor.AINTLIB.CompletedZeta.ThetaEstimates FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.UnitsDecomposition
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P011 FurioLombardo.M2.Data.P010
+ok 8 s, peak 0.3 GiB: FurioLombardo.M2.Data.P009 FurioLombardo.M1.BruinCheck
+ok 2 s, peak 0.1 GiB: FurioLombardo.M2.Data.P014 FurioLombardo.M2.Data.P013
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P012
+ok 10 s, peak 0.3 GiB: FurioLombardo.M1.Norms FurioLombardo.Discharge.M3b.K21Defs FurioLombardo.Discharge.M3a.ConcreteDefs FurioLombardo.Discharge.M4Cert.OnCurve FurioLombardo.Discharge.KvArith.BallOps FurioLombardo.M2.Sound
+ok 9 s, peak 0.3 GiB: FurioLombardo.M2.Mul FurioLombardo.Discharge.SelmerBasis.AssemblyGen FurioLombardo.M3a.Route FurioLombardo.Discharge.M3a.XTKernelK1 FurioLombardo.Discharge.M3a.SelmerK2 FurioLombardo.Discharge.Analytic.LogChart
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.R7.LineStep FurioLombardo.Discharge.M3a.TwoTorsionClass FurioLombardo.Discharge.M3a.K1Half FurioLombardo.Discharge.M3a.AbelPrym FurioLombardo.M3b.SUnits FurioLombardo.M4.Cover
+ok 7 s, peak 0.3 GiB: FurioLombardo.Vendor.AINTLIB.CompletedZeta.FEPair FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.ExpConverge FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.MultiplicativeGroup FurioLombardo.M1.SSet FurioLombardo.Discharge.M3b.K21Real FurioLombardo.Discharge.M3b.K21Primes
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferCertDefs FurioLombardo.Discharge.M3a.AbelPrymDefs FurioLombardo.Discharge.KvArith.TM FurioLombardo.Discharge.KvArith.Sigma FurioLombardo.M2.Norm FurioLombardo.Discharge.SelmerBasis.GlobalSpanGen
+ok 9 s, peak 0.4 GiB: FurioLombardo.Discharge.Analytic.ModTwo FurioLombardo.Discharge.R7.FGLK FurioLombardo.Discharge.KvArith.Cantor FurioLombardo.Discharge.M3a.LocalTwoTorsion FurioLombardo.Discharge.M3a.K1Kernel FurioLombardo.Discharge.M3a.AbelPrymRuling
+ok 9 s, peak 0.3 GiB: FurioLombardo.M3b.Hypotheses FurioLombardo.M4.Twist FurioLombardo.Discharge.M4Box.Weak FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.LogIso FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.PowerSubgroup
+ok 13 s, peak 0.2 GiB: FurioLombardo.Discharge.M3a.ConcreteCheck FurioLombardo.Discharge.M3a.AbelPrymCheck2
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P017 FurioLombardo.M2.Data.P016
+ok 10 s, peak 0.3 GiB: FurioLombardo.M2.Data.P015 FurioLombardo.Vendor.AINTLIB.CompletedZeta.MellinAgreement
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferCertCheck FurioLombardo.Discharge.M3a.AbelPrymCheck
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P020 FurioLombardo.M2.Data.P019
+ok 2 s, peak 0.1 GiB: FurioLombardo.M2.Data.P018
+ok 9 s, peak 0.2 GiB: FurioLombardo.M1.Descent FurioLombardo.M1.Signature FurioLombardo.Discharge.M3b.Fields FurioLombardo.Discharge.M3b.DyadicMap FurioLombardo.Discharge.M3a.Concrete FurioLombardo.M2.Residue
+ok 9 s, peak 0.3 GiB: FurioLombardo.M2.Discr FurioLombardo.Discharge.M4Box.AbelPrymRel FurioLombardo.Discharge.KvArith.DChain FurioLombardo.Discharge.M3a.MuT FurioLombardo.Discharge.M3a.CertSmul FurioLombardo.Discharge.M3a.CertMap
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.AbelPrymExists FurioLombardo.M4.Instances FurioLombardo.Vendor.AINTLIB.CompletedZeta.Existence FurioLombardo.Vendor.Toolbox.FormalGroup.ScaledLog FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Squares FurioLombardo.M1.SieveRing
+ok 8 s, peak 0.3 GiB: FurioLombardo.M2.Signature FurioLombardo.Discharge.SelmerBasis.SUnitTower FurioLombardo.Discharge.SelmerBasis.SUnitDefs FurioLombardo.Discharge.M3b.RamN FurioLombardo.Discharge.M3b.RamL FurioLombardo.Discharge.M3b.DyadicRho
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferCertGlue FurioLombardo.Discharge.M3a.AbelPrymKnown FurioLombardo.M2.Special FurioLombardo.Discharge.SelmerSpan.Mumford FurioLombardo.Discharge.M4Box.AbelPrymSpec FurioLombardo.Discharge.M4Cert.Excl
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Cert.Discs FurioLombardo.Discharge.M4Box.Chain FurioLombardo.Discharge.M3a.Plug FurioLombardo.Discharge.Analytic.Route FurioLombardo.M2.Zimmert.ClassZeta FurioLombardo.Vendor.Toolbox.FormalGroup.ScaledPoints
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Bridge
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P023 FurioLombardo.M2.Data.P022
+ok 8 s, peak 0.3 GiB: FurioLombardo.M2.Data.P021 FurioLombardo.Vendor.AINTLIB.CompletedZeta.AnalyticControl
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P026 FurioLombardo.M2.Data.P025
+ok 10 s, peak 0.3 GiB: FurioLombardo.M2.Data.P024 FurioLombardo.Discharge.SelmerBasis.RealPlace
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.PlaceWGen
+ok 9 s, peak 0.3 GiB: FurioLombardo.M1.SqCond FurioLombardo.M2.ZimmertBound FurioLombardo.Discharge.SelmerBasis.TowerEval FurioLombardo.Discharge.SelmerBasis.SUnitOrder FurioLombardo.Discharge.SelmerBasis.SUnitCount FurioLombardo.Discharge.M3b.Signs
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.AbelPrymTotal FurioLombardo.M2.Special45613 FurioLombardo.Discharge.M3a.LocalRes FurioLombardo.Discharge.M3a.LocalLead FurioLombardo.Discharge.M4Cert.Bridge FurioLombardo.Discharge.M3a.Quarter
+ok 10 s, peak 0.3 GiB: FurioLombardo.M2.Zimmert.Satz2 FurioLombardo.Vendor.Toolbox.Padic.UnitBall FurioLombardo.Vendor.Toolbox.FormalGroup.Resc FurioLombardo.Discharge.SelmerBasis.Spanning FurioLombardo.M1.SieveBlocks FurioLombardo.M1.Local3
+ok 8 s, peak 0.3 GiB: FurioLombardo.M1.Local2 FurioLombardo.Discharge.SelmerBasis.SUnitRes FurioLombardo.Discharge.SelmerBasis.SUnitRank FurioLombardo.Discharge.M3b.Main FurioLombardo.Discharge.SelmerSpan.Sigma FurioLombardo.Discharge.SelmerSpan.ApproxT
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.QuarterInst FurioLombardo.Discharge.SelmerBasis.Count.Abstract FurioLombardo.Discharge.R7.KvBall FurioLombardo.Vendor.Toolbox.PowerSeries.BoundedRes FurioLombardo.Discharge.R7.FGLO FurioLombardo.Discharge.SelmerBasis.LocalGlue
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7Gen
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.TowerChecks FurioLombardo.M2.Data.P029
+ok 2 s, peak 0.1 GiB: FurioLombardo.M2.Data.P028 FurioLombardo.M2.Data.P027
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.LocalCheck FurioLombardo.Discharge.SelmerBasis.PlaceReal
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.AdicPlace FurioLombardo.Discharge.SelmerBasis.PlaceWCert
+ok 11 s, peak 0.3 GiB: FurioLombardo.M1.SieveCheck5 FurioLombardo.M1.SieveCheck4
+ok 10 s, peak 0.3 GiB: FurioLombardo.M1.SieveCheck3 FurioLombardo.M1.SieveCheck2
+ok 11 s, peak 0.3 GiB: FurioLombardo.M1.SieveCheck1 FurioLombardo.M1.SieveCheck0
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SUnitMem FurioLombardo.M2.Data.P032
+ok 2 s, peak 0.1 GiB: FurioLombardo.M2.Data.P031 FurioLombardo.M2.Data.P030
+ok 10 s, peak 0.3 GiB: FurioLombardo.M1.SieveComb FurioLombardo.Discharge.SelmerBasis.TowerFacts FurioLombardo.Discharge.SelmerSpan.Dpt FurioLombardo.Discharge.SelmerSpan.ApproxN FurioLombardo.Discharge.SelmerBasis.RealRoots FurioLombardo.Discharge.M3a.Assembly
+ok 12 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Count.Cert FurioLombardo.Discharge.R7.LogChart FurioLombardo.Discharge.R7.ConcreteBase FurioLombardo.Discharge.KvArith.LogTail FurioLombardo.Discharge.M4Log.Transport FurioLombardo.Discharge.R7.Psi
+ok 11 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VGlue FurioLombardo.M1.Sieve FurioLombardo.Discharge.SelmerBasis.MuTCert FurioLombardo.Discharge.SelmerBasis.RealInst FurioLombardo.Discharge.M3a.Refined FurioLombardo.Discharge.M4Log.ModelLeaves
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Count.Setup FurioLombardo.Discharge.R7.FinIdx.ZSet FurioLombardo.Discharge.R7.ChartKv
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SUnitIndep FurioLombardo.M2.Data.P035
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P034 FurioLombardo.M2.Data.P033
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.KappaCheck FurioLombardo.M2.Data.P038
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P037 FurioLombardo.M2.Data.P036
+ok 9 s, peak 0.3 GiB: FurioLombardo.M1.SelmerSet FurioLombardo.Discharge.M3a.ConcreteInputs FurioLombardo.Discharge.M4Log.Model FurioLombardo.Discharge.SelmerBasis.Count.Chart FurioLombardo.Discharge.R7.FinIdx.PencilB0 FurioLombardo.Discharge.R7.FinIdx.Comp
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.R7.FinIdx.Chart FurioLombardo.Discharge.R7.ConcreteKv FurioLombardo.Discharge.KvArith.Chart FurioLombardo.M1.DescentM3a FurioLombardo.Discharge.M3a.ConcreteRoute FurioLombardo.Discharge.R7.FinIdx.PencilAux
+ok 8 s, peak 0.2 GiB: FurioLombardo.Discharge.R7.FinIdx.BadSet FurioLombardo.Discharge.SelmerBasis.Count.Base FurioLombardo.Discharge.M4Box.Comp.Cert FurioLombardo.Discharge.KvArith.DCert FurioLombardo.Discharge.KvArith.ChartBranch
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P041 FurioLombardo.M2.Data.P040
+ok 2 s, peak 0.1 GiB: FurioLombardo.M2.Data.P039 FurioLombardo.M2.Data.P044
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P043 FurioLombardo.M2.Data.P042
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.LocalFacts FurioLombardo.Discharge.R7.FinIdx.Pencil FurioLombardo.Discharge.SelmerBasis.Count.Key FurioLombardo.Discharge.R7.FinIdx.Key FurioLombardo.Discharge.M4Box.DCertData.Twist1 FurioLombardo.Discharge.M4Box.DCertData.Twist0
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.Comp.BoxTM FurioLombardo.Discharge.SelmerSpan.Chars FurioLombardo.Discharge.SelmerBasis.Count.Tors FurioLombardo.Discharge.M3a.K1Concrete FurioLombardo.Discharge.SelmerBasis.Count.FinIdx FurioLombardo.Discharge.R7.FinIdx.Assembly
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P047 FurioLombardo.M2.Data.P046
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P045 FurioLombardo.M2.Data.P050
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P049 FurioLombardo.M2.Data.P048
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Count.Place
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerSpan.Indep FurioLombardo.Discharge.SelmerBasis.Count.KE FurioLombardo.Discharge.SelmerBasis.GlobalCRT FurioLombardo.Discharge.M3a.ConcreteKv FurioLombardo.Discharge.R7.Transfer FurioLombardo.Discharge.SelmerBasis.GlobalGens
+ok 11 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerSpan.Basis FurioLombardo.Discharge.M4Box.ChainM3a FurioLombardo.Discharge.M3a.ConcretePhi FurioLombardo.Discharge.SelmerBasis.Count.AtV
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P053 FurioLombardo.M2.Data.P052
+ok 10 s, peak 0.3 GiB: FurioLombardo.M2.Data.P051 FurioLombardo.Discharge.SelmerBasis.Count.AtPlace
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P056 FurioLombardo.M2.Data.P055
+ok 10 s, peak 0.3 GiB: FurioLombardo.M2.Data.P054 FurioLombardo.Discharge.SelmerBasis.PlaceWModel
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.PlaceV FurioLombardo.Discharge.SelmerBasis.Count.AtW3
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Count.AtW2
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.RealCoord FurioLombardo.Discharge.SelmerBasis.Kappa FurioLombardo.Discharge.M4Log.Defs FurioLombardo.Discharge.SelmerBasis.Count.At7 FurioLombardo.Discharge.SelmerBasis.RealSignDefs FurioLombardo.Discharge.SelmerBasis.PointGen
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Log.IntModelKv FurioLombardo.Discharge.M4Box.LogBound FurioLombardo.Discharge.M4Box.DiscRoot FurioLombardo.Discharge.M4Box.Coord FurioLombardo.Discharge.M4Box.Amat
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P059 FurioLombardo.M2.Data.P058
+ok 9 s, peak 0.3 GiB: FurioLombardo.M2.Data.P057 FurioLombardo.Discharge.SelmerBasis.W3Data
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.PlaceWElem FurioLombardo.Discharge.SelmerBasis.VPlace
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P062 FurioLombardo.M2.Data.P061
+ok 10 s, peak 0.3 GiB: FurioLombardo.M2.Data.P060 FurioLombardo.Discharge.SelmerBasis.RealSignCheckN
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.RealSignCheckM FurioLombardo.Discharge.SelmerBasis.RealSignCheckL
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.RealSignCheckI1 FurioLombardo.Discharge.SelmerBasis.RealSignCheckI0
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W3CheckE FurioLombardo.Discharge.SelmerBasis.W3DataK1
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W3DataK0 FurioLombardo.Discharge.SelmerBasis.W3CheckN
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W3CheckK FurioLombardo.Discharge.SelmerBasis.PlaceWRows
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7Spec FurioLombardo.Discharge.M4Box.PhiCertData.P3 FurioLombardo.Discharge.M4Box.PhiCertData.P2 FurioLombardo.Discharge.M4Box.PhiCertData.P1 FurioLombardo.Discharge.M4Box.PhiCertData.P0 FurioLombardo.Discharge.M4Box.DCertData.K1I6
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K1I5 FurioLombardo.Discharge.M4Box.DCertData.K1I4 FurioLombardo.Discharge.M4Box.DCertData.K1I3 FurioLombardo.Discharge.M4Box.DCertData.K1I2 FurioLombardo.Discharge.M4Box.DCertData.K1I1 FurioLombardo.Discharge.M4Box.DCertData.K1I0
+ok 7 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I6 FurioLombardo.Discharge.M4Box.DCertData.K0I5 FurioLombardo.Discharge.M4Box.DCertData.K0I4 FurioLombardo.Discharge.M4Box.DCertData.K0I3 FurioLombardo.Discharge.M4Box.DCertData.K0I2 FurioLombardo.Discharge.M4Box.DCertData.K0I1
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I0 FurioLombardo.Discharge.M4Box.CentreData.K1C9 FurioLombardo.Discharge.M4Box.CentreData.K1C8 FurioLombardo.Discharge.M4Box.CentreData.K1C7 FurioLombardo.Discharge.M4Box.CentreData.K1C6 FurioLombardo.Discharge.M4Box.CentreData.K1C5
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C4 FurioLombardo.Discharge.M4Box.CentreData.K1C3 FurioLombardo.Discharge.M4Box.CentreData.K1C21 FurioLombardo.Discharge.M4Box.CentreData.K1C20 FurioLombardo.Discharge.M4Box.CentreData.K1C2 FurioLombardo.Discharge.M4Box.CentreData.K1C19
+ok 7 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C18 FurioLombardo.Discharge.M4Box.CentreData.K1C17 FurioLombardo.Discharge.M4Box.CentreData.K1C16 FurioLombardo.Discharge.M4Box.CentreData.K1C15 FurioLombardo.Discharge.M4Box.CentreData.K1C14 FurioLombardo.Discharge.M4Box.CentreData.K1C13
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C12 FurioLombardo.Discharge.M4Box.CentreData.K1C11 FurioLombardo.Discharge.M4Box.CentreData.K1C10 FurioLombardo.Discharge.M4Box.CentreData.K1C1 FurioLombardo.Discharge.M4Box.CentreData.K1C0 FurioLombardo.Discharge.M4Box.CentreData.K0C9
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C81 FurioLombardo.Discharge.M4Box.CentreData.K0C80 FurioLombardo.Discharge.M4Box.CentreData.K0C8 FurioLombardo.Discharge.M4Box.CentreData.K0C79 FurioLombardo.Discharge.M4Box.CentreData.K0C78 FurioLombardo.Discharge.M4Box.CentreData.K0C77
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C76 FurioLombardo.Discharge.M4Box.CentreData.K0C75 FurioLombardo.Discharge.M4Box.CentreData.K0C74 FurioLombardo.Discharge.M4Box.CentreData.K0C73 FurioLombardo.Discharge.M4Box.CentreData.K0C72 FurioLombardo.Discharge.M4Box.CentreData.K0C71
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C70 FurioLombardo.Discharge.M4Box.CentreData.K0C7 FurioLombardo.Discharge.M4Box.CentreData.K0C69 FurioLombardo.Discharge.M4Box.CentreData.K0C68 FurioLombardo.Discharge.M4Box.CentreData.K0C67 FurioLombardo.Discharge.M4Box.CentreData.K0C66
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C65 FurioLombardo.Discharge.M4Box.CentreData.K0C64 FurioLombardo.Discharge.M4Box.CentreData.K0C63 FurioLombardo.Discharge.M4Box.CentreData.K0C62 FurioLombardo.Discharge.M4Box.CentreData.K0C61 FurioLombardo.Discharge.M4Box.CentreData.K0C60
+ok 9 s, peak 0.2 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C6 FurioLombardo.Discharge.M4Box.CentreData.K0C59 FurioLombardo.Discharge.M4Box.CentreData.K0C58 FurioLombardo.Discharge.M4Box.CentreData.K0C57 FurioLombardo.Discharge.M4Box.CentreData.K0C56 FurioLombardo.Discharge.M4Box.CentreData.K0C55
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C54 FurioLombardo.Discharge.M4Box.CentreData.K0C53 FurioLombardo.Discharge.M4Box.CentreData.K0C52 FurioLombardo.Discharge.M4Box.CentreData.K0C51 FurioLombardo.Discharge.M4Box.CentreData.K0C50 FurioLombardo.Discharge.M4Box.CentreData.K0C5
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C49 FurioLombardo.Discharge.M4Box.CentreData.K0C48 FurioLombardo.Discharge.M4Box.CentreData.K0C47 FurioLombardo.Discharge.M4Box.CentreData.K0C46 FurioLombardo.Discharge.M4Box.CentreData.K0C45 FurioLombardo.Discharge.M4Box.CentreData.K0C44
+ok 49 s, peak 2.2 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C43 FurioLombardo.Discharge.M4Box.CentreData.K0C42 FurioLombardo.Discharge.M4Box.CentreData.K0C41 FurioLombardo.Discharge.M4Box.CentreData.K0C40 FurioLombardo.Discharge.M4Box.CentreData.K0C4 FurioLombardo.Discharge.M4Box.CentreData.K0C39
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C38 FurioLombardo.Discharge.M4Box.CentreData.K0C37 FurioLombardo.Discharge.M4Box.CentreData.K0C36 FurioLombardo.Discharge.M4Box.CentreData.K0C35 FurioLombardo.Discharge.M4Box.CentreData.K0C34 FurioLombardo.Discharge.M4Box.CentreData.K0C33
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C32 FurioLombardo.Discharge.M4Box.CentreData.K0C31 FurioLombardo.Discharge.M4Box.CentreData.K0C30 FurioLombardo.Discharge.M4Box.CentreData.K0C3 FurioLombardo.Discharge.M4Box.CentreData.K0C29 FurioLombardo.Discharge.M4Box.CentreData.K0C28
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C27 FurioLombardo.Discharge.M4Box.CentreData.K0C26 FurioLombardo.Discharge.M4Box.CentreData.K0C25 FurioLombardo.Discharge.M4Box.CentreData.K0C24 FurioLombardo.Discharge.M4Box.CentreData.K0C23 FurioLombardo.Discharge.M4Box.CentreData.K0C22
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C21 FurioLombardo.Discharge.M4Box.CentreData.K0C20 FurioLombardo.Discharge.M4Box.CentreData.K0C2 FurioLombardo.Discharge.M4Box.CentreData.K0C19 FurioLombardo.Discharge.M4Box.CentreData.K0C18 FurioLombardo.Discharge.M4Box.CentreData.K0C17
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C16 FurioLombardo.Discharge.M4Box.CentreData.K0C15 FurioLombardo.Discharge.M4Box.CentreData.K0C14 FurioLombardo.Discharge.M4Box.CentreData.K0C13 FurioLombardo.Discharge.M4Box.CentreData.K0C12 FurioLombardo.Discharge.M4Box.CentreData.K0C11
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C10 FurioLombardo.Discharge.M4Box.CentreData.K0C1 FurioLombardo.Discharge.M4Box.CentreData.K0C0 FurioLombardo.Discharge.M4Box.BoxData.K1B9 FurioLombardo.Discharge.M4Box.BoxData.K1B8 FurioLombardo.Discharge.M4Box.BoxData.K1B7
+ok 7 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B6 FurioLombardo.Discharge.M4Box.BoxData.K1B5 FurioLombardo.Discharge.M4Box.BoxData.K1B4 FurioLombardo.Discharge.M4Box.BoxData.K1B3 FurioLombardo.Discharge.M4Box.BoxData.K1B23 FurioLombardo.Discharge.M4Box.BoxData.K1B22
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B21 FurioLombardo.Discharge.M4Box.BoxData.K1B20 FurioLombardo.Discharge.M4Box.BoxData.K1B2 FurioLombardo.Discharge.M4Box.BoxData.K1B19 FurioLombardo.Discharge.M4Box.BoxData.K1B18 FurioLombardo.Discharge.M4Box.BoxData.K1B17
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B16 FurioLombardo.Discharge.M4Box.BoxData.K1B15 FurioLombardo.Discharge.M4Box.BoxData.K1B14 FurioLombardo.Discharge.M4Box.BoxData.K1B13 FurioLombardo.Discharge.M4Box.BoxData.K1B12 FurioLombardo.Discharge.M4Box.BoxData.K1B11
+ok 7 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B10 FurioLombardo.Discharge.M4Box.BoxData.K1B1 FurioLombardo.Discharge.M4Box.BoxData.K1B0 FurioLombardo.Discharge.M4Box.BoxData.K0B9 FurioLombardo.Discharge.M4Box.BoxData.K0B83 FurioLombardo.Discharge.M4Box.BoxData.K0B82
+ok 11 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B81 FurioLombardo.Discharge.M4Box.BoxData.K0B80 FurioLombardo.Discharge.M4Box.BoxData.K0B8 FurioLombardo.Discharge.M4Box.BoxData.K0B79 FurioLombardo.Discharge.M4Box.BoxData.K0B78 FurioLombardo.Discharge.M4Box.BoxData.K0B77
+ok 11 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B76 FurioLombardo.Discharge.M4Box.BoxData.K0B75 FurioLombardo.Discharge.M4Box.BoxData.K0B74 FurioLombardo.Discharge.M4Box.BoxData.K0B73 FurioLombardo.Discharge.M4Box.BoxData.K0B72 FurioLombardo.Discharge.M4Box.BoxData.K0B71
+ok 84 s, peak 18.9 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B70 FurioLombardo.Discharge.M4Box.BoxData.K0B7 FurioLombardo.Discharge.M4Box.BoxData.K0B69 FurioLombardo.Discharge.M4Box.BoxData.K0B68 FurioLombardo.Discharge.M4Box.BoxData.K0B67 FurioLombardo.Discharge.M4Box.BoxData.K0B66
+FAILED 82 s, peak 23.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B65 FurioLombardo.Discharge.M4Box.BoxData.K0B64 FurioLombardo.Discharge.M4Box.BoxData.K0B63 FurioLombardo.Discharge.M4Box.BoxData.K0B62 FurioLombardo.Discharge.M4Box.BoxData.K0B61 FurioLombardo.Discharge.M4Box.BoxData.K0B60
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 7 s, peak 1.0 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B65
+ok 5 s, peak 0.4 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B64
+ok 9 s, peak 0.4 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B63
+ok 74 s, peak 5.4 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B62
+ok 7 s, peak 0.5 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B61
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B60
+ok 83 s, peak 20.7 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B6 FurioLombardo.Discharge.M4Box.BoxData.K0B59 FurioLombardo.Discharge.M4Box.BoxData.K0B58 FurioLombardo.Discharge.M4Box.BoxData.K0B57 FurioLombardo.Discharge.M4Box.BoxData.K0B56 FurioLombardo.Discharge.M4Box.BoxData.K0B55
+ok 90 s, peak 23.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B54 FurioLombardo.Discharge.M4Box.BoxData.K0B53 FurioLombardo.Discharge.M4Box.BoxData.K0B52 FurioLombardo.Discharge.M4Box.BoxData.K0B51 FurioLombardo.Discharge.M4Box.BoxData.K0B50 FurioLombardo.Discharge.M4Box.BoxData.K0B5
+ok 81 s, peak 19.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B49 FurioLombardo.Discharge.M4Box.BoxData.K0B48 FurioLombardo.Discharge.M4Box.BoxData.K0B47 FurioLombardo.Discharge.M4Box.BoxData.K0B46 FurioLombardo.Discharge.M4Box.BoxData.K0B45 FurioLombardo.Discharge.M4Box.BoxData.K0B44
+ok 82 s, peak 17.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B43 FurioLombardo.Discharge.M4Box.BoxData.K0B42 FurioLombardo.Discharge.M4Box.BoxData.K0B41 FurioLombardo.Discharge.M4Box.BoxData.K0B40 FurioLombardo.Discharge.M4Box.BoxData.K0B4 FurioLombardo.Discharge.M4Box.BoxData.K0B39
+ok 69 s, peak 16.2 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B38 FurioLombardo.Discharge.M4Box.BoxData.K0B37 FurioLombardo.Discharge.M4Box.BoxData.K0B36 FurioLombardo.Discharge.M4Box.BoxData.K0B35 FurioLombardo.Discharge.M4Box.BoxData.K0B34 FurioLombardo.Discharge.M4Box.BoxData.K0B33
+ok 62 s, peak 17.1 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B32 FurioLombardo.Discharge.M4Box.BoxData.K0B31 FurioLombardo.Discharge.M4Box.BoxData.K0B30 FurioLombardo.Discharge.M4Box.BoxData.K0B3 FurioLombardo.Discharge.M4Box.BoxData.K0B29 FurioLombardo.Discharge.M4Box.BoxData.K0B28
+FAILED 63 s, peak 17.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B27 FurioLombardo.Discharge.M4Box.BoxData.K0B26 FurioLombardo.Discharge.M4Box.BoxData.K0B25 FurioLombardo.Discharge.M4Box.BoxData.K0B24 FurioLombardo.Discharge.M4Box.BoxData.K0B23 FurioLombardo.Discharge.M4Box.BoxData.K0B22
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 7 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B27
+ok 9 s, peak 0.6 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B26
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B25
+ok 43 s, peak 3.1 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B24
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B23
+ok 8 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B22
+FAILED 58 s, peak 13.9 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B21 FurioLombardo.Discharge.M4Box.BoxData.K0B20 FurioLombardo.Discharge.M4Box.BoxData.K0B2 FurioLombardo.Discharge.M4Box.BoxData.K0B19 FurioLombardo.Discharge.M4Box.BoxData.K0B18 FurioLombardo.Discharge.M4Box.BoxData.K0B17
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 44 s, peak 3.1 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B21
+ok 11 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B20
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B2
+ok 11 s, peak 0.4 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B19
+ok 11 s, peak 0.6 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B18
+FAILED 2 s, peak 0.1 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B17
+ok 68 s, peak 16.8 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B16 FurioLombardo.Discharge.M4Box.BoxData.K0B15 FurioLombardo.Discharge.M4Box.BoxData.K0B14 FurioLombardo.Discharge.M4Box.BoxData.K0B13 FurioLombardo.Discharge.M4Box.BoxData.K0B12 FurioLombardo.Discharge.M4Box.BoxData.K0B11
+ok 50 s, peak 8.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B10 FurioLombardo.Discharge.M4Box.BoxData.K0B1 FurioLombardo.Discharge.M4Box.BoxData.K0B0 FurioLombardo.Discharge.M4Box.Known FurioLombardo.Discharge.SelmerBasis.VLocal FurioLombardo.Discharge.M4Log.ChartLog
+FAILED 35 s, peak 4.7 GiB: FurioLombardo.Discharge.M4Box.DValue FurioLombardo.Discharge.M4Box.BoxCert FurioLombardo.Discharge.SelmerBasis.RealSigns FurioLombardo.Discharge.SelmerBasis.W7DataN FurioLombardo.Discharge.SelmerBasis.W7DataL FurioLombardo.Discharge.SelmerBasis.W7Data
+# retry module by module
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DValue
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxCert
+ok 9 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.RealSigns
+ok 10 s, peak 0.4 GiB: FurioLombardo.Discharge.SelmerBasis.W7DataN
+ok 10 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7DataL
+ok 11 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7Data
+ok 34 s, peak 3.2 GiB: FurioLombardo.Discharge.SelmerBasis.W7Cert FurioLombardo.Discharge.M4Log.LamInt FurioLombardo.Discharge.M4Box.DInput FurioLombardo.Discharge.M4Box.LiftLog
+ok 30 s, peak 1.1 GiB: FurioLombardo.M2.Data.P065 FurioLombardo.M2.Data.P064
+ok 100 s, peak 2.1 GiB: FurioLombardo.M2.Data.P063 FurioLombardo.Discharge.SelmerBasis.W3CheckK1
+ok 98 s, peak 2.0 GiB: FurioLombardo.Discharge.SelmerBasis.W3CheckK0 FurioLombardo.Discharge.SelmerBasis.PlaceUGen
+ok 26 s, peak 1.2 GiB: FurioLombardo.M2.Data.P068 FurioLombardo.M2.Data.P067
+ok 52 s, peak 1.8 GiB: FurioLombardo.M2.Data.P066 FurioLombardo.Discharge.SelmerBasis.W7CheckN1
+ok 55 s, peak 2.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7CheckN0 FurioLombardo.Discharge.SelmerBasis.W7CheckM
+ok 41 s, peak 1.8 GiB: FurioLombardo.Discharge.SelmerBasis.W7CheckL FurioLombardo.Discharge.SelmerBasis.W7CheckB
+ok 51 s, peak 2.3 GiB: FurioLombardo.Discharge.SelmerBasis.W3Place FurioLombardo.Discharge.SelmerBasis.PlaceUCert
+ok 42 s, peak 3.8 GiB: FurioLombardo.Discharge.SelmerBasis.W7Model FurioLombardo.Discharge.M4Box.SelLoc FurioLombardo.Discharge.M4Box.DFinal FurioLombardo.Discharge.SelmerBasis.W2UnramDefs FurioLombardo.Discharge.SelmerBasis.VGen FurioLombardo.Discharge.M4Box.PtValue
+ok 26 s, peak 1.0 GiB: FurioLombardo.Discharge.M4Box.DCertData.Values
+ok 28 s, peak 1.3 GiB: FurioLombardo.M2.Data.P071 FurioLombardo.M2.Data.P070
+ok 28 s, peak 1.1 GiB: FurioLombardo.M2.Data.P069 FurioLombardo.Discharge.SelmerBasis.W7CheckN
+ok 39 s, peak 1.9 GiB: FurioLombardo.Discharge.SelmerBasis.VDataP1 FurioLombardo.Discharge.SelmerBasis.VDataK1P1
+ok 33 s, peak 1.5 GiB: FurioLombardo.Discharge.SelmerBasis.VDataK0P1 FurioLombardo.M2.Data.P074
+ok 28 s, peak 1.2 GiB: FurioLombardo.M2.Data.P073 FurioLombardo.M2.Data.P072
+ok 27 s, peak 1.8 GiB: FurioLombardo.Discharge.SelmerBasis.W7Check FurioLombardo.Discharge.SelmerBasis.W2DataP1
+ok 32 s, peak 2.0 GiB: FurioLombardo.Discharge.SelmerBasis.W2DataK1P1 FurioLombardo.Discharge.SelmerBasis.W2DataK0P1
+ok 26 s, peak 1.8 GiB: FurioLombardo.Discharge.SelmerBasis.VDataP2 FurioLombardo.Discharge.SelmerBasis.VDataK1P2
+ok 23 s, peak 1.1 GiB: FurioLombardo.Discharge.SelmerBasis.VDataK0P2
+ok 63 s, peak 3.8 GiB: FurioLombardo.Discharge.SelmerBasis.W2Unram FurioLombardo.Discharge.SelmerBasis.W7Glue FurioLombardo.Discharge.SelmerBasis.VCRT FurioLombardo.Discharge.M4Box.CentreValue FurioLombardo.Discharge.M4Box.PhiCertData.Values FurioLombardo.Discharge.SelmerBasis.W2Glue
+ok 26 s, peak 2.4 GiB: FurioLombardo.Discharge.SelmerBasis.VDataK1 FurioLombardo.Discharge.SelmerBasis.VDataK0 FurioLombardo.Discharge.M4Box.BoxTM
+FAILED 27 s, peak 0.7 GiB: FurioLombardo.M2.Data.P077 FurioLombardo.M2.Data.P076
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 22 s, peak 0.7 GiB: FurioLombardo.M2.Data.P077
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P076
+ok 31 s, peak 1.7 GiB: FurioLombardo.M2.Data.P075 FurioLombardo.Discharge.SelmerBasis.W2DataP2
+ok 31 s, peak 2.0 GiB: FurioLombardo.Discharge.SelmerBasis.W2DataK1P2 FurioLombardo.Discharge.SelmerBasis.W2DataK0P2
+ok 32 s, peak 1.8 GiB: FurioLombardo.Discharge.SelmerBasis.W7Place FurioLombardo.Discharge.SelmerBasis.VDataP3
+ok 25 s, peak 1.8 GiB: FurioLombardo.Discharge.M4Box.CentreData.Values1 FurioLombardo.Discharge.M4Box.CentreData.Values0
+ok 22 s, peak 1.1 GiB: FurioLombardo.M2.Data.P080 FurioLombardo.M2.Data.P079
+ok 29 s, peak 1.3 GiB: FurioLombardo.M2.Data.P078 FurioLombardo.Discharge.SelmerBasis.W2DataP3
+ok 25 s, peak 2.0 GiB: FurioLombardo.Discharge.SelmerBasis.W2DataK1P3 FurioLombardo.Discharge.SelmerBasis.W2DataK0P3
+ok 27 s, peak 1.4 GiB: FurioLombardo.Discharge.SelmerBasis.VDataP4
+ok 35 s, peak 1.8 GiB: FurioLombardo.Discharge.M4Box.BoxRun FurioLombardo.Discharge.SelmerBasis.VData FurioLombardo.Discharge.M4Box.BoxOk
+ok 21 s, peak 1.3 GiB: FurioLombardo.M2.Data.P083 FurioLombardo.M2.Data.P082
+ok 26 s, peak 1.8 GiB: FurioLombardo.M2.Data.P081 FurioLombardo.Discharge.SelmerBasis.W2DataP4
+ok 19 s, peak 1.9 GiB: FurioLombardo.Discharge.SelmerBasis.W2DataK1P4 FurioLombardo.Discharge.SelmerBasis.W2DataK0P4
+ok 21 s, peak 1.3 GiB: FurioLombardo.M2.Data.P086 FurioLombardo.M2.Data.P085
+ok 27 s, peak 1.7 GiB: FurioLombardo.M2.Data.P084 FurioLombardo.Discharge.SelmerBasis.W2DataP5
+ok 63 s, peak 3.5 GiB: FurioLombardo.Discharge.SelmerBasis.VCheckN0 FurioLombardo.Discharge.SelmerBasis.VCheckK1
+FAILED 69 s, peak 2.9 GiB: FurioLombardo.Discharge.SelmerBasis.VCheckK0 FurioLombardo.Discharge.SelmerBasis.VCheckK
+error: Lean exited with code 139
+error: build failed
+# retry module by module
+ok 58 s, peak 2.2 GiB: FurioLombardo.Discharge.SelmerBasis.VCheckK0
+ok 17 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VCheckK
+ok 392 s, peak 3.5 GiB: FurioLombardo.Discharge.SelmerBasis.VCheckE FurioLombardo.Discharge.M4Box.BoxData.Values1
+ok 23 s, peak 1.2 GiB: FurioLombardo.Discharge.M4Box.BoxData.Values0
+ok 20 s, peak 1.7 GiB: FurioLombardo.Discharge.SelmerBasis.W2DataK1 FurioLombardo.Discharge.SelmerBasis.W2DataK0
+ok 27 s, peak 1.1 GiB: FurioLombardo.M2.Data.P089 FurioLombardo.M2.Data.P088
+ok 26 s, peak 1.5 GiB: FurioLombardo.M2.Data.P087 FurioLombardo.Discharge.SelmerBasis.W2DataP6
+ok 98 s, peak 2.5 GiB: FurioLombardo.Discharge.SelmerBasis.VCheckN1 FurioLombardo.M2.Data.P092
+ok 25 s, peak 1.2 GiB: FurioLombardo.M2.Data.P091 FurioLombardo.M2.Data.P090
+ok 28 s, peak 1.9 GiB: FurioLombardo.Discharge.SelmerBasis.W2Data FurioLombardo.Discharge.SelmerBasis.VCoord
+ok 21 s, peak 1.2 GiB: FurioLombardo.M2.Data.P095 FurioLombardo.M2.Data.P094
+# clean_build.sh at 2026-09-30 02:03 UTC
+# Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+# Lake version 5.0.0-src+5045d00 (Lean version 4.34.1)
+# machine: AMD Ryzen 9 5900X 12-Core Processor, 24 logical CPUs, 62.7 GiB RAM
+# package: 913 modules; sources sha256 e002e675297778c0ca078a371e5a86c06343126c764988ba050881fff1c6ebdd; FurioLombardo bad68224053fd174d484c56dc837a73edf72453978b3e5bea3b7ae2fff8760e3, lakefile.toml 6438c9cd09105f14ab3f56707de3e2a587012e3c339c910f556084291f966a1e, lake-manifest.json 2694d3750a4f8beb2eafbea411f155a8683eb24d55ab3e916bf8c62d5af27eae
+# (sha256 of a set of files: that of the sha256sum listing of the files, paths from the package root in LC_ALL=C order; FurioLombardo: the .lean files of FurioLombardo/, and FurioLombardo.lean if present)
+# settings: HB=2 LB=6 PEAK_HEAVY=7G PEAK_LIGHT=12G MEM_MARGIN=4G MEM_POLL=60 MEM_LOWER=600 MIN_DISK_GB=8; RUN_WRAP: cap -m 24G -c 12 -t 90min; lock: held for the run
+# memory peak per call: memory.peak of the cgroup of RUN_WRAP (all processes of the call)
+# at start: MemAvailable 50.6 GiB, load average 1.62 0.75 0.33
+# RESUME=1: continues on the present build directory (not a clean build)
+ok 7 s, peak 1.7 GiB: FurioLombardo.Discharge.Analytic.TwoIndex FurioLombardo.Discharge.KvArith.Comp.Ball FurioLombardo.Discharge.KvArith.Comp.Ops FurioLombardo.Discharge.M3a.AbelPrymData FurioLombardo.Discharge.M3a.AbelPrymData2 FurioLombardo.Discharge.M3a.DataBruin
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.LocalData FurioLombardo.Discharge.M3a.LocalQuad FurioLombardo.Discharge.M3b.DataDyadic FurioLombardo.Discharge.M3b.DataK21 FurioLombardo.Discharge.M3b.DataL FurioLombardo.Discharge.M3b.Ramification
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Cert.Data FurioLombardo.Discharge.M4Cert.DataRes FurioLombardo.Discharge.M4Cert.Hensel FurioLombardo.Discharge.M4Cert.Kv FurioLombardo.Discharge.M4Log.BranchData FurioLombardo.Discharge.SelmerBasis.AssemblyData
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Count.AtW2Data FurioLombardo.Discharge.SelmerBasis.Count.Poly FurioLombardo.Discharge.SelmerBasis.EtaleCRT FurioLombardo.Discharge.SelmerBasis.KappaData FurioLombardo.Discharge.SelmerBasis.QuadField FurioLombardo.Discharge.SelmerBasis.RealRootData
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.RealSignData FurioLombardo.Discharge.SelmerBasis.SUnitCountData FurioLombardo.Discharge.SelmerBasis.SUnitCountGen FurioLombardo.Discharge.SelmerBasis.SchaeferAux FurioLombardo.Discharge.SelmerBasis.SquareLemmas FurioLombardo.Discharge.SelmerSpan.IData
+ok 2 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerSpan.QuadSq FurioLombardo.M1.Basic FurioLombardo.M1.Data2 FurioLombardo.M1.Data3 FurioLombardo.M1.DataAvoid FurioLombardo.M1.DataBezout
+ok 1 s, peak 0.1 GiB: FurioLombardo.M1.DataBruin FurioLombardo.M1.DataField FurioLombardo.M1.DataGens FurioLombardo.M1.DataKnown FurioLombardo.M1.DataSieve FurioLombardo.M1.DataSqrt
+ok 3 s, peak 0.3 GiB: FurioLombardo.M1.Primitive FurioLombardo.M1.Valuation FurioLombardo.M1.Vendor.NetOfConics FurioLombardo.M1.Vendor.Stoll.Basic FurioLombardo.M1.Vendor.Stoll.FractionalIdeal FurioLombardo.M2.Defs
+ok 3 s, peak 0.2 GiB: FurioLombardo.M2.Field FurioLombardo.M2.Frame FurioLombardo.M2.ZimmertDefs FurioLombardo.M3a.CoordRing FurioLombardo.M3a.IdealDeg FurioLombardo.M3a.Moving
+ok 2 s, peak 0.3 GiB: FurioLombardo.M3b.Abstract FurioLombardo.M3b.DyadicCert FurioLombardo.M3b.Factorization FurioLombardo.M3b.FixedPoints FurioLombardo.M3b.GroupRank FurioLombardo.M4.Defs
+ok 3 s, peak 0.3 GiB: FurioLombardo.M4.Stoll FurioLombardo.Statement FurioLombardo.Vendor.AINTLIB.CompletedZeta.DualLattice FurioLombardo.Vendor.AINTLIB.CompletedZeta.GammaStrip FurioLombardo.Vendor.AINTLIB.CompletedZeta.Normalisation FurioLombardo.Vendor.AINTLIB.CompletedZeta.PoissonSummation
+ok 3 s, peak 0.3 GiB: FurioLombardo.Vendor.LeanPool.RectangleIntegral FurioLombardo.Vendor.Toolbox.GroupTheory.FiniteIndexSeq FurioLombardo.Vendor.Toolbox.GroupTheory.NsmulIndex FurioLombardo.Vendor.Toolbox.Polynomial.CoeffLim FurioLombardo.Vendor.Toolbox.Polynomial.SubPoly FurioLombardo.Vendor.Toolbox.PowerSeries.FormalFix
+ok 1 s, peak 0.1 GiB: FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.AdicTopology FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.LocalRing FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.MvPowerSeriesPDeriv FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.PadicInt FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.PadicValNat FurioLombardo.Vendor.Toolbox.TauCeti.Algebra.Group.PowMonoidHom
+ok 1 s, peak 0.2 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.Algebra.Group.Units.Basic FurioLombardo.Vendor.Toolbox.TauCeti.Data.Int.WithZero FurioLombardo.Vendor.Toolbox.TauCeti.Data.Nat.Factorization.MulDvd FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.UnitFiltration.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.AdicCompletion.Pi FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Finite.ArtinSchreier
+ok 1 s, peak 0.2 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Henselian.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.Finite FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.IntegrallyClosed FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.AbsoluteValue FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.Discrete.Order
+ok 1 s, peak 0.1 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.RootMonic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.ValuationRing FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.ValuativeRel.Basic FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Valuation.ValuativeRel.Extension
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Count.CertData FurioLombardo.Discharge.SelmerBasis.RealPlaceAux
+ok 1 s, peak 0.1 GiB: FurioLombardo.Discharge.SelmerBasis.SUnitData FurioLombardo.Discharge.SelmerBasis.SchaeferCertData
+ok 1 s, peak 0.1 GiB: FurioLombardo.Discharge.SelmerSpan.DData
+ok 2 s, peak 0.3 GiB: FurioLombardo.Discharge.KvArith.Ops FurioLombardo.Discharge.KvArith.Comp.Cantor FurioLombardo.Discharge.KvArith.Comp.BallOps FurioLombardo.Discharge.SelmerBasis.Echelon FurioLombardo.M1.ListPoly FurioLombardo.M1.Hypotheses
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.K1Res FurioLombardo.M1.Vendor.Stoll.SIntegers FurioLombardo.Discharge.SelmerBasis.SchaeferLocal FurioLombardo.M2.Spec FurioLombardo.M2.Global FurioLombardo.M2.Hypotheses
+ok 3 s, peak 0.3 GiB: FurioLombardo.M2.ZimmertNum FurioLombardo.M2.Zimmert.Defs FurioLombardo.M2.Zimmert FurioLombardo.M3a.Dedekind FurioLombardo.M3a.ClassGroupLift FurioLombardo.M3b.Chevalley
+ok 3 s, peak 0.3 GiB: FurioLombardo.M3b.AbstractUnits FurioLombardo.M4.Data FurioLombardo.M4.Boxes FurioLombardo.M4.Analytic FurioLombardo.M3a.StollSat FurioLombardo.M3a.Sections
+ok 3 s, peak 0.3 GiB: FurioLombardo.Vendor.AINTLIB.CompletedZeta.FunctionalEquation FurioLombardo.Vendor.AINTLIB.CompletedZeta.PoissonLattice FurioLombardo.M2.Zimmert.Contour FurioLombardo.Vendor.Toolbox.Polynomial.CoeffLimRoot FurioLombardo.Vendor.Toolbox.Polynomial.CoeffLimFibre FurioLombardo.Vendor.Toolbox.PowerSeries.SqrtMod
+ok 1 s, peak 0.2 GiB: FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.MvPowerSeriesComp FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.PSeries FurioLombardo.Vendor.Toolbox.TauCeti.GroupTheory.OrderOfElement.Basic FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Henselian FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.LocalRing FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.NormalizedValuation
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.Comp.AbelPrym FurioLombardo.Discharge.KvArith.Comp.DChain FurioLombardo.Discharge.KvArith.Comp.TM FurioLombardo.Discharge.KvArith.Comp.DCert FurioLombardo.Discharge.SelmerBasis.LocalLemmas FurioLombardo.M1.Kron
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M3b.RealCert FurioLombardo.Discharge.M3a.K1Quad FurioLombardo.Discharge.M3a.K1Norm FurioLombardo.M1.Vendor.Stoll.SelmerGroup FurioLombardo.Discharge.SelmerBasis.SchaeferModel FurioLombardo.M2.PackedSpec
+ok 3 s, peak 0.3 GiB: FurioLombardo.M2.Zimmert.Positivity FurioLombardo.M2.Zimmert.Leaves FurioLombardo.M2.Zimmert.Growth FurioLombardo.M3a.Basic FurioLombardo.M3b.Glue FurioLombardo.Discharge.M3b.QuadReal
+ok 3 s, peak 0.3 GiB: FurioLombardo.M4.Leading FurioLombardo.M4.Hypotheses FurioLombardo.Discharge.M3a.Transfer FurioLombardo.Vendor.AINTLIB.CompletedZeta.GRH FurioLombardo.Vendor.AINTLIB.CompletedZeta.ThetaLattice FurioLombardo.Vendor.Toolbox.PowerSeries.Conv
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Log.SqrtModTwo FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.MvPSeries FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.RootsOfUnity.Henselian FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Uniformizer FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.RamificationIndex FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.NormedField
+ok 2 s, peak 0.2 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.NatCastValuation
+ok 3 s, peak 0.3 GiB: FurioLombardo.M2.Check FurioLombardo.M4.Checks
+ok 0 s, peak 0.1 GiB: FurioLombardo.M2.Data.P002 FurioLombardo.M2.Data.P001
+ok 0 s, peak 0.1 GiB: FurioLombardo.M2.Data.P000 FurioLombardo.M2.Check2
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.BasisData
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.KvArith.Comp.DRun FurioLombardo.Discharge.SelmerBasis.QuadLocal FurioLombardo.M1.ZK FurioLombardo.Discharge.M4Cert.DataOnC FurioLombardo.M1.SelmerBound FurioLombardo.M2.Poly
+ok 3 s, peak 0.3 GiB: FurioLombardo.M2.Cover FurioLombardo.M2.Zimmert.Satz1 FurioLombardo.M3a.Pic FurioLombardo.M3b.UnitsIndex FurioLombardo.M3b.Ideals FurioLombardo.M4.Sigma
+ok 3 s, peak 0.3 GiB: FurioLombardo.M4.Series FurioLombardo.Vendor.AINTLIB.CompletedZeta.IdealLattice FurioLombardo.Discharge.R7.Formal FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Basic FurioLombardo.Vendor.Toolbox.PowerSeries.EvalLip FurioLombardo.Vendor.Toolbox.PowerSeries.Bounded
+ok 3 s, peak 0.3 GiB: FurioLombardo.Vendor.Toolbox.TauCeti.RingTheory.Henselian.Teichmuller FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.IntegerRing FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.FiniteExtension.Basic FurioLombardo.M1.ZKInt FurioLombardo.M1.Conics FurioLombardo.Discharge.M4Cert.Embed
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.LocalQE FurioLombardo.Discharge.SelmerBasis.SUnitMemGen FurioLombardo.Discharge.SelmerBasis.SUnitIndepGen FurioLombardo.M2.Factor FurioLombardo.M2.DiscrData FurioLombardo.M2.Basis
+ok 3 s, peak 0.3 GiB: FurioLombardo.M2.Zimmert.Limit FurioLombardo.M3a.BaseChange FurioLombardo.M3b.Formula FurioLombardo.M4.Lattice FurioLombardo.Vendor.AINTLIB.CompletedZeta.HeckeTheta FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Points
+ok 2 s, peak 0.2 GiB: FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Invariance FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.GaloisAction
+ok 0 s, peak 0.1 GiB: FurioLombardo.M2.Data.P005 FurioLombardo.M2.Data.P004
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P003 FurioLombardo.M2.SpecialData
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P008 FurioLombardo.M2.Data.P007
+ok 0 s, peak 0.1 GiB: FurioLombardo.M2.Data.P006
+ok 4 s, peak 0.3 GiB: FurioLombardo.M1.Residue FurioLombardo.Discharge.M4Cert.Resid FurioLombardo.M2.Exponent FurioLombardo.M3a.XminusT FurioLombardo.M3a.TwoTorsion FurioLombardo.M3b.Characters
+ok 3 s, peak 0.3 GiB: FurioLombardo.M4.QCert FurioLombardo.M4.Local FurioLombardo.Discharge.Analytic.Saturation FurioLombardo.Vendor.AINTLIB.CompletedZeta.ClassTheta FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw.Log FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Teichmuller
+ok 3 s, peak 0.3 GiB: FurioLombardo.M1.ResRing FurioLombardo.M1.Gens FurioLombardo.Discharge.M3a.PolyK FurioLombardo.Discharge.M4Cert.Curve FurioLombardo.Discharge.KvArith.Ball FurioLombardo.M2.Gen
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Interfaces FurioLombardo.M3a.Hypotheses FurioLombardo.Discharge.M3a.Reduction FurioLombardo.M3b.Tower FurioLombardo.M3b.Dyadic FurioLombardo.M4.Main
+ok 4 s, peak 0.3 GiB: FurioLombardo.Vendor.AINTLIB.CompletedZeta.ThetaEstimates FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.FormalGroupLaw FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.UnitsDecomposition
+ok 0 s, peak 0.1 GiB: FurioLombardo.M2.Data.P011 FurioLombardo.M2.Data.P010
+ok 3 s, peak 0.3 GiB: FurioLombardo.M2.Data.P009 FurioLombardo.M1.BruinCheck
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P014 FurioLombardo.M2.Data.P013
+ok 0 s, peak 0.1 GiB: FurioLombardo.M2.Data.P012
+ok 4 s, peak 0.3 GiB: FurioLombardo.M1.Norms FurioLombardo.Discharge.M3b.K21Defs FurioLombardo.Discharge.M3a.ConcreteDefs FurioLombardo.Discharge.M4Cert.OnCurve FurioLombardo.Discharge.KvArith.BallOps FurioLombardo.M2.Sound
+ok 3 s, peak 0.3 GiB: FurioLombardo.M2.Mul FurioLombardo.Discharge.SelmerBasis.AssemblyGen FurioLombardo.M3a.Route FurioLombardo.Discharge.M3a.XTKernelK1 FurioLombardo.Discharge.M3a.SelmerK2 FurioLombardo.Discharge.Analytic.LogChart
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.R7.LineStep FurioLombardo.Discharge.M3a.TwoTorsionClass FurioLombardo.Discharge.M3a.K1Half FurioLombardo.Discharge.M3a.AbelPrym FurioLombardo.M3b.SUnits FurioLombardo.M4.Cover
+ok 3 s, peak 0.3 GiB: FurioLombardo.Vendor.AINTLIB.CompletedZeta.FEPair FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.ExpConverge FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.MultiplicativeGroup FurioLombardo.M1.SSet FurioLombardo.Discharge.M3b.K21Real FurioLombardo.Discharge.M3b.K21Primes
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferCertDefs FurioLombardo.Discharge.M3a.AbelPrymDefs FurioLombardo.Discharge.KvArith.TM FurioLombardo.Discharge.KvArith.Sigma FurioLombardo.M2.Norm FurioLombardo.Discharge.SelmerBasis.GlobalSpanGen
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.Analytic.ModTwo FurioLombardo.Discharge.R7.FGLK FurioLombardo.Discharge.KvArith.Cantor FurioLombardo.Discharge.M3a.LocalTwoTorsion FurioLombardo.Discharge.M3a.K1Kernel FurioLombardo.Discharge.M3a.AbelPrymRuling
+ok 4 s, peak 0.3 GiB: FurioLombardo.M3b.Hypotheses FurioLombardo.M4.Twist FurioLombardo.Discharge.M4Box.Weak FurioLombardo.Vendor.Toolbox.Stoll.Mathlib.Chabauty.LogIso FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.PowerSubgroup
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.ConcreteCheck FurioLombardo.Discharge.M3a.AbelPrymCheck2
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P017 FurioLombardo.M2.Data.P016
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Data.P015 FurioLombardo.Vendor.AINTLIB.CompletedZeta.MellinAgreement
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferCertCheck FurioLombardo.Discharge.M3a.AbelPrymCheck
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P020 FurioLombardo.M2.Data.P019
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P018
+ok 3 s, peak 0.3 GiB: FurioLombardo.M1.Descent FurioLombardo.M1.Signature FurioLombardo.Discharge.M3b.Fields FurioLombardo.Discharge.M3b.DyadicMap FurioLombardo.Discharge.M3a.Concrete FurioLombardo.M2.Residue
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Discr FurioLombardo.Discharge.M4Box.AbelPrymRel FurioLombardo.Discharge.KvArith.DChain FurioLombardo.Discharge.M3a.MuT FurioLombardo.Discharge.M3a.CertSmul FurioLombardo.Discharge.M3a.CertMap
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.AbelPrymExists FurioLombardo.M4.Instances FurioLombardo.Vendor.AINTLIB.CompletedZeta.Existence FurioLombardo.Vendor.Toolbox.FormalGroup.ScaledLog FurioLombardo.Vendor.Toolbox.TauCeti.NumberTheory.LocalField.Squares FurioLombardo.M1.SieveRing
+ok 5 s, peak 0.3 GiB: FurioLombardo.M2.Signature FurioLombardo.Discharge.SelmerBasis.SUnitTower FurioLombardo.Discharge.SelmerBasis.SUnitDefs FurioLombardo.Discharge.M3b.RamN FurioLombardo.Discharge.M3b.RamL FurioLombardo.Discharge.M3b.DyadicRho
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferCertGlue FurioLombardo.Discharge.M3a.AbelPrymKnown FurioLombardo.M2.Special FurioLombardo.Discharge.SelmerSpan.Mumford FurioLombardo.Discharge.M4Box.AbelPrymSpec FurioLombardo.Discharge.M4Cert.Excl
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Cert.Discs FurioLombardo.Discharge.M4Box.Chain FurioLombardo.Discharge.M3a.Plug FurioLombardo.Discharge.Analytic.Route FurioLombardo.M2.Zimmert.ClassZeta FurioLombardo.Vendor.Toolbox.FormalGroup.ScaledPoints
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Bridge
+ok 0 s, peak 0.1 GiB: FurioLombardo.M2.Data.P023 FurioLombardo.M2.Data.P022
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Data.P021 FurioLombardo.Vendor.AINTLIB.CompletedZeta.AnalyticControl
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P026 FurioLombardo.M2.Data.P025
+ok 3 s, peak 0.3 GiB: FurioLombardo.M2.Data.P024 FurioLombardo.Discharge.SelmerBasis.RealPlace
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.PlaceWGen
+ok 4 s, peak 0.3 GiB: FurioLombardo.M1.SqCond FurioLombardo.M2.ZimmertBound FurioLombardo.Discharge.SelmerBasis.TowerEval FurioLombardo.Discharge.SelmerBasis.SUnitOrder FurioLombardo.Discharge.SelmerBasis.SUnitCount FurioLombardo.Discharge.M3b.Signs
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.AbelPrymTotal FurioLombardo.M2.Special45613 FurioLombardo.Discharge.M3a.LocalRes FurioLombardo.Discharge.M3a.LocalLead FurioLombardo.Discharge.M4Cert.Bridge FurioLombardo.Discharge.M3a.Quarter
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Zimmert.Satz2 FurioLombardo.Vendor.Toolbox.Padic.UnitBall FurioLombardo.Vendor.Toolbox.FormalGroup.Resc FurioLombardo.Discharge.SelmerBasis.Spanning FurioLombardo.M1.SieveBlocks FurioLombardo.M1.Local3
+ok 3 s, peak 0.3 GiB: FurioLombardo.M1.Local2 FurioLombardo.Discharge.SelmerBasis.SUnitRes FurioLombardo.Discharge.SelmerBasis.SUnitRank FurioLombardo.Discharge.M3b.Main FurioLombardo.Discharge.SelmerSpan.Sigma FurioLombardo.Discharge.SelmerSpan.ApproxT
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.QuarterInst FurioLombardo.Discharge.SelmerBasis.Count.Abstract FurioLombardo.Discharge.R7.KvBall FurioLombardo.Vendor.Toolbox.PowerSeries.BoundedRes FurioLombardo.Discharge.R7.FGLO FurioLombardo.Discharge.SelmerBasis.LocalGlue
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7Gen
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.TowerChecks FurioLombardo.M2.Data.P029
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P028 FurioLombardo.M2.Data.P027
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.LocalCheck FurioLombardo.Discharge.SelmerBasis.PlaceReal
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.AdicPlace FurioLombardo.Discharge.SelmerBasis.PlaceWCert
+ok 4 s, peak 0.3 GiB: FurioLombardo.M1.SieveCheck5 FurioLombardo.M1.SieveCheck4
+ok 5 s, peak 0.3 GiB: FurioLombardo.M1.SieveCheck3 FurioLombardo.M1.SieveCheck2
+ok 5 s, peak 0.3 GiB: FurioLombardo.M1.SieveCheck1 FurioLombardo.M1.SieveCheck0
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SUnitMem FurioLombardo.M2.Data.P032
+ok 0 s, peak 0.1 GiB: FurioLombardo.M2.Data.P031 FurioLombardo.M2.Data.P030
+ok 4 s, peak 0.3 GiB: FurioLombardo.M1.SieveComb FurioLombardo.Discharge.SelmerBasis.TowerFacts FurioLombardo.Discharge.SelmerSpan.Dpt FurioLombardo.Discharge.SelmerSpan.ApproxN FurioLombardo.Discharge.SelmerBasis.RealRoots FurioLombardo.Discharge.M3a.Assembly
+ok 4 s, peak 0.4 GiB: FurioLombardo.Discharge.SelmerBasis.Count.Cert FurioLombardo.Discharge.R7.LogChart FurioLombardo.Discharge.R7.ConcreteBase FurioLombardo.Discharge.KvArith.LogTail FurioLombardo.Discharge.M4Log.Transport FurioLombardo.Discharge.R7.Psi
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VGlue FurioLombardo.M1.Sieve FurioLombardo.Discharge.SelmerBasis.MuTCert FurioLombardo.Discharge.SelmerBasis.RealInst FurioLombardo.Discharge.M3a.Refined FurioLombardo.Discharge.M4Log.ModelLeaves
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Count.Setup FurioLombardo.Discharge.R7.FinIdx.ZSet FurioLombardo.Discharge.R7.ChartKv
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.SUnitIndep FurioLombardo.M2.Data.P035
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P034 FurioLombardo.M2.Data.P033
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.KappaCheck FurioLombardo.M2.Data.P038
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P037 FurioLombardo.M2.Data.P036
+ok 3 s, peak 0.3 GiB: FurioLombardo.M1.SelmerSet FurioLombardo.Discharge.M3a.ConcreteInputs FurioLombardo.Discharge.M4Log.Model FurioLombardo.Discharge.SelmerBasis.Count.Chart FurioLombardo.Discharge.R7.FinIdx.PencilB0 FurioLombardo.Discharge.R7.FinIdx.Comp
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.R7.FinIdx.Chart FurioLombardo.Discharge.R7.ConcreteKv FurioLombardo.Discharge.KvArith.Chart FurioLombardo.M1.DescentM3a FurioLombardo.Discharge.M3a.ConcreteRoute FurioLombardo.Discharge.R7.FinIdx.PencilAux
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.R7.FinIdx.BadSet FurioLombardo.Discharge.SelmerBasis.Count.Base FurioLombardo.Discharge.M4Box.Comp.Cert FurioLombardo.Discharge.KvArith.DCert FurioLombardo.Discharge.KvArith.ChartBranch
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P041 FurioLombardo.M2.Data.P040
+ok 0 s, peak 0.1 GiB: FurioLombardo.M2.Data.P039 FurioLombardo.M2.Data.P044
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P043 FurioLombardo.M2.Data.P042
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M3a.LocalFacts FurioLombardo.Discharge.R7.FinIdx.Pencil FurioLombardo.Discharge.SelmerBasis.Count.Key FurioLombardo.Discharge.R7.FinIdx.Key FurioLombardo.Discharge.M4Box.DCertData.Twist1 FurioLombardo.Discharge.M4Box.DCertData.Twist0
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.Comp.BoxTM FurioLombardo.Discharge.SelmerSpan.Chars FurioLombardo.Discharge.SelmerBasis.Count.Tors FurioLombardo.Discharge.M3a.K1Concrete FurioLombardo.Discharge.SelmerBasis.Count.FinIdx FurioLombardo.Discharge.R7.FinIdx.Assembly
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P047 FurioLombardo.M2.Data.P046
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P045 FurioLombardo.M2.Data.P050
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P049 FurioLombardo.M2.Data.P048
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Count.Place
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerSpan.Indep FurioLombardo.Discharge.SelmerBasis.Count.KE FurioLombardo.Discharge.SelmerBasis.GlobalCRT FurioLombardo.Discharge.M3a.ConcreteKv FurioLombardo.Discharge.R7.Transfer FurioLombardo.Discharge.SelmerBasis.GlobalGens
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerSpan.Basis FurioLombardo.Discharge.M4Box.ChainM3a FurioLombardo.Discharge.M3a.ConcretePhi FurioLombardo.Discharge.SelmerBasis.Count.AtV
+ok 0 s, peak 0.1 GiB: FurioLombardo.M2.Data.P053 FurioLombardo.M2.Data.P052
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Data.P051 FurioLombardo.Discharge.SelmerBasis.Count.AtPlace
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P056 FurioLombardo.M2.Data.P055
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Data.P054 FurioLombardo.Discharge.SelmerBasis.PlaceWModel
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.PlaceV FurioLombardo.Discharge.SelmerBasis.Count.AtW3
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.Count.AtW2
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.RealCoord FurioLombardo.Discharge.SelmerBasis.Kappa FurioLombardo.Discharge.M4Log.Defs FurioLombardo.Discharge.SelmerBasis.Count.At7 FurioLombardo.Discharge.SelmerBasis.RealSignDefs FurioLombardo.Discharge.SelmerBasis.PointGen
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Log.IntModelKv FurioLombardo.Discharge.M4Box.LogBound FurioLombardo.Discharge.M4Box.DiscRoot FurioLombardo.Discharge.M4Box.Coord FurioLombardo.Discharge.M4Box.Amat
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P059 FurioLombardo.M2.Data.P058
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Data.P057 FurioLombardo.Discharge.SelmerBasis.W3Data
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.PlaceWElem FurioLombardo.Discharge.SelmerBasis.VPlace
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P062 FurioLombardo.M2.Data.P061
+ok 4 s, peak 0.3 GiB: FurioLombardo.M2.Data.P060 FurioLombardo.Discharge.SelmerBasis.RealSignCheckN
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.RealSignCheckM FurioLombardo.Discharge.SelmerBasis.RealSignCheckL
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.RealSignCheckI1 FurioLombardo.Discharge.SelmerBasis.RealSignCheckI0
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W3CheckE FurioLombardo.Discharge.SelmerBasis.W3DataK1
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W3DataK0 FurioLombardo.Discharge.SelmerBasis.W3CheckN
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W3CheckK FurioLombardo.Discharge.SelmerBasis.PlaceWRows
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7Spec FurioLombardo.Discharge.M4Box.PhiCertData.P3 FurioLombardo.Discharge.M4Box.PhiCertData.P2 FurioLombardo.Discharge.M4Box.PhiCertData.P1 FurioLombardo.Discharge.M4Box.PhiCertData.P0 FurioLombardo.Discharge.M4Box.DCertData.K1I6
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K1I5 FurioLombardo.Discharge.M4Box.DCertData.K1I4 FurioLombardo.Discharge.M4Box.DCertData.K1I3 FurioLombardo.Discharge.M4Box.DCertData.K1I2 FurioLombardo.Discharge.M4Box.DCertData.K1I1 FurioLombardo.Discharge.M4Box.DCertData.K1I0
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I6 FurioLombardo.Discharge.M4Box.DCertData.K0I5 FurioLombardo.Discharge.M4Box.DCertData.K0I4 FurioLombardo.Discharge.M4Box.DCertData.K0I3 FurioLombardo.Discharge.M4Box.DCertData.K0I2 FurioLombardo.Discharge.M4Box.DCertData.K0I1
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.K0I0 FurioLombardo.Discharge.M4Box.CentreData.K1C9 FurioLombardo.Discharge.M4Box.CentreData.K1C8 FurioLombardo.Discharge.M4Box.CentreData.K1C7 FurioLombardo.Discharge.M4Box.CentreData.K1C6 FurioLombardo.Discharge.M4Box.CentreData.K1C5
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C4 FurioLombardo.Discharge.M4Box.CentreData.K1C3 FurioLombardo.Discharge.M4Box.CentreData.K1C21 FurioLombardo.Discharge.M4Box.CentreData.K1C20 FurioLombardo.Discharge.M4Box.CentreData.K1C2 FurioLombardo.Discharge.M4Box.CentreData.K1C19
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C18 FurioLombardo.Discharge.M4Box.CentreData.K1C17 FurioLombardo.Discharge.M4Box.CentreData.K1C16 FurioLombardo.Discharge.M4Box.CentreData.K1C15 FurioLombardo.Discharge.M4Box.CentreData.K1C14 FurioLombardo.Discharge.M4Box.CentreData.K1C13
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K1C12 FurioLombardo.Discharge.M4Box.CentreData.K1C11 FurioLombardo.Discharge.M4Box.CentreData.K1C10 FurioLombardo.Discharge.M4Box.CentreData.K1C1 FurioLombardo.Discharge.M4Box.CentreData.K1C0 FurioLombardo.Discharge.M4Box.CentreData.K0C9
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C81 FurioLombardo.Discharge.M4Box.CentreData.K0C80 FurioLombardo.Discharge.M4Box.CentreData.K0C8 FurioLombardo.Discharge.M4Box.CentreData.K0C79 FurioLombardo.Discharge.M4Box.CentreData.K0C78 FurioLombardo.Discharge.M4Box.CentreData.K0C77
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C76 FurioLombardo.Discharge.M4Box.CentreData.K0C75 FurioLombardo.Discharge.M4Box.CentreData.K0C74 FurioLombardo.Discharge.M4Box.CentreData.K0C73 FurioLombardo.Discharge.M4Box.CentreData.K0C72 FurioLombardo.Discharge.M4Box.CentreData.K0C71
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C70 FurioLombardo.Discharge.M4Box.CentreData.K0C7 FurioLombardo.Discharge.M4Box.CentreData.K0C69 FurioLombardo.Discharge.M4Box.CentreData.K0C68 FurioLombardo.Discharge.M4Box.CentreData.K0C67 FurioLombardo.Discharge.M4Box.CentreData.K0C66
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C65 FurioLombardo.Discharge.M4Box.CentreData.K0C64 FurioLombardo.Discharge.M4Box.CentreData.K0C63 FurioLombardo.Discharge.M4Box.CentreData.K0C62 FurioLombardo.Discharge.M4Box.CentreData.K0C61 FurioLombardo.Discharge.M4Box.CentreData.K0C60
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C6 FurioLombardo.Discharge.M4Box.CentreData.K0C59 FurioLombardo.Discharge.M4Box.CentreData.K0C58 FurioLombardo.Discharge.M4Box.CentreData.K0C57 FurioLombardo.Discharge.M4Box.CentreData.K0C56 FurioLombardo.Discharge.M4Box.CentreData.K0C55
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C54 FurioLombardo.Discharge.M4Box.CentreData.K0C53 FurioLombardo.Discharge.M4Box.CentreData.K0C52 FurioLombardo.Discharge.M4Box.CentreData.K0C51 FurioLombardo.Discharge.M4Box.CentreData.K0C50 FurioLombardo.Discharge.M4Box.CentreData.K0C5
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C49 FurioLombardo.Discharge.M4Box.CentreData.K0C48 FurioLombardo.Discharge.M4Box.CentreData.K0C47 FurioLombardo.Discharge.M4Box.CentreData.K0C46 FurioLombardo.Discharge.M4Box.CentreData.K0C45 FurioLombardo.Discharge.M4Box.CentreData.K0C44
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C43 FurioLombardo.Discharge.M4Box.CentreData.K0C42 FurioLombardo.Discharge.M4Box.CentreData.K0C41 FurioLombardo.Discharge.M4Box.CentreData.K0C40 FurioLombardo.Discharge.M4Box.CentreData.K0C4 FurioLombardo.Discharge.M4Box.CentreData.K0C39
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C38 FurioLombardo.Discharge.M4Box.CentreData.K0C37 FurioLombardo.Discharge.M4Box.CentreData.K0C36 FurioLombardo.Discharge.M4Box.CentreData.K0C35 FurioLombardo.Discharge.M4Box.CentreData.K0C34 FurioLombardo.Discharge.M4Box.CentreData.K0C33
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C32 FurioLombardo.Discharge.M4Box.CentreData.K0C31 FurioLombardo.Discharge.M4Box.CentreData.K0C30 FurioLombardo.Discharge.M4Box.CentreData.K0C3 FurioLombardo.Discharge.M4Box.CentreData.K0C29 FurioLombardo.Discharge.M4Box.CentreData.K0C28
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C27 FurioLombardo.Discharge.M4Box.CentreData.K0C26 FurioLombardo.Discharge.M4Box.CentreData.K0C25 FurioLombardo.Discharge.M4Box.CentreData.K0C24 FurioLombardo.Discharge.M4Box.CentreData.K0C23 FurioLombardo.Discharge.M4Box.CentreData.K0C22
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C21 FurioLombardo.Discharge.M4Box.CentreData.K0C20 FurioLombardo.Discharge.M4Box.CentreData.K0C2 FurioLombardo.Discharge.M4Box.CentreData.K0C19 FurioLombardo.Discharge.M4Box.CentreData.K0C18 FurioLombardo.Discharge.M4Box.CentreData.K0C17
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C16 FurioLombardo.Discharge.M4Box.CentreData.K0C15 FurioLombardo.Discharge.M4Box.CentreData.K0C14 FurioLombardo.Discharge.M4Box.CentreData.K0C13 FurioLombardo.Discharge.M4Box.CentreData.K0C12 FurioLombardo.Discharge.M4Box.CentreData.K0C11
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.K0C10 FurioLombardo.Discharge.M4Box.CentreData.K0C1 FurioLombardo.Discharge.M4Box.CentreData.K0C0 FurioLombardo.Discharge.M4Box.BoxData.K1B9 FurioLombardo.Discharge.M4Box.BoxData.K1B8 FurioLombardo.Discharge.M4Box.BoxData.K1B7
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B6 FurioLombardo.Discharge.M4Box.BoxData.K1B5 FurioLombardo.Discharge.M4Box.BoxData.K1B4 FurioLombardo.Discharge.M4Box.BoxData.K1B3 FurioLombardo.Discharge.M4Box.BoxData.K1B23 FurioLombardo.Discharge.M4Box.BoxData.K1B22
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B21 FurioLombardo.Discharge.M4Box.BoxData.K1B20 FurioLombardo.Discharge.M4Box.BoxData.K1B2 FurioLombardo.Discharge.M4Box.BoxData.K1B19 FurioLombardo.Discharge.M4Box.BoxData.K1B18 FurioLombardo.Discharge.M4Box.BoxData.K1B17
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B16 FurioLombardo.Discharge.M4Box.BoxData.K1B15 FurioLombardo.Discharge.M4Box.BoxData.K1B14 FurioLombardo.Discharge.M4Box.BoxData.K1B13 FurioLombardo.Discharge.M4Box.BoxData.K1B12 FurioLombardo.Discharge.M4Box.BoxData.K1B11
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K1B10 FurioLombardo.Discharge.M4Box.BoxData.K1B1 FurioLombardo.Discharge.M4Box.BoxData.K1B0 FurioLombardo.Discharge.M4Box.BoxData.K0B9 FurioLombardo.Discharge.M4Box.BoxData.K0B83 FurioLombardo.Discharge.M4Box.BoxData.K0B82
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B81 FurioLombardo.Discharge.M4Box.BoxData.K0B80 FurioLombardo.Discharge.M4Box.BoxData.K0B8 FurioLombardo.Discharge.M4Box.BoxData.K0B79 FurioLombardo.Discharge.M4Box.BoxData.K0B78 FurioLombardo.Discharge.M4Box.BoxData.K0B77
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B76 FurioLombardo.Discharge.M4Box.BoxData.K0B75 FurioLombardo.Discharge.M4Box.BoxData.K0B74 FurioLombardo.Discharge.M4Box.BoxData.K0B73 FurioLombardo.Discharge.M4Box.BoxData.K0B72 FurioLombardo.Discharge.M4Box.BoxData.K0B71
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B70 FurioLombardo.Discharge.M4Box.BoxData.K0B7 FurioLombardo.Discharge.M4Box.BoxData.K0B69 FurioLombardo.Discharge.M4Box.BoxData.K0B68 FurioLombardo.Discharge.M4Box.BoxData.K0B67 FurioLombardo.Discharge.M4Box.BoxData.K0B66
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B65 FurioLombardo.Discharge.M4Box.BoxData.K0B64 FurioLombardo.Discharge.M4Box.BoxData.K0B63 FurioLombardo.Discharge.M4Box.BoxData.K0B62 FurioLombardo.Discharge.M4Box.BoxData.K0B61 FurioLombardo.Discharge.M4Box.BoxData.K0B60
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B6 FurioLombardo.Discharge.M4Box.BoxData.K0B59 FurioLombardo.Discharge.M4Box.BoxData.K0B58 FurioLombardo.Discharge.M4Box.BoxData.K0B57 FurioLombardo.Discharge.M4Box.BoxData.K0B56 FurioLombardo.Discharge.M4Box.BoxData.K0B55
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B54 FurioLombardo.Discharge.M4Box.BoxData.K0B53 FurioLombardo.Discharge.M4Box.BoxData.K0B52 FurioLombardo.Discharge.M4Box.BoxData.K0B51 FurioLombardo.Discharge.M4Box.BoxData.K0B50 FurioLombardo.Discharge.M4Box.BoxData.K0B5
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B49 FurioLombardo.Discharge.M4Box.BoxData.K0B48 FurioLombardo.Discharge.M4Box.BoxData.K0B47 FurioLombardo.Discharge.M4Box.BoxData.K0B46 FurioLombardo.Discharge.M4Box.BoxData.K0B45 FurioLombardo.Discharge.M4Box.BoxData.K0B44
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B43 FurioLombardo.Discharge.M4Box.BoxData.K0B42 FurioLombardo.Discharge.M4Box.BoxData.K0B41 FurioLombardo.Discharge.M4Box.BoxData.K0B40 FurioLombardo.Discharge.M4Box.BoxData.K0B4 FurioLombardo.Discharge.M4Box.BoxData.K0B39
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B38 FurioLombardo.Discharge.M4Box.BoxData.K0B37 FurioLombardo.Discharge.M4Box.BoxData.K0B36 FurioLombardo.Discharge.M4Box.BoxData.K0B35 FurioLombardo.Discharge.M4Box.BoxData.K0B34 FurioLombardo.Discharge.M4Box.BoxData.K0B33
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B32 FurioLombardo.Discharge.M4Box.BoxData.K0B31 FurioLombardo.Discharge.M4Box.BoxData.K0B30 FurioLombardo.Discharge.M4Box.BoxData.K0B3 FurioLombardo.Discharge.M4Box.BoxData.K0B29 FurioLombardo.Discharge.M4Box.BoxData.K0B28
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B27 FurioLombardo.Discharge.M4Box.BoxData.K0B26 FurioLombardo.Discharge.M4Box.BoxData.K0B25 FurioLombardo.Discharge.M4Box.BoxData.K0B24 FurioLombardo.Discharge.M4Box.BoxData.K0B23 FurioLombardo.Discharge.M4Box.BoxData.K0B22
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B21 FurioLombardo.Discharge.M4Box.BoxData.K0B20 FurioLombardo.Discharge.M4Box.BoxData.K0B2 FurioLombardo.Discharge.M4Box.BoxData.K0B19 FurioLombardo.Discharge.M4Box.BoxData.K0B18 FurioLombardo.Discharge.M4Box.BoxData.K0B17
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B16 FurioLombardo.Discharge.M4Box.BoxData.K0B15 FurioLombardo.Discharge.M4Box.BoxData.K0B14 FurioLombardo.Discharge.M4Box.BoxData.K0B13 FurioLombardo.Discharge.M4Box.BoxData.K0B12 FurioLombardo.Discharge.M4Box.BoxData.K0B11
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.K0B10 FurioLombardo.Discharge.M4Box.BoxData.K0B1 FurioLombardo.Discharge.M4Box.BoxData.K0B0 FurioLombardo.Discharge.M4Box.Known FurioLombardo.Discharge.SelmerBasis.VLocal FurioLombardo.Discharge.M4Log.ChartLog
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DValue FurioLombardo.Discharge.M4Box.BoxCert FurioLombardo.Discharge.SelmerBasis.RealSigns FurioLombardo.Discharge.SelmerBasis.W7DataN FurioLombardo.Discharge.SelmerBasis.W7DataL FurioLombardo.Discharge.SelmerBasis.W7Data
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7Cert FurioLombardo.Discharge.M4Log.LamInt FurioLombardo.Discharge.M4Box.DInput FurioLombardo.Discharge.M4Box.LiftLog
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P065 FurioLombardo.M2.Data.P064
+ok 6 s, peak 0.3 GiB: FurioLombardo.M2.Data.P063 FurioLombardo.Discharge.SelmerBasis.W3CheckK1
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W3CheckK0 FurioLombardo.Discharge.SelmerBasis.PlaceUGen
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P068 FurioLombardo.M2.Data.P067
+ok 6 s, peak 0.3 GiB: FurioLombardo.M2.Data.P066 FurioLombardo.Discharge.SelmerBasis.W7CheckN1
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7CheckN0 FurioLombardo.Discharge.SelmerBasis.W7CheckM
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7CheckL FurioLombardo.Discharge.SelmerBasis.W7CheckB
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W3Place FurioLombardo.Discharge.SelmerBasis.PlaceUCert
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7Model FurioLombardo.Discharge.M4Box.SelLoc FurioLombardo.Discharge.M4Box.DFinal FurioLombardo.Discharge.SelmerBasis.W2UnramDefs FurioLombardo.Discharge.SelmerBasis.VGen FurioLombardo.Discharge.M4Box.PtValue
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.DCertData.Values
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P071 FurioLombardo.M2.Data.P070
+ok 5 s, peak 0.3 GiB: FurioLombardo.M2.Data.P069 FurioLombardo.Discharge.SelmerBasis.W7CheckN
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VDataP1 FurioLombardo.Discharge.SelmerBasis.VDataK1P1
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VDataK0P1 FurioLombardo.M2.Data.P074
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P073 FurioLombardo.M2.Data.P072
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7Check FurioLombardo.Discharge.SelmerBasis.W2DataP1
+ok 3 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W2DataK1P1 FurioLombardo.Discharge.SelmerBasis.W2DataK0P1
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VDataP2 FurioLombardo.Discharge.SelmerBasis.VDataK1P2
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VDataK0P2
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W2Unram FurioLombardo.Discharge.SelmerBasis.W7Glue FurioLombardo.Discharge.SelmerBasis.VCRT FurioLombardo.Discharge.M4Box.CentreValue FurioLombardo.Discharge.M4Box.PhiCertData.Values FurioLombardo.Discharge.SelmerBasis.W2Glue
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VDataK1 FurioLombardo.Discharge.SelmerBasis.VDataK0 FurioLombardo.Discharge.M4Box.BoxTM
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P077 FurioLombardo.M2.Data.P076
+ok 5 s, peak 0.3 GiB: FurioLombardo.M2.Data.P075 FurioLombardo.Discharge.SelmerBasis.W2DataP2
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W2DataK1P2 FurioLombardo.Discharge.SelmerBasis.W2DataK0P2
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W7Place FurioLombardo.Discharge.SelmerBasis.VDataP3
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.CentreData.Values1 FurioLombardo.Discharge.M4Box.CentreData.Values0
+ok 0 s, peak 0.1 GiB: FurioLombardo.M2.Data.P080 FurioLombardo.M2.Data.P079
+ok 6 s, peak 0.3 GiB: FurioLombardo.M2.Data.P078 FurioLombardo.Discharge.SelmerBasis.W2DataP3
+ok 4 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W2DataK1P3 FurioLombardo.Discharge.SelmerBasis.W2DataK0P3
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VDataP4
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxRun FurioLombardo.Discharge.SelmerBasis.VData FurioLombardo.Discharge.M4Box.BoxOk
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P083 FurioLombardo.M2.Data.P082
+ok 5 s, peak 0.3 GiB: FurioLombardo.M2.Data.P081 FurioLombardo.Discharge.SelmerBasis.W2DataP4
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W2DataK1P4 FurioLombardo.Discharge.SelmerBasis.W2DataK0P4
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P086 FurioLombardo.M2.Data.P085
+ok 5 s, peak 0.3 GiB: FurioLombardo.M2.Data.P084 FurioLombardo.Discharge.SelmerBasis.W2DataP5
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VCheckN0 FurioLombardo.Discharge.SelmerBasis.VCheckK1
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VCheckK0 FurioLombardo.Discharge.SelmerBasis.VCheckK
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VCheckE FurioLombardo.Discharge.M4Box.BoxData.Values1
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.M4Box.BoxData.Values0
+ok 5 s, peak 0.4 GiB: FurioLombardo.Discharge.SelmerBasis.W2DataK1 FurioLombardo.Discharge.SelmerBasis.W2DataK0
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P089 FurioLombardo.M2.Data.P088
+ok 5 s, peak 0.3 GiB: FurioLombardo.M2.Data.P087 FurioLombardo.Discharge.SelmerBasis.W2DataP6
+ok 5 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.VCheckN1 FurioLombardo.M2.Data.P092
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P091 FurioLombardo.M2.Data.P090
+ok 6 s, peak 0.3 GiB: FurioLombardo.Discharge.SelmerBasis.W2Data FurioLombardo.Discharge.SelmerBasis.VCoord
+ok 1 s, peak 0.1 GiB: FurioLombardo.M2.Data.P095 FurioLombardo.M2.Data.P094
+ok 83 s, peak 2.8 GiB: FurioLombardo.M2.Data.P093 FurioLombardo.Discharge.SelmerBasis.W2CheckN2
+ok 84 s, peak 3.3 GiB: FurioLombardo.Discharge.SelmerBasis.W2CheckN1 FurioLombardo.Discharge.SelmerBasis.W2CheckL
+ok 227 s, peak 11.7 GiB: FurioLombardo.Discharge.SelmerBasis.W2CheckK1 FurioLombardo.Discharge.SelmerBasis.W2CheckK0
+ok 159 s, peak 3.6 GiB: FurioLombardo.Discharge.SelmerBasis.W2CheckK FurioLombardo.Discharge.SelmerBasis.W2CheckE
+ok 15 s, peak 1.4 GiB: FurioLombardo.M2.Data.P098 FurioLombardo.M2.Data.P097
+ok 71 s, peak 5.0 GiB: FurioLombardo.M2.Data.P096 FurioLombardo.Discharge.SelmerBasis.W2Place
+ok 14 s, peak 1.3 GiB: FurioLombardo.M2.Data.P101 FurioLombardo.M2.Data.P100
+ok 13 s, peak 1.4 GiB: FurioLombardo.M2.Data.P099 FurioLombardo.M2.Data.P104
+ok 14 s, peak 1.3 GiB: FurioLombardo.M2.Data.P103 FurioLombardo.M2.Data.P102
+ok 12 s, peak 1.3 GiB: FurioLombardo.M2.Data.P107 FurioLombardo.M2.Data.P106
+ok 16 s, peak 1.4 GiB: FurioLombardo.M2.Data.P105 FurioLombardo.M2.Data.P110
+ok 14 s, peak 1.4 GiB: FurioLombardo.M2.Data.P109 FurioLombardo.M2.Data.P108
+ok 15 s, peak 1.4 GiB: FurioLombardo.M2.Data.P113 FurioLombardo.M2.Data.P112
+ok 12 s, peak 1.4 GiB: FurioLombardo.M2.Data.P111 FurioLombardo.M2.Data.P116
+ok 16 s, peak 1.5 GiB: FurioLombardo.M2.Data.P115 FurioLombardo.M2.Data.P114
+ok 17 s, peak 1.3 GiB: FurioLombardo.M2.Data.P119 FurioLombardo.M2.Data.P118
+ok 13 s, peak 0.8 GiB: FurioLombardo.M2.Data.P117
+ok 29 s, peak 1.2 GiB: FurioLombardo.M2.DataAll FurioLombardo.M2.Generic FurioLombardo.M2.Main FurioLombardo.M2.Bridge FurioLombardo.M2.ZimmertMain FurioLombardo.M2.ZimmertProved
+ok 33 s, peak 2.5 GiB: FurioLombardo.Discharge.SelmerBasis.SchaeferGlobal FurioLombardo.Discharge.SelmerBasis.SUnitSpan FurioLombardo.Discharge.R7.Consumer FurioLombardo.Discharge.SelmerBasis.GlobalSpan FurioLombardo.Discharge.M4Box.WeakConsumer FurioLombardo.Discharge.SelmerBasis.Assembly
+ok 12 s, peak 1.1 GiB: FurioLombardo.Discharge.M4Box.Final FurioLombardo.Main
+# done in 27 min: 913 modules, 243 batches (119 heavy, 124 light), 243 lake calls, 0 modules failed
+# .lake/build.prev removed
+# size of .lake/build: 5707.6 MiB in all, setup.json 4278.0 MiB, olean 873.3 MiB, c 475.6 MiB, olean.private 40.4 MiB, ilean 36.1 MiB, trace 3.1 MiB, olean.server 0.8 MiB, ir 0.2 MiB, olean.hash 0.0 MiB, ilean.hash 0.0 MiB, c.hash 0.0 MiB, ir.sig 0.0 MiB, olean.server.hash 0.0 MiB, olean.private.hash 0.0 MiB, ir.sig.hash 0.0 MiB, ir.hash 0.0 MiB
+# result: ok, all 913 modules built

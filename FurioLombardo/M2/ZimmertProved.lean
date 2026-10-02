@@ -35,7 +35,7 @@ theorem classNumber_K21 : classNumber K21 = 1 := classNumber_K21_of_zimmertSatz2
 theorem clK21TwoTorsionTrivial : FurioLombardo.M1.ClK21TwoTorsionTrivial :=
   clK21TwoTorsionTrivial_of_zimmertSatz2 zimmertSatz2K21
 
-/-- `h = 1` on lane M1's field. -/
+/-- `h = 1` on lane M1's field. Proposition 2.1 of the paper. -/
 theorem isPrincipalIdealRing_M1K21 : IsPrincipalIdealRing (𝓞 FurioLombardo.M1.K21) :=
   isPrincipalIdealRing_M1K21_of_zimmertSatz2 zimmertSatz2K21
 

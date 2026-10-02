@@ -5,7 +5,7 @@
 load('descent_set_lib.sage')
 src = open('local_conditions_2_3.sage').read().split('# ---------------- p = 2 ----------------')[0]
 src = src.replace("load('descent_set_lib.sage')", "")
-exec(preparse(src))
+exec(preparse(src), globals())  # one namespace, so that generator expressions in src see its names
 
 def in_leaf(t, t0, m, free):
     return all((t[i] - t0[i]) % p_^m == 0 for i in free) and all(t[i] == t0[i] for i in range(3) if i not in free)

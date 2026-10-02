@@ -93,7 +93,7 @@ Hypotheses:
   `z ≡ pr w (mod 2M)` with `w ∈ W`, then `z ∈ 2M` (the leading class of `pr (lam (ι x))`
   is not in `pr(W)`).
 
-Conclusion: `pr (lam (ι x)) = 0`. -/
+Conclusion: `pr (lam (ι x)) = 0`. Theorem 4.1 of the paper. -/
 theorem stoll_log (ι : A →+ B) (lam : B →+ V) (pr : V →+ M) (T : A) (Γ : AddSubgroup A)
     (W : Set V) (x : A)
     (hloc : ∀ Q : A, (∃ b : B, ι Q = (2 : ℕ) • b) → ∃ Q' : A, Q = (2 : ℕ) • Q')

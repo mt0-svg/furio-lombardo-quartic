@@ -511,7 +511,7 @@ theorem constant_ok_0 : ∀ c ∈ FurioLombardo.M4.T0.data.constant, CentreOK 0 
   interval_cases i
   exacts [K0C0.cert, K0C1.cert, K0C2.cert, K0C3.cert, K0C4.cert, K0C5.cert, K0C6.cert, K0C7.cert, K0C8.cert, K0C9.cert, K0C10.cert, K0C11.cert, K0C12.cert, K0C13.cert, K0C14.cert, K0C15.cert, K0C16.cert, K0C17.cert, K0C18.cert, K0C19.cert, K0C20.cert, K0C21.cert, K0C22.cert, K0C23.cert, K0C24.cert, K0C25.cert, K0C26.cert, K0C27.cert, K0C28.cert, K0C29.cert, K0C30.cert, K0C31.cert, K0C32.cert, K0C33.cert, K0C34.cert, K0C35.cert, K0C36.cert, K0C37.cert, K0C38.cert, K0C39.cert, K0C40.cert, K0C41.cert, K0C42.cert, K0C43.cert, K0C44.cert, K0C45.cert, K0C46.cert, K0C47.cert, K0C48.cert, K0C49.cert, K0C50.cert, K0C51.cert, K0C52.cert, K0C53.cert, K0C54.cert, K0C55.cert, K0C56.cert, K0C57.cert, K0C58.cert, K0C59.cert, K0C60.cert, K0C61.cert, K0C62.cert, K0C63.cert, K0C64.cert, K0C65.cert, K0C66.cert, K0C67.cert, K0C68.cert, K0C69.cert, K0C70.cert, K0C71.cert, K0C72.cert, K0C73.cert, K0C74.cert, K0C75.cert, K0C76.cert, K0C77.cert, K0C78.cert, K0C79.cert, K0C80.cert, K0C81.cert]
 
-/-- **`HCentre` for twist 0.** -/
+/-- **`HCentre` for twist 0.** Lemma 7.4 of the paper. -/
 theorem hCe_0 : FurioLombardo.M4.HCentre FurioLombardo.M4.T0.data (lamD 0) :=
   hCentre_of_ok 0 FurioLombardo.M4.T0.data (lamInt_of 0 (DCertData.lamK_Dpt_le_one 0)) (fun j => (PhiCertData.P0.cert j).2)
     constant_ok_0

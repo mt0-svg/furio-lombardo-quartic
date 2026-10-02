@@ -1,0 +1,26 @@
+run 1: start 2026-09-29 23:21 UTC, clean (build directory moved aside); HB=3 LB=12 PEAK_HEAVY=7G PEAK_LIGHT=4G MEM_MARGIN=4G MEM_POLL=60 MEM_LOWER=600 MIN_DISK_GB=8
+  logged lake calls 241 (batch calls 96, retries of one module 145); failed calls 15 (batch calls 14, retries of one module 1)
+  sum of logged call times 4258 s (1 h 10 min 58 s); largest peak of a call 22.6 GiB (4 calls with no peak recorded)
+  Built lines 682, sum of their times 9973 s
+  last line: # result: interrupted (SIGTERM); rerun with RESUME=1 to continue
+  the run ended before it had retried 7 modules of its last failed batch call
+run 2: start 2026-09-30 00:35 UTC, RESUME=1 (continues on the build directory of the run before); HB=2 LB=6 PEAK_HEAVY=7G PEAK_LIGHT=12G MEM_MARGIN=4G MEM_POLL=60 MEM_LOWER=600 MIN_DISK_GB=8
+  logged lake calls 251 (batch calls 223, retries of one module 28); failed calls 7 (batch calls 6, retries of one module 1)
+  sum of logged call times 4681 s (1 h 18 min 01 s); largest peak of a call 23.3 GiB (0 calls with no peak recorded)
+  Built lines 182, sum of their times 6955 s
+  last line: none, the run ends with no result line
+run 3: start 2026-09-30 02:03 UTC, RESUME=1 (continues on the build directory of the run before); HB=2 LB=6 PEAK_HEAVY=7G PEAK_LIGHT=12G MEM_MARGIN=4G MEM_POLL=60 MEM_LOWER=600 MIN_DISK_GB=8
+  logged lake calls 243 (batch calls 243, retries of one module 0); failed calls 0 (batch calls 0, retries of one module 0)
+  sum of logged call times 1633 s (0 h 27 min 13 s); largest peak of a call 11.7 GiB (0 calls with no peak recorded)
+  Built lines 46, sum of their times 1180 s
+  last line: # result: ok, all 913 modules built
+all 3 runs: logged lake calls 735; failed calls 22 (batch calls 20, retries of one module 2); sum of logged call times 10572 s (2 h 56 min 12 s); largest peak 23.3 GiB
+  Built lines 910, sum of their times 18108 s (5 h 01 min 48 s)
+  package (header): 913 modules
+  distinct modules in a call that passed: 913; of them with no Built line: 3: FurioLombardo.Discharge.M4Box.BoxData.K0B71 FurioLombardo.Discharge.SelmerBasis.W7DataN FurioLombardo.M2.Data.P093
+  calls of FurioLombardo.Discharge.M4Box.BoxData.K0B71 (no Built line): run 1, line 288 of clean_build.out, FAILED 52 s, a call of 12 modules; run 2, line 467 of clean_build.out, ok 11 s, a call of 6 modules; run 3, line 744 of clean_build.out, ok 5 s, a call of 6 modules
+  calls of FurioLombardo.Discharge.SelmerBasis.W7DataN (no Built line): run 2, line 507 of clean_build.out, FAILED 35 s, a call of 6 modules; run 2, line 512 of clean_build.out, ok 10 s retry, a call of this module alone; run 3, line 757 of clean_build.out, ok 6 s, a call of 6 modules
+  calls of FurioLombardo.M2.Data.P093 (no Built line): run 3, line 806 of clean_build.out, ok 83 s, a call of 2 modules
+  failed in a retry of one module in run 1: FurioLombardo.Discharge.M4Box.CentreData.K0C40; its messages: error: (kernel) application type mismatch; error: build failed; first call that passed it after that: run 2
+  failed in a retry of one module in run 2: FurioLombardo.Discharge.M4Box.BoxData.K0B17; its messages: none; first call that passed it after that: run 3
+  summary line printed by run 3: # done in 27 min: 913 modules, 243 batches (119 heavy, 124 light), 243 lake calls, 0 modules failed

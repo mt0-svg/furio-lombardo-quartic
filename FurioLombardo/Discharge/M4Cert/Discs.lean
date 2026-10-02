@@ -80,7 +80,7 @@ theorem dvd_one' : (2 : ℤ_[2]) ∣ (1 : ℤ_[2]) - ((1 : ℤ) : ℤ_[2]) := �
 /-! ## The disc covering -/
 
 /-- **Disc covering.** Every nonzero point of `C(ℚ_2)` is, up to a nonzero factor, a point of one of
-the five discs. -/
+the five discs. Lemma 7.1 of the paper. -/
 theorem exists_disc (u : Fin 3 → ℚ_[2]) (hu : u ≠ 0) (hF : F (u 0) (u 1) (u 2) = 0) :
     ∃ d ∈ [1, 2, 3, 4, 5], ∃ X Y : ℤ_[2], ∃ μ : ℚ_[2], μ ≠ 0 ∧
       ∀ i, μ * u i = ((discPt d X Y i : ℤ_[2]) : ℚ_[2]) := by

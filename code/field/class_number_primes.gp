@@ -1,10 +1,10 @@
-\\ class_number_primes.gp: writes lean/FurioLombardo/M2/Data/P<b>.lean, b = 0..119: for every prime p in
+\\ class_number_primes.gp: writes FurioLombardo/M2/Data/P<b>.lean of the Lean package, b = 0..119: for every prime p in
 \\ [1000 b, 1000 b + 1000) (the last block runs to Bnd = 120000; p not 2, 7, 45613) a packed record n<p>, the kernel check
 \\ c<p> : checkPrime p n<p> = true, the list of records and the coverage check of the block.
 \\ Run from code/field: gp -q class_number_primes.gp (G5OUT=<dir>/ writes the blocks to <dir> instead, as class_number_primes_rerun.sh does)
 default(parisizemax, 4*10^9); default(nbthreads, 1);
 read("class_number_prime_certs.gp"); g4init();
-outdir = if (#getenv("G5OUT"), getenv("G5OUT"), "../../../FurioLombardo/M2/Data/");
+outdir = if (#getenv("G5OUT"), getenv("G5OUT"), "../../FurioLombardo/M2/Data/");
 blockfile(b) = {
   my(lo = 1000 * b, hi = if (b == 119, Bnd + 1, 1000 * b + 1000), file, ps = List(), name);
   name = Strprintf("P%03d", b);

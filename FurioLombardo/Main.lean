@@ -16,7 +16,7 @@ namespace FurioLombardo
 
 /-- **Conjecture 1.6** of Furio and Lombardo (arXiv 2507.17967v3), in the form of
 `FurioLombardo.Statement`: a nonzero rational triple lies on `C` if and only if it is a nonzero
-multiple of one of the four listed triples. -/
+multiple of one of the four listed triples. Theorem 1.2 of the paper. -/
 theorem conjecture_1_6 : Conjecture :=
   conjecture_iff_onlyFourPoints.mpr Discharge.M4Box.onlyFourPoints
 

@@ -73,7 +73,7 @@ theorem muJ_Tpt_fRev_ne_one (k : Fin 2) (q' : K21[X]) (hq : q'.Monic) (hqf : q' 
 theorem poonenSchaefer_fRev (k : Fin 2) : PoonenSchaefer (fRev k) :=
   poonenSchaefer_of (fRev k) (fRev_eval_ne_zero k) (muJ_Tpt_fRev_ne_one k)
 
-/-- **(K1) for the real sextics, with no hypothesis.** -/
+/-- **(K1) for the real sextics, with no hypothesis.** Proposition 3.3 of the paper. -/
 theorem xtKernel_fRev' (k : Fin 2) : XTKernel (fRev k) :=
   xtKernel_fRev k (poonenSchaefer_fRev k)
 

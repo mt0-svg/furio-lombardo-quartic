@@ -124,7 +124,7 @@ theorem isSquare_of_chars {O F : Type*} [CommRing O] [Field F] (ι : O →+* F) 
 
 /-! ### The targets -/
 
-/-- **`SUnitSpan` for `L42`.** -/
+/-- **`SUnitSpan` for `L42`.** Lemma 5.4 of the paper. -/
 theorem sUnitSpan_L42 : SUnitSpan L42 gensL :=
   sUnitSpan_L42_of gensL_ne_zero gensL_mem gensL_indep
 

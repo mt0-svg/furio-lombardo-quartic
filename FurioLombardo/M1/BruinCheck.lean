@@ -75,7 +75,7 @@ theorem map_qev {A B : Type*} [CommRing A] [CommRing B] (φ : A →+* B) (c : Fi
     (R : Fin 3 → A) : φ (qev c R) = qev (fun m => φ (c m)) (fun j => φ (R j)) := by
   simp [qev]
 
-/-- **Bruin identity** `Q1 Q3 - Q2² = cB F`. -/
+/-- **Bruin identity** `Q1 Q3 - Q2² = cB F`. Lemma 2.2 of the paper. -/
 theorem bruin_O (R : Fin 3 → 𝓞 K21) :
     qev (qC 0) R * qev (qC 2) R - qev (qC 1) R ^ 2 = cBO * FurioLombardo.F (R 0) (R 1) (R 2) := by
   apply RingOfIntegers.coe_injective

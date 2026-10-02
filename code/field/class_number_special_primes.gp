@@ -1,9 +1,9 @@
 \\ class_number_special_primes.gp: data and kernel checks for the special primes 2, 7, 45613 of M2, written as
-\\ lean/FurioLombardo/M2/SpecialData.lean (checked by FurioLombardo.M2.mulCheck, comboEq, facCheckE,
+\\ FurioLombardo/M2/SpecialData.lean of the Lean package (checked by FurioLombardo.M2.mulCheck, comboEq, facCheckE,
 \\ homogL). Every check the kernel runs is replayed here first. Run from code/field:
 \\ gp -q class_number_special_primes.gp
 default(parisizemax, 4*10^9); default(nbthreads, 1);
-LEANDIR = if (type(getenv("LEANOUT")) == "t_STR", getenv("LEANOUT"), "../../../");  \\ LEANOUT=<dir>/ writes the Lean file under <dir> instead of lean/
+LEANDIR = if (type(getenv("LEANOUT")) == "t_STR", getenv("LEANOUT"), "../../");  \\ LEANOUT=<dir>/ writes the Lean file under <dir> instead of the Lean package
 read("class_number_prime_certs.gp"); g4init();
 outfile = Str(LEANDIR, "FurioLombardo/M2/SpecialData.lean");
 W2 = 2^512; Fk2 = subst(f, x, W2);

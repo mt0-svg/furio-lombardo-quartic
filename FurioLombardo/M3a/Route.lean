@@ -28,7 +28,7 @@ namespace FurioLombardo.M3a.Route
 variable {k kv : Type*} [Field k] [Field kv]
 
 /-- The global part: local divisibility by 2 implies global divisibility by 2, from (K1), (K2)
-and the proved properties of the `x - T` map. -/
+and the proved properties of the `x - T` map. Corollary 5.9 of the paper. -/
 theorem hloc_jac (σ : k →+* kv) (f : k[X]) [GoodSextic f] [GoodSextic (f.map σ)]
     (hK1 : XTKernel f) (hK2 : SelmerInjective σ f) :
     ∀ Q : Additive (Jac f), (∃ b : Additive (Jac (f.map σ)), iotaA σ f Q = (2 : ℕ) • b) →
@@ -71,7 +71,7 @@ theorem two_smul_eq_zero_V (v : Fin 6 → ℤ_[2]) (hv : (2 : ℤ_[2]) • v = 0
 
 variable [Algebra ℚ k]
 
-/-- The local argument for one twist, from its inputs. -/
+/-- The local argument for one twist, from its inputs. Theorem 8.1 of the paper. -/
 theorem twistConclusion_of_inputs {σ : k →+* kv} {f : k[X]} [GoodSextic f] [GoodSextic (f.map σ)]
     {q : k[X]} {hq : q.Monic} {hqf : q ∣ f} {hdeg : q.natDegree = 2}
     {M1 M2 M3 : Matrix (Fin 3) (Fin 3) k} {δ : k} {Pa Pb : ℚ × ℚ × ℚ}

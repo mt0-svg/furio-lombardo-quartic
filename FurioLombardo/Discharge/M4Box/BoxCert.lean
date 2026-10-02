@@ -132,7 +132,7 @@ theorem tK_zero (k : Fin 2) (h : AdmM0 k) : tK k h 0 = 0 := by
 
 /-! ## The constant boxes -/
 
-/-- **`HConstLip` from the per box statements.** -/
+/-- **`HConstLip` from the per box statements.** Lemma 7.3 of the paper. -/
 theorem hConstLip_of_cert {k : Fin 2} {D : TwistData} (h : AdmM0 k) (hI : LamInt k)
     (hc : ∀ c ∈ D.constant, ConstCert k h c) : HConstLip D (lamD k) := by
   have hA := norm_Amat_le_one k
@@ -155,7 +155,7 @@ theorem hConstLip_of_cert {k : Fin 2} {D : TwistData} (h : AdmM0 k) (hI : LamInt
 
 /-! ## The tail boxes -/
 
-/-- **`HTailQuad` from the per box statements.** -/
+/-- **`HTailQuad` from the per box statements.** Lemma 7.5 of the paper. -/
 theorem hTailQuad_of_cert {k : Fin 2} {D : TwistData} (hD : TwistChecks D) (h : AdmM0 k)
     (hI : LamInt k) (ht : ∀ b ∈ D.tails, TailCert k h b) : HTailQuad D (lamD k) := by
   have hA := norm_Amat_le_one k

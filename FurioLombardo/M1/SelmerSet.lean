@@ -118,7 +118,7 @@ theorem gU_indep (e : Fin 18 → Bool) (h : IsSquare (subprod (fun i => ((gU i :
   obtain ⟨s, hs⟩ := exists_sq_of_sq (x := gProd e) (t := r) (by rw [sq, ← hr])
   exact gProd_eq_sq e s hs
 
-/-- **The Selmer set at a primitive integer point.** -/
+/-- **The Selmer set at a primitive integer point.** Theorem 2.7 of the paper. -/
 theorem selmer_int (hCl : ClK21TwoTorsionTrivial) (a r : Fin 3 → ℤ) (hr : ∑ j, r j * a j = 1)
     (hF : FurioLombardo.F (a 0) (a 1) (a 2) = 0) (i : Fin 3) (hi : i = 0 ∨ i = 2)
     (hne : qO i a ≠ 0) : ∃ k : Fin 2, ∃ t : K21, ((qO i a : 𝓞 K21) : K21) = δK k * t ^ 2 := by
@@ -192,7 +192,7 @@ theorem exists_int_point (x y z : ℚ) (hne : (x, y, z) ≠ (0, 0, 0))
 
 /-- **The Selmer set theorem over `K21`** (lane M1): assuming `Cl(K21)[2] = 0`, for every
 rational point `(x : y : z)` of `C`, the descent value `qSel x y z` is nonzero and equals
-`δ_k t²` for `k = 0` or `k = 1` and some `t ∈ K21`. -/
+`δ_k t²` for `k = 0` or `k = 1` and some `t ∈ K21`. Remark 2.8 of the paper. -/
 theorem selmerSet (hCl : ClK21TwoTorsionTrivial) (x y z : ℚ) (hne : (x, y, z) ≠ (0, 0, 0))
     (hF : FurioLombardo.F x y z = 0) :
     qSel x y z ≠ 0 ∧ ∃ k : Fin 2, ∃ t : K21, qSel x y z = δK k * t ^ 2 := by

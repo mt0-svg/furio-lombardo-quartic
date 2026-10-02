@@ -1,12 +1,12 @@
 \\ discriminant_bound.gp: data and kernel checks for the discriminant bound |disc K21| <= 2^22 7^27 of M2,
-\\ written as lean/FurioLombardo/M2/DiscrData.lean.
+\\ written as FurioLombardo/M2/DiscrData.lean of the Lean package.
 \\ (1) HNF family: hW_j = sum_k hA_j[k] W_k (W_k the numerators of PARI's integral basis, w_k = W_k(theta)/DD),
 \\     upper triangular in the power basis (coefficient i of hW_j is 0 for i > j), diagonal product diagP.
 \\ (2) beta = f'(theta): characteristic polynomial X^21 + chiB, and M theta = H(beta) with M = MB, H = HB.
 \\ (3) diagP^2 chiB[0] = DD^42 2^22 7^27.
 \\ Every check the kernel runs is replayed here first. Run from code/field: gp -q discriminant_bound.gp < /dev/null
 default(parisizemax, 2*10^9); default(nbthreads, 1);
-LEANDIR = if (type(getenv("LEANOUT")) == "t_STR", getenv("LEANOUT"), "../../../");  \\ LEANOUT=<dir>/ writes the Lean file under <dir> instead of lean/
+LEANDIR = if (type(getenv("LEANOUT")) == "t_STR", getenv("LEANOUT"), "../../");  \\ LEANOUT=<dir>/ writes the Lean file under <dir> instead of the Lean package
 read("class_number_prime_certs.gp"); g4init();
 outfile = Str(LEANDIR, "FurioLombardo/M2/DiscrData.lean");
 lstr(v) = { my(s = "["); for (i = 1, #v, s = concat(s, Str(v[i])); if (i < #v, s = concat(s, ", "))); concat(s, "]"); }

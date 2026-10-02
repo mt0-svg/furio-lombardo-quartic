@@ -73,7 +73,7 @@ theorem exists_dpoint_q3 (d : K21) (p : Fin 3 → K21) (hp : p ≠ 0) (t : K21)
   · rw [quad_eq, ht]
 
 /-- **Lane M1 in the form of lane M3a**: every rational point of `C` lifts to `D_δ0(K21)` or
-`D_δ1(K21)`, assuming `Cl(K21)[2] = 0`. -/
+`D_δ1(K21)`, assuming `Cl(K21)[2] = 0`. Corollary 2.9 of the paper. -/
 theorem descent_Mmat (hCl : ClK21TwoTorsionTrivial) :
     Descent K21 (Mmat 0) (Mmat 1) (Mmat 2) δ0 δ1 := by
   intro x y z hne hF

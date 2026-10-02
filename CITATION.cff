@@ -6,7 +6,8 @@ authors:
   - name: mt0-svg
 repository-code: "https://github.com/mt0-svg/furio-lombardo-quartic"
 license: Apache-2.0
-version: v1.1.0
+version: v1.2.0
+date-released: 2026-10-02
 doi: 10.5281/zenodo.23049094
 keywords:
   - Furio-Lombardo conjecture

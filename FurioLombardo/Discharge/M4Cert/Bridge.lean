@@ -33,7 +33,8 @@ theorem qFormData_Mmat (q : Fin 3) : QFormData (Mmat q) (qzk q) := by
 theorem δ_eq (k : Fin 2) : δ k = zkE (dzk k) := by
   simp only [δ, dL_eq]
 
-/-- Lane M4's `HExcl` for the twist δ0 and the Bruin matrices of the M3a discharge. -/
+/-- Lane M4's `HExcl` for the twist δ0 and the Bruin matrices of the M3a discharge.
+Lemma 7.2 of the paper. -/
 theorem hExcl_T0_Mmat : FurioLombardo.M4.HExcl FurioLombardo.M4.T0.data
     (Twist (Mmat 0) (Mmat 1) (Mmat 2) δ0) :=
   hExcl_T0 (qFormData_Mmat 0) (qFormData_Mmat 2) (δ_eq 0)

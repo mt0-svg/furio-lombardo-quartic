@@ -1,0 +1,20 @@
+# comment_only_build_sources.sh: v1.1.0 = commit d3f89537d9b46fd42fef20e9f6bc4c52a8d23788
+1. raw FurioLombardo hash of v1.1.0 without Challenge.lean and Solution.lean (913 files): bad68224053fd174d484c56dc837a73edf72453978b3e5bea3b7ae2fff8760e3
+   FurioLombardo hash of the clean_build.out headers: bad68224053fd174d484c56dc837a73edf72453978b3e5bea3b7ae2fff8760e3
+   equal: the clean build ran on these sources
+2. code of v1.1.0 against the working tree, comments removed
+   files on both sides: 915; raw text differs: 33; code differs: 0
+   FurioLombardo/Challenge.lean: raw text identical
+   FurioLombardo/Solution.lean: raw text identical
+   stripped tree sha256, v1.1.0: 114156afa35f740b04cb9c5659fb11d6cc1124cfd79e520d91faceba759d9e01
+   stripped tree sha256, working tree: 114156afa35f740b04cb9c5659fb11d6cc1124cfd79e520d91faceba759d9e01
+3. controls
+   ok: control a b: code same
+   ok: control a c: code differs
+   ok: control a d: code differs
+   ok: control e f: code same
+   ok: control g h: code differs
+   ok: control i j: code differs
+   ok: control s0 s1: code differs
+   ok: control s0 s2: code same
+   (s0: FurioLombardo/Statement.lean; s1: its first theorem keyword made lemma, a code edit; s2: its first docstring edited)

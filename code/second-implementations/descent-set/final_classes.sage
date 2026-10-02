@@ -9,7 +9,7 @@ surv, final, leaves2t, leaves3t = load('local_conditions_2_3.sobj')
 # reuse the square tests and covering of step 5 without rerunning its main part
 src = open('local_conditions_2_3.sage').read().split('# ---------------- p = 2 ----------------')[0]
 src = src.replace("load('descent_set_lib.sage')", "")
-exec(preparse(src))
+exec(preparse(src), globals())  # one namespace, so that generator expressions in src see its names
 
 print("final survivors (indices into the 8):", final)
 reps = [delta_rep(P) for P in PTS]

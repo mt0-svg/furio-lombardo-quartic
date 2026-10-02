@@ -15,7 +15,7 @@ antiderivative ones (`FurioLombardo.M4.rescale_spec`).
 namespace FurioLombardo.M4
 
 /-- The lattice layer from the data: `Q = projO UG` characterises `S + 2^n Λ` for `n ≤ r`, `4V ⊆ Λ`, and
-`Λ ⊇ {x : G x ≡ 0 mod 4}`. -/
+`Λ ⊇ {x : G x ≡ 0 mod 4}`. Proposition 6.4 of the paper. -/
 theorem qchar_of_cert {Λ S : Submodule ℤ_[2] (Fin 6 → ℤ_[2])} {D : TwistData} (hD : TwistChecks D)
     {ℓ : Fin 7 → Fin 6 → ℤ_[2]} {a b : Fin 6 → ℤ_[2]} (hGen : HGen Λ ℓ) (hBD : HBallD D ℓ)
     (hBP : HBallPhi D a b) (hSat : HSat Λ S a b) :

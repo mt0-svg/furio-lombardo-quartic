@@ -2,8 +2,9 @@ name: Release
 
 # On a tag v* (or by hand for a given tag): the GitHub release of the tagged commit, from the green CI run of
 # that commit. Nothing is compiled again: the Lake build that CI built and checked (build, source scan, axioms,
-# Comparator) is packed as it is, with the PDF and the outputs of every check of that run. With no green CI run
-# on the commit, the release stops: run ci.yml on it first, then start this workflow by hand with the tag.
+# Comparator, the Sage checks) is packed as it is, with the PDF and the outputs of every check of that run. It takes
+# the green CI run started by hand on the tagged commit; with none, the release stops: run ci.yml on it first, then
+# start this workflow by hand with the tag.
 on:
   push:
     tags: ["v*"]
@@ -33,8 +34,8 @@ jobs:
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0
-      # The green CI run of the tagged commit, else of the latest commit with the same build inputs (CI runs only
-      # on commits that touch them).
+      # The green CI run started by hand on the tagged commit: a run on a push has only the jobs of the parts that
+      # the push touched.
       - id: find
         env:
           GH_TOKEN: ${{ github.token }}
@@ -42,17 +43,29 @@ jobs:
         run: |
           set -eu
           sha=$(git rev-parse "$TAG^{commit}")
-          inputs=(':(glob)**/*.lean' lakefile.toml lake-manifest.json lean-toolchain config.json code/formal-proof .github/workflows/ci.yml)
-          run=""
-          for r in $(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?status=success&per_page=100" --jq '.workflow_runs[] | "\(.id):\(.head_sha)"'); do
-            h=${r#*:}
-            git cat-file -e "$h^{commit}" 2> /dev/null || continue
-            if [ "$h" = "$sha" ] || { git merge-base --is-ancestor "$h" "$sha" && git diff --quiet "$h" "$sha" -- "${inputs[@]}"; }; then
-              run=${r%%:*}; break
-            fi
-          done
-          [ -n "$run" ] || { echo "no successful CI run with the build inputs of $TAG ($sha): run ci.yml on it, then this workflow by hand"; exit 1; }
+          run=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?status=success&event=workflow_dispatch&head_sha=$sha&per_page=100" \
+            --jq '.workflow_runs[0].id // empty')
+          [ -n "$run" ] || { echo "no successful CI run started by hand on $TAG ($sha): run ci.yml on it (gh workflow run ci.yml --ref $TAG), then this workflow by hand"; exit 1; }
           echo "CI run $run on $TAG ($sha)"
+          # Every job of that run but Badges must have run and passed: a job skipped by its if, or a step skipped
+          # inside a job, would leave results missing, and counts of result files kept here drift from ci.yml. The
+          # one exception: the continuation parts of a chained Lean build (part 2 on) are skipped by design once an
+          # earlier part ends the build, so they may be skipped, provided part 1 and the job after the chain, which
+          # needs every part and fails on an unfinished build, passed.
+          gh api --paginate "repos/$GITHUB_REPOSITORY/actions/runs/$run/jobs?per_page=100" \
+            | jq -r '.jobs[] | select(.name != "Badges") | "\(.conclusion)\t\(.name)"' > jobs.tsv
+          cat jobs.tsv
+          [ -s jobs.tsv ] || { echo "CI run $run lists no job"; exit 1; }
+          cont='^skipped'$'\t''(Lean build|Build), part ([2-9]|[1-9][0-9]+)$'
+          if grep -vE "^success"$'\t' jobs.tsv | grep -vE "$cont"; then
+            echo "CI run $run has jobs that did not pass (above)"; exit 1
+          fi
+          if grep -qE "$cont" jobs.tsv; then
+            if ! grep -qE '^success'$'\t''(Lean build|Build), part 1$' jobs.tsv \
+              || ! grep -qE '^success'$'\t''(Lean checks|Axioms)$' jobs.tsv; then
+              echo "CI run $run: build parts skipped, but part 1 or the job after the chain did not pass"; exit 1
+            fi
+          fi
           echo "run=$run" >> "$GITHUB_OUTPUT"
           echo "sha=$sha" >> "$GITHUB_OUTPUT"
 
@@ -109,7 +122,8 @@ jobs:
           fi
           cat archive.md
 
-      # Expected runs: the source scan, the build, the up-to-date check, the axioms, Comparator.
+      # Expected runs: the source scan, the build, the up-to-date check, the axioms, Comparator (the computation jobs
+      # are covered by the job check of ci-run).
       - name: Verification archive
         shell: bash
         run: |
@@ -121,7 +135,7 @@ jobs:
           done
           if cut -f4 verify/results/*.tsv | grep -v '^PASS'; then echo "a run did not pass"; exit 1; fi
           mkdir "$d"
-          cp -r verify/lean verify/build "$d/"
+          cp -r verify/lean verify/build verify/sage "$d/"
           n=$(cat verify/results/*.tsv | wc -l)
           {
             echo "# Verification of $TAG"

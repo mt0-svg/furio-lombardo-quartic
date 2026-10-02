@@ -77,7 +77,8 @@ theorem tors_v (k : Fin 2) : ∃ tT : Finset (Jac ((fRev k).map σ)), tT.card �
     (fun u hu hud huf => Finset.mem_singleton.mpr (uniq_v k u hu hud huf))
   exact ⟨tT, by simpa using htc, ht⟩
 
-/-- **`CountBound` at `v`**: the image of `μ` on `A(K_v)` has at most `2^7` elements. -/
+/-- **`CountBound` at `v`**: the image of `μ` on `A(K_v)` has at most `2^7` elements.
+Lemma 5.6 of the paper. -/
 theorem countBound_v (k : Fin 2) : CountBound ((fRev k).map σ) 7 := by
   obtain ⟨tV, htVc, htV⟩ := reps_v
   obtain ⟨tT, htTc, htT⟩ := tors_v k

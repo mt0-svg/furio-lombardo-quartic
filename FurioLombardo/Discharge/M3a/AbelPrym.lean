@@ -522,7 +522,7 @@ theorem bruinPhi_inv {f : L[X]} [GoodSextic f] (x : DPoint L M1 M2 M3 δ) :
 variable (M1 M2 M3 δ) in
 /-- The Abel-Prym map on the reversed model: Bruin's construction for the swapped forms
 `(Q3, Q2, Q1)` at `(p, s, r)`, with values in `Jac f` for `f = -δ det(M3 + 2t M2 + t² M1)`, the
-reversal of `-δ det(M1 + 2t M2 + t² M3)`. -/
+reversal of `-δ det(M1 + 2t M2 + t² M3)`. Proposition 3.4 of the paper. -/
 noncomputable def phiRev (f : L[X]) [GoodSextic f] (x : DPoint L M1 M2 M3 δ) : Jac f :=
   bruinPhi M3 M2 M1 δ f (swapPt x)
 

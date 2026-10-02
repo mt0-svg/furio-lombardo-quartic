@@ -88,7 +88,8 @@ theorem globalSpan_fRev (k : Fin 2) (hL : SUnitSpan L42 gensL) (hN : SUnitSpan N
     rw [IsUnit.unit_spec, psi_mk]
     exact muT_components k
 
-/-- **`GlobalSpan (fRev k) (gK k)`**, with `SUnitSpan` for `L42` and `N84` (SUnitSpan.lean). -/
+/-- **`GlobalSpan (fRev k) (gK k)`**, with `SUnitSpan` for `L42` and `N84` (SUnitSpan.lean).
+Lemma 5.5 of the paper. -/
 theorem globalSpan_gK (k : Fin 2) : GlobalSpan (fRev k) (gK k) :=
   globalSpan_fRev k sUnitSpan_L42 sUnitSpan_N84
 

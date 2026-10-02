@@ -193,7 +193,7 @@ known lifts, `Γ'` the preimage of `S`. Hypotheses: `hloc`, `hker`,
 the known points lie in `S`), `hT2` (`T` is 2-torsion), `hW` (every global logarithm is congruent to
 an element of `W` modulo `2Λ`), `hq` (the lattice fact: `r` with `4 r = n a + m b` and
 `S ≤ span {a, b, r}`), `hiii` (condition (iii) at every lift) and `hzero` (a lift with
-`λ ∈ S` is good). Conclusion: every lift is good. -/
+`λ ∈ S` is good). Conclusion: every lift is good. Corollary 4.3 of the paper. -/
 theorem twist_sat [IsNoetherian ℤ_[2] V] (htfV : ∀ v : V, (2 : ℤ_[2]) • v = 0 → v = 0)
     (ι : A →+ B) (lam : B →+ V) (Λ S : Submodule ℤ_[2] V) (W : Set V) (T : A)
     {Dk : Type*} (φ : Dk → A) (ga gb : A) (Good : Dk → Prop)

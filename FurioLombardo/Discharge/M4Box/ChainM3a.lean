@@ -30,7 +30,7 @@ section Plug
 
 variable {k : Type} [Field k] [Algebra ℚ k] {kv : Type} [Field kv]
 
-/-- `CoverIII` and `KnownZero` of M3a from `cover_lifts_w`. -/
+/-- `CoverIII` and `KnownZero` of M3a from `cover_lifts_w`. Proposition 7.6 of the paper. -/
 theorem coverIII_knownZero_of_M4_w {M1 M2 M3 : Matrix (Fin 3) (Fin 3) k} {δ : k}
     {Pa Pb : ℚ × ℚ × ℚ} {D : FurioLombardo.M4.TwistData} (hD : FurioLombardo.M4.TwistChecks D)
     (hg4 : TailsFour D)

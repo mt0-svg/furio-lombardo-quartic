@@ -45,4 +45,4 @@
  x_3: 2^1 c_1 in Lambda; nu(pr c_1) = 0; class e1 = [1, 1, 0, 0]; e1 in pr(W): False; margin (j - d2) - (nu + 1 + t) = 491
  e1(x_1) == e1(x_3): True
 
-saved s3_lattice.sobj
+saved lattice.sobj

@@ -220,7 +220,7 @@ theorem exists_plane (A : Fin 3 → ZMod 27)
     · simp
 
 /-- **The 3-adic step**: at a primitive integer point of `C`, the survivors `k < 4` of the good
-prime sieve fail the square condition. -/
+prime sieve fail the square condition. Lemma 2.6 of the paper. -/
 theorem kill3 (a r : Fin 3 → ℤ) (hr : ∑ j, r j * a j = 1)
     (hF : FurioLombardo.F (a 0) (a 1) (a 2) = 0) (k : ℕ) (hk : k < 4)
     (hsq : SqCond a (survE k)) : False := by

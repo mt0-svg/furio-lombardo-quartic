@@ -122,7 +122,7 @@ theorem resultant_val_eq_one {M : Type*} [Field M] {Γ₀ : Type*}
 
 end Schaefer
 
-/-- **Schaefer's lemma, value group form.** -/
+/-- **Schaefer's lemma, value group form.** Lemma 5.1 of the paper. -/
 theorem schaefer_local_sq {M : Type*} [Field M] {Γ₀ : Type*}
     [LinearOrderedCommGroupWithZero Γ₀] (v : Valuation M Γ₀)
     {f u V w : M[X]} {θ c : M}
@@ -243,7 +243,7 @@ theorem schaefer_local_sq {M : Type*} [Field M] {Γ₀ : Type*}
         rw [map_div₀, div_pow, ← h2, mul_div_cancel_right₀ _ (pow_ne_zero 2 hvb0)]
     · exact ⟨1, by rw [hUeq, map_one, one_pow]⟩
 
-/-- **Schaefer's lemma** (`ℤᵐ⁰` form). -/
+/-- **Schaefer's lemma** (`ℤᵐ⁰` form). Remark 5.2 of the paper. -/
 theorem schaefer_local {M : Type*} [Field M] (v : Valuation M (WithZero (Multiplicative ℤ)))
     {f u V w : M[X]} {θ c : M}
     (hf : ∀ i, v (f.coeff i) ≤ 1) (hdeg : f.natDegree = 6) (hl : v f.leadingCoeff = 1)

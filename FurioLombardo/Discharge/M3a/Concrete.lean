@@ -182,7 +182,7 @@ theorem fRev_separable (k : Fin 2) : (fRev k).Separable := by
         rw [Nat.cast_ofNat]
         field_simp
 
-/-- **Lane M3a's standing hypotheses for the reversed Prym sextics.** -/
+/-- **Lane M3a's standing hypotheses for the reversed Prym sextics.** Lemma 3.1 of the paper. -/
 instance goodSextic_fRev (k : Fin 2) : GoodSextic (fRev k) :=
   goodSextic_of (fRev_separable k) (fRev_natDegree k)
     (by rw [fRev_leadingCoeff]; exact c_not_isSquare k) two_ne_zero

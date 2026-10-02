@@ -137,6 +137,7 @@ theorem FurioLombardo.M4.not_mem_of_leading {Λ S : Submodule ℤ_[2] V} {W : Se
     simp [smul_neg, add_assoc]
   exact h_not hz0_in_SL
 
+/-- Lemma 4.2 of the paper. -/
 theorem FurioLombardo.M4.condIII_of_leading {Λ S : Submodule ℤ_[2] V} {W : Set V} {ν : ℕ} {y : V} (hS : Saturated Λ S)
     (hy : Leading Λ S W ν y) : CondIII Λ S W y := by
   obtain ⟨s0, hs0, z0, hz0, l, hl, rfl, hz0n, hz0w⟩ := hy

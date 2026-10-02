@@ -155,7 +155,7 @@ theorem hCoord0 : ∀ w : P0, CoordCond (φ0 w) (fRev 0) (gK 0) (muJ ((fRev 0).m
   | .r6 => coordCond_range (realEmb (Fin.castSucc 1)) (fRev 0) (gK 0) (RealRoots.CR 1)
       (RealRoots.coordCond_place 1 (RealRoots.Sg 1) (RealRoots.signOK 1)) (RealRoots.imageIn_place 1)
 
-/-- **`SelmerBasisK21` for twist 0.** -/
+/-- **`SelmerBasisK21` for twist 0.** Theorem 5.8 of the paper. -/
 theorem selmerBasis_0 : SelmerSpan.SelmerBasisK21 0 FurioLombardo.M4.T0.data.SB := by
   unfold SelmerSpan.SelmerBasisK21 SelmerSpan
   exact selmerBasis_of_interfaces (fRev 0) (gK 0) (GlobalK21.globalSpan_gK 0) K0 φ0

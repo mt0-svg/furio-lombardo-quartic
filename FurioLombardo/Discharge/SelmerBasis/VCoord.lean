@@ -394,7 +394,7 @@ theorem β_bits (k : Fin 2) (j : Fin 4) (s : Fin 82) :
 
 /-! ## The frozen statements of VPlace.lean -/
 
-/-- **`CoordCond` at `v`.** -/
+/-- **`CoordCond` at `v`.** Lemma 5.7 of the paper. -/
 theorem coordCond_v (k : Fin 2) : CoordCond σ (fRev k) (gK k) (Wv k) (Cv k) := by
   rw [Cv_eq]
   exact coordCond_of_coords σ (fRev k) (gKu k) (Dv k) (Uu k) (muJ_Dv k) (evG k).toMonoidHom (Ksub k)

@@ -168,7 +168,7 @@ theorem sqClass_mk_eq_mk_iff (a b : Fˣ) :
     field_simp [a.ne_zero]
     exact (Units.inv_mul a).symm
 
-/-- **Spanning from independence.** -/
+/-- **Spanning from independence.** Lemma 2.4 of the paper. -/
 theorem exists_isSquare_mul_prod (S : Set (HeightOneSpectrum (𝓞 F))) (hS : S.Finite)
     (hCl : ∀ c : ClassGroup (𝓞 F), c ^ 2 = 1 → c = 1) {m : ℕ}
     (hm : Units.rank F + S.ncard + 1 ≤ m) (g : Fin m → Fˣ)

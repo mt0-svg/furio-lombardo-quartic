@@ -1,9 +1,11 @@
 <h1 align="center">The plane quartic of Furio and Lombardo has exactly four rational points</h1>
 
 <p align="center">
-  <a href="https://zenodo.org/records/23062256/files/furio-lombardo-quartic.pdf"><img alt="Paper" src="https://img.shields.io/badge/Paper-PDF-b31b1b"></a>
+  <a href="https://zenodo.org/records/23098205/files/furio-lombardo-quartic.pdf"><img alt="Paper" src="https://img.shields.io/badge/Paper-PDF-b31b1b"></a>
   <a href="https://doi.org/10.5281/zenodo.23049094"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.23049094.svg"></a>
-  <a href="https://github.com/mt0-svg/furio-lombardo-quartic/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/mt0-svg/furio-lombardo-quartic/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://mt0-svg.github.io/furio-lombardo-quartic/run.html"><img alt="Lean Proved" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmt0-svg%2Ffurio-lombardo-quartic%2Fbadges%2Flean.json"></a>
+  <a href="https://mt0-svg.github.io/furio-lombardo-quartic/run.html"><img alt="Lean Comparator" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmt0-svg%2Ffurio-lombardo-quartic%2Fbadges%2Fcomparator.json"></a>
+  <a href="https://mt0-svg.github.io/furio-lombardo-quartic/run.html"><img alt="Computation Certificates" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmt0-svg%2Ffurio-lombardo-quartic%2Fbadges%2Fcertificates.json"></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue"></a>
 </p>
 
@@ -31,10 +33,10 @@ theorem FurioLombardo.conjecture_1_6 : FurioLombardo.Conjecture
 
 ## What is checked
 
-- **Lean 4.** `FurioLombardo.conjecture_1_6` has no hypothesis and uses only the axioms `propext`, `Classical.choice` and `Quot.sound`: no `sorry`, no `native_decide`. The kernel checks every finite computation of the proof, from the class number certificate to the boxes that cover $`C(\mathbb{Q}_2)`$, so no compiled code is trusted. Comparator checks the theorem against `FurioLombardo/Challenge.lean`, which imports only Mathlib. The paper names the Lean declaration of each numbered statement.
+- **Lean 4.** `FurioLombardo.conjecture_1_6` has no hypothesis and uses only the axioms `propext`, `Classical.choice` and `Quot.sound`: no `sorry`, no `native_decide`. The kernel checks every finite computation of the proof, from the class number certificate to the boxes that cover $`C(\mathbb{Q}_2)`$, so no compiled code is trusted. Comparator checks the theorem against `FurioLombardo/Challenge.lean`, which imports only Mathlib, and nanoda, an implementation of the Lean kernel written separately, checks the whole proof again (timed alone on a GitHub hosted runner with 4 CPUs, on tag v1.1.0, whose Lean code is that of this version up to comments: 1 min 26 s for the export it reads, 56 min 52 s for nanoda; the job logs and `comparator_time.out` are in `code/formal-proof`). Each proof of the paper that rests on Lean ends with the name of its main declaration; [`STATEMENTS.md`](STATEMENTS.md) gives, for each numbered statement, its Lean declarations, and for each section that reports a computation, its scripts and recorded outputs.
 - **Second programs.** The certificates were written by PARI/GP scripts and Lean programs (`code/`). Two programs written separately in Sage redo parts of them. One redoes the descent over the field of degree $`21`$ and finds the same two classes. The other recomputes the $`2`$-adic logarithms, the lattice and its saturation, the leading classes at the 104 centres and the bounds on the boxes, and agrees everywhere; it starts from the exact data, the local points, the boxes and the local Selmer image of the first programs, and does not redo the independence of the local points. Details: section 9 of the paper and `code/README.md`.
 
-`ci.yml` builds what changed since the last build, fails on any axiom other than these three, scans the sources for `sorry`, `admit` and `native_decide`, and runs Comparator. `release.yml` attaches the PDF, the logs of the checks and the build Comparator checked to each release, from the green CI run, without compiling again.
+`ci.yml` builds what changed since the last build, fails on any axiom other than these three, scans the sources for `sorry`, `admit` and `native_decide`, and runs Comparator. `release.yml` attaches the PDF, the logs of the checks and the build Comparator checked to each release, from the green CI run, without compiling again. A run started by hand on `main` writes the three badges above from its jobs: the hypotheses and axioms of the main theorem (`code/formal-proof/facts.lean`), the Comparator check, and the jobs that rerun the computations (the Sage second implementations, `code/second-implementations/rerun.sh`).
 
 ## Layout
 
@@ -43,7 +45,7 @@ theorem FurioLombardo.conjecture_1_6 : FurioLombardo.Conjecture
 | `FurioLombardo/`                                                             | the Lean proof (Lean and Mathlib `v4.34.1`): `Main.lean` proves the theorem; `Vendor/` holds the modules copied from other projects (Built on lists them, with the files adapted from them elsewhere) and, in `Vendor/Toolbox/`, 16 modules written for this proof |
 | `FurioLombardo/Statement.lean`                                               | the definitions of the statement, its open part `OnlyFourPoints` and their equivalence                                                                                                                                                                             |
 | `FurioLombardo/Challenge.lean`, `FurioLombardo/Solution.lean`, `config.json` | the statement with `sorry`, its proof, and the Comparator configuration                                                                                                                                                                                            |
-| `paper/`                                                                     | the TeX source and `small_checks.gp`                                                                                                                                                                                                                               |
+| `paper/`                                                                     | the TeX source, `small_checks.gp` (the search of the introduction) and `statement_map.sh` (which writes `STATEMENTS.md`)                                                                                                                                           |
 | `code/`                                                                      | the programs that wrote the certificates, the second implementations and the earlier PARI/GP computations, each with its recorded output; `code/README.md` maps each directory to the part of the paper it serves                                                  |
 
 The vendored extensions of the Mathlib API keep their Mathlib namespaces (`IsDedekindDomain`, `Valuation`, `Polynomial`, ...), as in their sources, so that dot notation works.
@@ -74,7 +76,7 @@ As a dependency (Lean and Mathlib `v4.34.1`):
 [[require]]
 name = "furio-lombardo-quartic"
 git = "https://github.com/mt0-svg/furio-lombardo-quartic"
-rev = "v1.1.0"
+rev = "v1.2.0"
 ```
 
 then `lake update furio-lombardo-quartic`, `lake exe cache get` and `lake build`, which downloads the build archive of the release.
@@ -85,6 +87,7 @@ The computations: `code/README.md` gives the command of each script and its reco
 
 - [Lean 4](https://github.com/leanprover/lean4) and [Mathlib](https://github.com/leanprover-community/mathlib4) (Apache 2.0): the formalization.
 - [Comparator](https://github.com/leanprover/comparator), [lean4export](https://github.com/leanprover/lean4export) and [landrun](https://github.com/zouuup/landrun): the check of the statement in CI.
+- [nanoda](https://github.com/ammkrn/nanoda_lib) of Chris Bailey (Apache 2.0), commit `3a2407216ee84a75f9e1aead6803d0578be06ae7`: the second implementation of the Lean kernel, built by the CI, which Comparator runs to check again every declaration the theorem depends on.
 - [EllipticCurves](https://github.com/MichaelStollBayreuth/EllipticCurves) of Michael Stoll (Apache 2.0), commit `1e4709496a2c0cb3da66b400efbb15939358d444`: fractional ideals, $`S`$-integers and Selmer groups in `FurioLombardo/M1/Vendor/Stoll/` (copies of `EllipticCurves/Mathlib/{Basic,FractionalIdeal,SIntegers,SelmerGroup}.lean`, module paths and namespaces renamed, no other change); the factorization of fractional ideals in `FurioLombardo/M3b/Factorization.lean` (adapted from `EllipticCurves/Mathlib/FractionalIdeal.lean`, declarations renamed, two lemmas added); formal group laws and their logarithms in `FurioLombardo/Vendor/Toolbox/Stoll/Mathlib/Chabauty/` (15 files, copies of `EllipticCurves/Mathlib/Chabauty/`, which Stoll took from his Chabauty project; module paths and the namespace `ChabautyColeman` renamed, no proof changed).
 - [Tau Ceti](https://github.com/TauCetiProject/TauCeti) (Apache 2.0): local fields (uniformizers, normalized valuations, squares, finite extensions) in `FurioLombardo/Vendor/Toolbox/TauCeti/` (35 files of commit `b5174264c00450f3f38976fe8b4a6fc573811c5e`, same paths under `TauCeti/`; namespace renamed, three data instances scoped, three lemmas renamed with a prime, no proof changed); the integral closedness of the coordinate ring in `FurioLombardo/M3a/CoordRing.lean` and `FurioLombardo/M3a/Dedekind.lean` (adapted from `TauCeti/AlgebraicGeometry/EllipticCurve/Affine/CoordinateRing.lean` of commit `ae983b7a7f37dab9ee586c432db940e69248cb97`, from Weierstrass equations to $`Y^2=f`$).
 - [AINTLIB](https://github.com/CBirkbeck/AINTLIB) of Chris Birkbeck (Apache 2.0), commit `8ad96111e05bb40552614d08c52eaa6b047b54e6`: the completed Dedekind zeta function, used in the proof of Zimmert's bound, in `FurioLombardo/Vendor/AINTLIB/CompletedZeta/` (the 16 files of `projects/DedekindResidue/DedekindResidue/CompletedZeta/`; module paths and the namespace `DedekindResidue` renamed, no other change).

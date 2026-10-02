@@ -92,7 +92,7 @@ theorem mulVec_eq_comboVec (e : Fin 18 → Bool) (i : ℕ → ℕ)
 theorem evz_eq (e : Fin 18 → Bool) : evz e = Lz.mulVec (Mz.mulVec (evz e)) := by
   rw [Matrix.mulVec_mulVec, hLM, Matrix.one_mulVec]
 
-/-- **The good prime sieve.** -/
+/-- **The good prime sieve.** Lemma 2.5 of the paper. -/
 theorem sieve_good (a r : Fin 3 → ℤ) (hr : ∑ j, r j * a j = 1)
     (hF : FurioLombardo.F (a 0) (a 1) (a 2) = 0) (e : Fin 18 → Bool) (hsq : SqCond a e) :
     ∃ k < 8, e = survE k := by

@@ -454,7 +454,8 @@ theorem sq_of_mem (k : Fin 2) (e : Fin 7 → ℕ)
     isSquare_prod_sq_mul Finset.univ (fun i => ψ3 k (AdjoinRoot.mk _ (Uv k i)))
       (fun i => algebraMap (NF k) (MF k) (algebraMap Kv (NF k) ((2 ^ sb3 k i : Kv)⁻¹))) e s3⟩
 
-/-- **(K2), independence**: the local images of `D_1, ..., D_7` are independent in `H g`. -/
+/-- **(K2), independence**: the local images of `D_1, ..., D_7` are independent in `H g`.
+Lemma 6.3 of the paper. -/
 theorem indep_Dpt (k : Fin 2) : ∀ c : Fin 7 → ℤ,
     ∏ i, muJ ((fRev k).map σ) (Additive.toMul (Dpt k i)) ^ c i = 1 → ∀ i, (2 : ℤ) ∣ c i := by
   intro c hc

@@ -46,7 +46,8 @@ theorem cS_not_mem (v : HeightOneSpectrum (𝓞 K21)) (hv : v ∉ S) : zkO cSL �
     · exact h16 (hP.mem_of_pow_mem _ h)
   · exact h17 (hP.mem_of_pow_mem _ h)
 
-/-- At a prime outside `S`, the three conics do not all vanish at a primitive integer point. -/
+/-- At a prime outside `S`, the three conics do not all vanish at a primitive integer point.
+Lemma 2.3 of the paper. -/
 theorem not_all_mem (v : HeightOneSpectrum (𝓞 K21)) (hv : v ∉ S) (a r : Fin 3 → ℤ)
     (hr : ∑ j, r j * a j = 1) (h : ∀ i, qO i a ∈ v.asIdeal) : False := by
   letI := Ideal.Quotient.field v.asIdeal

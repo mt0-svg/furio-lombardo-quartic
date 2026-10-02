@@ -1,4 +1,4 @@
-# [disc, X0, level, nu0, class (basis of pr of s3_lattice.sobj), class in pr(W), class == e1, margin j - (nu0 + 1), branch (1: r from Q1, 3: s from Q3), v(Q1/delta), lambda precision pi^m, near x_i, tiny series check v(diff)]
+# [disc, X0, level, nu0, class (basis of pr of lattice.sobj), class in pr(W), class == e1, margin j - (nu0 + 1), branch (1: r from Q1, 3: s from Q3), v(Q1/delta), lambda precision pi^m, near x_i, tiny series check v(diff)]
 [3, 28, 5, 4, [1, 1, 0, 0], False, True, 191, 1, 0, 595, 1, (84, '+', 207)]
 [3, 12, 5, 4, [1, 1, 0, 0], False, True, 191, 1, 0, 595, 1, (84, '+', 207)]
 [3, 20, 5, 4, [1, 1, 0, 0], False, True, 191, 1, 0, 595, 1, (84, '+', 207)]

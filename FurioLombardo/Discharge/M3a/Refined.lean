@@ -67,6 +67,7 @@ theorem selmerInjective_of_K2Inputs {σ : k →+* kv} {f : k[X]} [GoodSextic f]
   exact selmerInjective_of_SB σ f g d SB L hspan hσ hind hL
 
 omit [Algebra ℚ k] in
+/-- Lemma 6.1 of the paper. -/
 theorem localTwoTorsion_of_L1Inputs (σ : k →+* kv) (f : k[X]) [GoodSextic f]
     [GoodSextic (f.map σ)] {q : k[X]} (hq : q.Monic) (hqf : q ∣ f) (hdeg : q.natDegree = 2)
     (h : L1Inputs σ f q) : LocalTwoTorsion (f.map σ) (jacMap σ f (Tpt f hq hqf hdeg)) := by

@@ -21,7 +21,7 @@ namespace FurioLombardo.Discharge.SelmerBasis
 
 open Cert
 
-/-- **Global Schaefer lemma for `fRev k`.** -/
+/-- **Global Schaefer lemma for `fRev k`.** Proposition 5.3 of the paper. -/
 theorem schaeferGlobal (k : Fin 2) {U V W : K21[X]} (hU : U.Monic) (hU2 : U.natDegree = 2)
     (hV : V.natDegree ≤ 1) (hw : V ^ 2 - fRev k = U * W) :
     ∃ c : K21, c ≠ 0 ∧ ∀ (F : Type) [Field F] [NumberField F] [Algebra K21 F] (θ : F),

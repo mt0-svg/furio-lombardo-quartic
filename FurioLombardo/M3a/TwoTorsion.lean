@@ -31,7 +31,7 @@ theorem coe_Tpt (f : K[X]) [GoodSextic f] {q : K[X]} (hq : q.Monic) (hqf : q ∣
     (hdeg : q.natDegree = 2) :
     ((Tpt f hq hqf hdeg : Jac f) : Pic f) = ClassGroup.mk0 (mumford0 f hq.ne_zero 0) := rfl
 
-/-- `2T = 0`. -/
+/-- `2T = 0`. Lemma 3.2 of the paper. -/
 theorem Tpt_sq (f : K[X]) [GoodSextic f] {q : K[X]} (hq : q.Monic) (hqf : q ∣ f)
     (hdeg : q.natDegree = 2) : Tpt f hq hqf hdeg ^ 2 = 1 := by
   obtain ⟨hw, hc⟩ := (mumford_data_of_dvd f hqf).choose_spec
